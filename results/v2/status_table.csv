@@ -1,0 +1,13 @@
+dataset,method,status,n_runs,n_common_criterion_converged,n_certificate_passed,elapsed_sec_median_all_status
+synthetic,cd,converged,360,360,360,0.02107141586020589
+synthetic,fista,converged,360,360,360,0.27375062368810177
+synthetic,ista,converged,360,360,360,0.31557844765484333
+synthetic,skglm,converged,360,360,360,0.014583179727196693
+uji,cd,converged,9,9,9,3.2990746907889843
+uji,fista,converged,9,9,9,16.52209709584713
+uji,ista,time_limit,9,0,0,20.007805223576725
+uji,skglm,converged,9,9,9,1.393442451953888
+leukemia,cd,converged,9,9,9,0.14186413772404194
+leukemia,fista,converged,9,9,9,11.6742226453498
+leukemia,ista,time_limit,9,0,0,20.00059763714671
+leukemia,skglm,converged,9,9,9,0.03928569704294205

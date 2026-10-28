@@ -1,0 +1,221 @@
+{
+  "session_date": "2026-10-28",
+  "timezone": "Asia/Shanghai",
+  "baseline": "skglm AndersonCD with Quadratic datafit and L1 penalty",
+  "objective": "||Xw-y||^2/(2*n)+lambda*||w||_1; fit_intercept=False; zero coefficients and zero fitted values for every attempt",
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-185-generic-x86_64-with-glibc2.35",
+  "versions": {
+    "skglm": "0.5",
+    "numba": "0.68.1",
+    "llvmlite": "0.50.0",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "installation": {
+    "target": ".modern_deps",
+    "base_environment": ".venv",
+    "base_numpy_scipy_sklearn_unchanged": true,
+    "commands": [
+      ".venv/bin/python -m pip install --no-deps --target .modern_deps skglm==0.5",
+      ".venv/bin/python -m pip install --no-deps --target .modern_deps numba==0.68.1 llvmlite==0.50.0"
+    ],
+    "import_note": "modern_solver adds only the optional dependency target to sys.path; all scientific base packages remain in .venv"
+  },
+  "package_metadata": {
+    "skglm": {
+      "distribution_metadata_sha256": "a76dfeccb3046aba9079b9478556f2741d607b64d58a674d262852cc3224642c",
+      "requires_python": ">=3.9",
+      "requirements": [
+        "numpy>=1.12",
+        "numba",
+        "scikit-learn>=1.6",
+        "scipy>=0.18.0",
+        "pytest; extra == \"test\"",
+        "flake8; extra == \"test\"",
+        "coverage; extra == \"test\"",
+        "numpydoc; extra == \"test\"",
+        "celer; extra == \"test\"",
+        "benchopt; extra == \"doc\"",
+        "libsvmdata>=0.2; extra == \"doc\"",
+        "matplotlib>=2.0.0; extra == \"doc\"",
+        "myst_parser; extra == \"doc\"",
+        "numpydoc; extra == \"doc\"",
+        "pillow; extra == \"doc\"",
+        "sphinx-bootstrap-theme; extra == \"doc\"",
+        "sphinx_copybutton; extra == \"doc\"",
+        "sphinx-gallery; extra == \"doc\"",
+        "sphinx-design; extra == \"doc\"",
+        "pytest; extra == \"doc\"",
+        "lifelines; extra == \"doc\"",
+        "pydata_sphinx_theme; extra == \"doc\"",
+        "sphinx-sitemap; extra == \"doc\"",
+        "sphinxext-opengraph; extra == \"doc\""
+      ],
+      "distribution_directory": "/root/polyu/.modern_deps/skglm-0.5.dist-info"
+    },
+    "numba": {
+      "distribution_metadata_sha256": "03180342d0a32eeed6a7ae09124b5c73d4d3acd8208cfe3fd039f4f440088b0b",
+      "requires_python": ">=3.10",
+      "requirements": [
+        "llvmlite<0.51,>=0.50.0dev0",
+        "numpy<2.6,>=1.22"
+      ],
+      "distribution_directory": "/root/polyu/.modern_deps/numba-0.68.1.dist-info"
+    },
+    "llvmlite": {
+      "distribution_metadata_sha256": "8f1269fc707c42d99b010322f95da3fc46a9ad3c542080fa0bc6d9deab6a9c05",
+      "requires_python": ">=3.10",
+      "requirements": null,
+      "distribution_directory": "/root/polyu/.modern_deps/llvmlite-0.50.0.dist-info"
+    }
+  },
+  "paper": {
+    "title": "skglm: Improving scikit-learn for Regularized Generalized Linear Models",
+    "authors": [
+      "Badr Moufad",
+      "Pierre-Antoine Bannier",
+      "Quentin Bertrand",
+      "Quentin Klopfenstein",
+      "Mathurin Massias"
+    ],
+    "year": 2025,
+    "venue": "Journal of Machine Learning Research",
+    "volume": 26,
+    "number": 149,
+    "pages": "1--6",
+    "url": "https://jmlr.org/papers/v26/24-0008.html",
+    "paper_version_reproduced": false,
+    "interpretation": "Context baseline using installed skglm 0.5. The software paper Table 1 lists components as of v0.3.1 (December 2023); this experiment does not reproduce its published benchmarks."
+  },
+  "algorithm_provenance": [
+    "https://proceedings.mlr.press/v130/bertrand21a.html",
+    "https://arxiv.org/abs/2204.07826"
+  ],
+  "official_sources": [
+    "https://pypi.org/project/skglm/0.5/",
+    "https://github.com/scikit-learn-contrib/skglm",
+    "https://contrib.scikit-learn.org/skglm/generated/skglm.solvers.AndersonCD.html"
+  ],
+  "protocol": {
+    "threads": 1,
+    "dtype": "float64",
+    "X_order": "Fortran contiguous",
+    "intercept": false,
+    "warm_start": false,
+    "jit_warmup": "once per process, separately timed and excluded from benchmark solve time",
+    "library_stop_criterion": "maximum subdifferential/KKT violation, not normalized duality gap",
+    "acceptance": "unchanged lasso_study.solvers.certificate normalized_gap <= requested common tol (default 1e-6)",
+    "library_tolerance_ladder": [
+      0.0001,
+      1e-06,
+      1e-08
+    ],
+    "max_attempts": 3,
+    "restart_each_attempt": "zero",
+    "timing": "sum of every complete attempt, wrapper overhead, initial and posterior certificate and metric callback; do not report only final successful attempt",
+    "library_outer_working_set_cap": 100,
+    "library_subproblem_max_epochs": 50000,
+    "time_limit": "observed before/after fits; no hard interruption while a library fit is running; mark budget_exceeded if measured cumulative time exceeds it",
+    "history": "initial point plus fit endpoints only; not comparable to dense-checkpoint time-to-accuracy curves"
+  },
+  "verification": {
+    "command": "PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 NUMBA_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_modern_solver.py -q",
+    "result": "3 passed",
+    "checks": [
+      "orthogonal closed-form solution",
+      "correlated problem objective and coefficients against sklearn Lasso",
+      "lambda_max zero solution"
+    ],
+    "runtime_sec": 5.05
+  },
+  "representative_v2_checks": [
+    {
+      "rho": 0.0,
+      "sparsity": 20,
+      "layout": "dispersed",
+      "c": 1.0,
+      "lambda": 0.166225813626911,
+      "status": "converged",
+      "elapsed_sec": 0.020115988329052925,
+      "iterations": 20,
+      "normalized_gap": 2.398950100646259e-08,
+      "attempts": [
+        {
+          "library_tol": 0.0001,
+          "fit_elapsed_sec": 0.00430579949170351,
+          "normalized_gap": 0.0003445961578349237
+        },
+        {
+          "library_tol": 1e-06,
+          "fit_elapsed_sec": 0.005622683092951775,
+          "normalized_gap": 1.214149050721229e-06
+        },
+        {
+          "library_tol": 1e-08,
+          "fit_elapsed_sec": 0.006317047402262688,
+          "normalized_gap": 2.398950100646259e-08
+        }
+      ]
+    },
+    {
+      "rho": 0.9,
+      "sparsity": 20,
+      "layout": "dispersed",
+      "c": 0.5,
+      "lambda": 0.0831129068134555,
+      "status": "converged",
+      "elapsed_sec": 0.0713412519544363,
+      "iterations": 40,
+      "normalized_gap": 1.8541417055968807e-09,
+      "attempts": [
+        {
+          "library_tol": 0.0001,
+          "fit_elapsed_sec": 0.018448772840201855,
+          "normalized_gap": 4.673198323416221e-05
+        },
+        {
+          "library_tol": 1e-06,
+          "fit_elapsed_sec": 0.021485713310539722,
+          "normalized_gap": 4.529907220729201e-06
+        },
+        {
+          "library_tol": 1e-08,
+          "fit_elapsed_sec": 0.02760366164147854,
+          "normalized_gap": 1.8541417055968807e-09
+        }
+      ]
+    },
+    {
+      "rho": 0.9,
+      "sparsity": 40,
+      "layout": "clustered",
+      "c": 0.5,
+      "lambda": 0.0831129068134555,
+      "status": "converged",
+      "elapsed_sec": 0.056549688801169395,
+      "iterations": 39,
+      "normalized_gap": 1.7616334364946876e-08,
+      "attempts": [
+        {
+          "library_tol": 0.0001,
+          "fit_elapsed_sec": 0.014056159183382988,
+          "normalized_gap": 0.00035282079855576736
+        },
+        {
+          "library_tol": 1e-06,
+          "fit_elapsed_sec": 0.01761083584278822,
+          "normalized_gap": 3.444341319249797e-06
+        },
+        {
+          "library_tol": 1e-08,
+          "fit_elapsed_sec": 0.021128052845597267,
+          "normalized_gap": 1.7616334364946876e-08
+        }
+      ]
+    }
+  ],
+  "documentation_version_note": "The browsed generated documentation is dev 0.6; the installed 0.5 source was inspected directly for objective scaling, initialization, working-set limits and maximum subdifferential stopping criterion."
+}

@@ -1,0 +1,474 @@
+{
+  "pages": [
+    [
+      [
+        "title",
+        "固定对偶间隙下的支持充分性审计"
+      ],
+      [
+        "p",
+        "Workshop先导研究简报 · 探索性结果\n姓名：________________　学号：________________\n日期：2026年10月28日（Asia/Shanghai）"
+      ],
+      [
+        "h",
+        "1　研究问题与当前证据"
+      ],
+      [
+        "p",
+        "同一Lasso目标求到某个固定gap时，相对生成真支持的评价是否已与高精度数值参考一致，而逐变量支持仍未匹配？本研究将这两个端点分开记录，同时量化继续计算到更紧gap的观测成本。它不提出新算法，也不预设较松容差一定不充分。"
+      ],
+      [
+        "eq",
+        "F(w)=\\frac{\\|Xw-y\\|_2^2}{2n}+\\lambda\\|w\\|_1,\\quad\\lambda=c\\sigma\\sqrt{2\\log(p)/n}"
+      ],
+      [
+        "p",
+        "在主支持阈值τ=1e-06、首次观测归一化gap≤1e-06处，72/72 (100.0%)条可用轨迹已逐索引匹配数值参考，本轮没有在这一档位观测到两个充分性端点的分离。普通区域稳定本身应作为结果保留。更粗gap=0.01处，逐索引匹配48/72，计数匹配52/72，其中4条计数相同而索引不同。在gap=0.0001处已观测到72/72逐索引匹配；不能把粗档位差异改写为常用容差普遍不可靠。"
+      ],
+      [
+        "table",
+        [
+          "因素",
+          "预先固定的pilot协议"
+        ],
+        [
+          [
+            "目标与轨迹",
+            "36个固定目标；72条轨迹；FISTA/循环CD"
+          ],
+          [
+            "独立种子",
+            "100, 101, 102；因素和算法均配对，轨迹检查点不是独立重复"
+          ],
+          [
+            "设计与维度",
+            "block ρ=0、block ρ=0.9、toeplitz ρ=0.9；n=500，p=1000，真非零数=20"
+          ],
+          [
+            "布局与幅度",
+            "dispersed, clustered；strong幅度1，mixed_weak每第4位幅度0.25"
+          ],
+          [
+            "固定噪声与惩罚",
+            "σ=1，c=1，λ=0.166226；不随信号方差或λmax缩放"
+          ],
+          [
+            "精度与观察间隔",
+            "最终gap目标=1e-10；每5次近端迭代/完整CD轮检查；单轨迹上限20秒"
+          ]
+        ]
+      ],
+      [
+        "p",
+        "状态记录：converged=72。数值参考获共识的目标为36/36；其余目标单列不确定，不计入参考充分性分母。block与Toeplitz在ρ=0时共享完全相同设计，故只保留一个共同基线。"
+      ],
+      [
+        "p",
+        "独立信息来自数据种子；不同几何、幅度、布局及两条算法轨迹均有配对关系。下文比例只是预设网格中的描述频率，不作为独立二项试验的总体概率或置信区间。"
+      ]
+    ],
+    [
+      [
+        "h",
+        "2　两个端点、数值参考与记账定义"
+      ],
+      [
+        "p",
+        "记S*为生成真支持，Sref,τ为数值参考在|w|>τ下的支持，St,τ为检查点支持。实验能直接计算前者与参考之间的差别，但没有可信精确证书时，不能把Sref,τ改名为精确Lasso最优支持。τ是输出支持阈值，λ是统计惩罚，gap是迭代停止精度；本轮运算始终为float64，未改变浮点位宽。"
+      ],
+      [
+        "eq",
+        "\\bar g=\\frac{P-D}{\\max(1,|P|,|D|)}"
+      ],
+      [
+        "p",
+        "参考支持端点要求St,τ与Sref,τ逐索引相同，符号另行保存。真实支持评价端点在本先导使用更严格的离线代理：相对S*的TP、FP、FN计数与参考完全相同。它既不等于恢复S*，也不保证变量索引相同；本轮尚未预注册实际评价容许误差δ，不能将该代理升级成可部署的“已经足够”决策。"
+      ],
+      [
+        "p",
+        "参考由scikit-learn循环CD与skglm各自求解[[moufad2025]]，共同gap目标1e-10；要求系数无穷范数差≤1e-07、归一目标值差≤1e-09，并在预定τ下支持和符号一致。当前最大系数差=2.42e-10，最大归一目标差=3.15e-16。两实现共识是数值证据，仍不是精确支持或可信计算证明。"
+      ],
+      [
+        "h2",
+        "数值偏差可能造成伤害，也可能偶然修正统计选择"
+      ],
+      [
+        "p",
+        "H(t)统计参考选择正确、当前选择错误的变量；R(t)统计参考选择错误、当前反而选择正确的变量。令E为相对S*的误选加漏选，则有下述二元选择记账恒等式。它不是新定理，也不能直接用于F1或三状态符号错误。"
+      ],
+      [
+        "eq",
+        "E_t=E_{\\mathrm{ref}}+H(t)-R(t),\\qquad|S_{t,\\tau}\\,\\triangle\\,S_{\\mathrm{ref},\\tau}|=H(t)+R(t)"
+      ],
+      [
+        "p",
+        "主τ=1e-06下，首次观测匹配后又在后续检查点离开的轨迹，FISTA为24/36、循环CD为0/36。此处每条轨迹只按主τ计一次，不将跨τ记录叠加成独立样本。首次匹配不意味着此后不变；“最后一次观测不一致之后”也只描述保存区间，不能保证未来所有迭代。"
+      ],
+      [
+        "p",
+        "Gap Safe在本轮仅作离线零变量排除诊断[[fercoq2015]]：equicorrelation set、未排除集合、数值非零支持及生成真支持不可互换，覆盖率不等于恢复率。"
+      ]
+    ],
+    [
+      [
+        "h",
+        "3　固定gap的观测充分性"
+      ],
+      [
+        "image",
+        "workshop/pilot/support_adequacy",
+        "图1　首次观测参考支持匹配yield：已达gap、参考共识且逐索引匹配数/全部预注册轨迹数。未达或参考不确定不算观测匹配，也不据此认定支持错误。三种几何分线、强/弱幅度分线型，每线汇合两布局及配对种子；不是独立总体成功概率。",
+        290
+      ],
+      [
+        "table",
+        [
+          "方法 / τ",
+          "参考共识且已达n",
+          "逐索引支持同",
+          "TP/FP/FN同",
+          "同计数不同支持",
+          "|F1−F1ref|中位"
+        ],
+        [
+          [
+            "FISTA / 1e-06",
+            "36",
+            "25/36 (69.4%)",
+            "25/36 (69.4%)",
+            "0",
+            "0.0000"
+          ],
+          [
+            "循环CD / 1e-06",
+            "36",
+            "23/36 (63.9%)",
+            "27/36 (75.0%)",
+            "4",
+            "0.0000"
+          ],
+          [
+            "FISTA / 0.0001",
+            "36",
+            "25/36 (69.4%)",
+            "26/36 (72.2%)",
+            "1",
+            "0.0000"
+          ],
+          [
+            "循环CD / 0.0001",
+            "36",
+            "23/36 (63.9%)",
+            "27/36 (75.0%)",
+            "4",
+            "0.0000"
+          ]
+        ]
+      ],
+      [
+        "p",
+        "表中固定观测gap档位为0.01，用于显示更粗精度下的端点差异。在主τ下，0条轨迹尚无这一档位的已达检查点；数值参考未获共识的目标也不进入比率分母。τ由1e-06、0.0001分别审计，不把极小非零系数自动当成可靠统计发现。"
+      ],
+      [
+        "p",
+        "同计数而不同索引可由变量替换或伤害与修正的抵消产生。即使F1不变，也应检查逐索引差异；即使逐索引匹配参考，仍可能重复参考的统计误选。完整逐目标、逐检查点与符号记录保留在分析JSON/CSV中。"
+      ]
+    ],
+    [
+      [
+        "h",
+        "4　伤害、偶然修正与追加观测成本"
+      ],
+      [
+        "image",
+        "workshop/pilot/harm_repair",
+        "图2　主τ=1e-06下的平均H/R变量数，汇合预设条件；仅用已达相应gap且数值参考有共识的轨迹。两者是相对真值的离线记账，不能用“修正”声称改进了估计器。",
+        205
+      ],
+      [
+        "table",
+        [
+          "方法 / τ",
+          "两档均已达n",
+          "支持变 / 计数变",
+          "同计数换位",
+          "追加秒中位",
+          "占紧档时间"
+        ],
+        [
+          [
+            "FISTA / 1e-06",
+            "36",
+            "0 / 0",
+            "0",
+            "2.812",
+            "64.3%"
+          ],
+          [
+            "循环CD / 1e-06",
+            "36",
+            "0 / 0",
+            "0",
+            "0.049",
+            "39.3%"
+          ],
+          [
+            "FISTA / 0.0001",
+            "36",
+            "0 / 0",
+            "0",
+            "2.812",
+            "64.3%"
+          ],
+          [
+            "循环CD / 0.0001",
+            "36",
+            "0 / 0",
+            "0",
+            "0.049",
+            "39.3%"
+          ]
+        ]
+      ],
+      [
+        "p",
+        "表中从首次观测gap≤1e-06至首次≤1e-10计算追加时间。它包含途中诊断，且受检查间隔影响，是观测上界差；它不是可保证节省的时间，也没有基于未来真值实现一个停止策略。表的分母仅限两档都已到达的轨迹，未完成轨迹不作为快解。"
+      ],
+      [
+        "p",
+        "FISTA诊断占解算时间中位29.8%（系数快照复制子项0.04%）；循环CD诊断占解算时间中位22.0%（系数快照复制子项0.04%）。上述诊断和支持/快照回调均已计入解算计时，不能再相加。离线Gap Safe及快照堆叠共19.066秒、文件写出共4.362秒另记；参考拟合、SVD与环境预热也分开记录。"
+      ],
+      [
+        "p",
+        "旧课程实验的末端支持一致、计数变化稀少，是反对预写“固定gap普遍失败”的已有负信号。本先导允许同样的稳定结果；若两个端点的差别没有实际评价或可复现成本意义，应接受no-go或按负面适用性结果报告。不能仅因少数近退化例或H/R恒等式成立就扩张结论。"
+      ]
+    ],
+    [
+      [
+        "h",
+        "5　最近邻、局限与下一步条件"
+      ],
+      [
+        "p",
+        "相关设计下的支持恢复数值研究已有系统比较[[kumar2024]]；其2024卷期对应2022年在线发表。Gap Safe已把gap与安全排除及有限识别联系起来[[fercoq2015]]。Bastounis I给出可信支持计算的条件分析[[bastounis2023i]]，II已连接相关随机设计、统计恢复、数值精度与计算成本[[bastounis2023ii]]；两篇本次均按2023预印本引用。Walwil与Fercoq已系统研究停止量及误差界/成本[[walwil2025]]。本轮不能声称首次联结这些层面。"
+      ],
+      [
+        "p",
+        "当前范围只是固定目标与float64求解轨迹的经验审计。没有穷尽新颖性检索，没有精确支持可信证书，没有独立确认集，也未建立实用容许误差δ或可部署停止规则。支持阈值敏感性、共识失败、未达档位和记录开销均应保留；先导种子与后验选点不能充当新的独立验证。"
+      ],
+      [
+        "p",
+        "下一步须先冻结可否定主张、δ和实际成本门槛，再使用未见种子与预定设计族独立确认；普通与弱信号区域都应保留。若分离比例接近零、代价差缺乏实际意义或只依赖挑出的极端目标，则停止扩网格。workshop展示、非正式短稿与正式收录状态应分别说明，当前结果不构成发表或接收保证。"
+      ],
+      [
+        "h2",
+        "参考文献"
+      ],
+      [
+        "refs"
+      ],
+      [
+        "h2",
+        "证据与重建"
+      ],
+      [
+        "p",
+        "主证据：results/workshop/pilot/analysis.json；逐检查点系数与两参考系数保留在独立workshop目录。重建：python scripts/analyze_workshop.py pilot，随后python scripts/build_workshop_brief.py。最近邻原文定位见docs/workshop_nearest_work.md。本简报由保存数据动态生成，不修改课程报告与第二版冻结结果。"
+      ]
+    ]
+  ],
+  "references": [
+    {
+      "key": "kumar2024",
+      "text": "Kumar, A.; Bhattacharyya, S.; Bouchard, K. Numerical characterization of support recovery in sparse regression with correlated design. Communications in Statistics—Simulation and Computation 53(3):1504–1518, 2024卷期；2022-03-31在线发表。",
+      "url": "https://doi.org/10.1080/03610918.2022.2050392"
+    },
+    {
+      "key": "fercoq2015",
+      "text": "Fercoq, O.; Gramfort, A.; Salmon, J. Mind the duality gap: safer rules for the Lasso. ICML, PMLR 37:333–342, 2015.",
+      "url": "https://proceedings.mlr.press/v37/fercoq15.html"
+    },
+    {
+      "key": "bastounis2023i",
+      "text": "Bastounis, A.; Cucker, F.; Hansen, A. C. When can you trust feature selection?—I: A condition-based analysis of LASSO and generalised hardness of approximation. arXiv:2312.11425, 2023，核查版本为预印本。",
+      "url": "https://arxiv.org/abs/2312.11425"
+    },
+    {
+      "key": "bastounis2023ii",
+      "text": "Bastounis, A.; Cucker, F.; Hansen, A. C. When can you trust feature selection?—II: On the effects of random data on condition in statistics and optimisation. arXiv:2312.11429, 2023，核查版本为预印本。",
+      "url": "https://arxiv.org/abs/2312.11429"
+    },
+    {
+      "key": "walwil2025",
+      "text": "Walwil, I.; Fercoq, O. The smoothed duality gap as a stopping criterion. Mathematical Programming Computation 17:653–697, 2025.",
+      "url": "https://doi.org/10.1007/s12532-025-00284-0"
+    },
+    {
+      "key": "moufad2025",
+      "text": "Moufad, B.; Bannier, P.-A.; Bertrand, Q.; Klopfenstein, Q.; Massias, M. skglm: Improving scikit-learn for Regularized Generalized Linear Models. Journal of Machine Learning Research 26(149):1–6, 2025.",
+      "url": "https://www.jmlr.org/papers/v26/24-0008.html"
+    }
+  ],
+  "derived": {
+    "primary_gap": 1e-06,
+    "primary_tau": 1e-06,
+    "primary_usable_rows": 72,
+    "primary_support_matches": 72,
+    "primary_count_matches": 72,
+    "primary_same_count_different_support": 0,
+    "endpoints": [
+      {
+        "method": "fista",
+        "tau": 1e-06,
+        "gap": 0.01,
+        "observed": 36,
+        "reference_consensus_n": 36,
+        "support_matches": 25,
+        "count_matches": 25,
+        "same_count_different_support": 0,
+        "absolute_f1_difference": {
+          "n": 36,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.007298436049417989,
+          "min": 0.0,
+          "max": 0.03300043421623966
+        }
+      },
+      {
+        "method": "cd",
+        "tau": 1e-06,
+        "gap": 0.01,
+        "observed": 36,
+        "reference_consensus_n": 36,
+        "support_matches": 23,
+        "count_matches": 27,
+        "same_count_different_support": 4,
+        "absolute_f1_difference": {
+          "n": 36,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0016660496112550771,
+          "min": 0.0,
+          "max": 0.0328048113723346
+        }
+      },
+      {
+        "method": "fista",
+        "tau": 0.0001,
+        "gap": 0.01,
+        "observed": 36,
+        "reference_consensus_n": 36,
+        "support_matches": 25,
+        "count_matches": 26,
+        "same_count_different_support": 1,
+        "absolute_f1_difference": {
+          "n": 36,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0067525347986775175,
+          "min": 0.0,
+          "max": 0.03300043421623966
+        }
+      },
+      {
+        "method": "cd",
+        "tau": 0.0001,
+        "gap": 0.01,
+        "observed": 36,
+        "reference_consensus_n": 36,
+        "support_matches": 23,
+        "count_matches": 27,
+        "same_count_different_support": 4,
+        "absolute_f1_difference": {
+          "n": 36,
+          "median": 0.0,
+          "q25": 0.0,
+          "q75": 0.0016660496112550771,
+          "min": 0.0,
+          "max": 0.0328048113723346
+        }
+      }
+    ],
+    "coarse_gap": 0.01,
+    "coarse_usable_rows": 72,
+    "coarse_support_matches": 48,
+    "coarse_count_matches": 52,
+    "coarse_same_count_different_support": 4,
+    "intermediate_gap": 0.0001,
+    "intermediate_usable_rows": 72,
+    "intermediate_support_matches": 72,
+    "primary_tau_observed_departures": [
+      {
+        "method": "fista",
+        "tau": 1e-06,
+        "eligible_trajectories": 36,
+        "observed_match_later_lost": 24
+      },
+      {
+        "method": "cd",
+        "tau": 1e-06,
+        "eligible_trajectories": 36,
+        "observed_match_later_lost": 0
+      }
+    ],
+    "costs": [
+      {
+        "method": "fista",
+        "diagnostic_fraction": {
+          "n": 36,
+          "median": 0.2984043084998999,
+          "q25": 0.2975654283139435,
+          "q75": 0.29944013693467625,
+          "min": 0.2971846378994214,
+          "max": 0.30167034612606786
+        },
+        "snapshot_copy_fraction": {
+          "n": 36,
+          "median": 0.0004213551129910811,
+          "q25": 0.0004118387681947939,
+          "q75": 0.00042985088506919747,
+          "min": 0.0003990582439857752,
+          "max": 0.0004963891161654082
+        },
+        "elapsed_sec": {
+          "n": 36,
+          "median": 4.251688676420599,
+          "q25": 0.1550679882057011,
+          "q75": 4.822756869485602,
+          "min": 0.13661436550319195,
+          "max": 6.504877821542323
+        }
+      },
+      {
+        "method": "cd",
+        "diagnostic_fraction": {
+          "n": 36,
+          "median": 0.21968211866428394,
+          "q25": 0.21860401334519733,
+          "q75": 0.2586872530402359,
+          "min": 0.21349707286210498,
+          "max": 0.2713422377928618
+        },
+        "snapshot_copy_fraction": {
+          "n": 36,
+          "median": 0.0003571658322151088,
+          "q25": 0.0003479006941685167,
+          "q75": 0.00039060929465904986,
+          "min": 0.0003157803819934812,
+          "max": 0.0004527507486920197
+        },
+        "elapsed_sec": {
+          "n": 36,
+          "median": 0.11713325697928667,
+          "q25": 0.013825638685375452,
+          "q75": 0.21576714050024748,
+          "min": 0.013457393273711205,
+          "max": 0.4895191676914692
+        }
+      }
+    ],
+    "offline_gap_safe_stack_sec": 19.066216715611517,
+    "artifact_write_sec": 4.3621686873957515
+  }
+}

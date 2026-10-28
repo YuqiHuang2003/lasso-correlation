@@ -1,0 +1,198 @@
+{
+  "accuracy_eligible": true,
+  "reference_accepted": true,
+  "qualification_failure_reasons": {
+    "accuracy": [],
+    "consensus": [],
+    "by_reference": {
+      "sklearn": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.004962737672030926,
+        "normalized_gap": 3.1097346919750635e-13
+      },
+      "skglm": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.003993616439402103,
+        "normalized_gap": 1.4210854715202004e-13
+      }
+    }
+  },
+  "scores_by_tau": {
+    "1e-06": {
+      "sklearn": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 0,
+        "nnz": 7,
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333334,
+        "f1_exact": {
+          "numerator": 5,
+          "denominator": 6
+        },
+        "support_indices": [
+          2,
+          3,
+          9,
+          19,
+          30,
+          51,
+          53
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 2,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 0,
+        "nnz": 7,
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333334,
+        "f1_exact": {
+          "numerator": 5,
+          "denominator": 6
+        },
+        "support_indices": [
+          2,
+          3,
+          9,
+          19,
+          30,
+          51,
+          53
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 2,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.8333333333333334,
+        0.8333333333333334
+      ]
+    },
+    "0.0001": {
+      "sklearn": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 0,
+        "nnz": 7,
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333334,
+        "f1_exact": {
+          "numerator": 5,
+          "denominator": 6
+        },
+        "support_indices": [
+          2,
+          3,
+          9,
+          19,
+          30,
+          51,
+          53
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 2,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 5,
+        "fp": 2,
+        "fn": 0,
+        "nnz": 7,
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333334,
+        "f1_exact": {
+          "numerator": 5,
+          "denominator": 6
+        },
+        "support_indices": [
+          2,
+          3,
+          9,
+          19,
+          30,
+          51,
+          53
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 2,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.8333333333333334,
+        0.8333333333333334
+      ]
+    }
+  },
+  "primary_support_threshold": 1e-06,
+  "primary_absolute_f1_difference": 0.0,
+  "primary_delta_exceeded": false,
+  "prediction_difference_rmse": 1.6158625446392107e-13,
+  "l1_norm_difference_abs": 3.552713678800501e-14,
+  "evaluation_sec_outside_reference_timers": 0.0004893792793154716,
+  "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
+  "target_id": "news_seed404_c1_mixed_weak",
+  "params": {
+    "source": "news",
+    "seed": 404,
+    "amplitude": "mixed_weak",
+    "c": 1.0
+  },
+  "source": "news",
+  "seed": 404,
+  "amplitude": "mixed_weak",
+  "c": 1.0,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "dataset_hash": "44a3a2abeef22712bd672d6838e5319a0efc00c63de6aab16dc550b6936dd25f",
+  "input_hashes": {
+    "dataset_sha256": "2e7fb1643b18cb59facf9d98d2861dc9863c302a6c9c092b3d49327247c0f9e9",
+    "reference_json_sha256": "9b5787baa14a381a75cf0cfa9d0208095cda723c98d79a691def13bafd9c8b5d",
+    "reference_coefficients_sha256": "76be93197392e72b51583a112ad4fa1b14056b0071c6de4978a4038913fca447"
+  }
+}

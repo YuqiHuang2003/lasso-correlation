@@ -1,0 +1,38 @@
+{
+  "dataset": "Leukemia (LIBSVM normalized snapshot)",
+  "source_page": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html#leukemia",
+  "source_urls": {
+    "leu.bz2": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/leu.bz2",
+    "leu.t.bz2": "https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/leu.t.bz2"
+  },
+  "license": "Not specified on the checked LIBSVM dataset page",
+  "redistribution": "Do not include raw/derived data in distributable submission archives; fetch locally using this script.",
+  "attribution": "Golub et al. (1999), distributed in preprocessed LIBSVM format by the LIBSVM dataset collection.",
+  "source_preprocessing": "LIBSVM reports instance-wise zero-mean/unit-variance normalization, then feature-wise zero-mean/unit-variance normalization on merged training/testing data.",
+  "original_split_rows": [
+    38,
+    34
+  ],
+  "combined_rows": 72,
+  "n_features": 7129,
+  "merge_order": [
+    "leu.bz2",
+    "leu.t.bz2"
+  ],
+  "evaluation_scope": "All 72 observations form one fixed least-squares Lasso optimization benchmark; binary labels are numeric targets. No generalization or true-support claim.",
+  "retrieved_at_utc": "2026-10-28T09:57:00.212159+00:00",
+  "files": {
+    "leu.bz2": {
+      "sha256": "2f7dc1c8ea4343b17038e27ff777dad0a87d79a5fa29de54765055cc841cb75b",
+      "bytes": 1423727
+    },
+    "leu.t.bz2": {
+      "sha256": "582161e3d5112f6c1604d262413acca5e33cad1b3f522c681faeb369e8b4a271",
+      "bytes": 1269502
+    },
+    "leukemia.libsvm": {
+      "sha256": "da6fe1bea490771a47f3913fb44ed42bfda6da5dc9cce8f3531dce6bfb100fc9",
+      "bytes": 7380209
+    }
+  }
+}

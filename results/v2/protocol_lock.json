@@ -1,0 +1,19 @@
+{
+  "frozen_at": "2026-10-28T18:04:19.843805+08:00",
+  "pilot_runs": 32,
+  "status_counts": {
+    "converged": 32
+  },
+  "pilot_mean_solver_sec": 0.5471887308813166,
+  "pilot_max_solver_sec": 4.505040072835982,
+  "projected_1440_solver_sec_at_pilot_mean": 787.9517724690959,
+  "conservative_1440_at_pilot_max_sec": 6487.257704883814,
+  "decision": "Keep 1440-run full factorial grid. Fixed sigma and absolute lambda. Preserve all time limits/failures. Estimate excludes reference/setup/evaluation; maximum-case estimate with extra allowance remains within initial 8-hour CPU budget.",
+  "selected_config": "configs/study_v2.json",
+  "limits": {
+    "per_solve_seconds": 20,
+    "initial_cpu_hours": 8,
+    "maximum_cpu_hours": 16
+  },
+  "main_started_after_lock": true
+}

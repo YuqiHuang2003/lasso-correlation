@@ -1,0 +1,29 @@
+{
+  "protocol_version": "workshop-confirm-1.0",
+  "stage": "confirm",
+  "purpose": "Independent-seed confirmation of exploratory support observations; no theory or novelty claim",
+  "n": 500, "p": 1000, "sparsity": 20, "block_size": 20,
+  "noise_std": 1.0, "lambda_factor": 1.0,
+  "weak_amplitude": 0.25, "weak_every": 4,
+  "seeds": [200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219],
+  "excluded_exploratory_seeds": [100, 101, 102],
+  "geometries": [
+    {"family": "block", "rho": 0.0},
+    {"family": "block", "rho": 0.9},
+    {"family": "toeplitz", "rho": 0.9}
+  ],
+  "rho_zero_handling": "The paired block and Toeplitz rho=0 designs are identical; only block rho=0 is used as the shared baseline",
+  "layouts": ["dispersed", "clustered"], "amplitudes": ["strong", "mixed_weak"],
+  "methods": ["fista", "cd"],
+  "expected_targets": 240, "expected_trajectories": 480,
+  "solver": {"tol": 1e-10, "max_iter": 100000, "time_limit": 20.0, "check_every": 5},
+  "references": {
+    "normalized_gap_tol": 1e-10, "time_limit": 20.0,
+    "sklearn_tol": 1e-13, "sklearn_max_iter": 500000,
+    "modern": {"library_max_iter": 100, "max_epochs": 50000, "library_tolerances": [1e-10, 1e-12, 1e-14]},
+    "coef_linf_agreement_tol": 1e-7, "normalized_objective_agreement_tol": 1e-9
+  },
+  "gap_thresholds": [0.01, 0.0001, 0.000001, 0.00000001, 0.0000000001],
+  "support_threshold": 1e-6, "support_thresholds": [1e-6, 1e-4],
+  "threads": 1
+}

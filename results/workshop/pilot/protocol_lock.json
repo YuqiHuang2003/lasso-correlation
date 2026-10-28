@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-28T19:44:40.396125+08:00",
+  "timezone": "Asia/Shanghai",
+  "numerical_signature": "2040adb736ce524eb3cd8346ca160752e1dfd76731aa02aa652578cc470f5b2f",
+  "config_sha256": "0a3f3ee648c858920a904ffc7aa6b01bd553a144b075fa5adee670a56d767194",
+  "expected_targets": 36,
+  "expected_trajectories": 72,
+  "exploratory_data_seeds": [
+    100,
+    101,
+    102
+  ],
+  "shared_baseline": "block rho0 represents the identical paired toeplitz rho0 case; no duplicate solve",
+  "primary_question": "How often do fixed gap levels suffice for recovery counts versus reference support identities, and what additional observed cost remains?",
+  "no_precommitted_direction": true,
+  "max_new_stage_cpu_wall_sec": 7200,
+  "existing_v2_outcomes_already_inspected": true,
+  "recording_note": "Configuration and source were frozen and smoke-tested before pilot launch. This provenance sidecar was recorded after launch because the first metadata-only call lacked the isolated skglm package path. No settings were changed.",
+  "frozen_source_files": {
+    "source_hashes": {
+      "src/lasso_study/data.py": "d5e3cd64f3c32459814cd75fda0d03f3070b335574fd4ea379447bc3f99a4c70",
+      "src/lasso_study/data_v2.py": "6b44619f839ade5e7f11cce93b2242b2dbb2dcfb8d6b930b1d63f9321ac462f7",
+      "src/lasso_study/workshop_data.py": "96af8bd1dfba55e0b9a5611da9804346ffc32057c566490960655ce14729fdb7",
+      "src/lasso_study/solvers.py": "f15b8164dd3bfc44a4839217831df798a6266227d29958857344eeebf502fbc7",
+      "src/lasso_study/cd_kernel.c": "72276caeefa784246f1d4254816786fd198dbabd29c3f538e5a5f3401ad357a2",
+      "src/lasso_study/modern_solver.py": "12daf0ddb15866a3e81ba4e7ca2add66f73162bddca8dc37a91e9ff621b0fc4b",
+      "scripts/run_workshop.py": "8836a9054023eb79ee2d75e8d2def6a0186f6d66f3633e751eb1affabef92775"
+    },
+    "dependency_versions": {
+      "numpy": "2.5.1",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0",
+      "skglm": "0.5",
+      "numba": "0.68.1",
+      "llvmlite": "0.50.0",
+      "threadpoolctl": "3.6.0"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "state": "finished",
+  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "wall_sec": 13.68492172472179,
+  "new_public_call_slots_reserved": 0,
+  "new_known_actual_library_fit_attempts": 0,
+  "unknown_partial_attempt_calls": [],
+  "budget_stop": false,
+  "stage_stopped": false,
+  "scope": "Full invocation wall time including preflight/preparation/warmup/output; no retries of reserved incomplete calls"
+}

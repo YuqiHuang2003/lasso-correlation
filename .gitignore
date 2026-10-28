@@ -1,0 +1,50 @@
+# Local environments and tool state
+.venv/
+venv/
+.modern_deps/
+.report_deps/
+.aws/
+.codex/
+.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_rsa.*
+
+# Build and test artifacts
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.py[cod]
+*.so
+*.o
+*.egg-info/
+build/
+dist/
+.DS_Store
+
+# Inputs, acquisition logs, and duplicate publication bundles
+data/raw/
+data/benchmarks/
+data/acquisition_log.json
+deliverables/
+publication/
+publication_support/
+
+# Generated report working files; finished reports and figures are tracked
+report/preview/
+report/**/preview/
+report/assets/
+report/chinese.ttf
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz

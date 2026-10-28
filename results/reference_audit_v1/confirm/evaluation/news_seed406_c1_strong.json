@@ -1,0 +1,202 @@
+{
+  "accuracy_eligible": true,
+  "reference_accepted": true,
+  "qualification_failure_reasons": {
+    "accuracy": [],
+    "consensus": [],
+    "by_reference": {
+      "sklearn": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.0020555956289172173,
+        "normalized_gap": 1.574296248918472e-13
+      },
+      "skglm": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.0033531775698065758,
+        "normalized_gap": 5.703215677499429e-13
+      }
+    }
+  },
+  "scores_by_tau": {
+    "1e-06": {
+      "sklearn": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 0,
+        "nnz": 8,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "f1_exact": {
+          "numerator": 10,
+          "denominator": 13
+        },
+        "support_indices": [
+          4,
+          5,
+          7,
+          9,
+          11,
+          14,
+          30,
+          32
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 3,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 0,
+        "nnz": 8,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "f1_exact": {
+          "numerator": 10,
+          "denominator": 13
+        },
+        "support_indices": [
+          4,
+          5,
+          7,
+          9,
+          11,
+          14,
+          30,
+          32
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 3,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.7692307692307693,
+        0.7692307692307693
+      ]
+    },
+    "0.0001": {
+      "sklearn": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 0,
+        "nnz": 8,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "f1_exact": {
+          "numerator": 10,
+          "denominator": 13
+        },
+        "support_indices": [
+          4,
+          5,
+          7,
+          9,
+          11,
+          14,
+          30,
+          32
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 3,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 0,
+        "nnz": 8,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "f1_exact": {
+          "numerator": 10,
+          "denominator": 13
+        },
+        "support_indices": [
+          4,
+          5,
+          7,
+          9,
+          11,
+          14,
+          30,
+          32
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 3,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.7692307692307693,
+        0.7692307692307693
+      ]
+    }
+  },
+  "primary_support_threshold": 1e-06,
+  "primary_absolute_f1_difference": 0.0,
+  "primary_delta_exceeded": false,
+  "prediction_difference_rmse": 1.9967452682858766e-13,
+  "l1_norm_difference_abs": 4.3787196091216174e-13,
+  "evaluation_sec_outside_reference_timers": 0.000507955439388752,
+  "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
+  "target_id": "news_seed406_c1_strong",
+  "params": {
+    "source": "news",
+    "seed": 406,
+    "amplitude": "strong",
+    "c": 1.0
+  },
+  "source": "news",
+  "seed": 406,
+  "amplitude": "strong",
+  "c": 1.0,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "dataset_hash": "02c5c6de94a6421e19919af2222696633d3ea3f1632d137d02f115931e4d98e7",
+  "input_hashes": {
+    "dataset_sha256": "9a794259672713910a78af597a339afc59f51c76efa15ae21bab79c04beaa6fa",
+    "reference_json_sha256": "f6e02453fb721807901e6bac763b8fbd716040455f211de5a7259f9f42236769",
+    "reference_coefficients_sha256": "0ddd5f61e86f7ffc19d7ed22530d69ba663d89d5644061b51e0231a9e7f45379"
+  }
+}

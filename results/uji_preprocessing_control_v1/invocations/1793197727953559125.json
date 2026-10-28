@@ -1,0 +1,8 @@
+{
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "wall_sec": 11.689129702746868,
+  "state": "finished",
+  "new_public_reference_call_slots_reserved": 48,
+  "new_actual_library_fit_attempts": 52,
+  "scope": "Measured invocation wall time, soft checks between new fits; abrupt termination may prevent final ledger write"
+}

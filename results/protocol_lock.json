@@ -1,0 +1,39 @@
+{
+  "frozen_at": "2026-10-28T16:58:09.935794+08:00",
+  "pilot_count": 12,
+  "converged": 12,
+  "mean_solver_sec": 2.7542371680028737,
+  "max_solver_sec": 10.382642162963748,
+  "estimated_180_solve_sec_at_pilot_mean": 495.76269024051726,
+  "conservative_180_at_pilot_max_sec": 1868.8755893334746,
+  "retained_grid": {
+    "n": 2000,
+    "p": 1000,
+    "rhos": [
+      0,
+      0.3,
+      0.6,
+      0.9
+    ],
+    "lambda_ratios": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "methods": [
+      "ista",
+      "fista",
+      "cd"
+    ]
+  },
+  "solver_time_limit_sec": 120,
+  "decision": "Retain the full grid; no optional extension; shared exact SVD and per-5-update diagnostics. Estimates exclude overhead; 2x slowest-case allowance remains below 8-hour CPU budget.",
+  "freeze_evidence": "pilot completion file mtime; full configuration was selected before main start, recorded in results/main/environment.json"
+}

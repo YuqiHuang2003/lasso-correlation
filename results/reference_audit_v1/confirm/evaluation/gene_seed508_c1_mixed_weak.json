@@ -1,0 +1,234 @@
+{
+  "accuracy_eligible": true,
+  "reference_accepted": true,
+  "qualification_failure_reasons": {
+    "accuracy": [],
+    "consensus": [],
+    "by_reference": {
+      "sklearn": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.026901129633188248,
+        "normalized_gap": 1.8808721742474995e-14
+      },
+      "skglm": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.014113795943558216,
+        "normalized_gap": 7.161420803447354e-13
+      }
+    }
+  },
+  "scores_by_tau": {
+    "1e-06": {
+      "sklearn": {
+        "tp": 4,
+        "fp": 12,
+        "fn": 1,
+        "nnz": 16,
+        "precision": 0.25,
+        "recall": 0.8,
+        "f1": 0.38095238095238093,
+        "f1_exact": {
+          "numerator": 8,
+          "denominator": 21
+        },
+        "support_indices": [
+          636,
+          640,
+          1445,
+          2283,
+          2648,
+          2945,
+          2967,
+          3959,
+          4059,
+          4944,
+          5757,
+          6039,
+          6185,
+          6263,
+          6279,
+          6409
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 13,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 4,
+        "fp": 12,
+        "fn": 1,
+        "nnz": 16,
+        "precision": 0.25,
+        "recall": 0.8,
+        "f1": 0.38095238095238093,
+        "f1_exact": {
+          "numerator": 8,
+          "denominator": 21
+        },
+        "support_indices": [
+          636,
+          640,
+          1445,
+          2283,
+          2648,
+          2945,
+          2967,
+          3959,
+          4059,
+          4944,
+          5757,
+          6039,
+          6185,
+          6263,
+          6279,
+          6409
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 13,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.38095238095238093,
+        0.38095238095238093
+      ]
+    },
+    "0.0001": {
+      "sklearn": {
+        "tp": 4,
+        "fp": 12,
+        "fn": 1,
+        "nnz": 16,
+        "precision": 0.25,
+        "recall": 0.8,
+        "f1": 0.38095238095238093,
+        "f1_exact": {
+          "numerator": 8,
+          "denominator": 21
+        },
+        "support_indices": [
+          636,
+          640,
+          1445,
+          2283,
+          2648,
+          2945,
+          2967,
+          3959,
+          4059,
+          4944,
+          5757,
+          6039,
+          6185,
+          6263,
+          6279,
+          6409
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 13,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 4,
+        "fp": 12,
+        "fn": 1,
+        "nnz": 16,
+        "precision": 0.25,
+        "recall": 0.8,
+        "f1": 0.38095238095238093,
+        "f1_exact": {
+          "numerator": 8,
+          "denominator": 21
+        },
+        "support_indices": [
+          636,
+          640,
+          1445,
+          2283,
+          2648,
+          2945,
+          2967,
+          3959,
+          4059,
+          4944,
+          5757,
+          6039,
+          6185,
+          6263,
+          6279,
+          6409
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 13,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.38095238095238093,
+        0.38095238095238093
+      ]
+    }
+  },
+  "primary_support_threshold": 1e-06,
+  "primary_absolute_f1_difference": 0.0,
+  "primary_delta_exceeded": false,
+  "prediction_difference_rmse": 1.678232729810019e-12,
+  "l1_norm_difference_abs": 1.2316814235191487e-12,
+  "evaluation_sec_outside_reference_timers": 0.0011499393731355667,
+  "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
+  "target_id": "gene_seed508_c1_mixed_weak",
+  "params": {
+    "source": "gene",
+    "seed": 508,
+    "amplitude": "mixed_weak",
+    "c": 1.0
+  },
+  "source": "gene",
+  "seed": 508,
+  "amplitude": "mixed_weak",
+  "c": 1.0,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "dataset_hash": "694953f7cc645862b898622a210f9e9bffbbbc3388655ad73d5bfde47e3d6f1d",
+  "input_hashes": {
+    "dataset_sha256": "917201bcd9bd08be08619d4c9fedd4703edae407ccd8ae521ff0714829830fcc",
+    "reference_json_sha256": "be72fc2bafcbc492bfba0d9cd0e6f5bb4dcb66b14c97874ed621fa1c3a90b8e4",
+    "reference_coefficients_sha256": "c76969d99c647de3da6ddf2a25ca04fc22075ede5a17a77e2cb7406f97eec18d"
+  }
+}

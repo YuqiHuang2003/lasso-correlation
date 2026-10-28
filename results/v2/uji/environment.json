@@ -1,0 +1,74 @@
+{
+  "started_at": "2026-10-28T18:14:07.539028+08:00",
+  "timezone": "Asia/Shanghai",
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-185-generic-x86_64-with-glibc2.35",
+  "cpu": "Intel(R) Xeon(R) Gold 6278C CPU @ 2.60GHz",
+  "logical_cpus": 8,
+  "threads": 1,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/cuhk/memory_repro_env/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-017048f4.so",
+      "version": "0.3.33.112.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/root/cuhk/memory_repro_env/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/root/cuhk/memory_repro_env/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1",
+    "pandas": "3.0.5",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_hashes": {
+    "src/lasso_study/__init__.py": "99b39f650d8993f7f751bba94772e0f9ed21feb2cfa9fb28c647617550fd248c",
+    "src/lasso_study/cd_kernel.c": "72276caeefa784246f1d4254816786fd198dbabd29c3f538e5a5f3401ad357a2",
+    "src/lasso_study/data.py": "d5e3cd64f3c32459814cd75fda0d03f3070b335574fd4ea379447bc3f99a4c70",
+    "src/lasso_study/data_v2.py": "6b44619f839ade5e7f11cce93b2242b2dbb2dcfb8d6b930b1d63f9321ac462f7",
+    "src/lasso_study/modern_solver.py": "12daf0ddb15866a3e81ba4e7ca2add66f73162bddca8dc37a91e9ff621b0fc4b",
+    "src/lasso_study/solvers.py": "f15b8164dd3bfc44a4839217831df798a6266227d29958857344eeebf502fbc7",
+    "scripts/analyze.py": "61c907f707623445da91b286e97ff1c8c91edbf2fed81f4b3d3fc5635eba8a5e",
+    "scripts/analyze_v2.py": "d63b39b8f1d673fe53d1f3b5aefa51e4ef82c316bcd9a5669834426c0a6eb61e",
+    "scripts/build_report.py": "68ff5ecc4ef21a42e2c31236669a2c822aabe8f88814164512f6e79026516442",
+    "scripts/build_report_v2.py": "c06fd79ac874d1cebdbb83fe5c2a3654d17305d3fa827981bcb6993fbcd41264",
+    "scripts/download_benchmarks.py": "209864f8f4d86db95c3b1e4328f380b7ff803d567226f44150cae95e7c2bdb18",
+    "scripts/download_data.py": "0e0ce85b96d3a70f9feac50553fdec9def54ffd13b91f511cebbdd4f70c6934f",
+    "scripts/package_results.py": "61cf3bdb952ae4501e0dd8814480042894ce016bddfd234c917066fe86fdc58b",
+    "scripts/package_v2.py": "8d6805ba460e1abe7156165d78da6b3e37450b1604dac9904ce26eefafb219a5",
+    "scripts/robustness.py": "6daadc9830d25e319d1a27451709cb03074447ec7175d19d5f235473fbf351c3",
+    "scripts/run_study.py": "76974e0ce0f877a990332bdf35e4a8056f6c31d1ea16f20708028ca59e074914",
+    "scripts/run_v2.py": "d6fa335029c6d6a252826c9a3d0f65fba8f20875052082c42db16bb642e8af30",
+    "configs/skglm_environment.json": "ec7054484abdd1bd54d18be687173bf35399130ae4fa47d35dcaf332c791a4cb",
+    "configs/study.json": "8fd2cdd6a723a63fff0575b62ddcb905b8bcd66cc183154b2134708c4343fdc0",
+    "configs/study_v2.json": "1a37c15e0c39523e862347aa3fe502944bd3fc1d4d611585da888e046a021a0e"
+  },
+  "cd_kernel": "C, gcc -O3, ctypes; one call per complete cyclic sweep",
+  "compiler": "gcc (conda-forge gcc 15.2.0-7) 15.2.0",
+  "numerical_signature": "ff953f7fcd59c19abd5c58f6fc2e21f9a613cfb29d82f3c717d21b94467e13c6",
+  "v2_numerical_signature": "8d5ab9bfdcf07eb73125f3443401d1cd69dd5e0b0cb358f888e0a3ff702a340b",
+  "v2_config_sha256": "1a37c15e0c39523e862347aa3fe502944bd3fc1d4d611585da888e046a021a0e"
+}

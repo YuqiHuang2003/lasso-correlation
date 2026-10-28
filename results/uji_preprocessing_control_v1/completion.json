@@ -1,0 +1,18 @@
+{
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "expected_old_targets": 12,
+  "expected_controls": 48,
+  "recorded_controls": 48,
+  "new_public_reference_calls_this_invocation": 48,
+  "new_actual_library_fit_attempts_this_invocation": 52,
+  "stored_known_new_public_reference_calls": 48,
+  "unknown_partial_reference_attempt_controls": 0,
+  "reserved_public_reference_call_slots": 48,
+  "accuracy_eligible_controls": 48,
+  "consensus_controls": 18,
+  "complete_grid": true,
+  "wall_sec_this_invocation": 11.688984151929617,
+  "previous_recorded_wall_sec": 0,
+  "posthoc": true,
+  "interpretation": "No independent confirmation or exact mathematical equivalence claim; original-coordinate results remain unchanged"
+}

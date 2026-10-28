@@ -1,0 +1,11 @@
+{
+  "control_id": "uji_seed308_clustered_mixed_weak__B_near",
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
+  "dataset_hash": "4f13cb038f4c38db851c217ad9ce64ab491601010d8b524d256a8d4edfed88f1",
+  "invocation": "1793197727953559125",
+  "reserved_public_reference_calls": 2,
+  "state": "completed",
+  "actual_library_fit_attempts": 2,
+  "reference_sha256": "d4895dab1d066e603604dea02c19ee106f104f0c870e56968d921d14b345cec2"
+}

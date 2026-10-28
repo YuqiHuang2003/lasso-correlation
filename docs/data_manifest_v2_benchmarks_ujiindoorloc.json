@@ -1,0 +1,27 @@
+{
+  "dataset": "UJIIndoorLoc",
+  "source_url": "https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip",
+  "source_page": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc",
+  "doi": "10.24432/C5MS59",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Torres-Sospedra, J., Montoliu, R., Martinez-Us, A., Arnau, T., and Avariento, J. (2014). UJIIndoorLoc. UCI Machine Learning Repository.",
+  "original_training_rows": 19937,
+  "original_validation_rows": 1111,
+  "study_pool": "Official trainingData.csv only; separate validationData.csv preserved but not used.",
+  "retrieved_at_utc": "2026-10-28T09:56:48.050973+00:00",
+  "files": {
+    "ujiindoorloc.zip": {
+      "sha256": "893512b82dfd7a7c345d84195b1c8019fbca0fa0d7820ce491ce5aa45ec3782f",
+      "bytes": 1463759
+    },
+    "trainingData.csv": {
+      "sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
+      "bytes": 42725381
+    },
+    "validationData.csv": {
+      "sha256": "5f90c536648cd657b2c516d20c4e0968d4003279ea6bd5d5d5322d3f1e8905c0",
+      "bytes": 2381949
+    }
+  }
+}

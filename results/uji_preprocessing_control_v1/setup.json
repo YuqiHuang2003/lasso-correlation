@@ -1,0 +1,6 @@
+{
+  "raw_RSSI_load_sec": 0.8166908761486411,
+  "frozen_UJI_source_load_sec": 1.3456260468810797,
+  "warmup_path": "warmup.json",
+  "raw_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168"
+}

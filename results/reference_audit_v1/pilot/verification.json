@@ -1,0 +1,271 @@
+{
+  "stage": "pilot",
+  "checked_at": "2026-10-28T22:07:27.539992+08:00",
+  "timezone": "Asia/Shanghai",
+  "verifier_script_sha256": "55a35f6958419b208a88f90ef739b8e1e883c5b2b7f5dbc00f5d5b91ecdd2bcd",
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "complete_grid": true,
+  "structural_passed": true,
+  "numerical_recomputed": true,
+  "numerical_passed": true,
+  "all_passed": true,
+  "expected_targets": 8,
+  "statistics": {
+    "reference_certificates_recomputed": 16,
+    "designs_regenerated": 8,
+    "targets_checked": 8,
+    "accuracy_eligible_targets": 8,
+    "consensus_accepted_targets": 8,
+    "actual_library_fit_attempts": 17
+  },
+  "reference_status_counts": {
+    "converged": 16
+  },
+  "seed_outcomes": [
+    {
+      "source": "news",
+      "seed": 400,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 500,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    }
+  ],
+  "per_target": [
+    {
+      "target_id": "news_seed400_c0.5_strong",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "news_seed400_c0.5_mixed_weak",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "news_seed400_c1_strong",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "news_seed400_c1_mixed_weak",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "gene_seed500_c0.5_strong",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "gene_seed500_c0.5_mixed_weak",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "gene_seed500_c1_strong",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    },
+    {
+      "target_id": "gene_seed500_c1_mixed_weak",
+      "accuracy_eligible": true,
+      "reference_accepted": true,
+      "fraction_events": {
+        "1e-06": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        },
+        "0.0001": {
+          "0.02": false,
+          "0.0": false,
+          "0.01": false,
+          "0.05": false
+        }
+      }
+    }
+  ],
+  "preserved_exception_records": 0,
+  "checks": {
+    "structure": 731,
+    "numerical": 162
+  },
+  "issues": {
+    "structure": [],
+    "numerical": []
+  },
+  "warnings": [],
+  "input_provenance": {
+    "configs/reference_audit_v1.json": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+    "results/reference_audit_v1/pilot/environment.json": "dd98e4603f2dfa0d96ca4e662906881c9fd345b6efdd914ca7d4f5957fce5cfc",
+    "results/reference_audit_v1/pilot/completion.json": "cc6e47ca3ea8ba16106f2edc63ab0271bb5213faf2395a4b18f7eba9397b0b8b",
+    "results/reference_audit_v1/pilot/config.json": "23b3bbd99ae3d3959952e524feb8685dbc53b8f86c2ee92f94303efd6ee8c060",
+    "results/reference_audit_v1/pilot/effective_config.json": "23b3bbd99ae3d3959952e524feb8685dbc53b8f86c2ee92f94303efd6ee8c060",
+    "results/reference_audit_v1/pilot/config_original.json": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+    "results/reference_audit_v1/pilot/protocol_snapshot.md": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+    "docs/reference_audit_protocol_v1.md": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+    "results/reference_audit_v1/pilot/sources/news.json": "27eeb12d0bb558a53df0e44ca98f5e3c601207889734cf3c17b5a12842b2fc62",
+    "results/reference_audit_v1/pilot/sources/gene.json": "dfd3c6ddf36919fa1e0f18927e7890bff13dec935063ad3460030b35d8b40868",
+    "results/reference_audit_v1/pilot/datasets/news_seed400_c0.5_strong.json": "a4155fcac4ba2c773a8d2f54c89da9f820c95f32df1d413cc8a87b6cbc118b95",
+    "results/reference_audit_v1/pilot/references/news_seed400_c0.5_strong.json": "79a2ba0993c53711987cf3b7fe4cd3400b289493e778593dae4619475c999be8",
+    "results/reference_audit_v1/pilot/evaluation/news_seed400_c0.5_strong.json": "554e156b8431bf67bd3fbbcfcd4b89eac78cf5b752f8d347ad57170fe4a7a6ce",
+    "results/reference_audit_v1/pilot/reference_coefficients/news_seed400_c0.5_strong.npz": "4e86b2323cddd98ae4b992f7a577a7ca42421c5649d3b1310c60b44823726429",
+    "results/reference_audit_v1/pilot/datasets/news_seed400_c0.5_mixed_weak.json": "922e57fdd88d381eb4cd14895cba4b10f3290d71f97a6f8358dc29288fabc317",
+    "results/reference_audit_v1/pilot/references/news_seed400_c0.5_mixed_weak.json": "40fd8b82e069009fc8be4dec5ed9127b8b67f46e661fcb32b4205484a94fcb3e",
+    "results/reference_audit_v1/pilot/evaluation/news_seed400_c0.5_mixed_weak.json": "8f563bb5ef15fc72da610aea52bb625b103377844b2956defbe927ac5ca78530",
+    "results/reference_audit_v1/pilot/reference_coefficients/news_seed400_c0.5_mixed_weak.npz": "91d14097961aba2c294f49915e6f1a3c63767f7595bed4ce8e7d448730326e8b",
+    "results/reference_audit_v1/pilot/datasets/news_seed400_c1_strong.json": "a24401ad9ecd59d62bf0025b45498b591726a611cc51869da76dcb28f19e7ac5",
+    "results/reference_audit_v1/pilot/references/news_seed400_c1_strong.json": "92e357da1f3310d9144cfdb07493afe7c026db7a5a9cec30079b3d3c3e142ef4",
+    "results/reference_audit_v1/pilot/evaluation/news_seed400_c1_strong.json": "798c132bfdc0195b4850ebc777ceb4472d8c0ff4e8449da0cacb9cdaf52e404f",
+    "results/reference_audit_v1/pilot/reference_coefficients/news_seed400_c1_strong.npz": "8971539c0419753e82f46ceafd1a0848c7c088319a3aaeee29f41dba36e17e39",
+    "results/reference_audit_v1/pilot/datasets/news_seed400_c1_mixed_weak.json": "2f19162274a5242df123a26069b1b721284885512724911b9b956ac5edf2eb8e",
+    "results/reference_audit_v1/pilot/references/news_seed400_c1_mixed_weak.json": "49050804529bb1c2be3b695d9136103491d6dfdef67e7a0b5b044dca2b1ee102",
+    "results/reference_audit_v1/pilot/evaluation/news_seed400_c1_mixed_weak.json": "b7d527d05c1fefe0a5a6ea611bf90de27a038f389661784aea66a4f74fc7561b",
+    "results/reference_audit_v1/pilot/reference_coefficients/news_seed400_c1_mixed_weak.npz": "c5a2ecafe28ff485ee01b36ad399adfd86667ebb4293c57816ad51b0e8d391c7",
+    "results/reference_audit_v1/pilot/datasets/gene_seed500_c0.5_strong.json": "c03e74fa1d1404c6d3d2d2d9fd0adcad74ebb078bf21e4ee36ce681bae0306a6",
+    "results/reference_audit_v1/pilot/references/gene_seed500_c0.5_strong.json": "2c0a65848a4c1b7d6b5847a229ebe8509bc7d6ecafea772d67e0592993735c7c",
+    "results/reference_audit_v1/pilot/evaluation/gene_seed500_c0.5_strong.json": "7b60312e4f45b1bbc9d5bac207dc9e29eb7464cf94a86916185380bedf36c47b",
+    "results/reference_audit_v1/pilot/reference_coefficients/gene_seed500_c0.5_strong.npz": "88337741153d4f0d4c3e07da17880bb651307d62664f1cb1a18c73aa2a7d2480",
+    "results/reference_audit_v1/pilot/datasets/gene_seed500_c0.5_mixed_weak.json": "31ac57ad376b1d9784d8c9a5c2b35514afdd9d35286735e60f900276e16bdf68",
+    "results/reference_audit_v1/pilot/references/gene_seed500_c0.5_mixed_weak.json": "f3576fd79d5bfeffeff4000995062fe0693c45f21f3b644e4222cf592f124c04",
+    "results/reference_audit_v1/pilot/evaluation/gene_seed500_c0.5_mixed_weak.json": "459211771add95a66889b8dabd0c2e283c85fbd5158ab59fc773b9952bdef6a6",
+    "results/reference_audit_v1/pilot/reference_coefficients/gene_seed500_c0.5_mixed_weak.npz": "ed4c49d518d29005a046e6daea57b2a20c2240f3d8436892d41738328849ea1b",
+    "results/reference_audit_v1/pilot/datasets/gene_seed500_c1_strong.json": "2bb0ec97587ff47fc3df13d5394ab190a28f93ec6ba6744631001be1df09ef4f",
+    "results/reference_audit_v1/pilot/references/gene_seed500_c1_strong.json": "473e08589f64529577b212057ff0b5e5734e4867b1fe4d07655d06ff87d95490",
+    "results/reference_audit_v1/pilot/evaluation/gene_seed500_c1_strong.json": "fdab286234b3b06797ac199755e2c2622eeb157571975aebf609a65f20f0fc03",
+    "results/reference_audit_v1/pilot/reference_coefficients/gene_seed500_c1_strong.npz": "b06d872dd361fd4132e99396824c6a5738d26fd1d795fe93f9f726510e8f6097",
+    "results/reference_audit_v1/pilot/datasets/gene_seed500_c1_mixed_weak.json": "0f82045ca276eaddc6e24b48386e8270586a18e45709ed99e11aca3096c47617",
+    "results/reference_audit_v1/pilot/references/gene_seed500_c1_mixed_weak.json": "e4e9e6587b10ac32e1c3a68f3a251a4c5da61f77c5704255834155ce1a932465",
+    "results/reference_audit_v1/pilot/evaluation/gene_seed500_c1_mixed_weak.json": "f84b9b77e43fa0a82f928a2979c508e99de077c3e51dd170c7ac3df6baa93ae1",
+    "results/reference_audit_v1/pilot/reference_coefficients/gene_seed500_c1_mixed_weak.npz": "7d75195193a85c65bd9c22196047f0359e87d4fc4312b47ee9e5a88d295b7f5b"
+  },
+  "verification_wall_sec": 1.499645576812327,
+  "boundaries": [
+    "No reference is required to pass consensus; accuracy-ineligible and reference-uncertain outputs remain in the grid.",
+    "Default verification regenerates stored responses and recomputes two certificates per target; it does not perform new optimizer fits, SVD or grouping.",
+    "Fraction comparisons are checked independently from integer TP/FP/FN; exact equality at delta is not an event.",
+    "This is an artifact/numerical audit, not a certificate of exact support, uniqueness, statistical recovery or novelty."
+  ]
+}

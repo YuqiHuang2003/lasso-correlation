@@ -1,0 +1,9 @@
+amplitude,both_tied,has_any_tie,seed,skglm_preferred_c,sklearn_preferred_c,source,state,tau
+mixed_weak,False,False,500,[1.0],[1.0],gene,same_set,1e-06
+mixed_weak,False,False,500,[1.0],[1.0],gene,same_set,0.0001
+strong,False,False,500,[1.0],[1.0],gene,same_set,1e-06
+strong,False,False,500,[1.0],[1.0],gene,same_set,0.0001
+mixed_weak,False,False,400,[1.0],[1.0],news,same_set,1e-06
+mixed_weak,False,False,400,[1.0],[1.0],news,same_set,0.0001
+strong,False,False,400,[1.0],[1.0],news,same_set,1e-06
+strong,False,False,400,[1.0],[1.0],news,same_set,0.0001

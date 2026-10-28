@@ -1,0 +1,221 @@
+{
+  "reference_accepted": true,
+  "status": "numerical_reference_agreement",
+  "both_pass_common_precision": true,
+  "both_within_observed_budget": true,
+  "coefficient_linf_difference": 7.732148255001903e-13,
+  "normalized_primal_difference": 0.0,
+  "by_support_threshold": {
+    "1e-06": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 20,
+      "skglm_nnz": 20
+    },
+    "0.0001": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 20,
+      "skglm_nnz": 20
+    }
+  },
+  "interpretation": "Agreement of two high-accuracy numerical implementations; not a proof of exact minimizer support or statistical recovery.",
+  "target_id": "gene_seed501_c1_strong",
+  "params": {
+    "source": "gene",
+    "seed": 501,
+    "amplitude": "strong",
+    "c": 1.0
+  },
+  "source": "gene",
+  "seed": 501,
+  "amplitude": "strong",
+  "c": 1.0,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "dataset_hash": "1e3aeb2b410c41a692293324aa6bac92376fe3dd6a02dedc17c7fe076d2ab72a",
+  "lambda": 0.4964296484542181,
+  "sklearn": {
+    "method": "sklearn_cyclic_cd",
+    "certificate": {
+      "primal": 1.8275105245111822,
+      "dual": 1.8275105245111314,
+      "gap": 5.084821452783217e-14,
+      "raw_gap": 5.084821452783217e-14,
+      "normalized_gap": 2.782376016216537e-14,
+      "dual_feasibility": 0.9999999999999959,
+      "kkt_inf": 3.0753177782116836e-14
+    },
+    "elapsed_sec": 0.054778740741312504,
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "status": "converged",
+    "iterations": 145,
+    "iteration_unit": "complete sklearn coordinate epochs",
+    "library_tol": 1e-13,
+    "library_max_iter": 500000,
+    "time_limit_mode": "observed after return; no interruption within sklearn fit",
+    "warnings": []
+  },
+  "skglm": {
+    "method": "skglm",
+    "history": [
+      {
+        "primal": 2.7427842602528782,
+        "dual": 1.4462527833713135,
+        "gap": 1.2965314768815648,
+        "raw_gap": 1.2965314768815648,
+        "normalized_gap": 0.47270632826295556,
+        "dual_feasibility": 0.9999999999999961,
+        "kkt_inf": 1.0923303849653352,
+        "iteration": 0,
+        "attempt": 0,
+        "time": 0.0021976185962557793
+      },
+      {
+        "primal": 1.8275105245111822,
+        "dual": 1.8275105245109649,
+        "gap": 2.1738166822160565e-13,
+        "raw_gap": 2.1738166822160565e-13,
+        "normalized_gap": 1.1894961222165894e-13,
+        "dual_feasibility": 0.9999999999999961,
+        "kkt_inf": 1.8390844402915718e-13,
+        "iteration": 8,
+        "attempt": 1,
+        "time": 0.01921870280057192
+      }
+    ],
+    "status": "converged",
+    "certificate": {
+      "primal": 1.8275105245111822,
+      "dual": 1.8275105245109649,
+      "gap": 2.1738166822160565e-13,
+      "raw_gap": 2.1738166822160565e-13,
+      "normalized_gap": 1.1894961222165894e-13,
+      "dual_feasibility": 0.9999999999999961,
+      "kkt_inf": 1.8390844402915718e-13
+    },
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "elapsed_sec": 0.01925088744610548,
+    "diagnostics_sec": 0.0010330546647310257,
+    "iterations": 8,
+    "iteration_unit": "outer working-set iterations across all attempts",
+    "attempts": [
+      {
+        "attempt": 1,
+        "library_tol": 1e-10,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.01650157105177641,
+        "elapsed_sec_including_posterior_diagnostics": 0.0170184513553977,
+        "cumulative_elapsed_sec": 0.01921870280057192,
+        "outer_working_set_iterations": 8,
+        "library_returned_stop_crit": 1.2995160503237457e-13,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          1.877695877442291,
+          1.8320847324488951,
+          1.8277798286987865,
+          1.8275106177263623,
+          1.8275105245496073,
+          1.8275105245112069,
+          1.8275105245112067,
+          1.827510524511203
+        ],
+        "normalized_gap": 1.1894961222165894e-13,
+        "passed_common_certificate": true
+      }
+    ],
+    "attempt_count": 1,
+    "library_tolerances": [
+      1e-10,
+      1e-12,
+      1e-14
+    ],
+    "library_max_iter": 100,
+    "library_max_epochs": 50000,
+    "time_limit_sec": 20.0,
+    "time_limit_mode": "checked between/after fits; no interruption within an in-progress library fit",
+    "history_sampling": "initial point and fit endpoints only; no internal time-to-accuracy curve",
+    "threshold_curve_comparable": false,
+    "check_every_compatibility_input": 5,
+    "L_compatibility_input_used": false,
+    "jit_warmup_sec": 0.0,
+    "warmup_metadata": {
+      "performed": false,
+      "elapsed_sec": 0.0,
+      "initial_warmup_sec": 3.904064695350826,
+      "versions": {
+        "skglm": "0.5",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "scikit-learn": "1.9.0"
+      },
+      "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+      "array_signature": "float64 Fortran-contiguous X, contiguous y",
+      "method": "skglm AndersonCD with working sets and Anderson acceleration"
+    },
+    "objective_increases": null
+  },
+  "geometry": {
+    "sklearn": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.12993211467454646,
+        "active_gram_max_eigenvalue": 6.490614734695566,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 2.882411968972128e-14,
+        "active_gram_condition": 49.953891314347004,
+        "beta_min": 0.006536134109063557,
+        "active_kkt_violation": 3.0753177782116836e-14,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.0015580892346065967
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.12993211467454646,
+        "active_gram_max_eigenvalue": 6.490614734695566,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 2.882411968972128e-14,
+        "active_gram_condition": 49.953891314347004,
+        "beta_min": 0.006536134109063557,
+        "active_kkt_violation": 3.0753177782116836e-14,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.0015580892346065967
+      }
+    },
+    "skglm": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.12993211467454646,
+        "active_gram_max_eigenvalue": 6.490614734695566,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 2.882411968972128e-14,
+        "active_gram_condition": 49.953891314347004,
+        "beta_min": 0.006536134108564351,
+        "active_kkt_violation": 1.8390844402915718e-13,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.0015580892345797848
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.12993211467454646,
+        "active_gram_max_eigenvalue": 6.490614734695566,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 2.882411968972128e-14,
+        "active_gram_condition": 49.953891314347004,
+        "beta_min": 0.006536134108564351,
+        "active_kkt_violation": 1.8390844402915718e-13,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.0015580892345797848
+      }
+    }
+  },
+  "geometry_diagnostics_sec_outside_fit_timers": 0.0016910983249545097,
+  "reported_reference_calls": 2,
+  "actual_library_fit_attempts": 2,
+  "coefficient_path": "reference_coefficients/gene_seed501_c1_strong.npz",
+  "coefficient_sha256": "ec5d2c542923d018c872282fd95d77bd93d8a3575d5b8e97e5a0534a937b1fcb",
+  "coefficient_write_sec": 0.0025880327448248863
+}

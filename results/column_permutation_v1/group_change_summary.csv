@@ -1,0 +1,7 @@
+method,source,target_coordinate_union_inside_groups,target_coordinate_union_outside_groups,targets,targets_with_outside_changes
+sklearn,uji,27,0,40,0
+skglm,uji,45,0,40,0
+sklearn,news,0,0,8,0
+skglm,news,0,0,8,0
+sklearn,gene,0,0,8,0
+skglm,gene,0,0,8,0

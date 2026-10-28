@@ -1,0 +1,20 @@
+{
+  "modern": {
+    "performed": true,
+    "elapsed_sec": 3.904064695350826,
+    "initial_warmup_sec": 3.904064695350826,
+    "versions": {
+      "skglm": "0.5",
+      "numba": "0.68.1",
+      "llvmlite": "0.50.0",
+      "numpy": "2.5.1",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0"
+    },
+    "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+    "array_signature": "float64 Fortran-contiguous X, contiguous y",
+    "method": "skglm AndersonCD with working sets and Anderson acceleration"
+  },
+  "setup_sec": 3.909780990332365,
+  "scope": "One engineering JIT warmup fit excluded from per-target reference times; no C-baseline warmup is needed"
+}

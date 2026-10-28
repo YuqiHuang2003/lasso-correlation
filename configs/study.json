@@ -1,0 +1,18 @@
+{
+  "protocol_version": "1.0",
+  "synthetic": {
+    "n": 2000, "p": 1000, "sparsity": 20, "block_size": 20,
+    "snr": 10.0, "n_test": 1000,
+    "rhos": [0.0, 0.3, 0.6, 0.9],
+    "lambda_ratios": [0.01, 0.05, 0.1], "seeds": [0, 1, 2, 3, 4]
+  },
+  "real": {"seeds": [0, 1, 2], "validation_ratios": 20, "validation_min_ratio": 0.001},
+  "solver": {"tol": 1e-6, "max_iter": 100000, "time_limit": 120.0, "check_every": 5},
+  "methods": ["ista", "fista", "cd"],
+  "thresholds": [0.01, 0.0001, 0.000001],
+  "support_threshold": 1e-6,
+  "support_sensitivity": [1e-8, 1e-6, 0.0001],
+  "threads": 1,
+  "cpu_budget_sec": 28800,
+  "optional_extension": null
+}

@@ -1,0 +1,128 @@
+{
+  "protocol_version": "column-permutation-v1",
+  "protocol_path": "docs/column_permutation_protocol_v1.md",
+  "output_path": "results/column_permutation_v1",
+  "sources": [
+    "uji",
+    "news",
+    "gene"
+  ],
+  "uji_seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309
+  ],
+  "external_seeds": {
+    "news": [
+      401,
+      402
+    ],
+    "gene": [
+      501,
+      502
+    ]
+  },
+  "layouts": [
+    "dispersed",
+    "clustered"
+  ],
+  "amplitudes": [
+    "strong",
+    "mixed_weak"
+  ],
+  "external_c": [
+    0.5,
+    1.0
+  ],
+  "uji_config_path": "configs/workshop_real.json",
+  "external_config_path": "configs/reference_audit_v1.json",
+  "baseline_paths": {
+    "uji": "results/workshop/real",
+    "news": "results/reference_audit_v1/confirm",
+    "gene": "results/reference_audit_v1/confirm"
+  },
+  "permutation_seeds": [
+    700,
+    701,
+    702,
+    703,
+    704
+  ],
+  "replacement_seed_start": 705,
+  "main_order_ids": [
+    "identity",
+    "perm_0",
+    "perm_1",
+    "perm_2",
+    "perm_3",
+    "perm_4"
+  ],
+  "execution_order_ids": [
+    "identity",
+    "identity_repeat",
+    "perm_0",
+    "perm_1",
+    "perm_2",
+    "perm_3",
+    "perm_4"
+  ],
+  "repeat_identity_all_targets": true,
+  "methods": [
+    "sklearn",
+    "skglm"
+  ],
+  "expected_targets": 56,
+  "expected_distinct_designs": 13,
+  "expected_public_calls": 784,
+  "expected_primary_public_calls": 672,
+  "expected_qc_public_calls": 112,
+  "maximum_public_reference_calls": 784,
+  "wall_budget_sec": 7200.0,
+  "threads": 1,
+  "references": {
+    "normalized_gap_tol": 1e-10,
+    "time_limit": 20.0,
+    "sklearn_tol": 1e-13,
+    "sklearn_max_iter": 500000,
+    "modern": {
+      "library_max_iter": 100,
+      "max_epochs": 50000,
+      "library_tolerances": [
+        1e-10,
+        1e-12,
+        1e-14
+      ]
+    },
+    "coef_linf_agreement_tol": 1e-07,
+    "normalized_objective_agreement_tol": 1e-09
+  },
+  "support_threshold": 1e-06,
+  "support_thresholds": [
+    1e-06,
+    0.0001
+  ],
+  "primary_delta": 0.02,
+  "delta_sensitivity": [
+    0.0,
+    0.01,
+    0.05
+  ],
+  "invariance_atol": 5e-12,
+  "invariance_rtol": 5e-12,
+  "score_event_arithmetic": "fractions.Fraction from integer TP FP FN; strict greater than Fraction(str(delta))",
+  "schedule_rule": "orders outer; position round-robin over source target lists; sources rotated by order_index; method order alternates by position+order_index",
+  "grouping_tolerance": 1e-12,
+  "grouping_sensitivity_tolerances": [
+    1e-10,
+    1e-14
+  ],
+  "repeat_qc_in_primary_six_orders": false,
+  "interpretation": "Mechanism follow-up on previously inspected targets; no independent source confirmation, no mathematical nonuniqueness proof or novelty claim"
+}

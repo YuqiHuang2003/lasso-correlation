@@ -1,0 +1,222 @@
+{
+  "reference_accepted": true,
+  "status": "numerical_reference_agreement",
+  "both_pass_common_precision": true,
+  "both_within_observed_budget": true,
+  "coefficient_linf_difference": 2.3932522630332187e-12,
+  "normalized_primal_difference": 2.2096339923836542e-16,
+  "by_support_threshold": {
+    "1e-06": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 20,
+      "skglm_nnz": 20
+    },
+    "0.0001": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 20,
+      "skglm_nnz": 20
+    }
+  },
+  "interpretation": "Agreement of two high-accuracy numerical implementations; not a proof of exact minimizer support or statistical recovery.",
+  "target_id": "uji_seed308_clustered_strong__B_near",
+  "params": {
+    "seed": 308,
+    "layout": "clustered",
+    "amplitude": "strong",
+    "arm": "B_near"
+  },
+  "seed": 308,
+  "layout": "clustered",
+  "amplitude": "strong",
+  "arm": "B_near",
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "source_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
+  "dataset_hash": "66367658248baad0b0607751e6ce9a0d7866e5a566c2cc15f4a8ca1b155a6bf6",
+  "lambda": 0.10849980674130397,
+  "sklearn": {
+    "method": "sklearn_cyclic_cd",
+    "certificate": {
+      "primal": 2.009786287596884,
+      "dual": 2.0097862875958543,
+      "gap": 1.0298428776422952e-12,
+      "raw_gap": 1.0298428776422952e-12,
+      "normalized_gap": 5.124141228337694e-13,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 8.849865285043279e-14
+    },
+    "elapsed_sec": 0.01549338735640049,
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "status": "converged",
+    "iterations": 99,
+    "iteration_unit": "complete sklearn coordinate epochs",
+    "library_tol": 1e-13,
+    "library_max_iter": 500000,
+    "time_limit_mode": "observed after return; no interruption within sklearn fit",
+    "warnings": []
+  },
+  "skglm": {
+    "method": "skglm",
+    "history": [
+      {
+        "primal": 8.199720022949531,
+        "dual": 1.0800971019636714,
+        "gap": 7.11962292098586,
+        "raw_gap": 7.11962292098586,
+        "normalized_gap": 0.8682763437116541,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.4827207386801324,
+        "iteration": 0,
+        "attempt": 0,
+        "time": 0.0018235184252262115
+      },
+      {
+        "primal": 2.0097862875968837,
+        "dual": 2.0097862875929695,
+        "gap": 3.914202295618452e-12,
+        "raw_gap": 3.914202295618452e-12,
+        "normalized_gap": 1.9475714008869532e-12,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.048938713665848e-12,
+        "iteration": 9,
+        "attempt": 1,
+        "time": 0.00987975299358368
+      }
+    ],
+    "status": "converged",
+    "certificate": {
+      "primal": 2.0097862875968837,
+      "dual": 2.0097862875929695,
+      "gap": 3.914202295618452e-12,
+      "raw_gap": 3.914202295618452e-12,
+      "normalized_gap": 1.9475714008869532e-12,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 1.048938713665848e-12
+    },
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "elapsed_sec": 0.00990859791636467,
+    "diagnostics_sec": 0.0006955331191420555,
+    "iterations": 9,
+    "iteration_unit": "outer working-set iterations across all attempts",
+    "attempts": [
+      {
+        "attempt": 1,
+        "library_tol": 1e-10,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.007708520628511906,
+        "elapsed_sec_including_posterior_diagnostics": 0.008054343052208424,
+        "cumulative_elapsed_sec": 0.00987975299358368,
+        "outer_working_set_iterations": 9,
+        "library_returned_stop_crit": 1.049826892085548e-12,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          6.071183191458173,
+          3.139119050068672,
+          2.2511117877302174,
+          2.0203387293517316,
+          2.00997779209389,
+          2.0098103747084215,
+          2.009786287612899,
+          2.0097862875968806,
+          2.00978628759688
+        ],
+        "normalized_gap": 1.9475714008869532e-12,
+        "passed_common_certificate": true
+      }
+    ],
+    "attempt_count": 1,
+    "library_tolerances": [
+      1e-10,
+      1e-12,
+      1e-14
+    ],
+    "library_max_iter": 100,
+    "library_max_epochs": 50000,
+    "time_limit_sec": 20.0,
+    "time_limit_mode": "checked between/after fits; no interruption within an in-progress library fit",
+    "history_sampling": "initial point and fit endpoints only; no internal time-to-accuracy curve",
+    "threshold_curve_comparable": false,
+    "check_every_compatibility_input": 5,
+    "L_compatibility_input_used": false,
+    "jit_warmup_sec": 0.0,
+    "warmup_metadata": {
+      "performed": false,
+      "elapsed_sec": 0.0,
+      "initial_warmup_sec": 3.895263062790036,
+      "versions": {
+        "skglm": "0.5",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "scikit-learn": "1.9.0"
+      },
+      "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+      "array_signature": "float64 Fortran-contiguous X, contiguous y",
+      "method": "skglm AndersonCD with working sets and Anderson acceleration"
+    },
+    "objective_increases": null
+  },
+  "geometry": {
+    "sklearn": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.19258941863578813,
+        "active_gram_max_eigenvalue": 3.7140714923854334,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.64937907438009e-14,
+        "active_gram_condition": 19.28491979826384,
+        "beta_min": 0.007370984603336873,
+        "active_kkt_violation": 8.849865285043279e-14,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.000558211686885135
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.19258941863578813,
+        "active_gram_max_eigenvalue": 3.7140714923854334,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.64937907438009e-14,
+        "active_gram_condition": 19.28491979826384,
+        "beta_min": 0.007370984603336873,
+        "active_kkt_violation": 8.849865285043279e-14,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.000558211686885135
+      }
+    },
+    "skglm": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.19258941863578813,
+        "active_gram_max_eigenvalue": 3.7140714923854334,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.64937907438009e-14,
+        "active_gram_condition": 19.28491979826384,
+        "beta_min": 0.007370984603350408,
+        "active_kkt_violation": 1.048938713665848e-12,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.0005582116869104897
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.19258941863578813,
+        "active_gram_max_eigenvalue": 3.7140714923854334,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.64937907438009e-14,
+        "active_gram_condition": 19.28491979826384,
+        "beta_min": 0.007370984603350408,
+        "active_kkt_violation": 1.048938713665848e-12,
+        "nnz": 20,
+        "inactive_kkt_margin": 0.0005582116869104897
+      }
+    }
+  },
+  "geometry_diagnostics_sec_outside_fit_timers": 0.0014793593436479568,
+  "reported_reference_calls": 2,
+  "actual_library_fit_attempts": 2,
+  "coefficient_path": "reference_coefficients/uji_seed308_clustered_strong__B_near.npz",
+  "coefficient_sha256": "6cbea2326a3c2a446a75e2a278b19de9d7a85d7e3d21d27f40302e92a675ca34",
+  "coefficient_write_sec": 0.000844636932015419
+}

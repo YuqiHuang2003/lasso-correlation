@@ -1,0 +1,222 @@
+{
+  "reference_accepted": false,
+  "status": "reference_uncertain",
+  "both_pass_common_precision": true,
+  "both_within_observed_budget": true,
+  "coefficient_linf_difference": 0.951914200646346,
+  "normalized_primal_difference": 0.0,
+  "by_support_threshold": {
+    "1e-06": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 21,
+      "skglm_nnz": 21
+    },
+    "0.0001": {
+      "same_support": false,
+      "support_symmetric_difference": 1,
+      "same_thresholded_signs": false,
+      "sklearn_nnz": 21,
+      "skglm_nnz": 20
+    }
+  },
+  "interpretation": "Agreement of two high-accuracy numerical implementations; not a proof of exact minimizer support or statistical recovery.",
+  "target_id": "uji_seed308_clustered_strong__A_raw_exact",
+  "params": {
+    "seed": 308,
+    "layout": "clustered",
+    "amplitude": "strong",
+    "arm": "A_raw_exact"
+  },
+  "seed": 308,
+  "layout": "clustered",
+  "amplitude": "strong",
+  "arm": "A_raw_exact",
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "source_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
+  "dataset_hash": "7d633b776999ee5b01340a174253e4a583534ace4cfb48da6fed17b357ca18f9",
+  "lambda": 0.10849980674130397,
+  "sklearn": {
+    "method": "sklearn_cyclic_cd",
+    "certificate": {
+      "primal": 2.009786287596884,
+      "dual": 2.009786287595836,
+      "gap": 1.0480505352461478e-12,
+      "raw_gap": 1.0480505352461478e-12,
+      "normalized_gap": 5.214736222025424e-13,
+      "dual_feasibility": 0.9999999999999959,
+      "kkt_inf": 8.891498648466722e-14
+    },
+    "elapsed_sec": 0.015649517066776752,
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "status": "converged",
+    "iterations": 99,
+    "iteration_unit": "complete sklearn coordinate epochs",
+    "library_tol": 1e-13,
+    "library_max_iter": 500000,
+    "time_limit_mode": "observed after return; no interruption within sklearn fit",
+    "warnings": []
+  },
+  "skglm": {
+    "method": "skglm",
+    "history": [
+      {
+        "primal": 8.199720022949531,
+        "dual": 1.0800971019636714,
+        "gap": 7.11962292098586,
+        "raw_gap": 7.11962292098586,
+        "normalized_gap": 0.8682763437116541,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.4827207386801324,
+        "iteration": 0,
+        "attempt": 0,
+        "time": 0.0019809305667877197
+      },
+      {
+        "primal": 2.009786287596884,
+        "dual": 2.0097862875951975,
+        "gap": 1.6866508190105378e-12,
+        "raw_gap": 1.6866508190105378e-12,
+        "normalized_gap": 8.392189903073119e-13,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.2484457911909885e-13,
+        "iteration": 9,
+        "attempt": 1,
+        "time": 0.0105139734223485
+      }
+    ],
+    "status": "converged",
+    "certificate": {
+      "primal": 2.009786287596884,
+      "dual": 2.0097862875951975,
+      "gap": 1.6866508190105378e-12,
+      "raw_gap": 1.6866508190105378e-12,
+      "normalized_gap": 8.392189903073119e-13,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 1.2484457911909885e-13
+    },
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "elapsed_sec": 0.010543392039835453,
+    "diagnostics_sec": 0.0007064873352646828,
+    "iterations": 9,
+    "iteration_unit": "outer working-set iterations across all attempts",
+    "attempts": [
+      {
+        "attempt": 1,
+        "library_tol": 1e-10,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.008178280666470528,
+        "elapsed_sec_including_posterior_diagnostics": 0.008531061932444572,
+        "cumulative_elapsed_sec": 0.0105139734223485,
+        "outer_working_set_iterations": 9,
+        "library_returned_stop_crit": 1.370709101777834e-13,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          6.071183191458173,
+          3.5340304199188375,
+          2.2511120965955316,
+          2.0192707239658776,
+          2.0099632698927334,
+          2.0098103667295755,
+          2.0097862876117403,
+          2.0097862875968864,
+          2.009786287596886
+        ],
+        "normalized_gap": 8.392189903073119e-13,
+        "passed_common_certificate": true
+      }
+    ],
+    "attempt_count": 1,
+    "library_tolerances": [
+      1e-10,
+      1e-12,
+      1e-14
+    ],
+    "library_max_iter": 100,
+    "library_max_epochs": 50000,
+    "time_limit_sec": 20.0,
+    "time_limit_mode": "checked between/after fits; no interruption within an in-progress library fit",
+    "history_sampling": "initial point and fit endpoints only; no internal time-to-accuracy curve",
+    "threshold_curve_comparable": false,
+    "check_every_compatibility_input": 5,
+    "L_compatibility_input_used": false,
+    "jit_warmup_sec": 0.0,
+    "warmup_metadata": {
+      "performed": false,
+      "elapsed_sec": 0.0,
+      "initial_warmup_sec": 3.895263062790036,
+      "versions": {
+        "skglm": "0.5",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "scikit-learn": "1.9.0"
+      },
+      "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+      "array_signature": "float64 Fortran-contiguous X, contiguous y",
+      "method": "skglm AndersonCD with working sets and Anderson acceleration"
+    },
+    "objective_increases": null
+  },
+  "geometry": {
+    "sklearn": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 1.408105242174944e-15,
+        "active_gram_max_eigenvalue": 3.716460517830523,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.7329620155424272e-14,
+        "active_gram_condition": null,
+        "beta_min": 0.001190530334472829,
+        "active_kkt_violation": 8.891498648466722e-14,
+        "nnz": 21,
+        "inactive_kkt_margin": 0.0005582116868853432
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 1.408105242174944e-15,
+        "active_gram_max_eigenvalue": 3.716460517830523,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.7329620155424272e-14,
+        "active_gram_condition": null,
+        "beta_min": 0.001190530334472829,
+        "active_kkt_violation": 8.891498648466722e-14,
+        "nnz": 21,
+        "inactive_kkt_margin": 0.0005582116868853432
+      }
+    },
+    "skglm": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 1.408105242174944e-15,
+        "active_gram_max_eigenvalue": 3.716460517830523,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.7329620155424272e-14,
+        "active_gram_condition": null,
+        "beta_min": 2.650467417780744e-05,
+        "active_kkt_violation": 1.2484457911909885e-13,
+        "nnz": 21,
+        "inactive_kkt_margin": 0.0005582116868730058
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.1925894186357873,
+        "active_gram_max_eigenvalue": 3.7140714923854308,
+        "active_gram_numerical_rank": 20,
+        "active_gram_rank_cutoff": 1.6493790743800886e-14,
+        "active_gram_condition": 19.28491979826391,
+        "beta_min": 0.0073709846033377935,
+        "active_kkt_violation": 1.2484457911909885e-13,
+        "nnz": 20,
+        "inactive_kkt_margin": 7.882583474838611e-15
+      }
+    }
+  },
+  "geometry_diagnostics_sec_outside_fit_timers": 0.0014544585719704628,
+  "reported_reference_calls": 2,
+  "actual_library_fit_attempts": 2,
+  "coefficient_path": "reference_coefficients/uji_seed308_clustered_strong__A_raw_exact.npz",
+  "coefficient_sha256": "147e1d1c5fb8f91451e58eda057eb187dc2bd31675b556c53734a8c87dc40da1",
+  "coefficient_write_sec": 0.0007985038682818413
+}

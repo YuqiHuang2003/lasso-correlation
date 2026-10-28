@@ -1,0 +1,38 @@
+{
+  "protocol_version": 2,
+  "pdf_pages": 10,
+  "pdf_bytes": 1587425,
+  "identity_complete": false,
+  "identity_display": "blank unspecified fields as requested",
+  "references": 13,
+  "recent_research_references_2023plus": 9,
+  "reference_keys": [
+    "tay2023glmnet",
+    "larsson2023slope",
+    "zogala2024screening",
+    "yang2024adelie",
+    "stallrich2025",
+    "buhai2025",
+    "minsker2025",
+    "moufad2025",
+    "zou2026coreset",
+    "beck2009",
+    "friedman2010",
+    "tseng2001",
+    "uji2014"
+  ],
+  "page_text_chars": [
+    946,
+    1044,
+    671,
+    661,
+    1135,
+    393,
+    578,
+    366,
+    898,
+    2782
+  ],
+  "pdf_renderer": "ReportLab, mathematical figures from Matplotlib; previews exported for inspection",
+  "tex_validation": "Editable multi-file source; compile in a full XeLaTeX/BibTeX environment"
+}

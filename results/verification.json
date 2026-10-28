@@ -1,0 +1,53 @@
+{
+  "main_runs": 180,
+  "real_runs": 27,
+  "verified_coefficient_files": 207,
+  "source_signature": "ff953f7fcd59c19abd5c58f6fc2e21f9a613cfb29d82f3c717d21b94467e13c6",
+  "correctness_tests": {
+    "passed": 18,
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONPATH=src .venv/bin/python -m pytest -q",
+    "evidence": "18 passed in 1.34s; executed before pilot/main with identical solver and data sources"
+  },
+  "representative_reproductions": 6,
+  "reproduction_passed": true,
+  "report": {
+    "pdf_pages": 9,
+    "pdf_bytes": 1272131,
+    "identity_complete": false,
+    "identity_display": "blank lines for unspecified fields, as requested by the user",
+    "page_text_chars": [
+      1090,
+      565,
+      735,
+      1367,
+      451,
+      398,
+      1251,
+      1133,
+      2674
+    ],
+    "references": 13,
+    "pdf_renderer": "ReportLab; all pages raster-previewed",
+    "tex_validation": "Source provided; desktop standalone compiler lacks multifile project support. Compile with full XeLaTeX/BibTeX environment."
+  },
+  "resources": {
+    "sequential_stage_wall_sec": {
+      "smoke": 0.29068788420408964,
+      "pilot": 35.95191307924688,
+      "main": 339.58408752270043,
+      "real": 52.11682891380042,
+      "reproduce": 14.988086951896548,
+      "robustness": 42.21706487517804
+    },
+    "total_recorded_wall_sec": 485.1486692270264,
+    "total_recorded_cpu_wall_hours": 0.13476351922972957,
+    "threads": 1,
+    "gpu_hours": 0,
+    "scope": "experiment stages only; excludes installation, reading, coding, plotting and report typesetting"
+  },
+  "identity_preference": "Leave name and student ID blank at the user's request",
+  "remaining": [
+    "final externally accessible code location and submission filename",
+    "author review and Canvas submission"
+  ]
+}

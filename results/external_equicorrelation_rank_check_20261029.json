@@ -1,0 +1,4183 @@
+{
+  "scope": "Posthoc float64 rank diagnostic, no refitting. Candidate E thresholds relative to lambda; gap outer set uses feasible residual dual and numerical primal-dual gap, with 1e-12 inclusion allowance. Not interval-arithmetic proof.",
+  "designs": {
+    "news401": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 1.1728990126598518e-14
+    },
+    "news402": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 1.0562811578456198e-14
+    },
+    "news403": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 1.1370055599128887e-14
+    },
+    "news404": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 7.923896441825091e-15
+    },
+    "news405": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 9.803525843683323e-15
+    },
+    "news406": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 1.0115881432621169e-14
+    },
+    "news407": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 1.0871265909412833e-14
+    },
+    "news408": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 1.2976412377226876e-14
+    },
+    "news409": {
+      "shape": [
+        1000,
+        58
+      ],
+      "rank": 56,
+      "smallest_singular": 8.564112631749778e-15
+    },
+    "gene0": {
+      "shape": [
+        72,
+        7129
+      ],
+      "rank": 71,
+      "smallest_singular": 7.9443534112586e-14
+    }
+  },
+  "summary": {
+    "news": {
+      "outputs": 72,
+      "max_gap": 9.916667487175346e-11,
+      "near_E_1e-8": {
+        "full_column_rank_outputs": 72,
+        "size_range": [
+          5,
+          14
+        ],
+        "minimum_singular": 5.805079527768008,
+        "minimum_relative_singular": 0.09600323041136252
+      },
+      "near_E_1e-6": {
+        "full_column_rank_outputs": 72,
+        "size_range": [
+          5,
+          14
+        ],
+        "minimum_singular": 5.805079527768008,
+        "minimum_relative_singular": 0.09600323041136252
+      },
+      "gap_outer_E": {
+        "full_column_rank_outputs": 72,
+        "size_range": [
+          5,
+          14
+        ],
+        "minimum_singular": 5.805079527768008,
+        "minimum_relative_singular": 0.09600323041136252
+      }
+    },
+    "gene": {
+      "outputs": 72,
+      "max_gap": 9.887473848100086e-11,
+      "near_E_1e-8": {
+        "full_column_rank_outputs": 72,
+        "size_range": [
+          13,
+          42
+        ],
+        "minimum_singular": 1.183530146946387,
+        "minimum_relative_singular": 0.0422412213063001
+      },
+      "near_E_1e-6": {
+        "full_column_rank_outputs": 72,
+        "size_range": [
+          13,
+          42
+        ],
+        "minimum_singular": 1.183530146946387,
+        "minimum_relative_singular": 0.0422412213063001
+      },
+      "gap_outer_E": {
+        "full_column_rank_outputs": 72,
+        "size_range": [
+          13,
+          42
+        ],
+        "minimum_singular": 1.183530146946387,
+        "minimum_relative_singular": 0.0422412213063001
+      }
+    }
+  },
+  "outputs": [
+    {
+      "source": "news",
+      "target": "news_seed401_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 2.9976021664879227e-14,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 2.1094237467877974e-15,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c0.5_strong",
+      "method": "sklearn",
+      "gap": 4.141131881851834e-14,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c0.5_strong",
+      "method": "skglm",
+      "gap": 1.9162449405030202e-13,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 20.220878353427885,
+        "smin_over_smax": 0.4604886429433465
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.0769163338864018e-14,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 3.175237850427948e-14,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c1_strong",
+      "method": "sklearn",
+      "gap": 1.3211653993039363e-14,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed401_c1_strong",
+      "method": "skglm",
+      "gap": 6.106226635438361e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 20.382701269572692,
+        "smin_over_smax": 0.4644819319135563
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 6.761258219967203e-14,
+      "active_size": 11,
+      "near_E_1e-8": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "near_E_1e-6": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "gap_outer_E": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 7.105427357601002e-15,
+      "active_size": 11,
+      "near_E_1e-8": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "near_E_1e-6": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "gap_outer_E": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c0.5_strong",
+      "method": "sklearn",
+      "gap": 6.972200594645983e-14,
+      "active_size": 11,
+      "near_E_1e-8": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "near_E_1e-6": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "gap_outer_E": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c0.5_strong",
+      "method": "skglm",
+      "gap": 4.885536419863001e-12,
+      "active_size": 11,
+      "near_E_1e-8": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "near_E_1e-6": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      },
+      "gap_outer_E": {
+        "size": 11,
+        "rank": 11,
+        "full_column_rank": true,
+        "smin": 11.465385652687953,
+        "smin_over_smax": 0.26003498931660785
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 5.495603971894525e-14,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 3.774758283725532e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c1_strong",
+      "method": "sklearn",
+      "gap": 5.639932965095795e-14,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed402_c1_strong",
+      "method": "skglm",
+      "gap": 3.844480289671992e-12,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 11.558866538540213,
+        "smin_over_smax": 0.2651655548662658
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.325606291402437e-13,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 5.362377208939506e-14,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.2179146580137967e-13,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c0.5_strong",
+      "method": "skglm",
+      "gap": 5.2513549064769904e-14,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 16.43786870360223,
+        "smin_over_smax": 0.37449471479492313
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 3.219646771412954e-15,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 6.786993189678014e-11,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c1_strong",
+      "method": "sklearn",
+      "gap": 4.884981308350689e-15,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed403_c1_strong",
+      "method": "skglm",
+      "gap": 4.910016837555986e-11,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 26.358172202321303,
+        "smin_over_smax": 0.6947572277704803
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 3.9812597663058114e-13,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 1.3707923685046808e-12,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c0.5_strong",
+      "method": "sklearn",
+      "gap": 4.75175454539567e-13,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c0.5_strong",
+      "method": "skglm",
+      "gap": 1.3741230375785563e-12,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 5.805079527768008,
+        "smin_over_smax": 0.09600323041136252
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 3.1097346919750635e-13,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 1.4210854715202004e-13,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c1_strong",
+      "method": "sklearn",
+      "gap": 3.7569947153315297e-13,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed404_c1_strong",
+      "method": "skglm",
+      "gap": 4.96269692007445e-14,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.282620113274967,
+        "smin_over_smax": 0.1360026450893341
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 9.625633623500107e-14,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 7.993605777301127e-15,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c0.5_strong",
+      "method": "sklearn",
+      "gap": 8.981704269217516e-14,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c0.5_strong",
+      "method": "skglm",
+      "gap": 6.417089082333405e-14,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 7.1358878128738805,
+        "smin_over_smax": 0.15410871992750802
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 7.605027718682322e-14,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 9.547918011776346e-15,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c1_strong",
+      "method": "sklearn",
+      "gap": 7.716050021144838e-14,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed405_c1_strong",
+      "method": "skglm",
+      "gap": 1.509903313490213e-14,
+      "active_size": 7,
+      "near_E_1e-8": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "near_E_1e-6": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      },
+      "gap_outer_E": {
+        "size": 7,
+        "rank": 7,
+        "full_column_rank": true,
+        "smin": 7.193815661305636,
+        "smin_over_smax": 0.15802411951039924
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.3655743202889425e-13,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 5.1480486540356196e-11,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.7563728249569976e-13,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c0.5_strong",
+      "method": "skglm",
+      "gap": 1.9445556276309617e-12,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 14.119475093641151,
+        "smin_over_smax": 0.3217322945330061
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.2301271112846734e-13,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 9.916667487175346e-11,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c1_strong",
+      "method": "sklearn",
+      "gap": 1.574296248918472e-13,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed406_c1_strong",
+      "method": "skglm",
+      "gap": 5.703215677499429e-13,
+      "active_size": 8,
+      "near_E_1e-8": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "near_E_1e-6": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      },
+      "gap_outer_E": {
+        "size": 8,
+        "rank": 8,
+        "full_column_rank": true,
+        "smin": 14.141893846543658,
+        "smin_over_smax": 0.33725380365790425
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.7985612998927536e-14,
+      "active_size": 14,
+      "near_E_1e-8": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "near_E_1e-6": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "gap_outer_E": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 8.116962657567228e-11,
+      "active_size": 14,
+      "near_E_1e-8": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "near_E_1e-6": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "gap_outer_E": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c0.5_strong",
+      "method": "sklearn",
+      "gap": 2.298161660974074e-14,
+      "active_size": 14,
+      "near_E_1e-8": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "near_E_1e-6": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "gap_outer_E": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c0.5_strong",
+      "method": "skglm",
+      "gap": 3.224198685813917e-12,
+      "active_size": 14,
+      "near_E_1e-8": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "near_E_1e-6": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      },
+      "gap_outer_E": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 24.352967355950042,
+        "smin_over_smax": 0.6111751702993781
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 3.1530333899354446e-14,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 2.7755575615628914e-15,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c1_strong",
+      "method": "sklearn",
+      "gap": 1.3766765505351941e-14,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed407_c1_strong",
+      "method": "skglm",
+      "gap": 3.552713678800501e-15,
+      "active_size": 5,
+      "near_E_1e-8": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "near_E_1e-6": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      },
+      "gap_outer_E": {
+        "size": 5,
+        "rank": 5,
+        "full_column_rank": true,
+        "smin": 25.05480253998775,
+        "smin_over_smax": 0.6654967392937489
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 7.438494264988549e-15,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 3.708144902248023e-14,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c0.5_strong",
+      "method": "sklearn",
+      "gap": 9.547918011776346e-15,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c0.5_strong",
+      "method": "skglm",
+      "gap": 4.374278717023117e-14,
+      "active_size": 10,
+      "near_E_1e-8": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "near_E_1e-6": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      },
+      "gap_outer_E": {
+        "size": 10,
+        "rank": 10,
+        "full_column_rank": true,
+        "smin": 22.670942083349185,
+        "smin_over_smax": 0.5758892017214833
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 2.55351295663786e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 4.551914400963142e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c1_strong",
+      "method": "sklearn",
+      "gap": 3.219646771412954e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed408_c1_strong",
+      "method": "skglm",
+      "gap": 3.9968028886505635e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 25.78818981168671,
+        "smin_over_smax": 0.7125995484248965
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 9.658940314238862e-15,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 5.064837438339964e-13,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.432187701766452e-14,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c0.5_strong",
+      "method": "skglm",
+      "gap": 7.66053886991358e-15,
+      "active_size": 12,
+      "near_E_1e-8": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "near_E_1e-6": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      },
+      "gap_outer_E": {
+        "size": 12,
+        "rank": 12,
+        "full_column_rank": true,
+        "smin": 14.738683411260038,
+        "smin_over_smax": 0.32642619692395897
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 5.773159728050814e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 1.2264189663824254e-11,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c1_strong",
+      "method": "sklearn",
+      "gap": 9.880984919163893e-15,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      }
+    },
+    {
+      "source": "news",
+      "target": "news_seed409_c1_strong",
+      "method": "skglm",
+      "gap": 4.595879232738298e-12,
+      "active_size": 6,
+      "near_E_1e-8": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "near_E_1e-6": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      },
+      "gap_outer_E": {
+        "size": 6,
+        "rank": 6,
+        "full_column_rank": true,
+        "smin": 23.457905342730275,
+        "smin_over_smax": 0.609211897001645
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.316741605999974e-13,
+      "active_size": 33,
+      "near_E_1e-8": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 2.044704729359989,
+        "smin_over_smax": 0.0728493589748524
+      },
+      "near_E_1e-6": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 2.044704729359989,
+        "smin_over_smax": 0.0728493589748524
+      },
+      "gap_outer_E": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 2.044704729359989,
+        "smin_over_smax": 0.0728493589748524
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 7.865021610726304e-12,
+      "active_size": 33,
+      "near_E_1e-8": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 2.044704729359989,
+        "smin_over_smax": 0.0728493589748524
+      },
+      "near_E_1e-6": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 2.044704729359989,
+        "smin_over_smax": 0.0728493589748524
+      },
+      "gap_outer_E": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 2.044704729359989,
+        "smin_over_smax": 0.0728493589748524
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c0.5_strong",
+      "method": "sklearn",
+      "gap": 8.21989822125178e-14,
+      "active_size": 28,
+      "near_E_1e-8": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.4079059509763248,
+        "smin_over_smax": 0.1099593305619909
+      },
+      "near_E_1e-6": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.4079059509763248,
+        "smin_over_smax": 0.1099593305619909
+      },
+      "gap_outer_E": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.4079059509763248,
+        "smin_over_smax": 0.1099593305619909
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c0.5_strong",
+      "method": "skglm",
+      "gap": 8.769180831801313e-13,
+      "active_size": 28,
+      "near_E_1e-8": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.4079059509763248,
+        "smin_over_smax": 0.1099593305619909
+      },
+      "near_E_1e-6": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.4079059509763248,
+        "smin_over_smax": 0.1099593305619909
+      },
+      "gap_outer_E": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.4079059509763248,
+        "smin_over_smax": 0.1099593305619909
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 5.442903114376914e-14,
+      "active_size": 20,
+      "near_E_1e-8": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 2.564642902394888,
+        "smin_over_smax": 0.10208147093612319
+      },
+      "near_E_1e-6": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 2.564642902394888,
+        "smin_over_smax": 0.10208147093612319
+      },
+      "gap_outer_E": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 2.564642902394888,
+        "smin_over_smax": 0.10208147093612319
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 2.8771185862596368e-12,
+      "active_size": 20,
+      "near_E_1e-8": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 2.564642902394888,
+        "smin_over_smax": 0.10208147093612319
+      },
+      "near_E_1e-6": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 2.564642902394888,
+        "smin_over_smax": 0.10208147093612319
+      },
+      "gap_outer_E": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 2.564642902394888,
+        "smin_over_smax": 0.10208147093612319
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c1_strong",
+      "method": "sklearn",
+      "gap": 2.782376016216537e-14,
+      "active_size": 20,
+      "near_E_1e-8": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 3.0586127993859167,
+        "smin_over_smax": 0.14148660890009074
+      },
+      "near_E_1e-6": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 3.0586127993859167,
+        "smin_over_smax": 0.14148660890009074
+      },
+      "gap_outer_E": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 3.0586127993859167,
+        "smin_over_smax": 0.14148660890009074
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed501_c1_strong",
+      "method": "skglm",
+      "gap": 1.1894961222165894e-13,
+      "active_size": 20,
+      "near_E_1e-8": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 3.0586127993859167,
+        "smin_over_smax": 0.14148660890009074
+      },
+      "near_E_1e-6": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 3.0586127993859167,
+        "smin_over_smax": 0.14148660890009074
+      },
+      "gap_outer_E": {
+        "size": 20,
+        "rank": 20,
+        "full_column_rank": true,
+        "smin": 3.0586127993859167,
+        "smin_over_smax": 0.14148660890009074
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 7.273238370916224e-14,
+      "active_size": 29,
+      "near_E_1e-8": {
+        "size": 29,
+        "rank": 29,
+        "full_column_rank": true,
+        "smin": 2.139835132178582,
+        "smin_over_smax": 0.08979612707730761
+      },
+      "near_E_1e-6": {
+        "size": 29,
+        "rank": 29,
+        "full_column_rank": true,
+        "smin": 2.139835132178582,
+        "smin_over_smax": 0.08979612707730761
+      },
+      "gap_outer_E": {
+        "size": 29,
+        "rank": 29,
+        "full_column_rank": true,
+        "smin": 2.139835132178582,
+        "smin_over_smax": 0.08979612707730761
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 2.5787601045847652e-11,
+      "active_size": 29,
+      "near_E_1e-8": {
+        "size": 29,
+        "rank": 29,
+        "full_column_rank": true,
+        "smin": 2.139835132178582,
+        "smin_over_smax": 0.08979612707730761
+      },
+      "near_E_1e-6": {
+        "size": 29,
+        "rank": 29,
+        "full_column_rank": true,
+        "smin": 2.139835132178582,
+        "smin_over_smax": 0.08979612707730761
+      },
+      "gap_outer_E": {
+        "size": 29,
+        "rank": 29,
+        "full_column_rank": true,
+        "smin": 2.139835132178582,
+        "smin_over_smax": 0.08979612707730761
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c0.5_strong",
+      "method": "sklearn",
+      "gap": 6.54480682520587e-14,
+      "active_size": 30,
+      "near_E_1e-8": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3290282395045465,
+        "smin_over_smax": 0.0994452117693676
+      },
+      "near_E_1e-6": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3290282395045465,
+        "smin_over_smax": 0.0994452117693676
+      },
+      "gap_outer_E": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3290282395045465,
+        "smin_over_smax": 0.0994452117693676
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c0.5_strong",
+      "method": "skglm",
+      "gap": 4.0715392005215376e-12,
+      "active_size": 30,
+      "near_E_1e-8": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3290282395045465,
+        "smin_over_smax": 0.0994452117693676
+      },
+      "near_E_1e-6": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3290282395045465,
+        "smin_over_smax": 0.0994452117693676
+      },
+      "gap_outer_E": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3290282395045465,
+        "smin_over_smax": 0.0994452117693676
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 3.591366881199373e-14,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 2.811229946112873,
+        "smin_over_smax": 0.14179946316438338
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 2.811229946112873,
+        "smin_over_smax": 0.14179946316438338
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 2.811229946112873,
+        "smin_over_smax": 0.14179946316438338
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 6.472653618587462e-14,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 2.811229946112873,
+        "smin_over_smax": 0.14179946316438338
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 2.811229946112873,
+        "smin_over_smax": 0.14179946316438338
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 2.811229946112873,
+        "smin_over_smax": 0.14179946316438338
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c1_strong",
+      "method": "sklearn",
+      "gap": 2.7768484057915914e-14,
+      "active_size": 16,
+      "near_E_1e-8": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 2.719445911735094,
+        "smin_over_smax": 0.12727826488420313
+      },
+      "near_E_1e-6": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 2.719445911735094,
+        "smin_over_smax": 0.12727826488420313
+      },
+      "gap_outer_E": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 2.719445911735094,
+        "smin_over_smax": 0.12727826488420313
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed502_c1_strong",
+      "method": "skglm",
+      "gap": 1.2086472069691157e-12,
+      "active_size": 16,
+      "near_E_1e-8": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 2.719445911735094,
+        "smin_over_smax": 0.12727826488420313
+      },
+      "near_E_1e-6": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 2.719445911735094,
+        "smin_over_smax": 0.12727826488420313
+      },
+      "gap_outer_E": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 2.719445911735094,
+        "smin_over_smax": 0.12727826488420313
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 7.228111695988062e-14,
+      "active_size": 32,
+      "near_E_1e-8": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.440389915157219,
+        "smin_over_smax": 0.10849791034009929
+      },
+      "near_E_1e-6": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.440389915157219,
+        "smin_over_smax": 0.10849791034009929
+      },
+      "gap_outer_E": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.440389915157219,
+        "smin_over_smax": 0.10849791034009929
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 2.381404656981781e-13,
+      "active_size": 32,
+      "near_E_1e-8": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.440389915157219,
+        "smin_over_smax": 0.10849791034009929
+      },
+      "near_E_1e-6": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.440389915157219,
+        "smin_over_smax": 0.10849791034009929
+      },
+      "gap_outer_E": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.440389915157219,
+        "smin_over_smax": 0.10849791034009929
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c0.5_strong",
+      "method": "sklearn",
+      "gap": 3.401029335024687e-14,
+      "active_size": 30,
+      "near_E_1e-8": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.081840466811866,
+        "smin_over_smax": 0.10151237442066081
+      },
+      "near_E_1e-6": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.081840466811866,
+        "smin_over_smax": 0.10151237442066081
+      },
+      "gap_outer_E": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.081840466811866,
+        "smin_over_smax": 0.10151237442066081
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c0.5_strong",
+      "method": "skglm",
+      "gap": 4.268570588352295e-12,
+      "active_size": 30,
+      "near_E_1e-8": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.081840466811866,
+        "smin_over_smax": 0.10151237442066081
+      },
+      "near_E_1e-6": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.081840466811866,
+        "smin_over_smax": 0.10151237442066081
+      },
+      "gap_outer_E": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.081840466811866,
+        "smin_over_smax": 0.10151237442066081
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.658550941489487e-14,
+      "active_size": 15,
+      "near_E_1e-8": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.6380230103124793,
+        "smin_over_smax": 0.17533390269117988
+      },
+      "near_E_1e-6": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.6380230103124793,
+        "smin_over_smax": 0.17533390269117988
+      },
+      "gap_outer_E": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.6380230103124793,
+        "smin_over_smax": 0.17533390269117988
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 1.7157335942199397e-11,
+      "active_size": 15,
+      "near_E_1e-8": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.6380230103124793,
+        "smin_over_smax": 0.17533390269117988
+      },
+      "near_E_1e-6": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.6380230103124793,
+        "smin_over_smax": 0.17533390269117988
+      },
+      "gap_outer_E": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.6380230103124793,
+        "smin_over_smax": 0.17533390269117988
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c1_strong",
+      "method": "sklearn",
+      "gap": 1.519311604383818e-14,
+      "active_size": 15,
+      "near_E_1e-8": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.8170033325813715,
+        "smin_over_smax": 0.2052168354828982
+      },
+      "near_E_1e-6": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.8170033325813715,
+        "smin_over_smax": 0.2052168354828982
+      },
+      "gap_outer_E": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.8170033325813715,
+        "smin_over_smax": 0.2052168354828982
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed503_c1_strong",
+      "method": "skglm",
+      "gap": 2.681138125383208e-15,
+      "active_size": 15,
+      "near_E_1e-8": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.8170033325813715,
+        "smin_over_smax": 0.2052168354828982
+      },
+      "near_E_1e-6": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.8170033325813715,
+        "smin_over_smax": 0.2052168354828982
+      },
+      "gap_outer_E": {
+        "size": 15,
+        "rank": 15,
+        "full_column_rank": true,
+        "smin": 3.8170033325813715,
+        "smin_over_smax": 0.2052168354828982
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.169879135397445e-13,
+      "active_size": 33,
+      "near_E_1e-8": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 1.802226376945117,
+        "smin_over_smax": 0.07862739539754472
+      },
+      "near_E_1e-6": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 1.802226376945117,
+        "smin_over_smax": 0.07862739539754472
+      },
+      "gap_outer_E": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 1.802226376945117,
+        "smin_over_smax": 0.07862739539754472
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 1.6319709298442353e-12,
+      "active_size": 33,
+      "near_E_1e-8": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 1.802226376945117,
+        "smin_over_smax": 0.07862739539754472
+      },
+      "near_E_1e-6": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 1.802226376945117,
+        "smin_over_smax": 0.07862739539754472
+      },
+      "gap_outer_E": {
+        "size": 33,
+        "rank": 33,
+        "full_column_rank": true,
+        "smin": 1.802226376945117,
+        "smin_over_smax": 0.07862739539754472
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.139514883827846e-13,
+      "active_size": 37,
+      "near_E_1e-8": {
+        "size": 37,
+        "rank": 37,
+        "full_column_rank": true,
+        "smin": 1.183530146946387,
+        "smin_over_smax": 0.05097907535181188
+      },
+      "near_E_1e-6": {
+        "size": 37,
+        "rank": 37,
+        "full_column_rank": true,
+        "smin": 1.183530146946387,
+        "smin_over_smax": 0.05097907535181188
+      },
+      "gap_outer_E": {
+        "size": 37,
+        "rank": 37,
+        "full_column_rank": true,
+        "smin": 1.183530146946387,
+        "smin_over_smax": 0.05097907535181188
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c0.5_strong",
+      "method": "skglm",
+      "gap": 5.455770458237076e-11,
+      "active_size": 37,
+      "near_E_1e-8": {
+        "size": 37,
+        "rank": 37,
+        "full_column_rank": true,
+        "smin": 1.183530146946387,
+        "smin_over_smax": 0.05097907535181188
+      },
+      "near_E_1e-6": {
+        "size": 37,
+        "rank": 37,
+        "full_column_rank": true,
+        "smin": 1.183530146946387,
+        "smin_over_smax": 0.05097907535181188
+      },
+      "gap_outer_E": {
+        "size": 37,
+        "rank": 37,
+        "full_column_rank": true,
+        "smin": 1.183530146946387,
+        "smin_over_smax": 0.05097907535181188
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 4.670189248549788e-14,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.242017777890492,
+        "smin_over_smax": 0.17845707040327624
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.242017777890492,
+        "smin_over_smax": 0.17845707040327624
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.242017777890492,
+        "smin_over_smax": 0.17845707040327624
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 7.759699059128879e-15,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.242017777890492,
+        "smin_over_smax": 0.17845707040327624
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.242017777890492,
+        "smin_over_smax": 0.17845707040327624
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.242017777890492,
+        "smin_over_smax": 0.17845707040327624
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c1_strong",
+      "method": "sklearn",
+      "gap": 3.08551959554474e-14,
+      "active_size": 24,
+      "near_E_1e-8": {
+        "size": 24,
+        "rank": 24,
+        "full_column_rank": true,
+        "smin": 2.5516191441146883,
+        "smin_over_smax": 0.10574596492285472
+      },
+      "near_E_1e-6": {
+        "size": 24,
+        "rank": 24,
+        "full_column_rank": true,
+        "smin": 2.5516191441146883,
+        "smin_over_smax": 0.10574596492285472
+      },
+      "gap_outer_E": {
+        "size": 24,
+        "rank": 24,
+        "full_column_rank": true,
+        "smin": 2.5516191441146883,
+        "smin_over_smax": 0.10574596492285472
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed504_c1_strong",
+      "method": "skglm",
+      "gap": 9.958363243660084e-14,
+      "active_size": 24,
+      "near_E_1e-8": {
+        "size": 24,
+        "rank": 24,
+        "full_column_rank": true,
+        "smin": 2.5516191441146883,
+        "smin_over_smax": 0.10574596492285472
+      },
+      "near_E_1e-6": {
+        "size": 24,
+        "rank": 24,
+        "full_column_rank": true,
+        "smin": 2.5516191441146883,
+        "smin_over_smax": 0.10574596492285472
+      },
+      "gap_outer_E": {
+        "size": 24,
+        "rank": 24,
+        "full_column_rank": true,
+        "smin": 2.5516191441146883,
+        "smin_over_smax": 0.10574596492285472
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 8.304468224196171e-14,
+      "active_size": 28,
+      "near_E_1e-8": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.516927839672515,
+        "smin_over_smax": 0.09720125146073379
+      },
+      "near_E_1e-6": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.516927839672515,
+        "smin_over_smax": 0.09720125146073379
+      },
+      "gap_outer_E": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.516927839672515,
+        "smin_over_smax": 0.09720125146073379
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 1.580957587066223e-12,
+      "active_size": 28,
+      "near_E_1e-8": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.516927839672515,
+        "smin_over_smax": 0.09720125146073379
+      },
+      "near_E_1e-6": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.516927839672515,
+        "smin_over_smax": 0.09720125146073379
+      },
+      "gap_outer_E": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.516927839672515,
+        "smin_over_smax": 0.09720125146073379
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.6802450254274633e-13,
+      "active_size": 30,
+      "near_E_1e-8": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3201375622574525,
+        "smin_over_smax": 0.09450820738591041
+      },
+      "near_E_1e-6": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3201375622574525,
+        "smin_over_smax": 0.09450820738591041
+      },
+      "gap_outer_E": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3201375622574525,
+        "smin_over_smax": 0.09450820738591041
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c0.5_strong",
+      "method": "skglm",
+      "gap": 6.157568571186019e-13,
+      "active_size": 30,
+      "near_E_1e-8": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3201375622574525,
+        "smin_over_smax": 0.09450820738591041
+      },
+      "near_E_1e-6": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3201375622574525,
+        "smin_over_smax": 0.09450820738591041
+      },
+      "gap_outer_E": {
+        "size": 30,
+        "rank": 30,
+        "full_column_rank": true,
+        "smin": 2.3201375622574525,
+        "smin_over_smax": 0.09450820738591041
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 3.1063018310991563e-14,
+      "active_size": 19,
+      "near_E_1e-8": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 3.178241144736674,
+        "smin_over_smax": 0.12463913054952709
+      },
+      "near_E_1e-6": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 3.178241144736674,
+        "smin_over_smax": 0.12463913054952709
+      },
+      "gap_outer_E": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 3.178241144736674,
+        "smin_over_smax": 0.12463913054952709
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 4.6219370240509204e-14,
+      "active_size": 19,
+      "near_E_1e-8": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 3.178241144736674,
+        "smin_over_smax": 0.12463913054952709
+      },
+      "near_E_1e-6": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 3.178241144736674,
+        "smin_over_smax": 0.12463913054952709
+      },
+      "gap_outer_E": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 3.178241144736674,
+        "smin_over_smax": 0.12463913054952709
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c1_strong",
+      "method": "sklearn",
+      "gap": 1.1989598554628027e-14,
+      "active_size": 18,
+      "near_E_1e-8": {
+        "size": 18,
+        "rank": 18,
+        "full_column_rank": true,
+        "smin": 3.3343543393485313,
+        "smin_over_smax": 0.15754983467253433
+      },
+      "near_E_1e-6": {
+        "size": 18,
+        "rank": 18,
+        "full_column_rank": true,
+        "smin": 3.3343543393485313,
+        "smin_over_smax": 0.15754983467253433
+      },
+      "gap_outer_E": {
+        "size": 18,
+        "rank": 18,
+        "full_column_rank": true,
+        "smin": 3.3343543393485313,
+        "smin_over_smax": 0.15754983467253433
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed505_c1_strong",
+      "method": "skglm",
+      "gap": 3.4811206511126254e-11,
+      "active_size": 18,
+      "near_E_1e-8": {
+        "size": 18,
+        "rank": 18,
+        "full_column_rank": true,
+        "smin": 3.3343543393485313,
+        "smin_over_smax": 0.15754983467253433
+      },
+      "near_E_1e-6": {
+        "size": 18,
+        "rank": 18,
+        "full_column_rank": true,
+        "smin": 3.3343543393485313,
+        "smin_over_smax": 0.15754983467253433
+      },
+      "gap_outer_E": {
+        "size": 18,
+        "rank": 18,
+        "full_column_rank": true,
+        "smin": 3.3343543393485313,
+        "smin_over_smax": 0.15754983467253433
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 2.769021893541378e-13,
+      "active_size": 26,
+      "near_E_1e-8": {
+        "size": 26,
+        "rank": 26,
+        "full_column_rank": true,
+        "smin": 2.2793583194442406,
+        "smin_over_smax": 0.08988038909489793
+      },
+      "near_E_1e-6": {
+        "size": 26,
+        "rank": 26,
+        "full_column_rank": true,
+        "smin": 2.2793583194442406,
+        "smin_over_smax": 0.08988038909489793
+      },
+      "gap_outer_E": {
+        "size": 26,
+        "rank": 26,
+        "full_column_rank": true,
+        "smin": 2.2793583194442406,
+        "smin_over_smax": 0.08988038909489793
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 3.761333493615933e-11,
+      "active_size": 26,
+      "near_E_1e-8": {
+        "size": 26,
+        "rank": 26,
+        "full_column_rank": true,
+        "smin": 2.2793583194442406,
+        "smin_over_smax": 0.08988038909489793
+      },
+      "near_E_1e-6": {
+        "size": 26,
+        "rank": 26,
+        "full_column_rank": true,
+        "smin": 2.2793583194442406,
+        "smin_over_smax": 0.08988038909489793
+      },
+      "gap_outer_E": {
+        "size": 26,
+        "rank": 26,
+        "full_column_rank": true,
+        "smin": 2.2793583194442406,
+        "smin_over_smax": 0.08988038909489793
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c0.5_strong",
+      "method": "sklearn",
+      "gap": 2.347710490315832e-13,
+      "active_size": 28,
+      "near_E_1e-8": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.221890201838384,
+        "smin_over_smax": 0.08767547588809865
+      },
+      "near_E_1e-6": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.221890201838384,
+        "smin_over_smax": 0.08767547588809865
+      },
+      "gap_outer_E": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.221890201838384,
+        "smin_over_smax": 0.08767547588809865
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c0.5_strong",
+      "method": "skglm",
+      "gap": 1.6322336382635837e-12,
+      "active_size": 28,
+      "near_E_1e-8": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.221890201838384,
+        "smin_over_smax": 0.08767547588809865
+      },
+      "near_E_1e-6": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.221890201838384,
+        "smin_over_smax": 0.08767547588809865
+      },
+      "gap_outer_E": {
+        "size": 28,
+        "rank": 28,
+        "full_column_rank": true,
+        "smin": 2.221890201838384,
+        "smin_over_smax": 0.08767547588809865
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.0998846338735686e-13,
+      "active_size": 19,
+      "near_E_1e-8": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 2.365153169549483,
+        "smin_over_smax": 0.09175900983957498
+      },
+      "near_E_1e-6": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 2.365153169549483,
+        "smin_over_smax": 0.09175900983957498
+      },
+      "gap_outer_E": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 2.365153169549483,
+        "smin_over_smax": 0.09175900983957498
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 6.98981835170932e-12,
+      "active_size": 19,
+      "near_E_1e-8": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 2.365153169549483,
+        "smin_over_smax": 0.09175900983957498
+      },
+      "near_E_1e-6": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 2.365153169549483,
+        "smin_over_smax": 0.09175900983957498
+      },
+      "gap_outer_E": {
+        "size": 19,
+        "rank": 19,
+        "full_column_rank": true,
+        "smin": 2.365153169549483,
+        "smin_over_smax": 0.09175900983957498
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c1_strong",
+      "method": "sklearn",
+      "gap": 8.24565694902033e-14,
+      "active_size": 21,
+      "near_E_1e-8": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.3938961864520376,
+        "smin_over_smax": 0.09259388932254473
+      },
+      "near_E_1e-6": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.3938961864520376,
+        "smin_over_smax": 0.09259388932254473
+      },
+      "gap_outer_E": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.3938961864520376,
+        "smin_over_smax": 0.09259388932254473
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed506_c1_strong",
+      "method": "skglm",
+      "gap": 4.511926711957824e-13,
+      "active_size": 21,
+      "near_E_1e-8": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.3938961864520376,
+        "smin_over_smax": 0.09259388932254473
+      },
+      "near_E_1e-6": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.3938961864520376,
+        "smin_over_smax": 0.09259388932254473
+      },
+      "gap_outer_E": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.3938961864520376,
+        "smin_over_smax": 0.09259388932254473
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.1790664076774783e-13,
+      "active_size": 34,
+      "near_E_1e-8": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.2655067638630015,
+        "smin_over_smax": 0.09275261019368101
+      },
+      "near_E_1e-6": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.2655067638630015,
+        "smin_over_smax": 0.09275261019368101
+      },
+      "gap_outer_E": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.2655067638630015,
+        "smin_over_smax": 0.09275261019368101
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 7.221340722185042e-11,
+      "active_size": 34,
+      "near_E_1e-8": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.2655067638630015,
+        "smin_over_smax": 0.09275261019368101
+      },
+      "near_E_1e-6": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.2655067638630015,
+        "smin_over_smax": 0.09275261019368101
+      },
+      "gap_outer_E": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.2655067638630015,
+        "smin_over_smax": 0.09275261019368101
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c0.5_strong",
+      "method": "sklearn",
+      "gap": 6.602146707008156e-14,
+      "active_size": 38,
+      "near_E_1e-8": {
+        "size": 38,
+        "rank": 38,
+        "full_column_rank": true,
+        "smin": 1.8619585400452707,
+        "smin_over_smax": 0.07588579057030825
+      },
+      "near_E_1e-6": {
+        "size": 38,
+        "rank": 38,
+        "full_column_rank": true,
+        "smin": 1.8619585400452707,
+        "smin_over_smax": 0.07588579057030825
+      },
+      "gap_outer_E": {
+        "size": 38,
+        "rank": 38,
+        "full_column_rank": true,
+        "smin": 1.8619585400452707,
+        "smin_over_smax": 0.07588579057030825
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c0.5_strong",
+      "method": "skglm",
+      "gap": 2.7692248766465444e-12,
+      "active_size": 38,
+      "near_E_1e-8": {
+        "size": 38,
+        "rank": 38,
+        "full_column_rank": true,
+        "smin": 1.8619585400452707,
+        "smin_over_smax": 0.07588579057030825
+      },
+      "near_E_1e-6": {
+        "size": 38,
+        "rank": 38,
+        "full_column_rank": true,
+        "smin": 1.8619585400452707,
+        "smin_over_smax": 0.07588579057030825
+      },
+      "gap_outer_E": {
+        "size": 38,
+        "rank": 38,
+        "full_column_rank": true,
+        "smin": 1.8619585400452707,
+        "smin_over_smax": 0.07588579057030825
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 2.214715314430599e-14,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.6903768355306266,
+        "smin_over_smax": 0.1844319991210123
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.6903768355306266,
+        "smin_over_smax": 0.1844319991210123
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.6903768355306266,
+        "smin_over_smax": 0.1844319991210123
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 1.952375555638378e-12,
+      "active_size": 13,
+      "near_E_1e-8": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.6903768355306266,
+        "smin_over_smax": 0.1844319991210123
+      },
+      "near_E_1e-6": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.6903768355306266,
+        "smin_over_smax": 0.1844319991210123
+      },
+      "gap_outer_E": {
+        "size": 13,
+        "rank": 13,
+        "full_column_rank": true,
+        "smin": 3.6903768355306266,
+        "smin_over_smax": 0.1844319991210123
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c1_strong",
+      "method": "sklearn",
+      "gap": 7.786511879876735e-14,
+      "active_size": 14,
+      "near_E_1e-8": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 3.457363328449371,
+        "smin_over_smax": 0.1721420688258696
+      },
+      "near_E_1e-6": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 3.457363328449371,
+        "smin_over_smax": 0.1721420688258696
+      },
+      "gap_outer_E": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 3.457363328449371,
+        "smin_over_smax": 0.1721420688258696
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed507_c1_strong",
+      "method": "skglm",
+      "gap": 5.158499945869876e-11,
+      "active_size": 14,
+      "near_E_1e-8": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 3.457363328449371,
+        "smin_over_smax": 0.1721420688258696
+      },
+      "near_E_1e-6": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 3.457363328449371,
+        "smin_over_smax": 0.1721420688258696
+      },
+      "gap_outer_E": {
+        "size": 14,
+        "rank": 14,
+        "full_column_rank": true,
+        "smin": 3.457363328449371,
+        "smin_over_smax": 0.1721420688258696
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.2579200464931434e-13,
+      "active_size": 34,
+      "near_E_1e-8": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.3130232408986036,
+        "smin_over_smax": 0.10935672395830068
+      },
+      "near_E_1e-6": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.3130232408986036,
+        "smin_over_smax": 0.10935672395830068
+      },
+      "gap_outer_E": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.3130232408986036,
+        "smin_over_smax": 0.10935672395830068
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 6.663762981853677e-11,
+      "active_size": 34,
+      "near_E_1e-8": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.3130232408986036,
+        "smin_over_smax": 0.10935672395830068
+      },
+      "near_E_1e-6": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.3130232408986036,
+        "smin_over_smax": 0.10935672395830068
+      },
+      "gap_outer_E": {
+        "size": 34,
+        "rank": 34,
+        "full_column_rank": true,
+        "smin": 2.3130232408986036,
+        "smin_over_smax": 0.10935672395830068
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.4571804453037093e-13,
+      "active_size": 35,
+      "near_E_1e-8": {
+        "size": 35,
+        "rank": 35,
+        "full_column_rank": true,
+        "smin": 2.2166112345683904,
+        "smin_over_smax": 0.10347823270638998
+      },
+      "near_E_1e-6": {
+        "size": 35,
+        "rank": 35,
+        "full_column_rank": true,
+        "smin": 2.2166112345683904,
+        "smin_over_smax": 0.10347823270638998
+      },
+      "gap_outer_E": {
+        "size": 35,
+        "rank": 35,
+        "full_column_rank": true,
+        "smin": 2.2166112345683904,
+        "smin_over_smax": 0.10347823270638998
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c0.5_strong",
+      "method": "skglm",
+      "gap": 2.300634500448418e-11,
+      "active_size": 35,
+      "near_E_1e-8": {
+        "size": 35,
+        "rank": 35,
+        "full_column_rank": true,
+        "smin": 2.2166112345683904,
+        "smin_over_smax": 0.10347823270638998
+      },
+      "near_E_1e-6": {
+        "size": 35,
+        "rank": 35,
+        "full_column_rank": true,
+        "smin": 2.2166112345683904,
+        "smin_over_smax": 0.10347823270638998
+      },
+      "gap_outer_E": {
+        "size": 35,
+        "rank": 35,
+        "full_column_rank": true,
+        "smin": 2.2166112345683904,
+        "smin_over_smax": 0.10347823270638998
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.8808721742474995e-14,
+      "active_size": 16,
+      "near_E_1e-8": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 4.018668277485653,
+        "smin_over_smax": 0.2410198399125774
+      },
+      "near_E_1e-6": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 4.018668277485653,
+        "smin_over_smax": 0.2410198399125774
+      },
+      "gap_outer_E": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 4.018668277485653,
+        "smin_over_smax": 0.2410198399125774
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 7.161420803447354e-13,
+      "active_size": 16,
+      "near_E_1e-8": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 4.018668277485653,
+        "smin_over_smax": 0.2410198399125774
+      },
+      "near_E_1e-6": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 4.018668277485653,
+        "smin_over_smax": 0.2410198399125774
+      },
+      "gap_outer_E": {
+        "size": 16,
+        "rank": 16,
+        "full_column_rank": true,
+        "smin": 4.018668277485653,
+        "smin_over_smax": 0.2410198399125774
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c1_strong",
+      "method": "sklearn",
+      "gap": 2.7831789866063765e-14,
+      "active_size": 21,
+      "near_E_1e-8": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 3.501790392671275,
+        "smin_over_smax": 0.18982751447704604
+      },
+      "near_E_1e-6": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 3.501790392671275,
+        "smin_over_smax": 0.18982751447704604
+      },
+      "gap_outer_E": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 3.501790392671275,
+        "smin_over_smax": 0.18982751447704604
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed508_c1_strong",
+      "method": "skglm",
+      "gap": 3.0841599141579515e-12,
+      "active_size": 21,
+      "near_E_1e-8": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 3.501790392671275,
+        "smin_over_smax": 0.18982751447704604
+      },
+      "near_E_1e-6": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 3.501790392671275,
+        "smin_over_smax": 0.18982751447704604
+      },
+      "gap_outer_E": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 3.501790392671275,
+        "smin_over_smax": 0.18982751447704604
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c0.5_mixed_weak",
+      "method": "sklearn",
+      "gap": 1.2936100269358264e-13,
+      "active_size": 42,
+      "near_E_1e-8": {
+        "size": 42,
+        "rank": 42,
+        "full_column_rank": true,
+        "smin": 1.4110591884895791,
+        "smin_over_smax": 0.0422412213063001
+      },
+      "near_E_1e-6": {
+        "size": 42,
+        "rank": 42,
+        "full_column_rank": true,
+        "smin": 1.4110591884895791,
+        "smin_over_smax": 0.0422412213063001
+      },
+      "gap_outer_E": {
+        "size": 42,
+        "rank": 42,
+        "full_column_rank": true,
+        "smin": 1.4110591884895791,
+        "smin_over_smax": 0.0422412213063001
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c0.5_mixed_weak",
+      "method": "skglm",
+      "gap": 4.227172125571244e-12,
+      "active_size": 42,
+      "near_E_1e-8": {
+        "size": 42,
+        "rank": 42,
+        "full_column_rank": true,
+        "smin": 1.4110591884895791,
+        "smin_over_smax": 0.0422412213063001
+      },
+      "near_E_1e-6": {
+        "size": 42,
+        "rank": 42,
+        "full_column_rank": true,
+        "smin": 1.4110591884895791,
+        "smin_over_smax": 0.0422412213063001
+      },
+      "gap_outer_E": {
+        "size": 42,
+        "rank": 42,
+        "full_column_rank": true,
+        "smin": 1.4110591884895791,
+        "smin_over_smax": 0.0422412213063001
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c0.5_strong",
+      "method": "sklearn",
+      "gap": 1.1113855066926391e-13,
+      "active_size": 32,
+      "near_E_1e-8": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.271016433550054,
+        "smin_over_smax": 0.07868000776072068
+      },
+      "near_E_1e-6": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.271016433550054,
+        "smin_over_smax": 0.07868000776072068
+      },
+      "gap_outer_E": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.271016433550054,
+        "smin_over_smax": 0.07868000776072068
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c0.5_strong",
+      "method": "skglm",
+      "gap": 9.887473848100086e-11,
+      "active_size": 32,
+      "near_E_1e-8": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.271016433550054,
+        "smin_over_smax": 0.07868000776072068
+      },
+      "near_E_1e-6": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.271016433550054,
+        "smin_over_smax": 0.07868000776072068
+      },
+      "gap_outer_E": {
+        "size": 32,
+        "rank": 32,
+        "full_column_rank": true,
+        "smin": 2.271016433550054,
+        "smin_over_smax": 0.07868000776072068
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c1_mixed_weak",
+      "method": "sklearn",
+      "gap": 9.053793124980652e-14,
+      "active_size": 25,
+      "near_E_1e-8": {
+        "size": 25,
+        "rank": 25,
+        "full_column_rank": true,
+        "smin": 2.193339499161479,
+        "smin_over_smax": 0.07121436487001485
+      },
+      "near_E_1e-6": {
+        "size": 25,
+        "rank": 25,
+        "full_column_rank": true,
+        "smin": 2.193339499161479,
+        "smin_over_smax": 0.07121436487001485
+      },
+      "gap_outer_E": {
+        "size": 25,
+        "rank": 25,
+        "full_column_rank": true,
+        "smin": 2.193339499161479,
+        "smin_over_smax": 0.07121436487001485
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c1_mixed_weak",
+      "method": "skglm",
+      "gap": 2.9901631531413097e-12,
+      "active_size": 25,
+      "near_E_1e-8": {
+        "size": 25,
+        "rank": 25,
+        "full_column_rank": true,
+        "smin": 2.193339499161479,
+        "smin_over_smax": 0.07121436487001485
+      },
+      "near_E_1e-6": {
+        "size": 25,
+        "rank": 25,
+        "full_column_rank": true,
+        "smin": 2.193339499161479,
+        "smin_over_smax": 0.07121436487001485
+      },
+      "gap_outer_E": {
+        "size": 25,
+        "rank": 25,
+        "full_column_rank": true,
+        "smin": 2.193339499161479,
+        "smin_over_smax": 0.07121436487001485
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c1_strong",
+      "method": "sklearn",
+      "gap": 1.3470684778870279e-13,
+      "active_size": 21,
+      "near_E_1e-8": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.5146110959193435,
+        "smin_over_smax": 0.08970904080073751
+      },
+      "near_E_1e-6": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.5146110959193435,
+        "smin_over_smax": 0.08970904080073751
+      },
+      "gap_outer_E": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.5146110959193435,
+        "smin_over_smax": 0.08970904080073751
+      }
+    },
+    {
+      "source": "gene",
+      "target": "gene_seed509_c1_strong",
+      "method": "skglm",
+      "gap": 3.2873232221779157e-13,
+      "active_size": 21,
+      "near_E_1e-8": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.5146110959193435,
+        "smin_over_smax": 0.08970904080073751
+      },
+      "near_E_1e-6": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.5146110959193435,
+        "smin_over_smax": 0.08970904080073751
+      },
+      "gap_outer_E": {
+        "size": 21,
+        "rank": 21,
+        "full_column_rank": true,
+        "smin": 2.5146110959193435,
+        "smin_over_smax": 0.08970904080073751
+      }
+    }
+  ]
+}

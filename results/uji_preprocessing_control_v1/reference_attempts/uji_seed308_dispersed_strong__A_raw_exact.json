@@ -1,0 +1,11 @@
+{
+  "control_id": "uji_seed308_dispersed_strong__A_raw_exact",
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
+  "dataset_hash": "274037969b26ed787680dc9be2b7aaa462f82e1b1a530e63970e509567ac6e82",
+  "invocation": "1793197727953559125",
+  "reserved_public_reference_calls": 2,
+  "state": "completed",
+  "actual_library_fit_attempts": 2,
+  "reference_sha256": "8c8669c6d89579a02872ddf7e9cf66fd224d9d51fa60a861aa2f2808e88a689b"
+}

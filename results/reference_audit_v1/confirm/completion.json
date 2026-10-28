@@ -1,0 +1,278 @@
+{
+  "stage": "confirm",
+  "external_stage_label": "external_confirm",
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "expected_targets": 72,
+  "recorded_targets": 72,
+  "expected_public_reference_calls": 144,
+  "stored_public_reference_calls": 144,
+  "stored_actual_library_fit_attempts": 149,
+  "new_reference_targets_this_invocation": 72,
+  "reused_reference_targets_this_invocation": 0,
+  "new_public_reference_calls_this_invocation": 144,
+  "new_actual_library_fit_attempts_this_invocation": 149,
+  "accuracy_eligible_targets": 72,
+  "consensus_accepted_targets": 72,
+  "failure_reason_counts": {},
+  "seed_outcomes": [
+    {
+      "source": "gene",
+      "seed": 501,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 502,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 503,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 504,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 505,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 506,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 507,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 508,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "gene",
+      "seed": 509,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 401,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 402,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 403,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 404,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 405,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 406,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 407,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 408,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    },
+    {
+      "source": "news",
+      "seed": 409,
+      "planned_target_count": 4,
+      "observed_target_count": 4,
+      "accuracy_eligible_targets": 4,
+      "primary_state": "no_event",
+      "states_by_delta": {
+        "0.02": "no_event",
+        "0.0": "no_event",
+        "0.01": "no_event",
+        "0.05": "no_event"
+      }
+    }
+  ],
+  "budget_stop": false,
+  "prior_recorded_wall_sec": 5.85310438927263,
+  "wall_sec_this_invocation": 14.60627575404942,
+  "complete_grid": true,
+  "interpretation": "Primary F1 contrasts use all accuracy-eligible targets, not only consensus accepted. Seeds are source-specific paired replication units; gene has one fixed design. No group analysis or optimizer trajectories were run."
+}

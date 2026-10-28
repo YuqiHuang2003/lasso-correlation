@@ -1,0 +1,7 @@
+# Scientific provenance uses byte-level hashes. Preserve original line endings,
+# including CSV files produced with CRLF, on every platform.
+* -text
+*.py diff=python
+*.pdf binary
+*.png binary
+*.npz binary

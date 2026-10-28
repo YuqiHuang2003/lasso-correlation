@@ -1,0 +1,226 @@
+{
+  "reference_accepted": true,
+  "status": "numerical_reference_agreement",
+  "both_pass_common_precision": true,
+  "both_within_observed_budget": true,
+  "coefficient_linf_difference": 2.5584858884264428e-11,
+  "normalized_primal_difference": 1.9682236263078836e-16,
+  "by_support_threshold": {
+    "1e-06": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 33,
+      "skglm_nnz": 33
+    },
+    "0.0001": {
+      "same_support": true,
+      "support_symmetric_difference": 0,
+      "same_thresholded_signs": true,
+      "sklearn_nnz": 33,
+      "skglm_nnz": 33
+    }
+  },
+  "interpretation": "Agreement of two high-accuracy numerical implementations; not a proof of exact minimizer support or statistical recovery.",
+  "target_id": "gene_seed501_c0.5_mixed_weak",
+  "params": {
+    "source": "gene",
+    "seed": 501,
+    "amplitude": "mixed_weak",
+    "c": 0.5
+  },
+  "source": "gene",
+  "seed": 501,
+  "amplitude": "mixed_weak",
+  "c": 0.5,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "dataset_hash": "0826f9ac7cc97bf22e6f2017103459f70034b9ae0ee4635ffd9dccbf9f17598f",
+  "lambda": 0.24821482422710905,
+  "sklearn": {
+    "method": "sklearn_cyclic_cd",
+    "certificate": {
+      "primal": 1.1281472387441889,
+      "dual": 1.1281472387440403,
+      "gap": 1.4854784069484595e-13,
+      "raw_gap": 1.4854784069484595e-13,
+      "normalized_gap": 1.316741605999974e-13,
+      "dual_feasibility": 0.9999999999999961,
+      "kkt_inf": 1.0000333894311098e-13
+    },
+    "elapsed_sec": 0.20452938042581081,
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "status": "converged",
+    "iterations": 510,
+    "iteration_unit": "complete sklearn coordinate epochs",
+    "library_tol": 1e-13,
+    "library_max_iter": 500000,
+    "time_limit_mode": "observed after return; no interruption within sklearn fit",
+    "warnings": []
+  },
+  "skglm": {
+    "method": "skglm",
+    "history": [
+      {
+        "primal": 3.1355155666125167,
+        "dual": 0.7565266459097436,
+        "gap": 2.3789889207027732,
+        "raw_gap": 2.3789889207027732,
+        "normalized_gap": 0.7587233646787268,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.6766365862908068,
+        "iteration": 0,
+        "attempt": 0,
+        "time": 0.0022110817953944206
+      },
+      {
+        "primal": 1.1281472387441887,
+        "dual": 1.1281472387353157,
+        "gap": 8.872902412804251e-12,
+        "raw_gap": 8.872902412804251e-12,
+        "normalized_gap": 7.865021610726304e-12,
+        "dual_feasibility": 0.9999999999999959,
+        "kkt_inf": 4.9135695512347866e-12,
+        "iteration": 13,
+        "attempt": 1,
+        "time": 0.030666564591228962
+      }
+    ],
+    "status": "converged",
+    "certificate": {
+      "primal": 1.1281472387441887,
+      "dual": 1.1281472387353157,
+      "gap": 8.872902412804251e-12,
+      "raw_gap": 8.872902412804251e-12,
+      "normalized_gap": 7.865021610726304e-12,
+      "dual_feasibility": 0.9999999999999959,
+      "kkt_inf": 4.9135695512347866e-12
+    },
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "elapsed_sec": 0.030699115246534348,
+    "diagnostics_sec": 0.0010426854714751244,
+    "iterations": 13,
+    "iteration_unit": "outer working-set iterations across all attempts",
+    "attempts": [
+      {
+        "attempt": 1,
+        "library_tol": 1e-10,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.02793266251683235,
+        "elapsed_sec_including_posterior_diagnostics": 0.028452912345528603,
+        "cumulative_elapsed_sec": 0.030666564591228962,
+        "outer_working_set_iterations": 13,
+        "library_returned_stop_crit": 2.762567952174777e-12,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          1.453122073116797,
+          1.2166423961041126,
+          1.147239076640265,
+          1.1304527726577622,
+          1.1283488930364995,
+          1.1281564170295832,
+          1.1281472541841417,
+          1.128147239046865,
+          1.1281472387461178,
+          1.1281472387442706,
+          1.1281472387441553,
+          1.128147238744155,
+          1.1281472387433966
+        ],
+        "normalized_gap": 7.865021610726304e-12,
+        "passed_common_certificate": true
+      }
+    ],
+    "attempt_count": 1,
+    "library_tolerances": [
+      1e-10,
+      1e-12,
+      1e-14
+    ],
+    "library_max_iter": 100,
+    "library_max_epochs": 50000,
+    "time_limit_sec": 20.0,
+    "time_limit_mode": "checked between/after fits; no interruption within an in-progress library fit",
+    "history_sampling": "initial point and fit endpoints only; no internal time-to-accuracy curve",
+    "threshold_curve_comparable": false,
+    "check_every_compatibility_input": 5,
+    "L_compatibility_input_used": false,
+    "jit_warmup_sec": 0.0,
+    "warmup_metadata": {
+      "performed": false,
+      "elapsed_sec": 0.0,
+      "initial_warmup_sec": 3.904064695350826,
+      "versions": {
+        "skglm": "0.5",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "scikit-learn": "1.9.0"
+      },
+      "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+      "array_signature": "float64 Fortran-contiguous X, contiguous y",
+      "method": "skglm AndersonCD with working sets and Anderson acceleration"
+    },
+    "objective_increases": null
+  },
+  "geometry": {
+    "sklearn": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.05806690875370939,
+        "active_gram_max_eigenvalue": 10.941509388062716,
+        "active_gram_numerical_rank": 33,
+        "active_gram_rank_cutoff": 8.017360326874493e-14,
+        "active_gram_condition": 188.42934164914985,
+        "beta_min": 0.003259398826155803,
+        "active_kkt_violation": 1.0000333894311098e-13,
+        "nnz": 33,
+        "inactive_kkt_margin": 0.00024400734062873797
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.05806690875370939,
+        "active_gram_max_eigenvalue": 10.941509388062716,
+        "active_gram_numerical_rank": 33,
+        "active_gram_rank_cutoff": 8.017360326874493e-14,
+        "active_gram_condition": 188.42934164914985,
+        "beta_min": 0.003259398826155803,
+        "active_kkt_violation": 1.0000333894311098e-13,
+        "nnz": 33,
+        "inactive_kkt_margin": 0.00024400734062873797
+      }
+    },
+    "skglm": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.05806690875370939,
+        "active_gram_max_eigenvalue": 10.941509388062716,
+        "active_gram_numerical_rank": 33,
+        "active_gram_rank_cutoff": 8.017360326874493e-14,
+        "active_gram_condition": 188.42934164914985,
+        "beta_min": 0.0032593988379677,
+        "active_kkt_violation": 4.9135695512347866e-12,
+        "nnz": 33,
+        "inactive_kkt_margin": 0.000244007335474139
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.05806690875370939,
+        "active_gram_max_eigenvalue": 10.941509388062716,
+        "active_gram_numerical_rank": 33,
+        "active_gram_rank_cutoff": 8.017360326874493e-14,
+        "active_gram_condition": 188.42934164914985,
+        "beta_min": 0.0032593988379677,
+        "active_kkt_violation": 4.9135695512347866e-12,
+        "nnz": 33,
+        "inactive_kkt_margin": 0.000244007335474139
+      }
+    }
+  },
+  "geometry_diagnostics_sec_outside_fit_timers": 0.002016204409301281,
+  "reported_reference_calls": 2,
+  "actual_library_fit_attempts": 2,
+  "coefficient_path": "reference_coefficients/gene_seed501_c0.5_mixed_weak.npz",
+  "coefficient_sha256": "b609af7fc0c6dd2290d17fb1f59c161f99ce7f2e2175f0e9469cd051e8f99092",
+  "coefficient_write_sec": 0.0026307739317417145
+}

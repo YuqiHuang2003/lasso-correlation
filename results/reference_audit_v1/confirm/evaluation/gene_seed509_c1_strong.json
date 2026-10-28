@@ -1,0 +1,252 @@
+{
+  "accuracy_eligible": true,
+  "reference_accepted": true,
+  "qualification_failure_reasons": {
+    "accuracy": [],
+    "consensus": [],
+    "by_reference": {
+      "sklearn": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.20129705592989922,
+        "normalized_gap": 1.3470684778870279e-13
+      },
+      "skglm": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.026827066205441952,
+        "normalized_gap": 3.2873232221779157e-13
+      }
+    }
+  },
+  "scores_by_tau": {
+    "1e-06": {
+      "sklearn": {
+        "tp": 2,
+        "fp": 19,
+        "fn": 3,
+        "nnz": 21,
+        "precision": 0.09523809523809523,
+        "recall": 0.4,
+        "f1": 0.15384615384615385,
+        "f1_exact": {
+          "numerator": 2,
+          "denominator": 13
+        },
+        "support_indices": [
+          226,
+          569,
+          1566,
+          1625,
+          2234,
+          2560,
+          2583,
+          2686,
+          3065,
+          3439,
+          3457,
+          3538,
+          3883,
+          4850,
+          5605,
+          5918,
+          6051,
+          6063,
+          6666,
+          6911,
+          7075
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 22,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 2,
+        "fp": 19,
+        "fn": 3,
+        "nnz": 21,
+        "precision": 0.09523809523809523,
+        "recall": 0.4,
+        "f1": 0.15384615384615385,
+        "f1_exact": {
+          "numerator": 2,
+          "denominator": 13
+        },
+        "support_indices": [
+          226,
+          569,
+          1566,
+          1625,
+          2234,
+          2560,
+          2583,
+          2686,
+          3065,
+          3439,
+          3457,
+          3538,
+          3883,
+          4850,
+          5605,
+          5918,
+          6051,
+          6063,
+          6666,
+          6911,
+          7075
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 22,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.15384615384615385,
+        0.15384615384615385
+      ]
+    },
+    "0.0001": {
+      "sklearn": {
+        "tp": 2,
+        "fp": 18,
+        "fn": 3,
+        "nnz": 20,
+        "precision": 0.1,
+        "recall": 0.4,
+        "f1": 0.16,
+        "f1_exact": {
+          "numerator": 4,
+          "denominator": 25
+        },
+        "support_indices": [
+          226,
+          569,
+          1566,
+          1625,
+          2234,
+          2583,
+          2686,
+          3065,
+          3439,
+          3457,
+          3538,
+          3883,
+          4850,
+          5605,
+          5918,
+          6051,
+          6063,
+          6666,
+          6911,
+          7075
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 21,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 2,
+        "fp": 18,
+        "fn": 3,
+        "nnz": 20,
+        "precision": 0.1,
+        "recall": 0.4,
+        "f1": 0.16,
+        "f1_exact": {
+          "numerator": 4,
+          "denominator": 25
+        },
+        "support_indices": [
+          226,
+          569,
+          1566,
+          1625,
+          2234,
+          2583,
+          2686,
+          3065,
+          3439,
+          3457,
+          3538,
+          3883,
+          4850,
+          5605,
+          5918,
+          6051,
+          6063,
+          6666,
+          6911,
+          7075
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 21,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.16,
+        0.16
+      ]
+    }
+  },
+  "primary_support_threshold": 1e-06,
+  "primary_absolute_f1_difference": 0.0,
+  "primary_delta_exceeded": false,
+  "prediction_difference_rmse": 1.345400229197776e-12,
+  "l1_norm_difference_abs": 5.657696533489798e-13,
+  "evaluation_sec_outside_reference_timers": 0.0011454634368419647,
+  "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
+  "target_id": "gene_seed509_c1_strong",
+  "params": {
+    "source": "gene",
+    "seed": 509,
+    "amplitude": "strong",
+    "c": 1.0
+  },
+  "source": "gene",
+  "seed": 509,
+  "amplitude": "strong",
+  "c": 1.0,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "dataset_hash": "d39c0ae170110f5dc8e4bed7fa1e34a03ee2081d68fb935ac8e891f8ae79bef9",
+  "input_hashes": {
+    "dataset_sha256": "039391b79daf45dc1b260b6887bb15a0711b233e326334fda4739a058df76b32",
+    "reference_json_sha256": "f888078aee76fd7d4b8229142f4670ef1d2beba13b53b8d6b057b22b3a99f099",
+    "reference_coefficients_sha256": "0006a9332eefa36fa75994d1ac53d04cff6bf30ae0a15af79541ef233af27039"
+  }
+}

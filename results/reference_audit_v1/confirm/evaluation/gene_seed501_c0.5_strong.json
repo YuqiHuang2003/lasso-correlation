@@ -1,0 +1,282 @@
+{
+  "accuracy_eligible": true,
+  "reference_accepted": true,
+  "qualification_failure_reasons": {
+    "accuracy": [],
+    "consensus": [],
+    "by_reference": {
+      "sklearn": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.05843168683350086,
+        "normalized_gap": 8.21989822125178e-14
+      },
+      "skglm": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.023973057977855206,
+        "normalized_gap": 8.769180831801313e-13
+      }
+    }
+  },
+  "scores_by_tau": {
+    "1e-06": {
+      "sklearn": {
+        "tp": 3,
+        "fp": 25,
+        "fn": 2,
+        "nnz": 28,
+        "precision": 0.10714285714285714,
+        "recall": 0.6,
+        "f1": 0.18181818181818182,
+        "f1_exact": {
+          "numerator": 2,
+          "denominator": 11
+        },
+        "support_indices": [
+          85,
+          276,
+          823,
+          926,
+          1132,
+          1184,
+          1204,
+          1645,
+          1914,
+          2366,
+          2456,
+          2648,
+          2831,
+          3274,
+          3310,
+          3382,
+          3529,
+          3829,
+          4803,
+          4808,
+          5097,
+          5315,
+          5348,
+          5618,
+          5794,
+          5828,
+          6430,
+          6573
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 27,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 3,
+        "fp": 25,
+        "fn": 2,
+        "nnz": 28,
+        "precision": 0.10714285714285714,
+        "recall": 0.6,
+        "f1": 0.18181818181818182,
+        "f1_exact": {
+          "numerator": 2,
+          "denominator": 11
+        },
+        "support_indices": [
+          85,
+          276,
+          823,
+          926,
+          1132,
+          1184,
+          1204,
+          1645,
+          1914,
+          2366,
+          2456,
+          2648,
+          2831,
+          3274,
+          3310,
+          3382,
+          3529,
+          3829,
+          4803,
+          4808,
+          5097,
+          5315,
+          5348,
+          5618,
+          5794,
+          5828,
+          6430,
+          6573
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 27,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.18181818181818182,
+        0.18181818181818182
+      ]
+    },
+    "0.0001": {
+      "sklearn": {
+        "tp": 3,
+        "fp": 25,
+        "fn": 2,
+        "nnz": 28,
+        "precision": 0.10714285714285714,
+        "recall": 0.6,
+        "f1": 0.18181818181818182,
+        "f1_exact": {
+          "numerator": 2,
+          "denominator": 11
+        },
+        "support_indices": [
+          85,
+          276,
+          823,
+          926,
+          1132,
+          1184,
+          1204,
+          1645,
+          1914,
+          2366,
+          2456,
+          2648,
+          2831,
+          3274,
+          3310,
+          3382,
+          3529,
+          3829,
+          4803,
+          4808,
+          5097,
+          5315,
+          5348,
+          5618,
+          5794,
+          5828,
+          6430,
+          6573
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 27,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 3,
+        "fp": 25,
+        "fn": 2,
+        "nnz": 28,
+        "precision": 0.10714285714285714,
+        "recall": 0.6,
+        "f1": 0.18181818181818182,
+        "f1_exact": {
+          "numerator": 2,
+          "denominator": 11
+        },
+        "support_indices": [
+          85,
+          276,
+          823,
+          926,
+          1132,
+          1184,
+          1204,
+          1645,
+          1914,
+          2366,
+          2456,
+          2648,
+          2831,
+          3274,
+          3310,
+          3382,
+          3529,
+          3829,
+          4803,
+          4808,
+          5097,
+          5315,
+          5348,
+          5618,
+          5794,
+          5828,
+          6430,
+          6573
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 27,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.18181818181818182,
+        0.18181818181818182
+      ]
+    }
+  },
+  "primary_support_threshold": 1e-06,
+  "primary_absolute_f1_difference": 0.0,
+  "primary_delta_exceeded": false,
+  "prediction_difference_rmse": 1.5323604451811358e-12,
+  "l1_norm_difference_abs": 7.744915819785092e-13,
+  "evaluation_sec_outside_reference_timers": 0.0011518001556396484,
+  "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
+  "target_id": "gene_seed501_c0.5_strong",
+  "params": {
+    "source": "gene",
+    "seed": 501,
+    "amplitude": "strong",
+    "c": 0.5
+  },
+  "source": "gene",
+  "seed": 501,
+  "amplitude": "strong",
+  "c": 0.5,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "dataset_hash": "1e3aeb2b410c41a692293324aa6bac92376fe3dd6a02dedc17c7fe076d2ab72a",
+  "input_hashes": {
+    "dataset_sha256": "f62fc3df8090053cf2d636497373624e39fc1f18cefa5818b029108c6678a087",
+    "reference_json_sha256": "1ea71040e3d666592ba192fbd71f44ea09e40a7c69f01cca7b6ecfd3457f0aab",
+    "reference_coefficients_sha256": "422e1f2e7440b000ec84eac3309b5f24f227aef4505890724f173858333b921d"
+  }
+}

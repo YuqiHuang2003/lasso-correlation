@@ -1,0 +1,6 @@
+# Optional modern context baseline; base scientific packages are pinned in requirements.txt.
+# This file intentionally contains only these three packages so --no-deps --target
+# installation can share the unchanged NumPy/SciPy/scikit-learn environment.
+skglm==0.5
+numba==0.68.1
+llvmlite==0.50.0

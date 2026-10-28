@@ -1,0 +1,40 @@
+{
+  "pages": 4,
+  "bytes": 191724,
+  "pdf_sha256": "fe00db0f2d90076ac758951714dc4e26c8b81f8f8739998e24d572922ac2ad55",
+  "builder_sha256": "2e5232c77ea6e7dbaecabec7e5a7b0b88cee32934ae1f3a54114be57e873436a",
+  "identity_complete": false,
+  "page_info": [
+    {
+      "page": 1,
+      "text_characters": 794
+    },
+    {
+      "page": 2,
+      "text_characters": 595
+    },
+    {
+      "page": 3,
+      "text_characters": 1146
+    },
+    {
+      "page": 4,
+      "text_characters": 1744
+    }
+  ],
+  "analysis_sha256": {
+    "pilot": "af8003696af4261ca4a7e76eab876f08b0175f061ef931a83864eaa77bc70f6d",
+    "confirm": "7569a7c1bd523de496b2e2ed45c58c01b7a7e1035432a249bdacb181a28c7cf1"
+  },
+  "analysis_verification_sha256": "02a8541a05fbed575f28de3dff26ebf43d86a51de49ca614c7c1524032b200d1",
+  "control_verification_sha256": "b9edb998255100d3520d51ae8b37334caff40a418689e921f9c4e6f4ad1b4bb2",
+  "renderer": "ReportLab/Matplotlib; no TeX compilation",
+  "optimization_calls": 0,
+  "visual_reviewed_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "observed_layout_overflow": false
+}

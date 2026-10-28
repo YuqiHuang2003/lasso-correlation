@@ -1,0 +1,14 @@
+{
+  "passed": 26,
+  "result": "..........................                                               [100%]\n26 passed in 5.50s",
+  "log_sha256": "95014ed4d43ee8a0902a3499abfea25eb5995f22714483237d66cd771a99dbcb",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1 PYTHONPATH=src .venv/bin/python -m pytest -q",
+  "scope": "14 basic-solver + 4 original data + 5 v2 data + 3 modern-solver tests",
+  "numerical_files": {
+    "src/lasso_study/solvers.py": "f15b8164dd3bfc44a4839217831df798a6266227d29958857344eeebf502fbc7",
+    "src/lasso_study/data.py": "d5e3cd64f3c32459814cd75fda0d03f3070b335574fd4ea379447bc3f99a4c70",
+    "src/lasso_study/data_v2.py": "6b44619f839ade5e7f11cce93b2242b2dbb2dcfb8d6b930b1d63f9321ac462f7",
+    "src/lasso_study/modern_solver.py": "12daf0ddb15866a3e81ba4e7ca2add66f73162bddca8dc37a91e9ff621b0fc4b",
+    "src/lasso_study/cd_kernel.c": "72276caeefa784246f1d4254816786fd198dbabd29c3f538e5a5f3401ad357a2"
+  }
+}

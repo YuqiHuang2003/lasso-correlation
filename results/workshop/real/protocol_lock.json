@@ -1,0 +1,69 @@
+{
+  "locked_at": "2026-10-28T19:52:18.070231+08:00",
+  "stage": "real",
+  "numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
+  "config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
+  "targets": 40,
+  "trajectories": 80,
+  "independent_seeds": [
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309
+  ],
+  "pilot_results_already_inspected": true,
+  "decision": "One independent confirmation and one semisynthetic real-design arm; no further automatic grid expansion.",
+  "primary_support_threshold": 1e-06,
+  "sensitivity_support_threshold": 0.0001,
+  "primary_comparisons": [
+    {
+      "gap": 0.01,
+      "endpoints": [
+        "same TP/FP/FN as reference",
+        "same variable identities as reference"
+      ]
+    },
+    {
+      "loose_gap": 0.0001,
+      "tight_gap": 1e-06,
+      "endpoints": [
+        "observed support changes",
+        "additional observed seconds and fraction"
+      ]
+    }
+  ],
+  "other_thresholds": "1e-8/1e-10 continue observing, not independent replications",
+  "continue_condition": "Replicable endpoint difference or useful quantified domain of adequacy beyond tighter-is-more-expensive; no claim of new guarantee.",
+  "all_reference_uncertainty_and_timeouts_retained": true,
+  "provenance": {
+    "base_pilot_numerical_signature": "2040adb736ce524eb3cd8346ca160752e1dfd76731aa02aa652578cc470f5b2f",
+    "followup_source_sha256": "aa8dec606c5adb31868a6d974a031cb62163afd99886229e75ab0c6861ad877b",
+    "config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
+    "base_provenance": {
+      "source_hashes": {
+        "src/lasso_study/data.py": "d5e3cd64f3c32459814cd75fda0d03f3070b335574fd4ea379447bc3f99a4c70",
+        "src/lasso_study/data_v2.py": "6b44619f839ade5e7f11cce93b2242b2dbb2dcfb8d6b930b1d63f9321ac462f7",
+        "src/lasso_study/workshop_data.py": "96af8bd1dfba55e0b9a5611da9804346ffc32057c566490960655ce14729fdb7",
+        "src/lasso_study/solvers.py": "f15b8164dd3bfc44a4839217831df798a6266227d29958857344eeebf502fbc7",
+        "src/lasso_study/cd_kernel.c": "72276caeefa784246f1d4254816786fd198dbabd29c3f538e5a5f3401ad357a2",
+        "src/lasso_study/modern_solver.py": "12daf0ddb15866a3e81ba4e7ca2add66f73162bddca8dc37a91e9ff621b0fc4b",
+        "scripts/run_workshop.py": "8836a9054023eb79ee2d75e8d2def6a0186f6d66f3633e751eb1affabef92775"
+      },
+      "dependency_versions": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "scikit-learn": "1.9.0",
+        "skglm": "0.5",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "threadpoolctl": "3.6.0"
+      }
+    }
+  }
+}

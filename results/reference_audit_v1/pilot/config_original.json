@@ -1,0 +1,29 @@
+{
+  "protocol_version": "reference-audit-v1",
+  "protocol_path": "docs/reference_audit_protocol_v1.md",
+  "purpose": "Dual-reference qualification and recovery-score consequences on new external designs; numerical consensus is not proof of exact support or uniqueness",
+  "sources": {
+    "news": {"source_seed": 0, "pilot_seeds": [400], "confirm_seeds": [401, 402, 403, 404, 405, 406, 407, 408, 409]},
+    "gene": {"source_seed": 0, "pilot_seeds": [500], "confirm_seeds": [501, 502, 503, 504, 505, 506, 507, 508, 509]}
+  },
+  "news_n": 1000, "gene_n": 72, "sparsity": 5,
+  "noise_std": 1.0, "weak_amplitude": 0.25, "weak_every": 4,
+  "c_values": [0.5, 1.0], "amplitudes": ["strong", "mixed_weak"],
+  "expected_targets": {"pilot": 8, "confirm": 72},
+  "expected_public_reference_calls": {"pilot": 16, "confirm": 144},
+  "references": {
+    "normalized_gap_tol": 1e-10, "time_limit": 20.0,
+    "sklearn_tol": 1e-13, "sklearn_max_iter": 500000,
+    "modern": {"library_max_iter": 100, "max_epochs": 50000, "library_tolerances": [1e-10, 1e-12, 1e-14]},
+    "coef_linf_agreement_tol": 1e-7, "normalized_objective_agreement_tol": 1e-9
+  },
+  "support_threshold": 1e-6, "support_thresholds": [1e-6, 1e-4],
+  "primary_delta": 0.02, "delta_sensitivity": [0.0, 0.01, 0.05],
+  "delta_comparison": "strict greater-than using exact Fraction F1 values and Fraction(str(delta))",
+  "oracle_c_tie_tolerance": 1e-12,
+  "threads": 1,
+  "additional_wall_budget_sec": 7200,
+  "wall_budget_scope": "Combined recorded invocations under this frozen configuration; checked between targets, not a hard interruption of a library fit",
+  "source_scope": "News is row-sampled from one fixed seed-0 training design; gene keeps all 72 rows, with independent support/sign/noise conditional on one fixed design. Sources are not difficulty matched or a random dataset sample.",
+  "grouping_scope": "No grouping or dense p-by-p Gram is computed in this runner. Any X-only group analysis is separate and retains original-variable scores."
+}

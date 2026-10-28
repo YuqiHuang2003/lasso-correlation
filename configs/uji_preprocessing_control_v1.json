@@ -1,0 +1,24 @@
+{
+  "protocol_version": "uji-preprocessing-control-v1",
+  "protocol_path": "docs/uji_preprocessing_control_protocol_v1.md",
+  "baseline_path": "results/workshop/real",
+  "baseline_config_path": "configs/workshop_real.json",
+  "raw_uji_csv": "data/benchmarks/ujiindoorloc/trainingData.csv",
+  "selected_seeds": [300, 305, 308],
+  "layouts": ["dispersed", "clustered"], "amplitudes": ["strong", "mixed_weak"],
+  "arms": ["baseline", "final_float64_exact", "A_raw_exact", "B_near"],
+  "near_relative_residual_tolerance": 1e-12,
+  "group_scan_block_size": 256,
+  "support_thresholds": [1e-6, 1e-4],
+  "references": {
+    "normalized_gap_tol": 1e-10, "time_limit": 20.0,
+    "sklearn_tol": 1e-13, "sklearn_max_iter": 500000,
+    "modern": {"library_max_iter": 100, "max_epochs": 50000, "library_tolerances": [1e-10, 1e-12, 1e-14]},
+    "coef_linf_agreement_tol": 1e-7, "normalized_objective_agreement_tol": 1e-9
+  },
+  "expected_old_targets": 12,
+  "maximum_new_public_reference_calls": 48,
+  "wall_budget_sec": 600,
+  "threads": 1,
+  "interpretation": "Post-hoc mechanism control on already inspected seeds; old-coordinate and reduced-coordinate F1 are different tasks; no claim of exact problem equivalence"
+}

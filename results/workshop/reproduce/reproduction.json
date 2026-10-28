@@ -1,0 +1,279 @@
+{
+  "stage": "reproduce",
+  "source_stage": "confirm",
+  "passed": true,
+  "started_at": "2026-10-28T20:13:59.608234+08:00",
+  "timezone": "Asia/Shanghai",
+  "source_path": "results/workshop/confirm",
+  "config_path": "configs/workshop_confirm.json",
+  "config_sha256": "73d28e6c5768efdddb43eaab6cb4d827def286ff9b2cecacd8d666be2e3ee9ae",
+  "numerical_signature": "ef3438d5ea4b3cf9711dd17c677d28818ad27c2408f5bb0d9cbea186620c28bd",
+  "source_signature": "ef3438d5ea4b3cf9711dd17c677d28818ad27c2408f5bb0d9cbea186620c28bd",
+  "reproducer_script_sha256": "380ab794c8141d5ee0c302e1052bc0d27778563074147875b0318dea5aad582e",
+  "expected_targets": 2,
+  "expected_new_trajectory_fits": 4,
+  "trajectory_fit_attempts": 4,
+  "trajectory_fits_completed": 4,
+  "new_reference_fits": 0,
+  "reused_reference_targets": 2,
+  "frozen_reference_solutions_reused": 4,
+  "tolerances": {
+    "coefficient_linf": 1e-07,
+    "absolute_primal": 1e-08,
+    "normalized_gap": 1e-10
+  },
+  "input_sha256": {
+    "configs/workshop_confirm.json": "73d28e6c5768efdddb43eaab6cb4d827def286ff9b2cecacd8d666be2e3ee9ae",
+    "results/workshop/confirm/environment.json": "1a484817e3752d1c3a68aac8d4fa22ca629689f82c0ba42d3b30e609b0c7f29b",
+    "results/workshop/confirm/completion.json": "3c6527960862d2636a1e122d19d1dc9455fe107e86eafde49705fe7ce594cc0e",
+    "results/workshop/confirm/config.json": "46d091fdc99cd01283166fbdcfd04a02a2d83e0b14f559a2993389c0ccb773d5",
+    "results/workshop/confirm/effective_config.json": "46d091fdc99cd01283166fbdcfd04a02a2d83e0b14f559a2993389c0ccb773d5",
+    "results/workshop/confirm/datasets/block_seed200_rho0_dispersed_strong.json": "2d3d454e196752912fbc76e156493151711407e42787020f50ebd770b08ec691",
+    "results/workshop/confirm/references/block_seed200_rho0_dispersed_strong.json": "9a0b1381ebc2d0af91cc7cd57d257970246bf037edb55c4f08c750694dc86fdd",
+    "results/workshop/confirm/reference_coefficients/block_seed200_rho0_dispersed_strong.npz": "9efceb250d2ad53d81c42237141142a00e9f5c9ca0f3ceb821dfcf7af0006c1d",
+    "results/workshop/confirm/runs/block_seed200_rho0_dispersed_strong_fista.json": "597d20b306d7f4d6c27cd096cb06b44dd56c8751cc87e4021b7f691047ecbd7b",
+    "results/workshop/confirm/trajectories/block_seed200_rho0_dispersed_strong_fista.npz": "bc6b8c9634940d90c952668d54f34700dae5d0a789fedf99c4f6a4ad07766605",
+    "results/workshop/confirm/runs/block_seed200_rho0_dispersed_strong_cd.json": "d58d8b6dd753d0f5c13ec83b426da7b3509682bda5c461523b14e732077ba472",
+    "results/workshop/confirm/trajectories/block_seed200_rho0_dispersed_strong_cd.npz": "a2d9c536880f55ce2841e8db5235e8e5212466cbe1da1227f23b980b5c96b677",
+    "results/workshop/confirm/datasets/toeplitz_seed200_rho0.9_clustered_mixed_weak.json": "16a90e7071a6b375ac23ae11b8197d20ad8f9b34b6265f26552c8c160d25003e",
+    "results/workshop/confirm/references/toeplitz_seed200_rho0.9_clustered_mixed_weak.json": "a3ea50e277ccc324803b5aeb3a30872419f50b8533945b459d0f1057e5935e1a",
+    "results/workshop/confirm/reference_coefficients/toeplitz_seed200_rho0.9_clustered_mixed_weak.npz": "d122d58d21999c7701c3ba7444ea052e26ebbfa29c69af24070cc3acffd2e9d3",
+    "results/workshop/confirm/runs/toeplitz_seed200_rho0.9_clustered_mixed_weak_fista.json": "b910b5189266abf2fc1fce1d75d1941520b7b77808cda8591e3aa6f82b68c668",
+    "results/workshop/confirm/trajectories/toeplitz_seed200_rho0.9_clustered_mixed_weak_fista.npz": "ccff943227c6a1fc4033e8cef0d8121bb2f0ed8d5d64020d56a16929f575179e",
+    "results/workshop/confirm/runs/toeplitz_seed200_rho0.9_clustered_mixed_weak_cd.json": "743683ebf62989dcbadd3ffcc8f01fc73469b84a7fe3c51b37044b7e299e450b",
+    "results/workshop/confirm/trajectories/toeplitz_seed200_rho0.9_clustered_mixed_weak_cd.npz": "2dd98215c5a7148178c9e620c70c21a39c083dd6781ed5ce690d3bc5a61738c5"
+  },
+  "targets": [
+    {
+      "target_id": "block_seed200_rho0_dispersed_strong",
+      "params": {
+        "seed": 200,
+        "family": "block",
+        "rho": 0.0,
+        "layout": "dispersed",
+        "amplitude": "strong"
+      },
+      "regenerated_hashes_match": true,
+      "dataset_hash": "777552904ef0f780a221af90debea01fbf6a78eb9adc247dec23daff2a5acdba",
+      "reference_coefficients_sha256": "9efceb250d2ad53d81c42237141142a00e9f5c9ca0f3ceb821dfcf7af0006c1d",
+      "references_reused_without_fitting": true,
+      "L": 5.736318232604685,
+      "preprocessing_sec": 0.06593079678714275,
+      "lipschitz_setup_sec": 0.07113440334796906,
+      "target_wall_sec": 0.35076143126934767
+    },
+    {
+      "target_id": "toeplitz_seed200_rho0.9_clustered_mixed_weak",
+      "params": {
+        "seed": 200,
+        "family": "toeplitz",
+        "rho": 0.9,
+        "layout": "clustered",
+        "amplitude": "mixed_weak"
+      },
+      "regenerated_hashes_match": true,
+      "dataset_hash": "c29fc59b127bf3b9eb71a366f2433d50500008ec99f9b3e2760cb4af5a7a1907",
+      "reference_coefficients_sha256": "d122d58d21999c7701c3ba7444ea052e26ebbfa29c69af24070cc3acffd2e9d3",
+      "references_reused_without_fitting": true,
+      "L": 25.08036341491859,
+      "preprocessing_sec": 0.07175709120929241,
+      "lipschitz_setup_sec": 0.06831446755677462,
+      "target_wall_sec": 4.716977685689926
+    }
+  ],
+  "runs": [
+    {
+      "passed": true,
+      "coefficient_linf_difference": 0.0,
+      "absolute_primal_difference": 0.0,
+      "normalized_primal_difference": 0.0,
+      "recomputed_vs_saved_primal_difference": 0.0,
+      "original_status": "converged",
+      "reproduced_status": "converged",
+      "status_matches": true,
+      "original_final_primal": 3.579199003173414,
+      "reproduced_final_primal": 3.579199003173414,
+      "original_final_normalized_gap": 6.966576974757332e-11,
+      "reproduced_certificate": {
+        "primal": 3.579199003173414,
+        "dual": 3.5791990029240663,
+        "gap": 2.49347653635823e-10,
+        "raw_gap": 2.49347653635823e-10,
+        "normalized_gap": 6.966576974757332e-11,
+        "dual_feasibility": 0.9999999999999961,
+        "kkt_inf": 1.563685292360617e-11
+      },
+      "original_iterations": 260,
+      "reproduced_iterations": 260,
+      "original_elapsed_sec": 0.15116181410849094,
+      "reproduced_elapsed_sec": 0.14927647728472948,
+      "support_by_threshold": {
+        "1e-06": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        },
+        "0.0001": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        }
+      },
+      "interpretation": "Coefficient, objective, status and common certificate checks; timing equality is not required.",
+      "target_id": "block_seed200_rho0_dispersed_strong",
+      "method": "fista",
+      "run_id": "block_seed200_rho0_dispersed_strong_fista",
+      "new_fit": true,
+      "trajectory_call_wall_sec": 0.18720988929271698,
+      "original_run_path": "results/workshop/confirm/runs/block_seed200_rho0_dispersed_strong_fista.json",
+      "reproduced_run_path": "results/workshop/reproduce/runs/block_seed200_rho0_dispersed_strong_fista.json",
+      "original_trajectory_sha256": "bc6b8c9634940d90c952668d54f34700dae5d0a789fedf99c4f6a4ad07766605",
+      "reproduced_trajectory_sha256": "d16eb7fff3edf547a3d0eed40c5ae0de8cf538fed39a6a7569041f4e2baceba8"
+    },
+    {
+      "passed": true,
+      "coefficient_linf_difference": 0.0,
+      "absolute_primal_difference": 0.0,
+      "normalized_primal_difference": 0.0,
+      "recomputed_vs_saved_primal_difference": 0.0,
+      "original_status": "converged",
+      "reproduced_status": "converged",
+      "status_matches": true,
+      "original_final_primal": 3.5791990031734144,
+      "reproduced_final_primal": 3.5791990031734144,
+      "original_final_normalized_gap": 5.222069699840004e-12,
+      "reproduced_certificate": {
+        "primal": 3.5791990031734144,
+        "dual": 3.5791990031547236,
+        "gap": 1.8690826664169435e-11,
+        "raw_gap": 1.8690826664169435e-11,
+        "normalized_gap": 5.222069699840004e-12,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.1114165143766286e-12
+      },
+      "original_iterations": 15,
+      "reproduced_iterations": 15,
+      "original_elapsed_sec": 0.013555154204368591,
+      "reproduced_elapsed_sec": 0.013704572804272175,
+      "support_by_threshold": {
+        "1e-06": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        },
+        "0.0001": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        }
+      },
+      "interpretation": "Coefficient, objective, status and common certificate checks; timing equality is not required.",
+      "target_id": "block_seed200_rho0_dispersed_strong",
+      "method": "cd",
+      "run_id": "block_seed200_rho0_dispersed_strong_cd",
+      "new_fit": true,
+      "trajectory_call_wall_sec": 0.019640901125967503,
+      "original_run_path": "results/workshop/confirm/runs/block_seed200_rho0_dispersed_strong_cd.json",
+      "reproduced_run_path": "results/workshop/reproduce/runs/block_seed200_rho0_dispersed_strong_cd.json",
+      "original_trajectory_sha256": "a2d9c536880f55ce2841e8db5235e8e5212466cbe1da1227f23b980b5c96b677",
+      "reproduced_trajectory_sha256": "e3ce88bad71e0ee68880c613c179ec0f238a5e2f7d642308a9a1193e7bb05950"
+    },
+    {
+      "passed": true,
+      "coefficient_linf_difference": 0.0,
+      "absolute_primal_difference": 0.0,
+      "normalized_primal_difference": 0.0,
+      "recomputed_vs_saved_primal_difference": 0.0,
+      "original_status": "converged",
+      "reproduced_status": "converged",
+      "status_matches": true,
+      "original_final_primal": 2.481924125629455,
+      "reproduced_final_primal": 2.481924125629455,
+      "original_final_normalized_gap": 6.968423614539532e-11,
+      "reproduced_certificate": {
+        "primal": 2.481924125629455,
+        "dual": 2.481924125456504,
+        "gap": 1.7295098686531674e-10,
+        "raw_gap": 1.7295098686531674e-10,
+        "normalized_gap": 6.968423614539532e-11,
+        "dual_feasibility": 0.9999999999999958,
+        "kkt_inf": 2.7046670458830135e-11
+      },
+      "original_iterations": 6445,
+      "reproduced_iterations": 6445,
+      "original_elapsed_sec": 3.6673819040879607,
+      "reproduced_elapsed_sec": 3.6744230100885034,
+      "support_by_threshold": {
+        "1e-06": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        },
+        "0.0001": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        }
+      },
+      "interpretation": "Coefficient, objective, status and common certificate checks; timing equality is not required.",
+      "target_id": "toeplitz_seed200_rho0.9_clustered_mixed_weak",
+      "method": "fista",
+      "run_id": "toeplitz_seed200_rho0.9_clustered_mixed_weak_fista",
+      "new_fit": true,
+      "trajectory_call_wall_sec": 4.4498990792781115,
+      "original_run_path": "results/workshop/confirm/runs/toeplitz_seed200_rho0.9_clustered_mixed_weak_fista.json",
+      "reproduced_run_path": "results/workshop/reproduce/runs/toeplitz_seed200_rho0.9_clustered_mixed_weak_fista.json",
+      "original_trajectory_sha256": "ccff943227c6a1fc4033e8cef0d8121bb2f0ed8d5d64020d56a16929f575179e",
+      "reproduced_trajectory_sha256": "e95dc669ffcb74fcbcd521273c4848a90215bf77f6a5aabbad4fc6bfacc234ef"
+    },
+    {
+      "passed": true,
+      "coefficient_linf_difference": 0.0,
+      "absolute_primal_difference": 0.0,
+      "normalized_primal_difference": 0.0,
+      "recomputed_vs_saved_primal_difference": 0.0,
+      "original_status": "converged",
+      "reproduced_status": "converged",
+      "status_matches": true,
+      "original_final_primal": 2.481924125629455,
+      "reproduced_final_primal": 2.481924125629455,
+      "original_final_normalized_gap": 7.716742176842035e-11,
+      "reproduced_certificate": {
+        "primal": 2.481924125629455,
+        "dual": 2.4819241254379314,
+        "gap": 1.9152368579966605e-10,
+        "raw_gap": 1.9152368579966605e-10,
+        "normalized_gap": 7.716742176842035e-11,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 4.553760146741581e-11
+      },
+      "original_iterations": 115,
+      "reproduced_iterations": 115,
+      "original_elapsed_sec": 0.09532924555242062,
+      "reproduced_elapsed_sec": 0.10075518116354942,
+      "support_by_threshold": {
+        "1e-06": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        },
+        "0.0001": {
+          "same_support": true,
+          "support_symmetric_difference": 0
+        }
+      },
+      "interpretation": "Coefficient, objective, status and common certificate checks; timing equality is not required.",
+      "target_id": "toeplitz_seed200_rho0.9_clustered_mixed_weak",
+      "method": "cd",
+      "run_id": "toeplitz_seed200_rho0.9_clustered_mixed_weak_cd",
+      "new_fit": true,
+      "trajectory_call_wall_sec": 0.11897305585443974,
+      "original_run_path": "results/workshop/confirm/runs/toeplitz_seed200_rho0.9_clustered_mixed_weak_cd.json",
+      "reproduced_run_path": "results/workshop/reproduce/runs/toeplitz_seed200_rho0.9_clustered_mixed_weak_cd.json",
+      "original_trajectory_sha256": "2dd98215c5a7148178c9e620c70c21a39c083dd6781ed5ce690d3bc5a61738c5",
+      "reproduced_trajectory_sha256": "9b43810bbe18c86fb5dd7c84f6717cf02b6cde33cfafe87afd13cada4106ac31"
+    }
+  ],
+  "interpretation": [
+    "Four fresh trajectory solves; the two frozen numerical references per target are reused, not refitted.",
+    "Numerical agreement does not prove exact minimizer support or statistical recovery.",
+    "Wall time includes regeneration, validation, trajectory diagnostics and artifact writes; it is not a fresh timing benchmark."
+  ],
+  "source_signature_unchanged": true,
+  "original_inputs_unchanged": true,
+  "wall_sec": 5.175553268752992,
+  "finished_at": "2026-10-28T20:14:04.709194+08:00"
+}

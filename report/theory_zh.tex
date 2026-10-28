@@ -1,0 +1,164 @@
+% Legacy v1 theoretical supplement. The current report is main_v2.tex.
+\section{引言与研究问题}
+高维回归中，预测变量常常携带相近的信息。例如，若干文本统计量可能共同反映文章长度，而同一组测量指标可能受到共同因素影响。Lasso 在平方损失中加入 $\ell_1$ 惩罚，使部分系数恰好为零，提供了同时进行参数收缩与变量选择的凸优化模型\cite{tibshirani1996}。然而，稀疏解是否容易算出，以及它是否接近产生数据的真实参数，是两个不同的问题。相关特征可能改变目标函数的曲率，也可能使若干变量在预测上相互替代。因此，单独报告最终预测误差或运行时间，无法解释计算精度、变量选择与数据结构之间的关系。
+
+本文研究特征相关性对 Lasso 求解效率和稀疏恢复的影响，比较迭代收缩阈值算法（ISTA）、快速迭代收缩阈值算法（FISTA）与循环坐标下降（CD）。三种方法求解完全相同的目标，从零向量出发，并使用统一的原始对偶间隙判断优化精度。研究采用分组相关的合成设计来控制相关性，再用一个公开回归数据集检查实际数据上的表现。项目与优化课程的联系在于将凸性、梯度步长、非光滑正则化、坐标最小化与对偶性用于同一可复现实例。本文实现和分析已有方法，不提出新的优化算法。
+
+研究围绕以下三个问题展开。
+\begin{enumerate}
+  \item \textbf{相关性与求解成本：}在相同目标精度下，增大组内相关性是否增加计算时间？三种方法对相关性的敏感程度是否相同？
+  \item \textbf{加速的实际收益：}FISTA 的经典加速是否在不同相关性与精度要求下都带来墙钟时间优势？外推引起的非单调轨迹如何影响达到给定精度的时间？
+  \item \textbf{优化与统计恢复：}在固定数据和正则化参数下，进一步缩小优化间隙是否总能改善系数误差及支持集恢复？何时统计误差已经成为主要限制？
+\end{enumerate}
+这些问题对应待检验的经验关系，而非预先设定的结论。算法比较固定损失归一化、数据与正则化参数；恢复比较则额外使用合成数据的已知真值。这样可以避免把模型选择差异误解释为求解方法差异。
+
+\section{相关工作}
+Tibshirani 提出的 Lasso 通过约束系数绝对值之和，将连续参数收缩与变量选择结合起来\cite{tibshirani1996}。本文使用与其约束形式相联系的惩罚形式，并明确损失中的 $1/(2n)$ 系数；这一系数会影响 $\lambda$、梯度与坐标更新的数值，不能在不同软件约定之间省略。
+
+阈值化迭代是稀疏逆问题的重要求解思路。Daubechies 等分析了在 Landweber 迭代后施加阈值算子的方案\cite{daubechies2004}。Beck 与 Teboulle 将 FISTA 表述为适用于凸复合目标的加速近端方法，并给出 ISTA 与 FISTA 的经典目标残差上界\cite{beck2009}。这些上界描述迭代次数与优化残差的关系，不能直接推出有限样本的变量恢复率，也没有规定具体实现中的墙钟时间排名。
+
+坐标下降利用 $\ell_1$ 惩罚的可分结构，把多变量优化分解为可精确求解的一维子问题。Tseng 对满足正则性和坐标子问题条件的非光滑可分目标建立了收敛分析\cite{tseng2001}。Friedman 等展示了循环坐标下降在 Lasso 及其他正则化模型中的有效实现，包括软阈值更新与正则化路径热启动\cite{friedman2010}。本文使用增量残差实现基本循环 CD，并对每个 $\lambda$ 独立从零开始；路径热启动和变量筛选不属于本次比较。
+
+优化收敛与支持恢复之间存在理论上的区别。Zhao 与 Yu 的模型选择一致性分析揭示了协方差结构与不可表示条件的作用\cite{zhao2006}；Wainwright 在带噪高斯设计及相应条件下研究了稀疏度、样本量与恢复概率的渐近阈值\cite{wainwright2009}。这些结论解释了为何求得 Lasso 最优解仍可能无法准确恢复真值，却不能直接预测本文有限样本网格中的全部结果。Zou 与 Hastie 对弹性网分组效应的讨论也说明，相关变量的选择行为与正则化结构有关\cite{zou2005}；本文保持 Lasso 目标，以控制研究范围。
+
+在求解器发展方面，Fercoq 等利用原始对偶间隙构造 Lasso 的安全筛选规则\cite{fercoq2015}，Ndiaye 等进一步推广到多类稀疏惩罚\cite{ndiaye2017}。近年工作进一步将 Anderson 外推用于坐标下降\cite{bertrand2021}，并在 skglm 中发展利用稀疏支持工作集的模块化求解框架\cite{moufad2025}。这些进展说明实际性能还受加速、变量选择与实现组织影响；本文仍比较三种基础方法，不声称达到现代专用求解器的最佳性能。本文借助可行对偶点评估精度，但不实现筛选；筛选所识别的优化活跃集不能与真实支持集混同。上述文献覆盖方法基础及相关后续发展，不构成截至 2026 年的完整综述。公开真实数据来自 UCI Online News Popularity\cite{fernandes2015}，用于补充受控合成实验。
+
+\section{问题建模与相关数据结构}
+\subsection{统一目标与两类误差}
+给定 $X\in\mathbb{R}^{n\times p}$、$y\in\mathbb{R}^{n}$ 与 $\lambda>0$，考虑
+\begin{equation}
+  \min_{w\in\mathbb{R}^p} P(w)
+  :=\underbrace{\frac{1}{2n}\|Xw-y\|_2^2}_{f(w)}
+    +\underbrace{\lambda\|w\|_1}_{g(w)}.
+  \label{eq:theory_primal}
+\end{equation}
+平方损失凸且光滑，$\ell_1$ 惩罚凸但在零点不可微，故整体为凸非光滑优化问题。由于 $\lambda>0$，目标随 $\|w\|_1$ 增大而趋于无穷，有限维情形下存在最优解。若 $X$ 列满秩，平方损失严格凸，解唯一；存在共线性时系数未必唯一，因此参考求解器核查优先比较目标值与最优性证书。
+
+训练特征按训练集均值和标准差处理，目标减去训练均值；验证和测试沿用相同变换。中心化后，未惩罚截距可以通过训练目标均值恢复，无须把常数列加入 $\ell_1$ 惩罚。梯度与可用 Lipschitz 常数为
+\begin{equation}
+  \nabla f(w)=\frac{X^\top(Xw-y)}{n},\qquad
+  L=\frac{\|X\|_2^2}{n}.
+  \label{eq:theory_gradient}
+\end{equation}
+零解的最优性条件给出
+\begin{equation}
+  \lambda_{\max}=\frac{\|X^\top y\|_\infty}{n}.
+  \label{eq:theory_lambdamax}
+\end{equation}
+不同数据集采用相同 $\lambda/\lambda_{\max}$ 只能保证相对正则化水平相同，不能保证绝对惩罚强度一致。
+
+合成数据来自稀疏线性机制 $y=Xw^\star+\varepsilon$，其系数真值定义在训练标准化后的特征坐标中。记 $\widehat w_\lambda$ 为给定目标的某个最优解。优化残差是 $P(w)-P(\widehat w_\lambda)$，而相对系数恢复误差为
+\begin{equation}
+  E_{\mathrm{coef}}(w)=\frac{\|w-w^\star\|_2}{\|w^\star\|_2}.
+  \label{eq:theory_recovery}
+\end{equation}
+支持恢复还比较估计非零位置与 $\operatorname{supp}(w^\star)$。即使优化残差趋于零，噪声、正则化偏差和设计结构仍会影响恢复指标；在非唯一情形下，相同最优目标甚至可能对应不同系数。
+
+\subsection{分组相关设计及其曲率}
+将特征分为大小 $b=20$ 的组。对于样本 $i$、组 $h$ 和组内特征 $j$，生成原始特征
+\begin{equation}
+  x^{\mathrm{raw}}_{i,hj}
+    =\sqrt{\rho}\,z_{i,h}+\sqrt{1-\rho}\,e_{i,hj},
+  \qquad 0\leq\rho<1,
+  \label{eq:theory_generation}
+\end{equation}
+其中 $z$ 与 $e$ 为相互独立的标准正态变量。不同组独立，同组总体相关系数为 $\rho$。每组总体协方差为
+\begin{equation}
+  \Sigma_b=(1-\rho)I_b+\rho\mathbf{1}\mathbf{1}^\top.
+  \label{eq:theory_covariance}
+\end{equation}
+沿全一向量方向的特征值为 $1+(b-1)\rho$，其正交补方向的特征值为 $1-\rho$，故总体协方差的谱条件数为
+\begin{equation}
+  \kappa(\Sigma_b)
+    =\frac{1+(b-1)\rho}{1-\rho}
+    =\frac{1+19\rho}{1-\rho}.
+  \label{eq:theory_condition}
+\end{equation}
+这为相关性可能改变求解难度提供了可计算的结构解释。不过，训练标准化后的样本 Hessian 为 $X^\top X/n$，它受到有限样本波动与缩放影响，其条件数不等于式~\eqref{eq:theory_condition}。此外，Lasso 的局部活跃变量及算法更新规则也影响速度，因此不能仅凭总体条件数断言所有方法的运行时间单调增加。主合成设计将真实非零变量放在不同组；这一安排控制了组内多个真实信号的混杂，但也限制了结论对其他支持结构的推广。
+
+\section{求解方法与统一精度证书}
+\subsection{软阈值与 ISTA}
+对标量 $a$，定义软阈值算子
+\begin{equation}
+  S_\tau(a)=\operatorname{sign}(a)\max\{|a|-\tau,0\},
+  \label{eq:theory_soft}
+\end{equation}
+并逐坐标作用于向量。它是 $\tau\|\cdot\|_1$ 的近端映射：在二次距离与绝对值惩罚之和的一维最小化中，正负两侧的一阶条件分别给出收缩，而中间区间给出零。因此无需直接对 $\ell_1$ 项求普通梯度。
+
+以 $w^0=0$ 初始化，ISTA 使用
+\begin{equation}
+  w^{k+1}=S_{\lambda/L}
+  \left(w^k-\frac{1}{L}\nabla f(w^k)\right).
+  \label{eq:theory_ista}
+\end{equation}
+当 $L$ 为有效梯度 Lipschitz 上界时，二次上界保证目标值不增。对具有最优解的凸复合目标，光滑部分梯度 Lipschitz 连续、近端步骤精确且固定步长为 $1/L$ 时，经典界为\cite{beck2009}
+\begin{equation}
+  P(w^k)-P^*\leq
+  \frac{L\|w^0-\widehat w_\lambda\|_2^2}{2k},
+  \qquad k\geq1.
+  \label{eq:theory_ista_rate}
+\end{equation}
+这里 $P^*$ 是最优目标值。该 $O(1/k)$ 界不要求强凸性，也不排除特定实例收敛得更快。
+
+\subsection{FISTA 的外推更新}
+令 $z^0=w^0=0$、$t_0=1$。标准 FISTA 更新为
+\begin{align}
+  w^{k+1}&=S_{\lambda/L}
+    \left(z^k-\frac{1}{L}\nabla f(z^k)\right),\nonumber\\
+  t_{k+1}&=\frac{1+\sqrt{1+4t_k^2}}{2},\nonumber\\
+  z^{k+1}&=w^{k+1}
+    +\frac{t_k-1}{t_{k+1}}(w^{k+1}-w^k).
+  \label{eq:theory_fista}
+\end{align}
+在相同凸性、Lipschitz 梯度和精确近端步骤条件下，其目标残差满足\cite{beck2009}
+\begin{equation}
+  P(w^k)-P^*\leq
+  \frac{2L\|w^0-\widehat w_\lambda\|_2^2}{(k+1)^2},
+  \qquad k\geq1.
+  \label{eq:theory_fista_rate}
+\end{equation}
+外推只增加向量级运算，改善了最坏情形目标残差界，但不强制每步目标值单调。本文采用标准版本并记录轨迹，不将重启机制加入主比较。式~\eqref{eq:theory_ista_rate} 与式~\eqref{eq:theory_fista_rate} 控制的是真实目标残差，而实验停止量是可计算的对偶间隙上界，二者不能直接等同。
+
+\subsection{循环坐标下降}
+令 $r=y-Xw$、$a_j=\|X_j\|_2^2/n$。固定其他坐标后，单坐标的精确最小化可写成\cite{friedman2010}
+\begin{align}
+  q_j&=\frac{X_j^\top r}{n}+a_jw_j,\nonumber\\
+  w_j^+&=\frac{S_\lambda(q_j)}{a_j},\qquad
+  r\leftarrow r-X_j(w_j^+-w_j).
+  \label{eq:theory_cd}
+\end{align}
+最后将 $w_j$ 替换为 $w_j^+$。每轮按固定顺序遍历全部坐标，称为一个 epoch。常量列在预处理中移除，故使用的列满足 $a_j>0$。增量维护残差避免每次坐标更新都重新计算整个 $Xw$。
+
+对于本文有限维 Lasso，目标连续且水平集紧，光滑项可微，非光滑项按坐标可分，每个非零列对应的一维子问题严格凸。这些性质使基本循环 CD 可以应用相应收敛分析；凸性将平稳点联系到全局最优解\cite{tseng2001}。本文不据此宣称任意相关设计下都有相同的线性收敛常数。
+
+对稠密 $X$，ISTA/FISTA 每步的主要成本是两次矩阵向量乘法，为 $O(np)$；CD 一个完整 epoch 的成本也是 $O(np)$，但访存方式、更新顺序与常数不同。三者除设计矩阵外使用 $O(n+p)$ 量级的工作存储。本文以稠密 SVD 计算可靠的 $L$，其预处理成本高于一次迭代，应单独记录，并在独立启动的时间比较中计入近端方法。CD 不需要该谱计算。因此，一次近端迭代与一个 CD epoch 具有相同的大量级成本，却不能视为等价的实际计算单位。
+
+\subsection{可行对偶点、停止条件与数值核查}
+为避免不同算法使用不相容的停止条件，采用残差空间中的对偶问题
+\begin{equation}
+  \max_{v\in\mathbb{R}^n}
+  D(v):=\frac{2y^\top v-\|v\|_2^2}{2n},
+  \qquad \|X^\top v\|_\infty\leq n\lambda.
+  \label{eq:theory_dual}
+\end{equation}
+它可由引入残差约束的拉格朗日函数消去原始变量得到；此处 $v$ 的尺度与直接以 $r/n$ 为对偶变量的写法不同。对任意当前系数，令
+\begin{equation}
+  r=y-Xw,\qquad
+  c=\max\left\{1,\frac{\|X^\top r\|_\infty}{n\lambda}\right\},
+  \qquad v=\frac{r}{c}.
+  \label{eq:theory_dualscale}
+\end{equation}
+于是 $v$ 可行。弱对偶性给出
+\begin{equation}
+  0\leq P(w)-P^*\leq
+  G(w,v):=P(w)-D(v).
+  \label{eq:theory_gap}
+\end{equation}
+对偶间隙也用于后续 Lasso 安全筛选研究\cite{fercoq2015,ndiaye2017}；本文只使用其作为优化证书的性质。统一归一化量为
+\begin{equation}
+  \widetilde G=\frac{G(w,v)}{\max\{1,|P(w)|,|D(v)|\}}.
+  \label{eq:theory_normalized_gap}
+\end{equation}
+主停止精度取 $10^{-6}$，并比较首次记录到 $10^{-2}$、$10^{-4}$、$10^{-6}$ 的时间。这是预先规定的优化精度约定，不是恢复误差界。检查点之间的阈值穿越不可直接观测，因而记录时间是检查频率所决定的观测上界。
+
+实现中对缩放因子略加浮点裕量，记录对偶可行性，并仅将舍入级微小负间隙裁剪到零。还用成熟求解器在完全相同目标下核对原始目标值。所有方法保留达到时间或迭代上限时的状态；未收敛结果不能因不利于比较而删除。由此，求解准确性、计时范围与恢复指标可以分别核查。

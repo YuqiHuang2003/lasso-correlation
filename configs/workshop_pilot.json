@@ -1,0 +1,34 @@
+{
+  "protocol_version": "workshop-pilot-1.0",
+  "purpose": "Exploratory support-error and observation-cost audit; not an exact-support certificate or a new stopping method",
+  "n": 500, "p": 1000, "sparsity": 20, "block_size": 20,
+  "noise_std": 1.0, "lambda_factor": 1.0,
+  "weak_amplitude": 0.25, "weak_every": 4,
+  "seeds": [100, 101, 102],
+  "geometries": [
+    {"family": "block", "rho": 0.0},
+    {"family": "block", "rho": 0.9},
+    {"family": "toeplitz", "rho": 0.9}
+  ],
+  "rho_zero_handling": "Toeplitz rho=0 is identical to the paired block rho=0 design, so the block case is the single shared baseline",
+  "expected_pilot_targets": 36, "expected_pilot_trajectories": 72,
+  "layouts": ["dispersed", "clustered"], "amplitudes": ["strong", "mixed_weak"],
+  "methods": ["fista", "cd"],
+  "solver": {"tol": 1e-10, "max_iter": 100000, "time_limit": 20.0, "check_every": 5},
+  "references": {
+    "normalized_gap_tol": 1e-10, "time_limit": 20.0,
+    "sklearn_tol": 1e-13, "sklearn_max_iter": 500000,
+    "modern": {"library_max_iter": 100, "max_epochs": 50000, "library_tolerances": [1e-10, 1e-12, 1e-14]},
+    "coef_linf_agreement_tol": 1e-7, "normalized_objective_agreement_tol": 1e-9
+  },
+  "gap_thresholds": [0.01, 0.0001, 0.000001, 0.00000001, 0.0000000001],
+  "support_threshold": 1e-6, "support_thresholds": [1e-6, 1e-4],
+  "threads": 1,
+  "smoke": {
+    "n": 80, "p": 100, "sparsity": 5,
+    "targets": [
+      {"seed": 100, "rho": 0.0, "family": "block", "layout": "dispersed", "amplitude": "strong"},
+      {"seed": 100, "rho": 0.9, "family": "toeplitz", "layout": "clustered", "amplitude": "mixed_weak"}
+    ]
+  }
+}

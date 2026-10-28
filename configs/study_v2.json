@@ -1,0 +1,14 @@
+{
+  "protocol_version": "2.0-fixed-noise-fixed-lambda",
+  "synthetic": {"n": 500, "p": 1000, "block_size": 20, "noise_std": 1.0, "n_test": 1000,
+    "sparsities": [5, 20, 40], "rhos": [0.0, 0.3, 0.6, 0.9],
+    "layouts": ["dispersed", "clustered"], "lambda_factors": [0.5, 1.0, 2.0], "seeds": [0, 1, 2, 3, 4]},
+  "methods": ["ista", "fista", "cd", "skglm"],
+  "solver": {"tol": 1e-6, "max_iter": 100000, "time_limit": 20.0, "check_every": 5},
+  "modern": {"library_max_iter": 100, "max_epochs": 50000, "library_tolerances": [0.0001, 0.000001, 0.00000001]},
+  "uji": {"seeds": [0, 1, 2], "validation_candidates": 12, "min_ratio": 0.001},
+  "leukemia": {"lambda_ratios": [0.01, 0.1, 0.3], "repeats": [0, 1, 2]},
+  "thresholds": [0.01, 0.0001, 0.000001],
+  "support_threshold": 1e-6, "support_sensitivity": [1e-8, 1e-6, 0.0001, 0.01, 0.05],
+  "threads": 1, "initial_cpu_budget_sec": 28800, "maximum_cpu_budget_sec": 57600
+}

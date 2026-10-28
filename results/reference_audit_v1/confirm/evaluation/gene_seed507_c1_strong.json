@@ -1,0 +1,226 @@
+{
+  "accuracy_eligible": true,
+  "reference_accepted": true,
+  "qualification_failure_reasons": {
+    "accuracy": [],
+    "consensus": [],
+    "by_reference": {
+      "sklearn": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.04715637303888798,
+        "normalized_gap": 7.786511879876735e-14
+      },
+      "skglm": {
+        "eligible": true,
+        "reasons": [],
+        "status": "converged",
+        "elapsed_sec": 0.0171869033947587,
+        "normalized_gap": 5.158499945869876e-11
+      }
+    }
+  },
+  "scores_by_tau": {
+    "1e-06": {
+      "sklearn": {
+        "tp": 2,
+        "fp": 12,
+        "fn": 3,
+        "nnz": 14,
+        "precision": 0.14285714285714285,
+        "recall": 0.4,
+        "f1": 0.21052631578947367,
+        "f1_exact": {
+          "numerator": 4,
+          "denominator": 19
+        },
+        "support_indices": [
+          355,
+          789,
+          902,
+          2528,
+          2663,
+          2750,
+          3068,
+          3114,
+          4697,
+          5126,
+          5756,
+          6238,
+          6627,
+          7011
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 15,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 2,
+        "fp": 12,
+        "fn": 3,
+        "nnz": 14,
+        "precision": 0.14285714285714285,
+        "recall": 0.4,
+        "f1": 0.21052631578947367,
+        "f1_exact": {
+          "numerator": 4,
+          "denominator": 19
+        },
+        "support_indices": [
+          355,
+          789,
+          902,
+          2528,
+          2663,
+          2750,
+          3068,
+          3114,
+          4697,
+          5126,
+          5756,
+          6238,
+          6627,
+          7011
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 15,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.21052631578947367,
+        0.21052631578947367
+      ]
+    },
+    "0.0001": {
+      "sklearn": {
+        "tp": 2,
+        "fp": 12,
+        "fn": 3,
+        "nnz": 14,
+        "precision": 0.14285714285714285,
+        "recall": 0.4,
+        "f1": 0.21052631578947367,
+        "f1_exact": {
+          "numerator": 4,
+          "denominator": 19
+        },
+        "support_indices": [
+          355,
+          789,
+          902,
+          2528,
+          2663,
+          2750,
+          3068,
+          3114,
+          4697,
+          5126,
+          5756,
+          6238,
+          6627,
+          7011
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 15,
+        "exact_true_sign": false
+      },
+      "skglm": {
+        "tp": 2,
+        "fp": 12,
+        "fn": 3,
+        "nnz": 14,
+        "precision": 0.14285714285714285,
+        "recall": 0.4,
+        "f1": 0.21052631578947367,
+        "f1_exact": {
+          "numerator": 4,
+          "denominator": 19
+        },
+        "support_indices": [
+          355,
+          789,
+          902,
+          2528,
+          2663,
+          2750,
+          3068,
+          3114,
+          4697,
+          5126,
+          5756,
+          6238,
+          6627,
+          7011
+        ],
+        "exact_true_support": false,
+        "true_sign_error": 15,
+        "exact_true_sign": false
+      },
+      "raw_absolute_f1_difference": 0.0,
+      "raw_signed_f1_difference_skglm_minus_sklearn": 0.0,
+      "absolute_f1_difference_exact": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "eligible_absolute_f1_difference": 0.0,
+      "delta_exceeded": {
+        "0.02": false,
+        "0.0": false,
+        "0.01": false,
+        "0.05": false
+      },
+      "support_symmetric_difference_indices": [],
+      "support_symmetric_difference_count": 0,
+      "sign_difference_count": 0,
+      "observed_two_output_f1_range": [
+        0.21052631578947367,
+        0.21052631578947367
+      ]
+    }
+  },
+  "primary_support_threshold": 1e-06,
+  "primary_absolute_f1_difference": 0.0,
+  "primary_delta_exceeded": false,
+  "prediction_difference_rmse": 1.614073884680843e-10,
+  "l1_norm_difference_abs": 2.7963409365838743e-11,
+  "evaluation_sec_outside_reference_timers": 0.001124395988881588,
+  "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
+  "target_id": "gene_seed507_c1_strong",
+  "params": {
+    "source": "gene",
+    "seed": 507,
+    "amplitude": "strong",
+    "c": 1.0
+  },
+  "source": "gene",
+  "seed": 507,
+  "amplitude": "strong",
+  "c": 1.0,
+  "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "source_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
+  "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
+  "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
+  "dataset_hash": "ecdf89c8cd643d6cecaf1b48284068ad622d93471abf2550439940862c2e94cd",
+  "input_hashes": {
+    "dataset_sha256": "8d01748ca430c3b13220c2aa5b28e246eb3f4c300be04faeef470befb472531e",
+    "reference_json_sha256": "8666fcdc3cb1aba55c9d9b2a9f3ca0f695f79d0f5f2ffa6e8a205aa4eb9dc3a8",
+    "reference_coefficients_sha256": "d74dbd2e015c545a71db62e7e91ad160673ac6c473c000935e377ca8b684e44c"
+  }
+}

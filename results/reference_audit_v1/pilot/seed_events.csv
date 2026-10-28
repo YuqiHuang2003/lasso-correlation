@@ -1,0 +1,17 @@
+delta,n_eligible,n_targets,seed,source,state,tau
+0.02,4,4,500,gene,no_event,1e-06
+0.0,4,4,500,gene,no_event,1e-06
+0.01,4,4,500,gene,no_event,1e-06
+0.05,4,4,500,gene,no_event,1e-06
+0.02,4,4,500,gene,no_event,0.0001
+0.0,4,4,500,gene,no_event,0.0001
+0.01,4,4,500,gene,no_event,0.0001
+0.05,4,4,500,gene,no_event,0.0001
+0.02,4,4,400,news,no_event,1e-06
+0.0,4,4,400,news,no_event,1e-06
+0.01,4,4,400,news,no_event,1e-06
+0.05,4,4,400,news,no_event,1e-06
+0.02,4,4,400,news,no_event,0.0001
+0.0,4,4,400,news,no_event,0.0001
+0.01,4,4,400,news,no_event,0.0001
+0.05,4,4,400,news,no_event,0.0001

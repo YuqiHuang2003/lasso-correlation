@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "run_id": "syn_seed0_r0_s5_dispersed_c1_ista",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0_s5_dispersed_c1_fista",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0_s5_dispersed_c1_cd",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0_s5_dispersed_c1_skglm",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0.9_s40_clustered_c1_ista",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0.9_s40_clustered_c1_fista",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0.9_s40_clustered_c1_cd",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "syn_seed0_r0.9_s40_clustered_c1_skglm",
+      "coef_max_difference": 0.0,
+      "objective_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,11 @@
+{
+  "decided_at": "2026-10-28T22:03:10.290077+08:00",
+  "decision": "proceed_with_frozen_confirm_grid",
+  "basis": "Complete pilot and recorded runtime only; no source/condition discarded based on score outcomes.",
+  "pilot_wall_sec": 5.852920283563435,
+  "tenfold_linear_runtime_projection_sec": 58.52920283563435,
+  "additional_wall_budget_sec": 7200,
+  "planned_confirm_targets": 72,
+  "planned_public_calls": 144,
+  "confirmation_seeds_unchanged": true
+}

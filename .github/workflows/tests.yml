@@ -1,0 +1,41 @@
+name: lasso-correlation lightweight tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lightweight-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+      NUMBA_NUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up the tested Python series
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Install the frozen base stack
+        run: python -m pip install -r requirements.txt
+      - name: Run lightweight and small solver checks
+        run: make test test-data test-solvers PYTHON=python
+
+      - name: Check the committed scientific snapshot
+        run: python scripts/check_snapshot.py

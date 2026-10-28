@@ -1,0 +1,27 @@
+{
+  "protocol_version": "workshop-real-1.0",
+  "stage": "real",
+  "purpose": "Independent semisynthetic real-design robustness arm; not a difficulty-matched synthetic comparison or proof of exact support",
+  "n": 500, "p": 1000, "sparsity": 20, "block_size": 20,
+  "real_n": 1000, "real_sparsity": 15,
+  "source_preprocessing_seed": 0,
+  "source_response_used": false,
+  "family": "uji", "rho": null,
+  "noise_std": 1.0, "lambda_factor": 1.0,
+  "weak_amplitude": 0.25, "weak_every": 4,
+  "seeds": [300, 301, 302, 303, 304, 305, 306, 307, 308, 309],
+  "excluded_exploratory_seeds": [100, 101, 102],
+  "layouts": ["dispersed", "clustered"], "amplitudes": ["strong", "mixed_weak"],
+  "methods": ["fista", "cd"],
+  "expected_targets": 40, "expected_trajectories": 80,
+  "solver": {"tol": 1e-10, "max_iter": 100000, "time_limit": 20.0, "check_every": 5},
+  "references": {
+    "normalized_gap_tol": 1e-10, "time_limit": 20.0,
+    "sklearn_tol": 1e-13, "sklearn_max_iter": 500000,
+    "modern": {"library_max_iter": 100, "max_epochs": 50000, "library_tolerances": [1e-10, 1e-12, 1e-14]},
+    "coef_linf_agreement_tol": 1e-7, "normalized_objective_agreement_tol": 1e-9
+  },
+  "gap_thresholds": [0.01, 0.0001, 0.000001, 0.00000001, 0.0000000001],
+  "support_threshold": 1e-6, "support_thresholds": [1e-6, 1e-4],
+  "threads": 1
+}

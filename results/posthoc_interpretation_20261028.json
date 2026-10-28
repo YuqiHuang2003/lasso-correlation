@@ -1,0 +1,212 @@
+{
+  "scope": "Exploratory descriptive reanalysis of saved scores; no new fitting; paired observations are not independent; control arms have different evaluation coordinates.",
+  "results": {
+    "1e-06": {
+      "n_diff": 15,
+      "error_type": {
+        "FP_only": 7,
+        "TP_only": 5,
+        "TP_and_FP": 3
+      },
+      "winner": {
+        "skglm": 8,
+        "sklearn": 7
+      },
+      "mean_signed_skglm_minus_sklearn": -0.000785906276516804,
+      "mean_absolute": 0.012440238286885966,
+      "layout": {
+        "clustered": {
+          "n": 20,
+          "different": 8
+        },
+        "dispersed": {
+          "n": 20,
+          "different": 7
+        }
+      },
+      "amplitude": {
+        "mixed_weak": {
+          "n": 20,
+          "different": 8
+        },
+        "strong": {
+          "n": 20,
+          "different": 7
+        }
+      },
+      "consensus_strata": {
+        "True": {
+          "n": 10,
+          "mean_f1_sklearn": 0.8293476084563829,
+          "mean_f1_skglm": 0.8293476084563829
+        },
+        "False": {
+          "n": 30,
+          "mean_f1_sklearn": 0.7885286806287941,
+          "mean_f1_skglm": 0.7874808055934384
+        }
+      }
+    },
+    "0.0001": {
+      "n_diff": 21,
+      "error_type": {
+        "FP_only": 11,
+        "TP_and_FP": 4,
+        "TP_only": 6
+      },
+      "winner": {
+        "skglm": 13,
+        "sklearn": 8
+      },
+      "mean_signed_skglm_minus_sklearn": 0.0011444624477241483,
+      "mean_absolute": 0.015592283232803145,
+      "layout": {
+        "clustered": {
+          "n": 20,
+          "different": 11
+        },
+        "dispersed": {
+          "n": 20,
+          "different": 10
+        }
+      },
+      "amplitude": {
+        "mixed_weak": {
+          "n": 20,
+          "different": 12
+        },
+        "strong": {
+          "n": 20,
+          "different": 9
+        }
+      },
+      "consensus_strata": {
+        "True": {
+          "n": 10,
+          "mean_f1_sklearn": 0.8293476084563829,
+          "mean_f1_skglm": 0.8293476084563829
+        },
+        "False": {
+          "n": 30,
+          "mean_f1_sklearn": 0.7896514961758865,
+          "mean_f1_skglm": 0.7911774461061853
+        }
+      }
+    },
+    "threshold_transitions": {
+      "True->True": 15,
+      "False->True": 6,
+      "False->False": 19
+    },
+    "controls": {
+      "A_raw_exact": {
+        "n": 12,
+        "consensus": 2,
+        "exact_recovery": {
+          "sklearn": 0,
+          "skglm": 0
+        },
+        "mean_fp": {
+          "sklearn": 5.666666666666667,
+          "skglm": 5.166666666666667
+        },
+        "mean_fn": {
+          "sklearn": 0.16666666666666666,
+          "skglm": 0.08333333333333333
+        },
+        "f1_disagreement_transition": {
+          "False->True": 2,
+          "True->False": 2,
+          "False->False": 3,
+          "True->True": 5
+        }
+      },
+      "B_near": {
+        "n": 12,
+        "consensus": 12,
+        "exact_recovery": {
+          "sklearn": 0,
+          "skglm": 0
+        },
+        "mean_fp": {
+          "sklearn": 4.666666666666667,
+          "skglm": 4.666666666666667
+        },
+        "mean_fn": {
+          "sklearn": 0,
+          "skglm": 0
+        },
+        "f1_disagreement_transition": {
+          "False->False": 5,
+          "True->False": 7
+        }
+      },
+      "baseline": {
+        "n": 12,
+        "consensus": 2,
+        "exact_recovery": {
+          "sklearn": 0,
+          "skglm": 0
+        },
+        "mean_fp": {
+          "sklearn": 5.666666666666667,
+          "skglm": 5.583333333333333
+        },
+        "mean_fn": {
+          "sklearn": 0.16666666666666666,
+          "skglm": 0.16666666666666666
+        }
+      },
+      "final_float64_exact": {
+        "n": 12,
+        "consensus": 2,
+        "exact_recovery": {
+          "sklearn": 0,
+          "skglm": 0
+        },
+        "mean_fp": {
+          "sklearn": 5.666666666666667,
+          "skglm": 5.583333333333333
+        },
+        "mean_fn": {
+          "sklearn": 0.16666666666666666,
+          "skglm": 0.16666666666666666
+        }
+      }
+    },
+    "external_recovery": {
+      "news": {
+        "strong": {
+          "n": 18,
+          "median_f1": 0.7692307692307693,
+          "min_f1": 0.5263157894736842,
+          "max_f1": 1.0,
+          "exact_recovery": 2
+        },
+        "mixed_weak": {
+          "n": 18,
+          "median_f1": 0.7692307692307693,
+          "min_f1": 0.5263157894736842,
+          "max_f1": 1.0,
+          "exact_recovery": 2
+        }
+      },
+      "gene": {
+        "strong": {
+          "n": 18,
+          "median_f1": 0.20344827586206898,
+          "min_f1": 0.11428571428571428,
+          "max_f1": 0.38461538461538464,
+          "exact_recovery": 0
+        },
+        "mixed_weak": {
+          "n": 18,
+          "median_f1": 0.187683284457478,
+          "min_f1": 0.1,
+          "max_f1": 0.38095238095238093,
+          "exact_recovery": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "reference_accepted": false,
+  "status": "reference_uncertain",
+  "both_pass_common_precision": true,
+  "both_within_observed_budget": true,
+  "coefficient_linf_difference": 0.099796424959772,
+  "normalized_primal_difference": 0.0,
+  "by_support_threshold": {
+    "1e-06": {
+      "same_support": false,
+      "support_symmetric_difference": 1,
+      "same_thresholded_signs": false,
+      "sklearn_nnz": 24,
+      "skglm_nnz": 25
+    },
+    "0.0001": {
+      "same_support": false,
+      "support_symmetric_difference": 1,
+      "same_thresholded_signs": false,
+      "sklearn_nnz": 24,
+      "skglm_nnz": 25
+    }
+  },
+  "interpretation": "Agreement of two high-accuracy numerical implementations; not a proof of exact minimizer support or statistical recovery.",
+  "target_id": "uji_seed308_dispersed_mixed_weak__A_raw_exact",
+  "params": {
+    "seed": 308,
+    "layout": "dispersed",
+    "amplitude": "mixed_weak",
+    "arm": "A_raw_exact"
+  },
+  "seed": 308,
+  "layout": "dispersed",
+  "amplitude": "mixed_weak",
+  "arm": "A_raw_exact",
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "source_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
+  "dataset_hash": "349aecf850ea3bece5d8a442519fee3cd471cb39f15bad8618a2856be92ae9fb",
+  "lambda": 0.10849980674130397,
+  "sklearn": {
+    "method": "sklearn_cyclic_cd",
+    "certificate": {
+      "primal": 1.7569447701017693,
+      "dual": 1.7569447701017022,
+      "gap": 6.705747068735946e-14,
+      "raw_gap": 6.705747068735946e-14,
+      "normalized_gap": 3.8167090866194514e-14,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 7.308043059595093e-14
+    },
+    "elapsed_sec": 0.022517908364534378,
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "status": "converged",
+    "iterations": 154,
+    "iteration_unit": "complete sklearn coordinate epochs",
+    "library_tol": 1e-13,
+    "library_max_iter": 500000,
+    "time_limit_mode": "observed after return; no interruption within sklearn fit",
+    "warnings": []
+  },
+  "skglm": {
+    "method": "skglm",
+    "history": [
+      {
+        "primal": 6.182079830199542,
+        "dual": 0.9884940445301903,
+        "gap": 5.1935857856693515,
+        "raw_gap": 5.1935857856693515,
+        "normalized_gap": 0.8401033193228299,
+        "dual_feasibility": 0.9999999999999959,
+        "kkt_inf": 1.1920127289413076,
+        "iteration": 0,
+        "attempt": 0,
+        "time": 0.0019623935222625732
+      },
+      {
+        "primal": 1.7569447701017693,
+        "dual": 1.7569447699959047,
+        "gap": 1.0586465037931703e-10,
+        "raw_gap": 1.0586465037931703e-10,
+        "normalized_gap": 6.025496770350096e-11,
+        "dual_feasibility": 0.9999999999999959,
+        "kkt_inf": 2.3921920000447017e-11,
+        "iteration": 10,
+        "attempt": 1,
+        "time": 0.011977320536971092
+      }
+    ],
+    "status": "converged",
+    "certificate": {
+      "primal": 1.7569447701017693,
+      "dual": 1.7569447699959047,
+      "gap": 1.0586465037931703e-10,
+      "raw_gap": 1.0586465037931703e-10,
+      "normalized_gap": 6.025496770350096e-11,
+      "dual_feasibility": 0.9999999999999959,
+      "kkt_inf": 2.3921920000447017e-11
+    },
+    "certificate_passed": true,
+    "budget_exceeded": false,
+    "elapsed_sec": 0.012006799690425396,
+    "diagnostics_sec": 0.0007348768413066864,
+    "iterations": 10,
+    "iteration_unit": "outer working-set iterations across all attempts",
+    "attempts": [
+      {
+        "attempt": 1,
+        "library_tol": 1e-10,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.009646822698414326,
+        "elapsed_sec_including_posterior_diagnostics": 0.010012881830334663,
+        "cumulative_elapsed_sec": 0.011977320536971092,
+        "outer_working_set_iterations": 10,
+        "library_returned_stop_crit": 2.3915203151148035e-11,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          4.817584528252178,
+          2.887709118517634,
+          1.8130642545710356,
+          1.7618306711095602,
+          1.7570524904595088,
+          1.7569447793516144,
+          1.7569447701034804,
+          1.7569447701017824,
+          1.7569447701017822,
+          1.7569447701017826
+        ],
+        "normalized_gap": 6.025496770350096e-11,
+        "passed_common_certificate": true
+      }
+    ],
+    "attempt_count": 1,
+    "library_tolerances": [
+      1e-10,
+      1e-12,
+      1e-14
+    ],
+    "library_max_iter": 100,
+    "library_max_epochs": 50000,
+    "time_limit_sec": 20.0,
+    "time_limit_mode": "checked between/after fits; no interruption within an in-progress library fit",
+    "history_sampling": "initial point and fit endpoints only; no internal time-to-accuracy curve",
+    "threshold_curve_comparable": false,
+    "check_every_compatibility_input": 5,
+    "L_compatibility_input_used": false,
+    "jit_warmup_sec": 0.0,
+    "warmup_metadata": {
+      "performed": false,
+      "elapsed_sec": 0.0,
+      "initial_warmup_sec": 3.895263062790036,
+      "versions": {
+        "skglm": "0.5",
+        "numba": "0.68.1",
+        "llvmlite": "0.50.0",
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "scikit-learn": "1.9.0"
+      },
+      "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+      "array_signature": "float64 Fortran-contiguous X, contiguous y",
+      "method": "skglm AndersonCD with working sets and Anderson acceleration"
+    },
+    "objective_increases": null
+  },
+  "geometry": {
+    "sklearn": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 0.08150346761829994,
+        "active_gram_max_eigenvalue": 3.674433943526414,
+        "active_gram_numerical_rank": 24,
+        "active_gram_rank_cutoff": 1.958131759952274e-14,
+        "active_gram_condition": 45.083160887517806,
+        "beta_min": 0.0010952699214575343,
+        "active_kkt_violation": 7.308043059595093e-14,
+        "nnz": 24,
+        "inactive_kkt_margin": 1.7458257062230587e-14
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 0.08150346761829994,
+        "active_gram_max_eigenvalue": 3.674433943526414,
+        "active_gram_numerical_rank": 24,
+        "active_gram_rank_cutoff": 1.958131759952274e-14,
+        "active_gram_condition": 45.083160887517806,
+        "beta_min": 0.0010952699214575343,
+        "active_kkt_violation": 7.308043059595093e-14,
+        "nnz": 24,
+        "inactive_kkt_margin": 1.7458257062230587e-14
+      }
+    },
+    "skglm": {
+      "1e-06": {
+        "active_gram_min_eigenvalue": 8.785563784439115e-16,
+        "active_gram_max_eigenvalue": 3.674748300446004,
+        "active_gram_numerical_rank": 24,
+        "active_gram_rank_cutoff": 2.039895086428658e-14,
+        "active_gram_condition": null,
+        "beta_min": 0.0010952697928049288,
+        "active_kkt_violation": 2.3921920000447017e-11,
+        "nnz": 25,
+        "inactive_kkt_margin": 0.0019917145639887918
+      },
+      "0.0001": {
+        "active_gram_min_eigenvalue": 8.785563784439115e-16,
+        "active_gram_max_eigenvalue": 3.674748300446004,
+        "active_gram_numerical_rank": 24,
+        "active_gram_rank_cutoff": 2.039895086428658e-14,
+        "active_gram_condition": null,
+        "beta_min": 0.0010952697928049288,
+        "active_kkt_violation": 2.3921920000447017e-11,
+        "nnz": 25,
+        "inactive_kkt_margin": 0.0019917145639887918
+      }
+    }
+  },
+  "geometry_diagnostics_sec_outside_fit_timers": 0.0016279416158795357,
+  "reported_reference_calls": 2,
+  "actual_library_fit_attempts": 2,
+  "coefficient_path": "reference_coefficients/uji_seed308_dispersed_mixed_weak__A_raw_exact.npz",
+  "coefficient_sha256": "1686b31e3d7a0e18247474231503e3cc359e1cefdce36ddb978bff29a28c8483",
+  "coefficient_write_sec": 0.0007993811741471291
+}

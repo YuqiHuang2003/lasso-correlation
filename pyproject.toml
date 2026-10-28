@@ -1,0 +1,7 @@
+# lasso-correlation research-checkout configuration. Install the frozen requirements files;
+# this repository does not need an editable install to run its tests/scripts.
+[tool.pytest.ini_options]
+minversion = "9.1"
+testpaths = ["tests"]
+pythonpath = ["src", "scripts"]
+addopts = "-ra"

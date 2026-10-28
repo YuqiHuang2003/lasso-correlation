@@ -1,0 +1,15 @@
+{
+  "sequential_stage_wall_sec": {
+    "smoke": 0.29068788420408964,
+    "pilot": 35.95191307924688,
+    "main": 339.58408752270043,
+    "real": 52.11682891380042,
+    "reproduce": 14.988086951896548,
+    "robustness": 42.21706487517804
+  },
+  "total_recorded_wall_sec": 485.1486692270264,
+  "total_recorded_cpu_wall_hours": 0.13476351922972957,
+  "threads": 1,
+  "gpu_hours": 0,
+  "scope": "experiment stages only; excludes installation, reading, coding, plotting and report typesetting"
+}

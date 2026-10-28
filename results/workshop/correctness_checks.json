@@ -1,0 +1,8 @@
+{
+  "passed": 37,
+  "result": ".....................................                                    [100%]\n37 passed in 5.87s",
+  "log_sha256": "5cdfb11664f129efe481dc162243869300aa76227167419d560c38fadc5e5e0b",
+  "numerical_signature": "2040adb736ce524eb3cd8346ca160752e1dfd76731aa02aa652578cc470f5b2f",
+  "config_sha256": "0a3f3ee648c858920a904ffc7aa6b01bd553a144b075fa5adee670a56d767194",
+  "support_accounting_exhaustive_binary_cases_passed": 512
+}

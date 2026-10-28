@@ -1,0 +1,37 @@
+{
+  "stage": "confirm",
+  "numerical_signature": "ef3438d5ea4b3cf9711dd17c677d28818ad27c2408f5bb0d9cbea186620c28bd",
+  "source_signature": "ef3438d5ea4b3cf9711dd17c677d28818ad27c2408f5bb0d9cbea186620c28bd",
+  "base_pilot_numerical_signature": "2040adb736ce524eb3cd8346ca160752e1dfd76731aa02aa652578cc470f5b2f",
+  "config_sha256": "73d28e6c5768efdddb43eaab6cb4d827def286ff9b2cecacd8d666be2e3ee9ae",
+  "expected_targets": 240,
+  "recorded_targets": 240,
+  "expected_trajectories": 480,
+  "recorded_trajectories": 480,
+  "expected_reference_calls": 480,
+  "reference_calls": 480,
+  "actual_reference_library_fit_attempts": 562,
+  "reference_accepted_targets": 240,
+  "trajectory_status_counts": {
+    "converged": 480
+  },
+  "registered_geometries": [
+    {
+      "family": "block",
+      "rho": 0.0
+    },
+    {
+      "family": "block",
+      "rho": 0.9
+    },
+    {
+      "family": "toeplitz",
+      "rho": 0.9
+    }
+  ],
+  "source_preparation_sec": 0.0,
+  "wall_sec_this_invocation": 1061.5464026480913,
+  "reference_call_count_scope": "Counts stored per-target calls; cache reuse does not imply new fitting in this invocation",
+  "observational_scope": "Independent follow-up seeds are the replication unit; conditions are paired and checkpoints are not independent samples.",
+  "interpretation": "Independent checking of exploratory observations, not a promise of a theoretical guarantee or novelty."
+}

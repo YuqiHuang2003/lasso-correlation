@@ -1,0 +1,16 @@
+{
+  "dataset": "Online News Popularity",
+  "source_url": "https://archive.ics.uci.edu/static/public/332/online+news+popularity.zip",
+  "source_page": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+  "doi": "10.24432/C5NS3V",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Fernandes, K., Vinagre, P., Cortez, P., and Sernadela, P. (2015). Online News Popularity. UCI Machine Learning Repository.",
+  "retrieved_at_utc": "2026-10-28T08:53:33.419442+00:00",
+  "archive_sha256": "dba2ae526f62ccef6f2f8efb53b0268319f4d0d2719bb98d88958cfe31d58a22",
+  "csv_sha256": "b66d9088632308cc27fa35af847650d174a5a50503987c4e511de94a99d1c218",
+  "archive_bytes": 7476401,
+  "csv_bytes": 24311769,
+  "csv_member": "OnlineNewsPopularity/OnlineNewsPopularity.csv",
+  "observed_data_rows": 39644
+}

@@ -1,0 +1,367 @@
+{
+  "verified_at": "2026-10-28T18:35:53.663753+08:00",
+  "numerical_signature": "8d5ab9bfdcf07eb73125f3443401d1cd69dd5e0b0cb358f888e0a3ff702a340b",
+  "config_sha256": "1a37c15e0c39523e862347aa3fe502944bd3fc1d4d611585da888e046a021a0e",
+  "runs": {
+    "stages": {
+      "synthetic": {
+        "declared_cells": 1440,
+        "returned_runs": 1440,
+        "failed_without_returned_run": 0,
+        "status_counts": {
+          "converged": 1440
+        },
+        "source_datasets_regenerated": 120,
+        "complete_grid_accounting": true
+      },
+      "uji": {
+        "declared_cells": 36,
+        "returned_runs": 36,
+        "failed_without_returned_run": 0,
+        "status_counts": {
+          "time_limit": 9,
+          "converged": 27
+        },
+        "source_datasets_regenerated": 3,
+        "complete_grid_accounting": true
+      },
+      "leukemia": {
+        "declared_cells": 36,
+        "returned_runs": 36,
+        "failed_without_returned_run": 0,
+        "status_counts": {
+          "time_limit": 9,
+          "converged": 27
+        },
+        "source_datasets_regenerated": 1,
+        "complete_grid_accounting": true
+      }
+    },
+    "verified_coefficient_files": 1512,
+    "max_saved_vs_recomputed_certificate_difference": 0.0,
+    "max_reference_normalized_gap": 3.0209932107498153e-10,
+    "failed_attempts": [],
+    "returned_nonconverged_runs": [
+      {
+        "stage": "uji",
+        "run_id": "uji_seed0_i0_ista",
+        "status": "time_limit",
+        "normalized_gap": 7.352720410820868e-05,
+        "elapsed_sec": 20.0045714257285
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed0_i1_ista",
+        "status": "time_limit",
+        "normalized_gap": 6.18699245204012e-05,
+        "elapsed_sec": 20.008747930638492
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed0_i2_ista",
+        "status": "time_limit",
+        "normalized_gap": 8.238278038408741e-06,
+        "elapsed_sec": 20.007805223576725
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed1_i0_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.00018763744365716585,
+        "elapsed_sec": 20.010025220923126
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed1_i1_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.00016139010982996673,
+        "elapsed_sec": 20.00634966418147
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed1_i2_ista",
+        "status": "time_limit",
+        "normalized_gap": 6.395348178461086e-06,
+        "elapsed_sec": 20.00929608568549
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed2_i0_ista",
+        "status": "time_limit",
+        "normalized_gap": 4.3206481954647306e-05,
+        "elapsed_sec": 20.008581112138927
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed2_i1_ista",
+        "status": "time_limit",
+        "normalized_gap": 3.3135916999820756e-05,
+        "elapsed_sec": 20.006500887684524
+      },
+      {
+        "stage": "uji",
+        "run_id": "uji_seed2_i2_ista",
+        "status": "time_limit",
+        "normalized_gap": 1.7693859669711033e-05,
+        "elapsed_sec": 20.00750936754048
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.01_rep0_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.002704246334790713,
+        "elapsed_sec": 20.000474698841572
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.01_rep1_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.0026846727041261887,
+        "elapsed_sec": 20.000560748390853
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.01_rep2_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.00267425975579459,
+        "elapsed_sec": 20.000914242118597
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.1_rep0_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.0010140924002467744,
+        "elapsed_sec": 20.00059349182993
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.1_rep1_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.0010141265599484667,
+        "elapsed_sec": 20.000935554504395
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.1_rep2_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.0010129657150705212,
+        "elapsed_sec": 20.00071931257844
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.3_rep0_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.0005008833568083126,
+        "elapsed_sec": 20.00059763714671
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.3_rep1_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.000499554579949546,
+        "elapsed_sec": 20.000615254044533
+      },
+      {
+        "stage": "leukemia",
+        "run_id": "leukemia_a0.3_rep2_ista",
+        "status": "time_limit",
+        "normalized_gap": 0.0005010071654494297,
+        "elapsed_sec": 20.000540802255273
+      }
+    ],
+    "failure_record_count": 0,
+    "failure_policy": "Failures and returned nonconverged runs remain in the archive. A recovered failed attempt is retained separately. Grid completeness counts each declared cell once.",
+    "reference_verification_scope": "Stored feasible-dual certificate consistency, feasibility ratio and normalized gap; reference coefficient vectors were not saved, so reference fits are not rerun here."
+  },
+  "representative_reproduction": {
+    "checks": [
+      {
+        "run_id": "syn_seed0_r0_s5_dispersed_c1_ista",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0_s5_dispersed_c1_fista",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0_s5_dispersed_c1_cd",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0_s5_dispersed_c1_skglm",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0.9_s40_clustered_c1_ista",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0.9_s40_clustered_c1_fista",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0.9_s40_clustered_c1_cd",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      },
+      {
+        "run_id": "syn_seed0_r0.9_s40_clustered_c1_skglm",
+        "coef_max_difference": 0.0,
+        "objective_difference": 0.0,
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  },
+  "report": {
+    "protocol_version": 2,
+    "pdf_pages": 10,
+    "pdf_bytes": 1587425,
+    "identity_complete": false,
+    "identity_display": "blank unspecified fields as requested",
+    "references": 13,
+    "recent_research_references_2023plus": 9,
+    "reference_keys": [
+      "tay2023glmnet",
+      "larsson2023slope",
+      "zogala2024screening",
+      "yang2024adelie",
+      "stallrich2025",
+      "buhai2025",
+      "minsker2025",
+      "moufad2025",
+      "zou2026coreset",
+      "beck2009",
+      "friedman2010",
+      "tseng2001",
+      "uji2014"
+    ],
+    "page_text_chars": [
+      946,
+      1044,
+      671,
+      661,
+      1135,
+      393,
+      578,
+      366,
+      898,
+      2782
+    ],
+    "pdf_renderer": "ReportLab, mathematical figures from Matplotlib; previews exported for inspection",
+    "tex_validation": "Editable multi-file source; compile in a full XeLaTeX/BibTeX environment",
+    "pdf_sha256": "b7659fd9b27ca5f653ca29213705b608221c410b36512e0a87469c563d80eb16",
+    "tex_sha256": "af085b45da29b4d6da3892602f2002337e1cbe5731fed65694d7d8ae5164bdc1",
+    "independent_pdf_page_check": 10
+  },
+  "resources": {
+    "v1_recorded_stage_wall_sec": {
+      "main": 339.58408752270043,
+      "pilot": 35.95191307924688,
+      "real": 52.11682891380042,
+      "reproduce": 14.988086951896548,
+      "robustness": 42.21706487517804,
+      "smoke": 0.29068788420408964
+    },
+    "v2_recorded_stage_wall_sec": {
+      "leukemia": 300.57367752771825,
+      "pilot": 18.945440826006234,
+      "reproduce": 4.691576809622347,
+      "smoke": 0.6217188816517591,
+      "synthetic": 573.3148334100842,
+      "uji": 446.46196036599576
+    },
+    "v2_separately_recorded_warmup_sec": {
+      "leukemia": 3.9121095975860953,
+      "pilot": 3.8870428344234824,
+      "reproduce": 3.9175555715337396,
+      "smoke": 3.9297614246606827,
+      "synthetic": 3.9317353749647737,
+      "uji": 3.892995150759816
+    },
+    "total_recorded_stage_wall_sec": 1829.757877048105,
+    "total_recorded_warmup_sec_outside_v2_stage_timers": 23.47119995392859,
+    "total_recorded_cpu_wall_sec": 1853.2290770020336,
+    "total_recorded_cpu_wall_hours": 0.5147858547227872,
+    "threads": 1,
+    "gpu_hours": 0,
+    "scope": "Recorded v1 and v2 experiment-stage wall times, plus v2 warmup excluded by its stage timers. Includes smoke/pilot/reproduction. Excludes installation, reading, coding, analysis, report generation, packaging and any unrecorded or overwritten earlier attempts. Wall time is not summed per-thread CPU accounting."
+  },
+  "data_source_manifests": [
+    {
+      "original": "data/benchmarks/leukemia/source.json",
+      "archived_metadata": "docs/data_manifest_v2_benchmarks_leukemia.json",
+      "sha256": "045599dc39a13c703bead1852c3e0ceb08cd0364890343eaf76bb367c922430c"
+    },
+    {
+      "original": "data/benchmarks/ujiindoorloc/source.json",
+      "archived_metadata": "docs/data_manifest_v2_benchmarks_ujiindoorloc.json",
+      "sha256": "b860f8dce1bfb82b276eba7449c7df60ee5ddb0e24f5568cd857556fd6b53f63"
+    },
+    {
+      "original": "data/raw/source.json",
+      "archived_metadata": "docs/data_manifest_v2_raw.json",
+      "sha256": "5fca4083427405f0dd446264113781dde94057661df6d559aceb1ba921fc1732"
+    }
+  ],
+  "analysis": {
+    "path": "results/v2/summary.json",
+    "sha256": "f4e938a27249d0ade91a700e83379245e76a9aeefc91a1d50ea9cb07ae5b21cd",
+    "integrity": {
+      "complete_grid": true,
+      "allow_partial": false,
+      "issues": [],
+      "warnings": [],
+      "counts": {
+        "synthetic": {
+          "observed_runs": 1440,
+          "expected_runs": 1440,
+          "missing_cells": 0,
+          "unexpected_cells": 0,
+          "duplicate_cells": 0,
+          "exception_records": 0
+        },
+        "uji": {
+          "observed_runs": 36,
+          "expected_runs": 36,
+          "missing_cells": 0,
+          "unexpected_cells": 0,
+          "duplicate_cells": 0,
+          "exception_records": 0
+        },
+        "leukemia": {
+          "observed_runs": 36,
+          "expected_runs": 36,
+          "missing_cells": 0,
+          "unexpected_cells": 0,
+          "duplicate_cells": 0,
+          "exception_records": 0
+        }
+      },
+      "config_sha256": "1a37c15e0c39523e862347aa3fe502944bd3fc1d4d611585da888e046a021a0e",
+      "numerical_signatures": [
+        "8d5ab9bfdcf07eb73125f3443401d1cd69dd5e0b0cb358f888e0a3ff702a340b"
+      ],
+      "synthetic_design_count": 120,
+      "expected_synthetic_designs": 120
+    },
+    "all_declared_cells_have_outcome_records": true,
+    "all_cells_returned_iterates": true
+  },
+  "identity_preference": "Name and student ID remain blank as explicitly requested; author review and submission remain with the user.",
+  "verification_scope": "Regenerate inputs and recompute common certificates from saved coefficient files; no optimization fits rerun during packaging. Success statuses must meet the common normalized dual gap; other statuses are retained explicitly.",
+  "recomputed_success_gap_roundoff_guard": 1e-12
+}

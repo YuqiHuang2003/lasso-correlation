@@ -1,0 +1,21 @@
+{
+  "seed": 305,
+  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "X_sha256": "1c60b341afc0c3c1103e2528ac561b06553d2168078513b29932d7821626fc4c",
+  "preparation_sec": 0.06541608925908804,
+  "near_grouping_diagnostics": {
+    "wall_sec": 0.018535965122282505,
+    "scan_wall_sec": 0.009657670743763447,
+    "block_size": 256,
+    "peak_gram_bytes_upper_bound": 524288,
+    "working_array_bytes_upper_bound": 4855040,
+    "candidate_pairs_checked": 5,
+    "cosine_candidate_pairs": 5,
+    "unique_pairs_scanned": 64620,
+    "all_unordered_pairs_screened": true,
+    "cache_hit": false,
+    "cosine_candidate_cutoff": 0.9999999999964455,
+    "cosine_rounding_guard": 3.55449003564069e-12
+  },
+  "scope": "One X-only preparation per seed, shared across paired layouts/amplitudes"
+}

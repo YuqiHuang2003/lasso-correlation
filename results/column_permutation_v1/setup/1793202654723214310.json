@@ -1,0 +1,21 @@
+{
+  "source_preparation_sec": 2.1683334344998,
+  "all_preparation_sec": 16.2726265527308,
+  "warmup": {
+    "performed": true,
+    "elapsed_sec": 3.8196991523727775,
+    "initial_warmup_sec": 3.8196991523727775,
+    "versions": {
+      "skglm": "0.5",
+      "numba": "0.68.1",
+      "llvmlite": "0.50.0",
+      "numpy": "2.5.1",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0"
+    },
+    "objective": "||Xw-y||^2/(2n)+lambda*||w||_1; intercept disabled",
+    "array_signature": "float64 Fortran-contiguous X, contiguous y",
+    "method": "skglm AndersonCD with working sets and Anderson acceleration"
+  },
+  "distinct_designs": 13
+}
