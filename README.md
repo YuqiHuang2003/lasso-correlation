@@ -15,7 +15,7 @@ with ISTA, FISTA, cyclic coordinate descent (C99 kernel), scikit-learn and skglm
 - At correlation 0.9, ISTA, FISTA and CD take 17 to 44 times as long as at correlation 0, and skglm 1.4 to 3.2 times as long. ISTA and CD converge linearly near the solution, and the ISTA iteration count matches the rate $(L/\mu_A)\ln 100$ set by the curvature on the selected support.
 - On synthetic designs, all solvers return the same support once the gap reaches $10^{-6}$.
 - On UJIIndoorLoc features solved to a gap of $10^{-10}$, reordering the columns changes the support on 18 of 40 targets with scikit-learn and 25 of 40 with skglm. F1 moves by up to 9.63 percentage points. Every change lies inside a group of nearly proportional columns found before fitting, and the outputs agree once coefficients are summed within each group.
-- On Online News and Leukemia, every equicorrelation submatrix has full column rank, so the solution is unique, and no column order changes the support.
+- On Online News and Leukemia, the uniqueness certificate of the proposed method (Sec. 3.3, Proposition 1) holds for every output, so the solution is unique, and no column order changes the support.
 
 ## Where each result in the report comes from
 
@@ -29,7 +29,7 @@ with ISTA, FISTA, cyclic coordinate descent (C99 kernel), scikit-learn and skglm
 | Sec. 5.3, sklearn against skglm on 40 UJI targets | `results/workshop/real/analysis.json` | `scripts/run_workshop_followup.py real`, then `scripts/analyze_workshop.py real` |
 | Tables 4 and 6, Sec. 5.4 group analysis | `results/column_permutation_v1/` | `scripts/run_column_permutation_v1.py`, then `scripts/analyze_column_permutation_v1.py` |
 | News and gene control targets | `results/reference_audit_v1/confirm/` | `scripts/run_reference_audit_v1.py confirm`, then `scripts/analyze_reference_audit_v1.py confirm` |
-| Table 5 | `results/equicorrelation_rank_check.json` | `scripts/check_equicorrelation_rank.py` |
+| Table 5, uniqueness certificate of Sec. 3.3 | `results/equicorrelation_rank_check.json` | `scripts/check_equicorrelation_rank.py` |
 | Table 7 | `results/uji_preprocessing_control_v1/` | `scripts/run_uji_preprocessing_control_v1.py` |
 
 The group scan of Sec. 3.3 is `near_proportional_groups_chunked` in `src/lasso_study/audit_data_v1.py`. The solvers are in `src/lasso_study/solvers.py`, `src/lasso_study/cd_kernel.c` and `src/lasso_study/modern_solver.py`. The duality gap certificate is `certificate` in `src/lasso_study/solvers.py`.
@@ -69,7 +69,7 @@ make data PYTHON=.venv/bin/python
 .venv/bin/python scripts/verify_column_permutation_v1.py # checks all 784 saved column order outputs
 ```
 
-`check_equicorrelation_rank.py` reuses the saved reference coefficients for 16 targets and refits the other 56 with the reference settings of `configs/reference_audit_v1.json`. It writes `results/equicorrelation_rank_check.json`.
+`check_equicorrelation_rank.py` builds the enclosing set $\bar E$ of Proposition 1 from the duality gap of each output and checks that $X_{\bar E}$ has full column rank. It reuses the saved reference coefficients for 16 targets and refits the other 56 with the reference settings of `configs/reference_audit_v1.json`. It writes `results/equicorrelation_rank_check.json`.
 
 ## Full reruns
 
