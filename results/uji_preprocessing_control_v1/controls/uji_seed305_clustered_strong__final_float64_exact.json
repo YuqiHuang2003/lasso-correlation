@@ -7,12 +7,12 @@
     "amplitude": "strong"
   },
   "arm": "final_float64_exact",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "old_reference_path": "results/workshop/real/references/uji_seed305_clustered_strong.json",
-  "old_reference_sha256": "0a039dd1114af11426951e8427b93632c435ef77aab7396c64359d9b1f1c8093",
-  "old_reference_coefficients_sha256": "8e3bb84f93b02d4ab3f841dbaf1b188c1b4297b59893454bdad81cac5af6f021",
-  "old_dataset_sha256": "58f19d2cca63c96232693e3d6023b6543edf9477a192188e5dfdf0bbea384cb4",
+  "old_reference_sha256": "13c7ffa1fba79c8fd77a43bbc94c4f1f830274c33f289cad43fbf29091d38340",
+  "old_reference_coefficients_sha256": "84e00db00bd69566b8eb12091e9919531b05b9d63946dd62edbd2b8b749d69f1",
+  "old_dataset_sha256": "776b0a32a4c76956ad1de03235b9eaac7a19d7a8aa28d619aaaef5cc688e3bec",
   "old_p": 360,
   "new_p": 360,
   "retained_old_columns": [
@@ -7949,7 +7949,7 @@
     "w_true": "750efaaa3acbb504aa11fb3e43d1b446c0dd4a1322932e1a6fab9e37b70d18aa"
   },
   "reduced_dataset_hash": "9405a8b64b463bebdb935f475b647c7f49d211d0daf9b8f0f6fd83e780c70613",
-  "old_dataset_reconstruction_sec": 0.19405235722661018,
+  "old_dataset_reconstruction_sec": 0.054844138910993934,
   "shared_group_preparation_path": "group_preparation/305.json",
   "raw_RSSI_subsample_hash": "60695e3ab367e328c1539bb0a23bfb564550c3e08a6629826e509dfde888ad66",
   "mapping_diagnostics": {
@@ -7994,8 +7994,8 @@
     "old_skglm": {
       "signal_or_fit_mapping_rmse": 0.0,
       "mapping_rmse_triangle_bound": 0.0,
-      "old_l1_norm": 12.966305117756328,
-      "mapped_l1_norm": 12.966305117756328,
+      "old_l1_norm": 12.966305117756184,
+      "mapped_l1_norm": 12.966305117756184,
       "l1_norm_change": 0.0,
       "l1_scale_change": 0.0,
       "l1_cancellation_amount": 0.0,
@@ -8135,7 +8135,7 @@
       "support_symmetric_difference_count": 0
     }
   },
-  "mapping_diagnostics_sec": 0.03253981191664934,
+  "mapping_diagnostics_sec": 0.014892310020513833,
   "new_public_reference_calls": 0,
   "new_actual_library_fit_attempts": 0,
   "public_reference_call_slots_reserved": 0,
@@ -8206,17 +8206,17 @@
       "sklearn": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 4.186748406326e-14,
-        "elapsed_sec": 0.011060096323490143
+        "normalized_gap": 4.1300173981102e-14,
+        "elapsed_sec": 0.00630124902818352
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 6.067948638761909e-13,
-        "elapsed_sec": 0.013324362225830555
+        "normalized_gap": 1.815392262905582e-14,
+        "elapsed_sec": 0.0034057729644700885
       }
     }
   },
-  "mapping_artifact_sha256": "667f91e0d8ebeb8f9323e103a1164687cabbc8ddfed7f1cf0c916c9d8420a393",
-  "mapping_artifact_write_sec": 0.0013428432866930962
+  "mapping_artifact_sha256": "fba12e931b214bc4715a1eafb20e952687d4fd75694c710ded6ed4ba595cc80f",
+  "mapping_artifact_write_sec": 0.0006790690822526813
 }

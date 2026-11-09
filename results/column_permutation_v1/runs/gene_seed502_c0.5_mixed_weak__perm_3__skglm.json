@@ -15,8 +15,8 @@
   "is_primary_order": true,
   "is_identity_repeat": false,
   "method": "skglm",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "28ab044ddfc281c344ea7dfa4d480d5306afc277cd1dc718851021f73af9b2d8",
   "input_hashes": {
@@ -37,51 +37,51 @@
   "permutation_sha256": "9b65bfcdf84a2449716f72b5239dae02ffb85585374ff2fa6a2dea6491b89b0d",
   "inverse_sha256": "05a2b311987816ccb23a45e6baae04cb70bf97ab21759673ed080c1f9bfff038",
   "permutation_path": "permutations/967af5f3d90bdc3bf36647184a3f19e8fa69a822a85363b27b156aca8498c9fd.json",
-  "permutation_record_sha256": "a74d0dc780c0b0abb0de6170aa6e931fa3482f63f1be774ae75cef2de101da0f",
+  "permutation_record_sha256": "583ff28ae6359ba2852060ccc260fccfb2770b729ee27fbbb3036b16794dd1c3",
   "historical_reference_path": "results/reference_audit_v1/confirm/references/gene_seed502_c0.5_mixed_weak.json",
   "origin": {
     "old_target_id": "gene_seed502_c0.5_mixed_weak",
     "baseline_path": "results/reference_audit_v1/confirm",
     "dataset_path": "results/reference_audit_v1/confirm/datasets/gene_seed502_c0.5_mixed_weak.json",
-    "dataset_sha256": "05ddeb418861fc62bcae672a64e46be746ab8061fcb8d8eb07c738ffd3938d2b",
+    "dataset_sha256": "6ff2b31b8eebb3b73e69b54539389419c8ed521e0dff7eb1352d24e2c61f9ba0",
     "reference_path": "results/reference_audit_v1/confirm/references/gene_seed502_c0.5_mixed_weak.json",
-    "reference_sha256": "1e36d07b75f8fa4e1e97f923bd920f04803e21516e388c42244146ac57bc4fba",
+    "reference_sha256": "725edbc1d3d2a6f889b23b81894aea947b131deccb4398ac5e623daa5a51a5ea",
     "coefficient_path": "results/reference_audit_v1/confirm/reference_coefficients/gene_seed502_c0.5_mixed_weak.npz",
-    "coefficient_sha256": "0eca7663c5dd1fc323c24ea4eee7f04f7c4125b5c4003a16b0351fe564dcbc85",
+    "coefficient_sha256": "456d33618be081b0e87779d2783d772d51189a67bb674c100e788dad5e4df5ec",
     "historical_reference_accepted": true,
     "historical_numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
     "historical_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
     "baseline_config_path": "configs/reference_audit_v1.json",
     "baseline_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
-    "existing_grouping_path": "results/reference_audit_v1/confirm/grouping/967af5f3d90bdc3bf36647184a3f19e8fa69a822a85363b27b156aca8498c9fd.json",
+    "existing_grouping_path": null,
     "existing_uji_grouping_metadata_path": null
   },
   "certificate": {
     "primal": 1.0624087727263205,
-    "dual": 1.0624087727209544,
-    "gap": 5.366151967223232e-12,
-    "raw_gap": 5.366151967223232e-12,
-    "normalized_gap": 5.050929646837138e-12,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 2.76711986657574e-12
+    "dual": 1.0624087726514408,
+    "gap": 7.487965802965846e-11,
+    "raw_gap": 7.487965802965846e-11,
+    "normalized_gap": 7.048102383182002e-11,
+    "dual_feasibility": 0.9999999999999959,
+    "kkt_inf": 3.53040652267822e-11
   },
   "certificate_original": {
     "primal": 1.0624087727263205,
-    "dual": 1.0624087727209544,
-    "gap": 5.366151967223232e-12,
-    "raw_gap": 5.366151967223232e-12,
-    "normalized_gap": 5.050929646837138e-12,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 2.76711986657574e-12
+    "dual": 1.0624087726514408,
+    "gap": 7.487965802965846e-11,
+    "raw_gap": 7.487965802965846e-11,
+    "normalized_gap": 7.048102383182002e-11,
+    "dual_feasibility": 0.9999999999999959,
+    "kkt_inf": 3.53040652267822e-11
   },
   "permuted_certificate": {
-    "primal": 1.0624087727263205,
-    "dual": 1.0624087727209544,
-    "gap": 5.366151967223232e-12,
-    "raw_gap": 5.366151967223232e-12,
-    "normalized_gap": 5.050929646837138e-12,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 2.76711986657574e-12
+    "primal": 1.0624087727263207,
+    "dual": 1.0624087726514406,
+    "gap": 7.488010211886831e-11,
+    "raw_gap": 7.488010211886831e-11,
+    "normalized_gap": 7.048144183402523e-11,
+    "dual_feasibility": 0.9999999999999959,
+    "kkt_inf": 3.530417624908466e-11
   },
   "invariance": {
     "passed": true,
@@ -90,49 +90,49 @@
     "rtol": 5e-12,
     "metrics": {
       "primal": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 1.0312043863631602e-11,
+        "absolute_difference": 2.220446049250313e-16,
+        "allowed_difference": 1.0312043863631604e-11,
         "passed": true
       },
       "dual": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 1.0312043863604772e-11,
+        "absolute_difference": 2.220446049250313e-16,
+        "allowed_difference": 1.0312043863257204e-11,
         "passed": true
       },
       "gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.0000000000268306e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.0000000003744e-12,
         "passed": true
       },
       "raw_gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.0000000000268306e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.0000000003744e-12,
         "passed": true
       },
       "normalized_gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.0000000000252546e-12,
+        "absolute_difference": 4.180022052075419e-16,
+        "allowed_difference": 5.000000000352407e-12,
         "passed": true
       },
       "dual_feasibility": {
         "absolute_difference": 0.0,
-        "allowed_difference": 9.99999999999998e-12,
+        "allowed_difference": 9.999999999999978e-12,
         "passed": true
       },
       "kkt_inf": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.0000000000138356e-12,
+        "absolute_difference": 1.1102230246251565e-16,
+        "allowed_difference": 5.00000000017652e-12,
         "passed": true
       },
       "prediction": {
         "maximum_absolute_difference": 8.881784197001252e-16,
-        "rmse": 2.5545042592506175e-16,
-        "allowed_difference": 3.437432819941761e-11,
+        "rmse": 3.20898316079416e-16,
+        "allowed_difference": 3.4374328197710207e-11,
         "passed": true
       },
       "l1": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 1.991572243923916e-11,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 1.9915722439006952e-11,
         "passed": true
       }
     }
@@ -149,82 +149,81 @@
   "budget_eligible": true,
   "library_status_eligible": true,
   "qualification_failure_reasons": [],
-  "elapsed_sec": 0.02894040197134018,
-  "public_elapsed_sec": 0.02894040197134018,
-  "solver_elapsed_sec": 0.027033704333007336,
-  "posterior_mapping_diagnostics_sec": 0.0019061397761106491,
-  "permuted_X_preparation_sec": 0.012683680281043053,
+  "elapsed_sec": 0.01820110494736582,
+  "public_elapsed_sec": 0.01820110494736582,
+  "solver_elapsed_sec": 0.015651385998353362,
+  "posterior_mapping_diagnostics_sec": 0.0025493470020592213,
+  "permuted_X_preparation_sec": 0.003374307998456061,
   "actual_library_fit_attempts": 1,
   "library_result": {
     "method": "skglm",
     "history": [
       {
-        "primal": 2.3399180556125683,
-        "dual": 0.6760141505957247,
-        "gap": 1.6639039050168436,
-        "raw_gap": 1.6639039050168436,
-        "normalized_gap": 0.7110949466908786,
+        "primal": 2.3399180556125687,
+        "dual": 0.6760141505957245,
+        "gap": 1.6639039050168443,
+        "raw_gap": 1.6639039050168443,
+        "normalized_gap": 0.7110949466908788,
         "dual_feasibility": 0.9999999999999961,
         "kkt_inf": 1.3354388996838247,
         "iteration": 0,
         "attempt": 0,
-        "time": 0.002379084937274456
+        "time": 0.002005634014494717
       },
       {
-        "primal": 1.0624087727263205,
-        "dual": 1.0624087727209544,
-        "gap": 5.366151967223232e-12,
-        "raw_gap": 5.366151967223232e-12,
-        "normalized_gap": 5.050929646837138e-12,
-        "dual_feasibility": 0.9999999999999961,
-        "kkt_inf": 2.76711986657574e-12,
-        "iteration": 12,
+        "primal": 1.0624087727263207,
+        "dual": 1.0624087726514406,
+        "gap": 7.488010211886831e-11,
+        "raw_gap": 7.488010211886831e-11,
+        "normalized_gap": 7.048144183402523e-11,
+        "dual_feasibility": 0.9999999999999959,
+        "kkt_inf": 3.530417624908466e-11,
+        "iteration": 11,
         "attempt": 1,
-        "time": 0.0269528990611434
+        "time": 0.015481242910027504
       }
     ],
     "status": "converged",
     "certificate": {
-      "primal": 1.0624087727263205,
-      "dual": 1.0624087727209544,
-      "gap": 5.366151967223232e-12,
-      "raw_gap": 5.366151967223232e-12,
-      "normalized_gap": 5.050929646837138e-12,
-      "dual_feasibility": 0.9999999999999961,
-      "kkt_inf": 2.76711986657574e-12
+      "primal": 1.0624087727263207,
+      "dual": 1.0624087726514406,
+      "gap": 7.488010211886831e-11,
+      "raw_gap": 7.488010211886831e-11,
+      "normalized_gap": 7.048144183402523e-11,
+      "dual_feasibility": 0.9999999999999959,
+      "kkt_inf": 3.530417624908466e-11
     },
     "certificate_passed": true,
     "budget_exceeded": false,
-    "elapsed_sec": 0.026986059732735157,
-    "diagnostics_sec": 0.0011276565492153168,
-    "iterations": 12,
+    "elapsed_sec": 0.01559090695809573,
+    "diagnostics_sec": 0.0007953459862619638,
+    "iterations": 11,
     "iteration_unit": "outer working-set iterations across all attempts",
     "attempts": [
       {
         "attempt": 1,
         "library_tol": 1e-10,
         "initialization": "zero coefficients and zero fitted values",
-        "fit_elapsed_sec": 0.02404797077178955,
-        "elapsed_sec_including_posterior_diagnostics": 0.02457136008888483,
-        "cumulative_elapsed_sec": 0.0269528990611434,
-        "outer_working_set_iterations": 12,
-        "library_returned_stop_crit": 2.804895204988611e-12,
+        "fit_elapsed_sec": 0.013076092000119388,
+        "elapsed_sec_including_posterior_diagnostics": 0.013474315986968577,
+        "cumulative_elapsed_sec": 0.015481242910027504,
+        "outer_working_set_iterations": 11,
+        "library_returned_stop_crit": 3.521061220368438e-11,
         "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
         "library_objectives_without_timestamps": [
-          1.29412095223483,
-          1.1221337814366568,
-          1.0743692770045115,
-          1.0641017727217101,
-          1.0624344827660552,
-          1.0624088674729384,
-          1.0624087753359526,
-          1.0624087727767217,
-          1.0624087727263785,
-          1.0624087727262541,
-          1.0624087727262537,
-          1.0624087727262181
+          1.2941209522348298,
+          1.1221318606156123,
+          1.0747229978392023,
+          1.0641106245135943,
+          1.0624214528633744,
+          1.0624087906659154,
+          1.0624087733594059,
+          1.06240877275667,
+          1.0624087727263156,
+          1.0624087727262046,
+          1.0624087727261708
         ],
-        "normalized_gap": 5.050929646837138e-12,
+        "normalized_gap": 7.048144183402523e-11,
         "passed_common_certificate": true
       }
     ],
@@ -246,7 +245,7 @@
     "warmup_metadata": {
       "performed": false,
       "elapsed_sec": 0.0,
-      "initial_warmup_sec": 3.8196991523727775,
+      "initial_warmup_sec": 3.482063365052454,
       "versions": {
         "skglm": "0.5",
         "numba": "0.68.1",
@@ -14610,9 +14609,9 @@
       ]
     }
   },
-  "historical_comparison_and_scoring_sec": 0.00037755537778139114,
+  "historical_comparison_and_scoring_sec": 0.0002569369971752167,
   "coefficient_path": "coefficients/gene_seed502_c0.5_mixed_weak__perm_3__skglm.npz",
-  "coefficient_sha256": "51e2a60789be9b3112d97435d66be5555b41a319bd4c87d5a8ba27fe2d758a94",
+  "coefficient_sha256": "565d769c2be625764e2425392966fd412aeff11c0a5417c523dbac69a79c049a",
   "coef_path": "coefficients/gene_seed502_c0.5_mixed_weak__perm_3__skglm.npz",
-  "coefficient_write_sec": 0.01258477196097374
+  "coefficient_write_sec": 0.006672622985206544
 }

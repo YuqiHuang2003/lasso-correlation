@@ -534738,13 +534738,13 @@
   "rule": "Full unordered-pair blocked absolute cosine screening; ascending-column greedy anchor groups; every admitted member directly passes no-intercept relative residual; negative scale allowed; no transitive chaining",
   "floating_point_boundary": "Candidate guard accommodates dot/normalization roundoff; final groups are numerical residual groups, not proofs of exact proportionality or mathematical solution non-uniqueness",
   "cache_hit": false,
-  "scan_elapsed_sec": 0.25818499736487865,
-  "original_scan_elapsed_sec": 0.25818499736487865,
+  "scan_elapsed_sec": 0.15523828798905015,
+  "original_scan_elapsed_sec": 0.15523828798905015,
   "cache_scope": "Process-local LRU of eight X-hash/tolerance/block-size results; call once per distinct X in post-processing",
-  "elapsed_sec": 0.27461044024676085,
+  "elapsed_sec": 0.16053184098564088,
   "diagnostics": {
-    "wall_sec": 0.27461044024676085,
-    "scan_wall_sec": 0.25818499736487865,
+    "wall_sec": 0.16053184098564088,
+    "scan_wall_sec": 0.15523828798905015,
     "block_size": 256,
     "peak_gram_bytes_upper_bound": 524288,
     "working_array_bytes_upper_bound": 3117488,
@@ -534756,12 +534756,10 @@
     "cosine_candidate_cutoff": 0.9999999999997424,
     "cosine_rounding_guard": 2.575717417130404e-13
   },
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "origin": {
-    "kind": "existing_frozen_record",
-    "path": "results/reference_audit_v1/confirm/grouping/967af5f3d90bdc3bf36647184a3f19e8fa69a822a85363b27b156aca8498c9fd.json",
-    "sha256": "99b2f65609a19589beefd354f2a16444c73af878cb78a89fc80614025cceed5b"
+    "kind": "original_X_only_pre_fit_computation"
   },
-  "preparation_sec": 0.2815204607322812,
+  "preparation_sec": 0.3032102669822052,
   "coordinate_system": "original frozen columns"
 }

@@ -1,8 +1,8 @@
 {
   "modern": {
     "performed": true,
-    "elapsed_sec": 3.904064695350826,
-    "initial_warmup_sec": 3.904064695350826,
+    "elapsed_sec": 3.668139514978975,
+    "initial_warmup_sec": 3.668139514978975,
     "versions": {
       "skglm": "0.5",
       "numba": "0.68.1",
@@ -15,6 +15,6 @@
     "array_signature": "float64 Fortran-contiguous X, contiguous y",
     "method": "skglm AndersonCD with working sets and Anderson acceleration"
   },
-  "setup_sec": 3.909780990332365,
+  "setup_sec": 3.6715044809971005,
   "scope": "One engineering JIT warmup fit excluded from per-target reference times; no C-baseline warmup is needed"
 }

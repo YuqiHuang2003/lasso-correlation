@@ -9,14 +9,14 @@
         "eligible": true,
         "reasons": [],
         "status": "converged",
-        "elapsed_sec": 0.0014615487307310104,
-        "normalized_gap": 2.298161660974074e-14
+        "elapsed_sec": 0.0009425949538126588,
+        "normalized_gap": 2.3425705819590803e-14
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
         "status": "converged",
-        "elapsed_sec": 0.003118998371064663,
+        "elapsed_sec": 0.0015396119561046362,
         "normalized_gap": 3.224198685813917e-12
       }
     }
@@ -198,9 +198,9 @@
   "primary_support_threshold": 1e-06,
   "primary_absolute_f1_difference": 0.0,
   "primary_delta_exceeded": false,
-  "prediction_difference_rmse": 1.4985488108896868e-12,
+  "prediction_difference_rmse": 1.4985705550373129e-12,
   "l1_norm_difference_abs": 1.127098414599459e-12,
-  "evaluation_sec_outside_reference_timers": 0.0005118735134601593,
+  "evaluation_sec_outside_reference_timers": 0.0005396719789132476,
   "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
   "target_id": "news_seed407_c0.5_strong",
   "params": {
@@ -219,8 +219,8 @@
   "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
   "dataset_hash": "1c00b3429d1f950a46c5f7e0f333697d5420aad1fbf0fdc7d4335bb9af75530c",
   "input_hashes": {
-    "dataset_sha256": "8a897be70455d5bd150ec1b37d82f080ca8317cd915a5698738288cbf4bb30ea",
-    "reference_json_sha256": "9ee2e5abdb080a96a313cdc5367f864d3cbb8b8c9a51218e3ba7337dfd8cf221",
-    "reference_coefficients_sha256": "7bd9028a246afbb2ad14115392c0bf719b820edf4bb7090e35f6b079782aadc4"
+    "dataset_sha256": "91334790b31eed29b3138466fb3313628a8fc243ee1db0dd1c7ae5a7d4f5820d",
+    "reference_json_sha256": "dd8a01a3d2c7adef5517635bdc712a99d6b2dc870b4559fe93f83539734d0f57",
+    "reference_coefficients_sha256": "56062ad72a430a8601d62c9c6da43f2d1a591d6b449ebb5d5a4358d00da3943a"
   }
 }

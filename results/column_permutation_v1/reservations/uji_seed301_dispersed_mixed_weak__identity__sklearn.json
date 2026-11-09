@@ -15,8 +15,8 @@
   "is_primary_order": true,
   "is_identity_repeat": false,
   "method": "sklearn",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "6251e2fc659536f3b3ecfa527ca20a2b5b8276ae1a68bc6f977b9b9be2468ae8",
   "input_hashes": {
@@ -39,29 +39,29 @@
   "permutation_sha256": "3b9f40a23ab69aeeb042784bf4c9a1e697483756fc8599a01fad5d9b4c05fee5",
   "inverse_sha256": "3b9f40a23ab69aeeb042784bf4c9a1e697483756fc8599a01fad5d9b4c05fee5",
   "permutation_path": "permutations/358a0a59755e407f16210f7dcc17a6934781f1fe857f78ebb9efaaf47e05174f.json",
-  "permutation_record_sha256": "27365a62d605eff8a550db81976148048151b2af23fce589b201154c4c2c8ccb",
+  "permutation_record_sha256": "d35426620ba1ab3537e44c816fa04a071e536e30ae0915fee342593b6ebbab45",
   "historical_reference_path": "results/workshop/real/references/uji_seed301_dispersed_mixed_weak.json",
   "origin": {
     "old_target_id": "uji_seed301_dispersed_mixed_weak",
     "baseline_path": "results/workshop/real",
     "dataset_path": "results/workshop/real/datasets/uji_seed301_dispersed_mixed_weak.json",
-    "dataset_sha256": "e5b149591a835258da5a3cccfc1a977298324ab95e741b302754a2f486881faf",
+    "dataset_sha256": "2fce865a6e7b9f832d6a83a28abc3cbe4e326198c861381da88cd170bc69a725",
     "reference_path": "results/workshop/real/references/uji_seed301_dispersed_mixed_weak.json",
-    "reference_sha256": "2ae45f4cac4efd6c496a9a56995f8a74d70248f6459e9f9fd85b280abc181b06",
+    "reference_sha256": "73d30c75859ec3b7bb71a322204837a969a8526decba45f68a963c0ccd1fd7cd",
     "coefficient_path": "results/workshop/real/reference_coefficients/uji_seed301_dispersed_mixed_weak.npz",
-    "coefficient_sha256": "194ceb4a97a55906c2f3bf4395a71ec92668c15e3f38f93238b87a0d5d0ba314",
+    "coefficient_sha256": "cae1e6b2b6383056f2f3cce4cc125bc8c0f86113189cbd7fae936d872e049968",
     "historical_reference_accepted": false,
     "historical_numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
     "historical_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "baseline_config_path": "configs/workshop_real.json",
     "baseline_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "existing_grouping_path": null,
-    "existing_uji_grouping_metadata_path": "results/workshop/real/reference_diagnostics.json"
+    "existing_uji_grouping_metadata_path": null
   },
-  "invocation": "1793202654723214310",
+  "invocation": "1794209518093666026",
   "reserved_public_reference_calls": 1,
   "state": "completed",
   "actual_library_fit_attempts": 1,
-  "public_elapsed_sec": 0.01609630137681961,
-  "run_sha256": "6015d6f3d6691a2ac8b9888a47696570cf74e74f2001e4d13749735811482a1d"
+  "public_elapsed_sec": 0.00806882104370743,
+  "run_sha256": "683f49eef6a9c4f53a22078756b9ef0a9edab141a9c05eb4e2b60e65aac6d0ea"
 }

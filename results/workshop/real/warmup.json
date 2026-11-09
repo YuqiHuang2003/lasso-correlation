@@ -1,9 +1,9 @@
 {
-  "cd_setup_sec": 0.0003797793760895729,
+  "cd_setup_sec": 0.000283305998891592,
   "modern": {
     "performed": true,
-    "elapsed_sec": 3.8926941715180874,
-    "initial_warmup_sec": 3.8926941715180874,
+    "elapsed_sec": 3.2388851779978722,
+    "initial_warmup_sec": 3.2388851779978722,
     "versions": {
       "skglm": "0.5",
       "numba": "0.68.1",

@@ -1,11 +1,11 @@
 {
   "control_id": "uji_seed308_clustered_strong__A_raw_exact",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
-  "dataset_hash": "7d633b776999ee5b01340a174253e4a583534ace4cfb48da6fed17b357ca18f9",
-  "invocation": "1793197727953559125",
+  "dataset_hash": "3d97853c8080d4bf5e6725a7fb5464036adfd829dba44e8d2732f4b27254775e",
+  "invocation": "1794209517956597954",
   "reserved_public_reference_calls": 2,
   "state": "completed",
   "actual_library_fit_attempts": 2,
-  "reference_sha256": "f16b21706bdc035e2e7b2019f31f55f47772902f61e2e910151bfbfad048a1b2"
+  "reference_sha256": "c41eb62d96a4c599dd8f2743af9b0d73972c0827326b88c7b754ea3db80b4ed6"
 }

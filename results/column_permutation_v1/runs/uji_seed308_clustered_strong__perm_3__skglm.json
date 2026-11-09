@@ -15,13 +15,13 @@
   "is_primary_order": true,
   "is_identity_repeat": false,
   "method": "skglm",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
-  "dataset_hash": "92ab33799119c6479f7b32f5bf136129b639370b0f2f5111a1e4095c82e3358f",
+  "dataset_hash": "f3d3efb081b0fc853e79d2f8a0830aee8400b9c6de279b5590a09696f871be57",
   "input_hashes": {
     "X": "b48b4579882477467df308492063b42b0469404f6334de0e96b7ace8fdbc15c3",
-    "y": "e819a927657a57493ce747742d5f80bdf319bcd2b8a77f6e3e5df1e8982ed02b",
+    "y": "f0ada72e441e43ade5b4c07c8f42172173bfc7c760e99b1dd68095181ac3e96e",
     "w_true": "86805709d759a6b1eb5f833187e26f0b72bbb8ce656362ef61f9112e3e20d7a3",
     "support_order": "2adf370fad22c6c37d9a1961b70430e2b4e63243f2e172e6c335382c9518ef60",
     "ordered_signs": "00c8439a899400b044996013b2b0d0f83274074ad3eb31340d3386d8e23b8cc6",
@@ -39,51 +39,51 @@
   "permutation_sha256": "45bc12e626adcf135ebcb022e11051df6caa44ff61c0f1e34585a66555fd2b30",
   "inverse_sha256": "04db8305088052bd183db77ddc3417e7e1d569b5dd52aa15c2def86e86b53024",
   "permutation_path": "permutations/b48b4579882477467df308492063b42b0469404f6334de0e96b7ace8fdbc15c3.json",
-  "permutation_record_sha256": "10193319596cfcc9f0b98f5499d2692da819a18eb632de7bfc57c704adc08817",
+  "permutation_record_sha256": "4d95da1d04d664900a399db3e4fe7c7686f83560219f2abaaf83b9b289c2cb65",
   "historical_reference_path": "results/workshop/real/references/uji_seed308_clustered_strong.json",
   "origin": {
     "old_target_id": "uji_seed308_clustered_strong",
     "baseline_path": "results/workshop/real",
     "dataset_path": "results/workshop/real/datasets/uji_seed308_clustered_strong.json",
-    "dataset_sha256": "4cf720f5c206b26a961448d5695917ef05ba980d2bb2265f1bb3b8cedce3f666",
+    "dataset_sha256": "a66467e114b7fd03b9452f56fa8129ffeda6bbd7e25636959de9f473b092b318",
     "reference_path": "results/workshop/real/references/uji_seed308_clustered_strong.json",
-    "reference_sha256": "2448ea40c7abb5acab166964585f71545837b3f3b17dc1c69d62e4e4136865fe",
+    "reference_sha256": "c5594d41c887aadb54651b060f2afbe36bfa6d286a07dcde82d22af797d1ca97",
     "coefficient_path": "results/workshop/real/reference_coefficients/uji_seed308_clustered_strong.npz",
-    "coefficient_sha256": "d27dffbca9697fe4bceaf831dc9aca192d44faabb041e6638ac8bd55cfa6dacd",
+    "coefficient_sha256": "1d6d7c264fd41378ea4a9011ba3ec0844e6ad707dd6050be6a67bc24066a6201",
     "historical_reference_accepted": false,
     "historical_numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
     "historical_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "baseline_config_path": "configs/workshop_real.json",
     "baseline_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "existing_grouping_path": null,
-    "existing_uji_grouping_metadata_path": "results/workshop/real/reference_diagnostics.json"
+    "existing_uji_grouping_metadata_path": null
   },
   "certificate": {
     "primal": 2.009786287596884,
-    "dual": 2.009786287588708,
-    "gap": 8.176126442549503e-12,
-    "raw_gap": 8.176126442549503e-12,
-    "normalized_gap": 4.0681571433775454e-12,
+    "dual": 2.009786287586191,
+    "gap": 1.0693224083979658e-11,
+    "raw_gap": 1.0693224083979658e-11,
+    "normalized_gap": 5.320577690260601e-12,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 6.576406086367115e-13
+    "kkt_inf": 1.2207457267265909e-12
   },
   "certificate_original": {
     "primal": 2.009786287596884,
-    "dual": 2.009786287588708,
-    "gap": 8.176126442549503e-12,
-    "raw_gap": 8.176126442549503e-12,
-    "normalized_gap": 4.0681571433775454e-12,
+    "dual": 2.009786287586191,
+    "gap": 1.0693224083979658e-11,
+    "raw_gap": 1.0693224083979658e-11,
+    "normalized_gap": 5.320577690260601e-12,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 6.576406086367115e-13
+    "kkt_inf": 1.2207457267265909e-12
   },
   "permuted_certificate": {
-    "primal": 2.0097862875968837,
-    "dual": 2.0097862875887067,
-    "gap": 8.177014620969203e-12,
-    "raw_gap": 8.177014620969203e-12,
-    "normalized_gap": 4.068599070176023e-12,
-    "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 6.577099975757505e-13
+    "primal": 2.009786287596884,
+    "dual": 2.0097862875861923,
+    "gap": 1.0691891816350108e-11,
+    "raw_gap": 1.0691891816350108e-11,
+    "normalized_gap": 5.319914800062886e-12,
+    "dual_feasibility": 0.9999999999999959,
+    "kkt_inf": 1.2208428712412456e-12
   },
   "invariance": {
     "passed": true,
@@ -92,49 +92,49 @@
     "rtol": 5e-12,
     "metrics": {
       "primal": {
-        "absolute_difference": 4.440892098500626e-16,
+        "absolute_difference": 0.0,
         "allowed_difference": 1.504893143798442e-11,
         "passed": true
       },
       "dual": {
         "absolute_difference": 1.3322676295501878e-15,
-        "allowed_difference": 1.504893143794354e-11,
+        "allowed_difference": 1.504893143793096e-11,
         "passed": true
       },
       "gap": {
-        "absolute_difference": 8.881784197001252e-16,
-        "allowed_difference": 5.0000000000408846e-12,
+        "absolute_difference": 1.3322676295501878e-15,
+        "allowed_difference": 5.000000000053466e-12,
         "passed": true
       },
       "raw_gap": {
-        "absolute_difference": 8.881784197001252e-16,
-        "allowed_difference": 5.0000000000408846e-12,
+        "absolute_difference": 1.3322676295501878e-15,
+        "allowed_difference": 5.000000000053466e-12,
         "passed": true
       },
       "normalized_gap": {
-        "absolute_difference": 4.4192679847790496e-16,
-        "allowed_difference": 5.000000000020342e-12,
+        "absolute_difference": 6.62890197714838e-16,
+        "allowed_difference": 5.000000000026603e-12,
         "passed": true
       },
       "dual_feasibility": {
-        "absolute_difference": 0.0,
+        "absolute_difference": 1.1102230246251565e-16,
         "allowed_difference": 9.999999999999978e-12,
         "passed": true
       },
       "kkt_inf": {
-        "absolute_difference": 6.938893903907228e-17,
-        "allowed_difference": 5.000000000003288e-12,
+        "absolute_difference": 9.71445146547012e-17,
+        "allowed_difference": 5.000000000006104e-12,
         "passed": true
       },
       "prediction": {
-        "maximum_absolute_difference": 1.0658141036401503e-14,
-        "rmse": 8.117624001908556e-16,
-        "allowed_difference": 1.5505536447598363e-10,
+        "maximum_absolute_difference": 3.552713678800501e-15,
+        "rmse": 4.683127429380009e-16,
+        "allowed_difference": 1.5505536447598252e-10,
         "passed": true
       },
       "l1": {
         "absolute_difference": 0.0,
-        "allowed_difference": 7.124872984081407e-11,
+        "allowed_difference": 7.124872984081327e-11,
         "passed": true
       }
     }
@@ -142,7 +142,7 @@
   "library_status": "converged",
   "permuted_input_hashes": {
     "X": "c94641848205331324b7d239a756f7fcb9029d2f1a281934df2efda3d6776060",
-    "y": "e819a927657a57493ce747742d5f80bdf319bcd2b8a77f6e3e5df1e8982ed02b",
+    "y": "f0ada72e441e43ade5b4c07c8f42172173bfc7c760e99b1dd68095181ac3e96e",
     "w_true": "d6bf1bf0b7ab10c0576be4f4dd8b92b2811201c10892540a19f0e038bf15f0ab"
   },
   "status": "converged",
@@ -151,11 +151,11 @@
   "budget_eligible": true,
   "library_status_eligible": true,
   "qualification_failure_reasons": [],
-  "elapsed_sec": 0.011197389103472233,
-  "public_elapsed_sec": 0.011197389103472233,
-  "solver_elapsed_sec": 0.010107738897204399,
-  "posterior_mapping_diagnostics_sec": 0.0010892003774642944,
-  "permuted_X_preparation_sec": 0.007673941552639008,
+  "elapsed_sec": 0.0047244689194485545,
+  "public_elapsed_sec": 0.0047244689194485545,
+  "solver_elapsed_sec": 0.0041697119595482945,
+  "posterior_mapping_diagnostics_sec": 0.0005544519517570734,
+  "permuted_X_preparation_sec": 0.0014936089282855392,
   "actual_library_fit_attempts": 1,
   "library_result": {
     "method": "skglm",
@@ -170,60 +170,59 @@
         "kkt_inf": 1.4827207386801324,
         "iteration": 0,
         "attempt": 0,
-        "time": 0.0018803831189870834
+        "time": 0.0012724280823022127
       },
       {
-        "primal": 2.0097862875968837,
-        "dual": 2.0097862875887067,
-        "gap": 8.177014620969203e-12,
-        "raw_gap": 8.177014620969203e-12,
-        "normalized_gap": 4.068599070176023e-12,
-        "dual_feasibility": 0.999999999999996,
-        "kkt_inf": 6.577099975757505e-13,
-        "iteration": 9,
+        "primal": 2.009786287596884,
+        "dual": 2.0097862875861923,
+        "gap": 1.0691891816350108e-11,
+        "raw_gap": 1.0691891816350108e-11,
+        "normalized_gap": 5.319914800062886e-12,
+        "dual_feasibility": 0.9999999999999959,
+        "kkt_inf": 1.2208428712412456e-12,
+        "iteration": 8,
         "attempt": 1,
-        "time": 0.01004435122013092
+        "time": 0.0041034320602193475
       }
     ],
     "status": "converged",
     "certificate": {
-      "primal": 2.0097862875968837,
-      "dual": 2.0097862875887067,
-      "gap": 8.177014620969203e-12,
-      "raw_gap": 8.177014620969203e-12,
-      "normalized_gap": 4.068599070176023e-12,
-      "dual_feasibility": 0.999999999999996,
-      "kkt_inf": 6.577099975757505e-13
+      "primal": 2.009786287596884,
+      "dual": 2.0097862875861923,
+      "gap": 1.0691891816350108e-11,
+      "raw_gap": 1.0691891816350108e-11,
+      "normalized_gap": 5.319914800062886e-12,
+      "dual_feasibility": 0.9999999999999959,
+      "kkt_inf": 1.2208428712412456e-12
     },
     "certificate_passed": true,
     "budget_exceeded": false,
-    "elapsed_sec": 0.010069695301353931,
-    "diagnostics_sec": 0.0007091434672474861,
-    "iterations": 9,
+    "elapsed_sec": 0.004126336076296866,
+    "diagnostics_sec": 0.0004073579329997301,
+    "iterations": 8,
     "iteration_unit": "outer working-set iterations across all attempts",
     "attempts": [
       {
         "attempt": 1,
         "library_tol": 1e-10,
         "initialization": "zero coefficients and zero fitted values",
-        "fit_elapsed_sec": 0.0078120045363903046,
-        "elapsed_sec_including_posterior_diagnostics": 0.00816220324486494,
-        "cumulative_elapsed_sec": 0.01004435122013092,
-        "outer_working_set_iterations": 9,
-        "library_returned_stop_crit": 6.497996585252963e-13,
+        "fit_elapsed_sec": 0.0027147020446136594,
+        "elapsed_sec_including_posterior_diagnostics": 0.0028292459901422262,
+        "cumulative_elapsed_sec": 0.0041034320602193475,
+        "outer_working_set_iterations": 8,
+        "library_returned_stop_crit": 1.2237572066808866e-12,
         "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
         "library_objectives_without_timestamps": [
-          6.071183191458173,
-          3.926816076203562,
-          2.2511063500091293,
-          2.0193447332323426,
-          2.0097990899971627,
-          2.0097862959586505,
-          2.009786287596903,
-          2.009786287596883,
-          2.009786287596881
+          6.071183191458175,
+          3.927139285706698,
+          2.2511098110603687,
+          2.019512032523264,
+          2.0098101333199723,
+          2.0097863050467737,
+          2.0097862876053973,
+          2.0097862875968824
         ],
-        "normalized_gap": 4.068599070176023e-12,
+        "normalized_gap": 5.319914800062886e-12,
         "passed_common_certificate": true
       }
     ],
@@ -245,7 +244,7 @@
     "warmup_metadata": {
       "performed": false,
       "elapsed_sec": 0.0,
-      "initial_warmup_sec": 3.8196991523727775,
+      "initial_warmup_sec": 3.482063365052454,
       "versions": {
         "skglm": "0.5",
         "numba": "0.68.1",
@@ -264,14 +263,14 @@
   "time_limit_mode": "observed full public elapsed; no interruption within native fit",
   "scores": {
     "1e-06": {
-      "tp": 14,
+      "tp": 15,
       "fp": 6,
-      "fn": 1,
-      "nnz": 20,
-      "f1": 0.8,
+      "fn": 0,
+      "nnz": 21,
+      "f1": 0.8333333333333334,
       "f1_exact": {
-        "numerator": 4,
-        "denominator": 5
+        "numerator": 5,
+        "denominator": 6
       },
       "support_indices": [
         82,
@@ -282,6 +281,7 @@
         99,
         180,
         181,
+        182,
         192,
         196,
         212,
@@ -478,7 +478,7 @@
         0,
         -1,
         1,
-        0,
+        1,
         0,
         0,
         0,
@@ -1054,9 +1054,9 @@
       ]
     }
   },
-  "historical_comparison_and_scoring_sec": 0.00015741586685180664,
+  "historical_comparison_and_scoring_sec": 0.00010860804468393326,
   "coefficient_path": "coefficients/uji_seed308_clustered_strong__perm_3__skglm.npz",
-  "coefficient_sha256": "d57ae902e97412e6547bfae952b9e60c46a7a3c59b040e80d1f3a4168c46cbd8",
+  "coefficient_sha256": "e708f068278aececd6018f067f91c9c4e75bdb7abca1147d029025537d85ee6d",
   "coef_path": "coefficients/uji_seed308_clustered_strong__perm_3__skglm.npz",
-  "coefficient_write_sec": 0.0013669487088918686
+  "coefficient_write_sec": 0.0008801789954304695
 }

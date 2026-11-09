@@ -20,13 +20,12 @@ SMALL_TESTS := \
 	tests/test_uji_preprocessing_control_v1.py \
 	tests/test_workshop_runner.py
 
-.PHONY: help install install-modern install-report test test-data test-solvers test-modern data check-column-metadata
+.PHONY: help install install-modern test test-data test-solvers test-modern data check-column-metadata
 
 help:
 	@printf '%s\n' \
 	  'install                Install the frozen base requirements in the selected Python environment' \
 	  'install-modern         Add isolated optional skglm/Numba packages in .modern_deps/' \
-	  'install-report         Install optional report-building Python requirements' \
 	  'test                   Run lightweight correctness checks (no datasets needed)' \
 	  'test-data              Run additional generated/temporary-data unit tests' \
 	  'test-solvers           Run small real solver checks; needs GCC and writes build/cd_kernel.so' \
@@ -41,9 +40,6 @@ install:
 # --no-deps preserves the base scientific stack installed from requirements.txt.
 install-modern:
 	$(PYTHON) -m pip install --no-deps --target .modern_deps -r requirements-modern.txt
-
-install-report:
-	$(PYTHON) -m pip install -r requirements-report.txt
 
 test:
 	$(PYTHON) -m pytest -q $(SMALL_TESTS)

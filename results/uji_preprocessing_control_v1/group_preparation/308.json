@@ -1,11 +1,11 @@
 {
   "seed": 308,
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "X_sha256": "b48b4579882477467df308492063b42b0469404f6334de0e96b7ace8fdbc15c3",
-  "preparation_sec": 0.06379953399300575,
+  "preparation_sec": 0.03160147205926478,
   "near_grouping_diagnostics": {
-    "wall_sec": 0.018141428008675575,
-    "scan_wall_sec": 0.009459062479436398,
+    "wall_sec": 0.009278600104153156,
+    "scan_wall_sec": 0.007290029083378613,
     "block_size": 256,
     "peak_gram_bytes_upper_bound": 524288,
     "working_array_bytes_upper_bound": 4855040,

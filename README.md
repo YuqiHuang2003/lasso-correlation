@@ -2,126 +2,95 @@
 
 [![Tests](https://github.com/YuqiHuang2003/lasso-correlation/actions/workflows/tests.yml/badge.svg)](https://github.com/YuqiHuang2003/lasso-correlation/actions/workflows/tests.yml)
 
-Reproducible experiments on **feature correlation, Lasso optimization efficiency, and sparse support recovery**.
+Code and saved results for the report *Column-Order Sensitivity of Lasso Support Recovery under Correlated Features* (COMP6704 individual assignment, PolyU, Fall 2026).
 
-The project combines controlled synthetic designs, semi-synthetic responses on public feature matrices, high-accuracy numerical certificates, and audits of support-recovery evaluation. The current research focus is whether different numerical representations of the same Lasso target change variable-level conclusions. Research reports are currently in Chinese; this repository guide is in English.
+The study solves the Lasso
 
-## Start here
+$$\min_w \frac{1}{2n}\|y-Xw\|_2^2+\lambda\|w\|_1$$
 
-- [Latest research brief: column-order sensitivity](report/column_permutation_v1/column_order_zh.pdf)
-- [Detailed findings and reproduction steps](docs/column_permutation_findings_v1_zh.md)
-- [Frozen column-order protocol](docs/column_permutation_protocol_v1.md) and [independent review](docs/column_permutation_review_v1.md)
-- [Research roadmap](TODO.md)
-- [Snapshot coverage](results/README.md) and [data preparation](DATA.md)
+with ISTA, FISTA, cyclic coordinate descent (C99 kernel), scikit-learn and skglm. All solvers stop on the same normalized duality gap. It measures how feature correlation slows each solver and when the support stops changing as the gap shrinks. It then permutes the input columns, with the objective held fixed, to test whether the support at convergence is unique.
 
-## Latest result
+## Main results
 
-The column-order study holds **the mathematical objective, response, penalty, feature values, and original variable identities fixed**. It changes only the input column order and maps fitted coefficients back before evaluating support and F1.
+- At correlation 0.9, ISTA, FISTA and CD take 17 to 44 times as long as at correlation 0, and skglm 1.4 to 3.2 times as long. ISTA and CD converge linearly near the solution, and the ISTA iteration count matches the rate $(L/\mu_A)\ln 100$ set by the curvature on the selected support.
+- On synthetic designs, all solvers return the same support once the gap reaches $10^{-6}$.
+- On UJIIndoorLoc features solved to a gap of $10^{-10}$, reordering the columns changes the support on 18 of 40 targets with scikit-learn and 25 of 40 with skglm. F1 moves by up to 9.63 percentage points. Every change lies inside a group of nearly proportional columns found before fitting, and the outputs agree once coefficients are summed within each group.
+- On Online News and Leukemia, every equicorrelation submatrix has full column rank, so the solution is unique, and no column order changes the support.
 
-For each target and implementation, the primary comparison uses the original order and five fixed permutations. A separate original-order repeat checks reproducibility. All **784 outputs** passed the common accuracy check; all **112 original-order repeats** and **112 comparisons with historical original-order references** passed their respective checks.
+## Where each result in the report comes from
 
-At the primary support threshold, `abs(coef) > 1e-6`:
+| Report item | Saved results | Script that produces them |
+| --- | --- | --- |
+| Sec. 3.1, sample Lipschitz constant | computed on the fly | `scripts/compute_lipschitz.py` |
+| Table 1, Figure 1, Figure 2 | `results/v2/synthetic_runs.csv`, `results/v2/summary.json` | `scripts/run_v2.py synthetic`, then `scripts/analyze_v2.py` (figures in `figures/v2/`) |
+| Sec. 5.1, convergence rate | `results/v2/synthetic_runs.csv` | `scripts/convergence_rate.py` |
+| Table 2 | `results/v2/real_unbounded.json` | `scripts/run_real_unbounded.py`, all four solvers without a time limit (needs `make data` and GCC) |
+| Table 3 | `results/workshop/confirm/` | `scripts/run_workshop_followup.py confirm`, then `scripts/analyze_workshop.py confirm` |
+| Sec. 5.3, sklearn against skglm on 40 UJI targets | `results/workshop/real/analysis.json` | `scripts/run_workshop_followup.py real`, then `scripts/analyze_workshop.py real` |
+| Tables 4 and 6, Sec. 5.4 group analysis | `results/column_permutation_v1/` | `scripts/run_column_permutation_v1.py`, then `scripts/analyze_column_permutation_v1.py` |
+| News and gene control targets | `results/reference_audit_v1/confirm/` | `scripts/run_reference_audit_v1.py confirm`, then `scripts/analyze_reference_audit_v1.py confirm` |
+| Table 5 | `results/equicorrelation_rank_check.json` | `scripts/check_equicorrelation_rank.py` |
+| Table 7 | `results/uji_preprocessing_control_v1/` | `scripts/run_uji_preprocessing_control_v1.py` |
 
-| Feature design | Implementation | Targets | Support changes across orders | F1 range > 0.02 | Maximum F1 range |
-| --- | --- | ---: | ---: | ---: | ---: |
-| UJIIndoorLoc | scikit-learn cyclic CD | 40 | 18 | 18 | 7.66 percentage points |
-| UJIIndoorLoc | skglm | 40 | 26 | 21 | 9.63 percentage points |
-| Online News | scikit-learn cyclic CD | 8 | 0 | 0 | 0 |
-| Online News | skglm | 8 | 0 | 0 | 0 |
-| Leukemia feature matrix | scikit-learn cyclic CD | 8 | 0 | 0 | 0 |
-| Leukemia feature matrix | skglm | 8 | 0 | 0 | 0 |
+The group scan of Sec. 3.3 is `near_proportional_groups_chunked` in `src/lasso_study/audit_data_v1.py`. The solvers are in `src/lasso_study/solvers.py`, `src/lasso_study/cd_kernel.c` and `src/lasso_study/modern_solver.py`. The duality gap certificate is `certificate` in `src/lasso_study/solvers.py`.
 
-Every observed support change was inside an X-only near-proportional group fixed before fitting. The 10 UJI targets that had passed the earlier two-reference consensus check remained stable under the tested permutations. The other two design sources also remained stable.
+## Installation
 
-These are findings about the **specified subsamples, preprocessing, responses, regularization levels, and finite set of orders**. The paired targets, permutations, and implementations are not independent datasets. Small duality gaps or two-implementation agreement do not prove uniqueness or correct recovery of the generating support. Column-order effects and permutation-based handling have prior work; this project does not claim to introduce a new solver.
-
-## Installation and tests
-
-The recorded environment uses Linux and Python 3.13.13. The dependency versions used by the experiments are pinned in the three requirements files. GCC is required for the optional C coordinate-descent checks.
+The experiments used Linux and Python 3.13. Pinned versions are in the requirements files. GCC is needed for the C coordinate descent kernel.
 
 ```bash
-git clone git@github.com:YuqiHuang2003/lasso-correlation.git
+git clone https://github.com/YuqiHuang2003/lasso-correlation.git
 cd lasso-correlation
 python3.13 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
+make install-modern PYTHON=.venv/bin/python   # skglm, numba, llvmlite into .modern_deps/
 make test PYTHON=.venv/bin/python
 ```
 
-The default tests use small fixtures and mocked experiment runners. They require no original datasets and do not launch research runs. Additional small data-generator and solver checks are explicit:
+`uv venv --python 3.13 .venv` works as well when the system Python lacks `venv`.
+
+## Quick checks (seconds, no download)
+
+These read saved results or rebuild synthetic designs from fixed seeds.
 
 ```bash
-make test-data test-solvers PYTHON=.venv/bin/python
+.venv/bin/python scripts/compute_lipschitz.py    # Sec. 3.1: L from about 5.8 to 30.6
+.venv/bin/python scripts/convergence_rate.py     # Sec. 5.1: iterations per two decades of the gap
+python3 scripts/check_snapshot.py                # saved results match their recorded bytes
 ```
 
-Optional modern solver and report dependencies:
+## Checks that need the public datasets
 
-```bash
-make install-modern PYTHON=.venv/bin/python
-make test-modern PYTHON=.venv/bin/python
-make install-report PYTHON=.venv/bin/python
-```
-
-The modern stack is installed into the ignored `.modern_deps/` directory with `--no-deps`, sharing the pinned base NumPy/SciPy/scikit-learn environment. Run `make help` for the available targets. No Make target starts a full research experiment implicitly.
-
-## Data and evidence verification
-
-Original datasets are **not included**. The frozen source manifests and attribution records are retained under `docs/`. The explicit data-preparation command downloads from the official sources, checks content hashes, and restores the historical source-record bytes needed by the saved provenance chain:
+`make data` downloads Online News Popularity and UJIIndoorLoc from UCI and Leukemia from LIBSVM, and checks them against the recorded source files. The datasets are not stored in this repository.
 
 ```bash
 make data PYTHON=.venv/bin/python
+.venv/bin/python scripts/check_equicorrelation_rank.py   # Table 5, about one minute
+.venv/bin/python scripts/verify_column_permutation_v1.py # checks all 784 saved column order outputs
 ```
 
-New acquisition timestamps are recorded separately from the historical source manifests. See [DATA.md](DATA.md) for cache behavior, licenses, and details.
+`check_equicorrelation_rank.py` reuses the saved reference coefficients for 16 targets and refits the other 56 with the reference settings of `configs/reference_audit_v1.json`. It writes `results/equicorrelation_rank_check.json`.
 
-The committed scientific snapshot can be checked without scientific Python dependencies or raw data:
+## Full reruns
 
-```bash
-python3 scripts/check_snapshot.py
-```
+Each experiment has a frozen configuration in `configs/` and a protocol in `docs/`. Run timing experiments one at a time with one BLAS thread, as the `Makefile` sets through `OPENBLAS_NUM_THREADS` and related variables. The run scripts reuse cached results whose signature matches, so write a rerun to a fresh copy of the repository to obtain new timings. All saved results were produced on one machine (Intel Core Ultra X7 358H, OpenBLAS with Haswell kernels, Python 3.13). On a CPU whose BLAS uses other kernels, such as AVX-512, the response $y=X\beta^\star+\varepsilon$ of a few UJI targets can differ in its last bits. The runners then print a warning and continue on the regenerated $y$, and a bitwise mismatch with the saved references is recorded without stopping the column order study. Iteration counts, supports and F1 of ISTA, FISTA and CD do not change across machines. skglm supports on UJI can change slightly, which is the order and rounding effect that the column order study measures.
 
-After preparing data and installing the modern stack, the latest experiment's metadata preflight checks the frozen inputs and planned calls without fitting, warming up a solver, or generating new data:
-
-```bash
-make check-column-metadata PYTHON=.venv/bin/python
-```
-
-To recompute the numerical verification, analysis, independent analysis checks, and Chinese brief:
-
-```bash
-.venv/bin/python scripts/verify_column_permutation_v1.py
-.venv/bin/python scripts/analyze_column_permutation_v1.py
-.venv/bin/python scripts/verify_column_permutation_v1.py --analysis-only
-.venv/bin/python scripts/build_column_permutation_brief_v1.py
-```
-
-These commands do not refit the experiment. They **do update derived verification and analysis files**. Use a separate checkout if you want to retain the committed snapshot byte-for-byte. Snapshot checks will correctly report changed files after regeneration. Report rebuilding requires the report dependencies.
-
-Actual numerical reruns are separate: follow the [protocol](docs/column_permutation_protocol_v1.md), use a new versioned output directory, prepare and lock inputs before the first fit, and keep numerical timing jobs sequential. Existing runs with matching signatures are cached results, not new timings.
+Detailed guides, in Chinese, are [docs/reproduction_v2.md](docs/reproduction_v2.md) for Tables 1 and 2 and [docs/workshop_reproduction.md](docs/workshop_reproduction.md) for Table 3. The column order protocol is [docs/column_permutation_protocol_v1.md](docs/column_permutation_protocol_v1.md).
 
 ## Repository layout
 
 ```text
-src/lasso_study/    Data generators, certificates, proximal/CD solvers, and audits
-scripts/           Versioned experiment, verification, analysis, and report entry points
-tests/             Small correctness, provenance, mapping, and runner tests
-configs/           Frozen experimental settings and environment records
-docs/              Protocols, findings, literature checks, and source manifests
-results/           Complete latest evidence, baseline dependencies, and older summaries
-figures/           Scientific figures generated from saved results
-report/            Chinese reports and editable report sources
-repository_snapshot.json  SHA-256 inventory of the copied scientific snapshot
+src/lasso_study/   data generators, solvers, duality gap certificate, group scan
+scripts/           experiment, analysis and verification scripts
+configs/           frozen experiment settings
+results/           saved outputs for every table in the report
+figures/           figures generated from saved results
+docs/              protocols, findings and data source records
+tests/             small correctness tests that need no datasets
 ```
 
-The original numerical source files and selected evidence retain their bytes because provenance checks use SHA-256 hashes. Repository setup, data bootstrap, documentation, and CI are added around them. Historical environment records may contain the original machine's installation paths; these are provenance metadata, not installation requirements.
+`results/README.md` lists which saved files are included. Dense per-iteration trajectories of the earliest runs are left out to keep the repository small.
 
-## Earlier stages and snapshot scope
+## Data and licenses
 
-The repository also retains the earlier correlation/sparsity study, synthetic confirmation results, external negative results, and the UJI preprocessing controls. Useful entry points are [the course-stage reproduction guide](docs/reproduction_v2.md), [workshop findings](docs/workshop_findings_zh.md), and [external reference-audit findings](docs/reference_audit_findings_v1_zh.md).
-
-This is a curated research snapshot. It contains the **complete latest column-order evidence and its historical baseline dependencies**. The older dense checkpoint trajectories, local environments, original course handout, original datasets, generated font files, and duplicate ZIP bundles are omitted. Therefore, a complete rebuild of every historical report or packaging command may require the original full archives or a new experimental run. [results/README.md](results/README.md) records the exact boundary.
-
-## Attribution and contributions
-
-See [NOTICE.md](NOTICE.md) for dataset, embedded-font, and dependency attribution. No project-wide open-source license has been selected yet. Third-party licenses remain separate.
-
-Contributions should preserve frozen evidence and use new versioned stages for changed numerical protocols; see [CONTRIBUTING.md](CONTRIBUTING.md). Publication novelty and claims are assessed separately from reproducibility and observed numerical effects.
+UJIIndoorLoc and Online News Popularity are from the UCI Machine Learning Repository under CC BY 4.0. The Leukemia matrix is from the LIBSVM dataset page. See [NOTICE.md](NOTICE.md) and [DATA.md](DATA.md).

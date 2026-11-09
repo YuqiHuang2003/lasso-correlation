@@ -850,7 +850,7 @@
     1.1612597249511787,
     1.2172644965478876
   ],
-  "train_y_mean": 0.003300923591141153,
+  "train_y_mean": 0.0033009235911411424,
   "coefficient_coordinates": "Original frozen final-X coordinates; no new preprocessing or grouping",
   "rng": "NumPy PCG64 via SeedSequence(seed).spawn(8)",
   "rng_stream_roles": {
@@ -866,7 +866,7 @@
   "layout_groups_scope": "Consecutive index blocks define support layout. Only family=block has independent covariance blocks; Toeplitz and real-design blocks are bookkeeping partitions.",
   "hashes": {
     "X": "b48b4579882477467df308492063b42b0469404f6334de0e96b7ace8fdbc15c3",
-    "y": "e819a927657a57493ce747742d5f80bdf319bcd2b8a77f6e3e5df1e8982ed02b",
+    "y": "f0ada72e441e43ade5b4c07c8f42172173bfc7c760e99b1dd68095181ac3e96e",
     "w_true": "86805709d759a6b1eb5f833187e26f0b72bbb8ce656362ef61f9112e3e20d7a3",
     "support_order": "2adf370fad22c6c37d9a1961b70430e2b4e63243f2e172e6c335382c9518ef60",
     "ordered_signs": "00c8439a899400b044996013b2b0d0f83274074ad3eb31340d3386d8e23b8cc6",
@@ -4545,9 +4545,10 @@
     493
   ],
   "real_design_comparison_scope": "Independent robustness arm with real_sparsity default 15 and real_n default 1000; not a difficulty-matched comparison with synthetic n500/p1000/s20",
+  "y_differs_from_frozen_in_last_bits": false,
   "source": "uji",
   "target_id": "uji_seed308_clustered_strong",
-  "historical_dataset_hash": "92ab33799119c6479f7b32f5bf136129b639370b0f2f5111a1e4095c82e3358f",
+  "historical_dataset_hash": "f3d3efb081b0fc853e79d2f8a0830aee8400b9c6de279b5590a09696f871be57",
   "original_reference_accepted": false,
   "params": {
     "source": "uji",
@@ -4560,21 +4561,21 @@
     "old_target_id": "uji_seed308_clustered_strong",
     "baseline_path": "results/workshop/real",
     "dataset_path": "results/workshop/real/datasets/uji_seed308_clustered_strong.json",
-    "dataset_sha256": "4cf720f5c206b26a961448d5695917ef05ba980d2bb2265f1bb3b8cedce3f666",
+    "dataset_sha256": "a66467e114b7fd03b9452f56fa8129ffeda6bbd7e25636959de9f473b092b318",
     "reference_path": "results/workshop/real/references/uji_seed308_clustered_strong.json",
-    "reference_sha256": "2448ea40c7abb5acab166964585f71545837b3f3b17dc1c69d62e4e4136865fe",
+    "reference_sha256": "c5594d41c887aadb54651b060f2afbe36bfa6d286a07dcde82d22af797d1ca97",
     "coefficient_path": "results/workshop/real/reference_coefficients/uji_seed308_clustered_strong.npz",
-    "coefficient_sha256": "d27dffbca9697fe4bceaf831dc9aca192d44faabb041e6638ac8bd55cfa6dacd",
+    "coefficient_sha256": "1d6d7c264fd41378ea4a9011ba3ec0844e6ad707dd6050be6a67bc24066a6201",
     "historical_reference_accepted": false,
     "historical_numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
     "historical_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "baseline_config_path": "configs/workshop_real.json",
     "baseline_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "existing_grouping_path": null,
-    "existing_uji_grouping_metadata_path": "results/workshop/real/reference_diagnostics.json"
+    "existing_uji_grouping_metadata_path": null
   },
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
-  "dataset_hash": "92ab33799119c6479f7b32f5bf136129b639370b0f2f5111a1e4095c82e3358f",
-  "preprocessing_sec": 0.2041213046759367
+  "dataset_hash": "f3d3efb081b0fc853e79d2f8a0830aee8400b9c6de279b5590a09696f871be57",
+  "preprocessing_sec": 0.05683136498555541
 }

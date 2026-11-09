@@ -25,10 +25,10 @@
   "numerical_signature": "ef3438d5ea4b3cf9711dd17c677d28818ad27c2408f5bb0d9cbea186620c28bd",
   "source_signature": "ef3438d5ea4b3cf9711dd17c677d28818ad27c2408f5bb0d9cbea186620c28bd",
   "stage": "confirm",
-  "started_at": "2026-10-28T19:52:40.411029+08:00",
+  "started_at": "2026-11-09T15:33:44.320308+08:00",
   "timezone": "Asia/Shanghai",
-  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
-  "platform": "Linux-5.15.0-185-generic-x86_64-with-glibc2.35",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.41",
   "threads": 1,
   "threadpools": [
     {
@@ -36,29 +36,29 @@
       "internal_api": "openblas",
       "num_threads": 1,
       "prefix": "libscipy_openblas",
-      "filepath": "/root/cuhk/memory_repro_env/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-017048f4.so",
+      "filepath": "/home/huangyuqi/polyu/comp6704_individual/lasso-correlation/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-017048f4.so",
       "version": "0.3.33.112.0",
       "threading_layer": "pthreads",
-      "architecture": "SkylakeX"
+      "architecture": "Haswell"
     },
     {
       "user_api": "blas",
       "internal_api": "openblas",
       "num_threads": 1,
       "prefix": "libscipy_openblas",
-      "filepath": "/root/cuhk/memory_repro_env/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "filepath": "/home/huangyuqi/polyu/comp6704_individual/lasso-correlation/.venv/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
       "version": "0.3.31.dev",
       "threading_layer": "pthreads",
-      "architecture": "SkylakeX"
+      "architecture": "Haswell"
     },
     {
       "user_api": "openmp",
       "internal_api": "openmp",
       "num_threads": 1,
       "prefix": "libgomp",
-      "filepath": "/root/cuhk/memory_repro_env/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "filepath": "/home/huangyuqi/polyu/comp6704_individual/lasso-correlation/.venv/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
       "version": null
     }
   ],
-  "compiler": "gcc (conda-forge gcc 15.2.0-7) 15.2.0"
+  "compiler": "gcc (conda-forge gcc 16.2.0-7) 16.2.0"
 }

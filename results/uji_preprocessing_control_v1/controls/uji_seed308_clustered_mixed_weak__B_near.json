@@ -7,12 +7,12 @@
     "amplitude": "mixed_weak"
   },
   "arm": "B_near",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "old_reference_path": "results/workshop/real/references/uji_seed308_clustered_mixed_weak.json",
-  "old_reference_sha256": "1e7b100b45b2874d238c72a8f8f5d5d4c93aedb438591dc2c3d716dc65cbb86a",
-  "old_reference_coefficients_sha256": "327ba08700e63b7fdde189287f766ed03d24c0ea93d11050ff2d97042fd993a2",
-  "old_dataset_sha256": "b6d4bd0f4ed11c9b6d1c49fb5642fc02b946a90f59a2019a7d8b330327e5ff98",
+  "old_reference_sha256": "f3299f2b5c363eac155fef047ed481cb9d91fd969b716031b99987c5e7535cc0",
+  "old_reference_coefficients_sha256": "20561b0d98e4997adf1c428f96895846bf8f077146e7976a908284548dcd2d55",
+  "old_dataset_sha256": "753057fd8c6e825dc19bee389a18da80e184b82b16d5ad3755be7d68419fe0eb",
   "old_p": 360,
   "new_p": 357,
   "retained_old_columns": [
@@ -1446,7 +1446,7 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        1.387084717831917e-17
+        1.3870847178319171e-17
       ],
       "feature_names": [
         "WAP055",
@@ -4206,8 +4206,8 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        6.935423589159583e-18,
-        1.3870847178319164e-17
+        6.9354235891595834e-18,
+        1.3870847178319165e-17
       ],
       "feature_names": [
         "WAP220",
@@ -7905,7 +7905,7 @@
     "w_true": "76a8993f7ba3bccb8940f7274ffcb0e684b9e63b0f946b972301bcc36dfe4493"
   },
   "reduced_dataset_hash": "4f13cb038f4c38db851c217ad9ce64ab491601010d8b524d256a8d4edfed88f1",
-  "old_dataset_reconstruction_sec": 0.19402575585991144,
+  "old_dataset_reconstruction_sec": 0.053851447999477386,
   "shared_group_preparation_path": "group_preparation/308.json",
   "raw_RSSI_subsample_hash": "446fbc957797b90560c04fa739fe0f8caee96cb93e0f8dbf666a1e9115778fe7",
   "mapping_diagnostics": {
@@ -7929,40 +7929,40 @@
       "mapped_objective": 1.863763584285153
     },
     "old_sklearn": {
-      "signal_or_fit_mapping_rmse": 8.238147542881473e-16,
-      "mapping_rmse_triangle_bound": 2.2262249012945882e-20,
+      "signal_or_fit_mapping_rmse": 6.372001044387342e-16,
+      "mapping_rmse_triangle_bound": 2.2262249012959685e-20,
       "old_l1_norm": 10.99974596816358,
       "mapped_l1_norm": 10.99974596816358,
       "l1_norm_change": 0.0,
-      "l1_scale_change": -1.0691226476517527e-18,
+      "l1_scale_change": -1.0691226476523081e-18,
       "l1_cancellation_amount": 0.0,
-      "l1_scale_error_bound": 1.0691226476517527e-18,
-      "l1_change_lower_bound": -1.0691226476517527e-18,
-      "l1_change_upper_bound": 1.0691226476517527e-18,
-      "absolute_l1_change_upper_bound": 1.0691226476517527e-18,
+      "l1_scale_error_bound": 1.0691226476523081e-18,
+      "l1_change_lower_bound": -1.0691226476523081e-18,
+      "l1_change_upper_bound": 1.0691226476523081e-18,
+      "absolute_l1_change_upper_bound": 1.0691226476523081e-18,
       "penalty_change": 0.0,
-      "penalty_change_lower_bound": -1.1599960065296638e-19,
-      "penalty_change_upper_bound": 1.1599960065296638e-19,
-      "l1_accounting_residual": 1.0691226476517527e-18,
+      "penalty_change_lower_bound": -1.1599960065302664e-19,
+      "penalty_change_upper_bound": 1.1599960065302664e-19,
+      "l1_accounting_residual": 1.0691226476523081e-18,
       "old_objective": 1.7656617224289504,
       "mapped_objective": 1.7656617224289501
     },
     "old_skglm": {
-      "signal_or_fit_mapping_rmse": 4.1820409038503805e-16,
-      "mapping_rmse_triangle_bound": 6.610494851361734e-18,
-      "old_l1_norm": 10.999745968168217,
-      "mapped_l1_norm": 10.999745968168217,
-      "l1_norm_change": 0.0,
-      "l1_scale_change": -3.1745445604872524e-16,
+      "signal_or_fit_mapping_rmse": 7.946925885497391e-16,
+      "mapping_rmse_triangle_bound": 6.610368855326322e-18,
+      "old_l1_norm": 10.999745968163754,
+      "mapped_l1_norm": 10.999745968163753,
+      "l1_norm_change": -1.7763568394002505e-15,
+      "l1_scale_change": -3.174564729940731e-16,
       "l1_cancellation_amount": 0.0,
-      "l1_scale_error_bound": 3.1745445604872524e-16,
-      "l1_change_lower_bound": -3.1745445604872524e-16,
-      "l1_change_upper_bound": 3.1745445604872524e-16,
-      "absolute_l1_change_upper_bound": 3.1745445604872524e-16,
-      "penalty_change": 0.0,
-      "penalty_change_lower_bound": -3.4443747130452465e-17,
-      "penalty_change_upper_bound": 3.4443747130452465e-17,
-      "l1_accounting_residual": 3.1745445604872524e-16,
+      "l1_scale_error_bound": 3.174564729940731e-16,
+      "l1_change_lower_bound": -3.174564729940731e-16,
+      "l1_change_upper_bound": 3.174564729940731e-16,
+      "absolute_l1_change_upper_bound": 3.174564729940731e-16,
+      "penalty_change": -1.927343737785207e-16,
+      "penalty_change_lower_bound": -3.444396596863291e-17,
+      "penalty_change_upper_bound": 3.444396596863291e-17,
+      "l1_accounting_residual": -1.4589003664061773e-15,
       "old_objective": 1.7656617224289501,
       "mapped_objective": 1.7656617224289501
     }
@@ -8002,16 +8002,16 @@
       },
       "skglm": {
         "tp": 14,
-        "fp": 7,
+        "fp": 6,
         "fn": 1,
-        "nnz": 21,
-        "precision": 0.6666666666666666,
+        "nnz": 20,
+        "precision": 0.7,
         "recall": 0.9333333333333333,
-        "f1": 0.7777777777777778,
-        "support_error": 8,
+        "f1": 0.8,
+        "support_error": 7,
         "exact_support": false
       },
-      "support_symmetric_difference_count": 2
+      "support_symmetric_difference_count": 1
     },
     "0.0001": {
       "sklearn": {
@@ -8091,9 +8091,9 @@
       "support_symmetric_difference_count": 0
     }
   },
-  "mapping_diagnostics_sec": 0.03278073947876692,
+  "mapping_diagnostics_sec": 0.012797474977560341,
   "new_public_reference_calls": 2,
-  "new_actual_library_fit_attempts": 2,
+  "new_actual_library_fit_attempts": 3,
   "public_reference_call_slots_reserved": 2,
   "interpretation": "Post-hoc mechanism control; original-variable and reduced-coordinate F1 are different tasks. Keeping y/lambda does not prove exact objective equivalence.",
   "status": "numerical_reference_agreement",
@@ -8152,7 +8152,7 @@
     }
   },
   "reduced_reference_path": "references/uji_seed308_clustered_mixed_weak__B_near.json",
-  "reduced_reference_sha256": "d4895dab1d066e603604dea02c19ee106f104f0c870e56968d921d14b345cec2",
+  "reduced_reference_sha256": "cd3be3787bb2ea280e5ab2d7559242e2bb646e1c68f001279ddc803e7118976a",
   "accuracy_eligible": true,
   "reference_accepted": true,
   "reference_consensus": true,
@@ -8163,17 +8163,17 @@
       "sklearn": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 4.841650685983936e-13,
-        "elapsed_sec": 0.01461878977715969
+        "normalized_gap": 4.846680972410933e-13,
+        "elapsed_sec": 0.007390737999230623
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 4.2997630806357604e-12,
-        "elapsed_sec": 0.009702817536890507
+        "normalized_gap": 3.805411682022699e-13,
+        "elapsed_sec": 0.007478028070181608
       }
     }
   },
-  "mapping_artifact_sha256": "ce40c05b6a753b298a3c601b5058fc0dcca9ca40291871d3ac9bf0569cd3476b",
-  "mapping_artifact_write_sec": 0.0013015121221542358
+  "mapping_artifact_sha256": "e73714e4080fd20b7c56e5228956107b3ed4ad99111daeea55b0a3515158702b",
+  "mapping_artifact_write_sec": 0.0005739409243687987
 }

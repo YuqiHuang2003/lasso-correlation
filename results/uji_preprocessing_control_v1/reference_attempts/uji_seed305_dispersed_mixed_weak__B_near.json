@@ -1,11 +1,11 @@
 {
   "control_id": "uji_seed305_dispersed_mixed_weak__B_near",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "dataset_hash": "0ce0828f1bd9a8e10516059df69f89989d0f27b94bbc04a7bad06738ab1e3068",
-  "invocation": "1793197727953559125",
+  "invocation": "1794209517956597954",
   "reserved_public_reference_calls": 2,
   "state": "completed",
-  "actual_library_fit_attempts": 3,
-  "reference_sha256": "68b45d7ddb100fc0e756d1e6a897eda87bb8bce6b0ea9919076b3e9e7c0899cd"
+  "actual_library_fit_attempts": 2,
+  "reference_sha256": "ba462e7d1980c1e0f53c3b1cdb8a37e9992b81db006afc64055a61ee57379a39"
 }

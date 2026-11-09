@@ -2,7 +2,7 @@ complete_primary_targets,historical_reference_accepted,maximum_observed_f1_range
 10,True,0.0,0,sklearn,{'no_event': 10},{'no_event': 10},{'no_event': 10},{'no_event': 10},uji,10
 30,False,0.07657657657657657,3,sklearn,"{'event': 18, 'no_event': 12}","{'event': 18, 'no_event': 12}","{'event': 18, 'no_event': 12}","{'event': 18, 'no_event': 12}",uji,30
 10,True,0.0,0,skglm,{'no_event': 10},{'no_event': 10},{'no_event': 10},{'no_event': 10},uji,10
-30,False,0.0962566844919786,5,skglm,"{'no_event': 9, 'event': 21}","{'event': 26, 'no_event': 4}","{'no_event': 9, 'event': 21}","{'event': 26, 'no_event': 4}",uji,30
+30,False,0.0962566844919786,5,skglm,"{'no_event': 10, 'event': 20}","{'event': 25, 'no_event': 5}","{'no_event': 10, 'event': 20}","{'event': 25, 'no_event': 5}",uji,30
 8,True,0.0,0,sklearn,{'no_event': 8},{'no_event': 8},{'no_event': 8},{'no_event': 8},news,8
 8,True,0.0,0,skglm,{'no_event': 8},{'no_event': 8},{'no_event': 8},{'no_event': 8},news,8
 8,True,0.0,0,sklearn,{'no_event': 8},{'no_event': 8},{'no_event': 8},{'no_event': 8},gene,8

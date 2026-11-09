@@ -7,12 +7,12 @@
     "amplitude": "strong"
   },
   "arm": "A_raw_exact",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "old_reference_path": "results/workshop/real/references/uji_seed300_dispersed_strong.json",
-  "old_reference_sha256": "9715a452ff46d2c9d58d8d81b65bca907453cb6191dcd214ea4de66b4a6a90ef",
-  "old_reference_coefficients_sha256": "dd4e5b6161b3107fce0431002d2467745a6669735eb1b9cc4d1c94b57382187c",
-  "old_dataset_sha256": "851e7d18721d9e43c08742eddb891d3c2d1b21f8f419a0d4be64003d5589653e",
+  "old_reference_sha256": "da9126d676e0a4f59cca4276a3895d4613002c8bf7523294eb0272398d34837a",
+  "old_reference_coefficients_sha256": "ee1db04c7907fdd7b769ae608f354f0f584be75a6b3a4bd18eae6914a9190835",
+  "old_dataset_sha256": "d2ab7830a62229ddf4da55b5b029922e8592f26e3d70077cfe710e89a6d4a0e5",
   "old_p": 360,
   "new_p": 357,
   "retained_old_columns": [
@@ -417,7 +417,7 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        1.387084717831917e-17
+        1.3870847178319171e-17
       ],
       "feature_names": [
         "WAP005",
@@ -7905,7 +7905,7 @@
     "w_true": "3a929c9d0a4459c7e79b0e3ebc4639b849b0457aaf05bd86815825014b3bfe0a"
   },
   "reduced_dataset_hash": "a0579d830b79d8bd785718e5d67dad7ce14e153fbdebf47946ce6e2f63abd2ba",
-  "old_dataset_reconstruction_sec": 0.19454329647123814,
+  "old_dataset_reconstruction_sec": 0.05572925496380776,
   "shared_group_preparation_path": "group_preparation/300.json",
   "raw_RSSI_subsample_hash": "b3be0f39d9b56624d2a9200dd269b5c9168ad6709da78ad2ca528773246cb4af",
   "mapping_diagnostics": {
@@ -7931,8 +7931,8 @@
     "old_sklearn": {
       "signal_or_fit_mapping_rmse": 0.0,
       "mapping_rmse_triangle_bound": 0.0,
-      "old_l1_norm": 12.869098288717348,
-      "mapped_l1_norm": 12.869098288717348,
+      "old_l1_norm": 12.86909828871735,
+      "mapped_l1_norm": 12.86909828871735,
       "l1_norm_change": 0.0,
       "l1_scale_change": 0.0,
       "l1_cancellation_amount": 0.0,
@@ -7950,8 +7950,8 @@
     "old_skglm": {
       "signal_or_fit_mapping_rmse": 0.0,
       "mapping_rmse_triangle_bound": 0.0,
-      "old_l1_norm": 12.86909828871399,
-      "mapped_l1_norm": 12.86909828871399,
+      "old_l1_norm": 12.869098288714834,
+      "mapped_l1_norm": 12.869098288714834,
       "l1_norm_change": 0.0,
       "l1_scale_change": 0.0,
       "l1_cancellation_amount": 0.0,
@@ -8091,7 +8091,7 @@
       "support_symmetric_difference_count": 1
     }
   },
-  "mapping_diagnostics_sec": 0.03313090279698372,
+  "mapping_diagnostics_sec": 0.013009582995437086,
   "new_public_reference_calls": 2,
   "new_actual_library_fit_attempts": 2,
   "public_reference_call_slots_reserved": 2,
@@ -8152,7 +8152,7 @@
     }
   },
   "reduced_reference_path": "references/uji_seed300_dispersed_strong__A_raw_exact.json",
-  "reduced_reference_sha256": "7f4fdb75ab4c31d2c3273967c3c90dcf3f2cf9fa4724f6919e9be29b088fb303",
+  "reduced_reference_sha256": "c0c961bff880d4cb619f3b3bf4f8074b20b02ba571a2cc88607f1085c4f6d66b",
   "accuracy_eligible": true,
   "reference_accepted": false,
   "reference_consensus": false,
@@ -8169,17 +8169,17 @@
       "sklearn": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 5.096794462727268e-14,
-        "elapsed_sec": 0.020349777303636074
+        "normalized_gap": 5.184670229326014e-14,
+        "elapsed_sec": 0.0082523999735713
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 4.218036796739808e-14,
-        "elapsed_sec": 0.009817642159759998
+        "normalized_gap": 2.724148764561126e-14,
+        "elapsed_sec": 0.004960361053235829
       }
     }
   },
-  "mapping_artifact_sha256": "1b042c0a609647d89e1d7f98189519faf6ef080eed1d7a596fdf1f2294bb8952",
-  "mapping_artifact_write_sec": 0.0013229623436927795
+  "mapping_artifact_sha256": "42464c794a27358fe1037c8e86e46d9f1bda6802a75817c1bb30a8e3bae56f55",
+  "mapping_artifact_write_sec": 0.0010343010071665049
 }

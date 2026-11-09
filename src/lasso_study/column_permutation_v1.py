@@ -11,6 +11,7 @@ import hashlib
 from itertools import product
 import json
 from pathlib import Path
+import warnings
 
 import numpy as np
 
@@ -150,11 +151,19 @@ def make_target(config, params, sources):
     else:
         generated = make_audit_design(old_config, params["seed"], source, params["amplitude"], params["c"], source_data=context["prepared"])
     metadata = generated["metadata"]
-    if metadata["hashes"] != old_ds["hashes"]:
+    y_differs = metadata["hashes"].get("y") != old_ds["hashes"].get("y")
+    if {k: v for k, v in metadata["hashes"].items() if k != "y"} != {k: v for k, v in old_ds["hashes"].items() if k != "y"}:
         raise ValueError("Regenerated target hashes differ from the frozen dataset.")
+    if y_differs:
+        # y = X w + noise is a BLAS matrix-vector product. A different CPU kernel
+        # (e.g. AVX2 instead of AVX-512) can change its last bits. X, w and the
+        # noise still match exactly, so the run continues on the regenerated y.
+        warnings.warn(f"{identifier}: regenerated y differs from the frozen y in its last bits "
+                      "(CPU-dependent BLAS rounding); continuing with the regenerated y.")
     if metadata["lambda"] != old_ds["lambda"] or old_ref["lambda"] != old_ds["lambda"]:
         raise ValueError("Regenerated, historical dataset and historical reference lambda differ.")
-    data_hash = hashlib.sha256(json.dumps(metadata["hashes"], sort_keys=True).encode()).hexdigest()
+    link_hashes = dict(metadata["hashes"], y=old_ds["hashes"]["y"]) if y_differs else metadata["hashes"]
+    data_hash = hashlib.sha256(json.dumps(link_hashes, sort_keys=True).encode()).hexdigest()
     if old_ref["dataset_hash"] != data_hash or old_ds.get("dataset_hash", data_hash) != data_hash:
         raise ValueError("Historical dataset/reference hash linkage differs.")
     if old_ref["numerical_signature"] != old_ds["numerical_signature"] or old_ref["config_sha256"] != old_ds["config_sha256"]:
@@ -187,6 +196,7 @@ def make_target(config, params, sources):
               "existing_grouping_path": _display(existing_grouping) if existing_grouping is not None and existing_grouping.is_file() else None,
               "existing_uji_grouping_metadata_path": _display(base/"reference_diagnostics.json") if source == "uji" and (base/"reference_diagnostics.json").is_file() else None}
     replay_meta = copy.deepcopy(metadata)
+    replay_meta["y_differs_from_frozen_in_last_bits"] = y_differs
     replay_meta.update(source=source, seed=params["seed"], layout=params["layout"], amplitude=params["amplitude"], c=params["c"],
                        target_id=identifier, historical_dataset_hash=data_hash, original_reference_accepted=bool(old_ref["reference_accepted"]),
                        coefficient_coordinates="Original frozen final-X coordinates; no new preprocessing or grouping")

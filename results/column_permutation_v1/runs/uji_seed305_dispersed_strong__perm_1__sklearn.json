@@ -15,8 +15,8 @@
   "is_primary_order": true,
   "is_identity_repeat": false,
   "method": "sklearn",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "c01b2f2d957da48fbd7312fdd63d3d6243ff5cb432dca9d3dbfa2fb3427faeb5",
   "input_hashes": {
@@ -39,51 +39,51 @@
   "permutation_sha256": "26d8406f1da33c39b8cb257bdbbc9644844fcd38ac711d1fccf19f675e6ad634",
   "inverse_sha256": "fe30ac7c27538cd11cf9a5c69b70f204ad1dd3c0f2c2c61f0bf610e390f28ed7",
   "permutation_path": "permutations/1c60b341afc0c3c1103e2528ac561b06553d2168078513b29932d7821626fc4c.json",
-  "permutation_record_sha256": "82f01215be954e7b5d7e76bc8227d849fa931425422b62d96f8f842aab681f96",
+  "permutation_record_sha256": "525b322a42c833085425cd23c878ceda6343519eab82e463fa1375f6634ed15f",
   "historical_reference_path": "results/workshop/real/references/uji_seed305_dispersed_strong.json",
   "origin": {
     "old_target_id": "uji_seed305_dispersed_strong",
     "baseline_path": "results/workshop/real",
     "dataset_path": "results/workshop/real/datasets/uji_seed305_dispersed_strong.json",
-    "dataset_sha256": "9bdf6226c9a74e862c739080f5b06f3de8391f295769cdf6e686e7c6ce224a54",
+    "dataset_sha256": "d853382dbf39cdb8f4c26b1be939dcc6fd456eb928c19b22c9856b106c7ce721",
     "reference_path": "results/workshop/real/references/uji_seed305_dispersed_strong.json",
-    "reference_sha256": "504eb8ed80f931be3a2a52509c45bf95b24807ea0d23a3a6fc26720b992c1f41",
+    "reference_sha256": "cc2f33cb0ad7f1e8f875feda90f98e2be18eb93a0249039e4283b3b01cdf9f30",
     "coefficient_path": "results/workshop/real/reference_coefficients/uji_seed305_dispersed_strong.npz",
-    "coefficient_sha256": "41f7e99fcce7b2c7e6ff273588b64a0473e0eebd3fb2f3f65caa9c3d5c3657df",
+    "coefficient_sha256": "8ac9fe6a324ecc198099c37868a75e08ab045bff2086558d7914b5d72a2b4b9d",
     "historical_reference_accepted": true,
     "historical_numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
     "historical_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "baseline_config_path": "configs/workshop_real.json",
     "baseline_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "existing_grouping_path": null,
-    "existing_uji_grouping_metadata_path": "results/workshop/real/reference_diagnostics.json"
+    "existing_uji_grouping_metadata_path": null
   },
   "certificate": {
-    "primal": 1.9747738648268183,
-    "dual": 1.9747738648261124,
-    "gap": 7.058797990566745e-13,
-    "raw_gap": 7.058797990566745e-13,
-    "normalized_gap": 3.574484206162907e-13,
+    "primal": 1.974773864826818,
+    "dual": 1.9747738648261135,
+    "gap": 7.045475314271243e-13,
+    "raw_gap": 7.045475314271243e-13,
+    "normalized_gap": 3.5677377748206686e-13,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 5.737077479750496e-14
+    "kkt_inf": 5.728750807065808e-14
   },
   "certificate_original": {
-    "primal": 1.9747738648268183,
-    "dual": 1.9747738648261124,
-    "gap": 7.058797990566745e-13,
-    "raw_gap": 7.058797990566745e-13,
-    "normalized_gap": 3.574484206162907e-13,
+    "primal": 1.974773864826818,
+    "dual": 1.9747738648261135,
+    "gap": 7.045475314271243e-13,
+    "raw_gap": 7.045475314271243e-13,
+    "normalized_gap": 3.5677377748206686e-13,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 5.737077479750496e-14
+    "kkt_inf": 5.728750807065808e-14
   },
   "permuted_certificate": {
     "primal": 1.9747738648268183,
-    "dual": 1.9747738648261128,
-    "gap": 7.054357098468245e-13,
-    "raw_gap": 7.054357098468245e-13,
-    "normalized_gap": 3.572235395715494e-13,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 5.739853037312059e-14
+    "dual": 1.9747738648261137,
+    "gap": 7.045475314271243e-13,
+    "raw_gap": 7.045475314271243e-13,
+    "normalized_gap": 3.567737774820668e-13,
+    "dual_feasibility": 0.999999999999996,
+    "kkt_inf": 5.728750807065808e-14
   },
   "invariance": {
     "passed": true,
@@ -92,48 +92,48 @@
     "rtol": 5e-12,
     "metrics": {
       "primal": {
-        "absolute_difference": 0.0,
+        "absolute_difference": 2.220446049250313e-16,
         "allowed_difference": 1.487386932413409e-11,
         "passed": true
       },
       "dual": {
-        "absolute_difference": 4.440892098500626e-16,
-        "allowed_difference": 1.4873869324130565e-11,
+        "absolute_difference": 2.220446049250313e-16,
+        "allowed_difference": 1.4873869324130568e-11,
         "passed": true
       },
       "gap": {
-        "absolute_difference": 4.440892098500626e-16,
-        "allowed_difference": 5.000000000003529e-12,
+        "absolute_difference": 0.0,
+        "allowed_difference": 5.0000000000035225e-12,
         "passed": true
       },
       "raw_gap": {
-        "absolute_difference": 4.440892098500626e-16,
-        "allowed_difference": 5.000000000003529e-12,
+        "absolute_difference": 0.0,
+        "allowed_difference": 5.0000000000035225e-12,
         "passed": true
       },
       "normalized_gap": {
-        "absolute_difference": 2.248810447413345e-16,
-        "allowed_difference": 5.0000000000017865e-12,
+        "absolute_difference": 5.048709793414476e-29,
+        "allowed_difference": 5.000000000001783e-12,
         "passed": true
       },
       "dual_feasibility": {
-        "absolute_difference": 1.1102230246251565e-16,
-        "allowed_difference": 9.99999999999998e-12,
+        "absolute_difference": 0.0,
+        "allowed_difference": 9.999999999999978e-12,
         "passed": true
       },
       "kkt_inf": {
-        "absolute_difference": 2.7755575615628914e-17,
+        "absolute_difference": 0.0,
         "allowed_difference": 5.0000000000002865e-12,
         "passed": true
       },
       "prediction": {
         "maximum_absolute_difference": 3.552713678800501e-15,
-        "rmse": 5.703254147235051e-16,
-        "allowed_difference": 1.0535813077496655e-10,
+        "rmse": 5.569465921172608e-16,
+        "allowed_difference": 1.0535813077496656e-10,
         "passed": true
       },
       "l1": {
-        "absolute_difference": 0.0,
+        "absolute_difference": 1.7763568394002505e-15,
         "allowed_difference": 7.078845505430133e-11,
         "passed": true
       }
@@ -151,11 +151,11 @@
   "budget_eligible": true,
   "library_status_eligible": true,
   "qualification_failure_reasons": [],
-  "elapsed_sec": 0.012934545055031776,
-  "public_elapsed_sec": 0.012934545055031776,
-  "solver_elapsed_sec": 0.011826789937913418,
-  "posterior_mapping_diagnostics_sec": 0.0011073397472500801,
-  "permuted_X_preparation_sec": 0.007767597213387489,
+  "elapsed_sec": 0.005669447942636907,
+  "public_elapsed_sec": 0.005669447942636907,
+  "solver_elapsed_sec": 0.004891408956609666,
+  "posterior_mapping_diagnostics_sec": 0.0007777130231261253,
+  "permuted_X_preparation_sec": 0.0019932850264012814,
   "actual_library_fit_attempts": 1,
   "library_result": {
     "method": "sklearn_cyclic_cd",
@@ -168,7 +168,7 @@
       {
         "attempt": 1,
         "library_tol": 1e-13,
-        "fit_elapsed_sec": 0.01182261761277914,
+        "fit_elapsed_sec": 0.004887358983978629,
         "initialization": "zero coefficients (new estimator, warm_start=False)"
       }
     ],
@@ -962,9 +962,9 @@
       ]
     }
   },
-  "historical_comparison_and_scoring_sec": 0.00015920400619506836,
+  "historical_comparison_and_scoring_sec": 8.707097731530666e-05,
   "coefficient_path": "coefficients/uji_seed305_dispersed_strong__perm_1__sklearn.npz",
-  "coefficient_sha256": "09daf6dba9831675f9bd11c733dfda335d1c459371b773d60f77fe85b6cd22ce",
+  "coefficient_sha256": "d51dc2eed59ea539dd453364266edd6e84094148fa2ecef49d48d7a1285b8dbd",
   "coef_path": "coefficients/uji_seed305_dispersed_strong__perm_1__sklearn.npz",
-  "coefficient_write_sec": 0.0014657825231552124
+  "coefficient_write_sec": 0.0007691419450566173
 }

@@ -15,8 +15,8 @@
   "is_primary_order": true,
   "is_identity_repeat": false,
   "method": "skglm",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "1325c71e81d0d656609b5ebb341c512edf4524cc3f4b73f501863059fee215b6",
   "input_hashes": {
@@ -37,51 +37,51 @@
   "permutation_sha256": "f3902f9ed0e72fbdbdda74ff50a83b1bb927b0dea8817ffb83fe80dc0a925c95",
   "inverse_sha256": "f3cdbc8e224fd1d9887943192d7aed6dca6ef454443f0afc8bfb1243b3aa5753",
   "permutation_path": "permutations/5f04beaaa48c1166a71cf856c7c7d399bf6d3ca10e4029fa18e71c52e5c26e81.json",
-  "permutation_record_sha256": "be95dc3ce49da99e76b1a94f7269364f5b6e7a5545af50e1c237ce7bb8afc6c7",
+  "permutation_record_sha256": "4370e1e58f7ab73c305f23c68a048c3aa452f8000d973e6805aad705ee010fa1",
   "historical_reference_path": "results/reference_audit_v1/confirm/references/news_seed402_c1_mixed_weak.json",
   "origin": {
     "old_target_id": "news_seed402_c1_mixed_weak",
     "baseline_path": "results/reference_audit_v1/confirm",
     "dataset_path": "results/reference_audit_v1/confirm/datasets/news_seed402_c1_mixed_weak.json",
-    "dataset_sha256": "58c08c53bdfdacc6073ba93534705cf612584ddcaab4fa6e04e6412cc7c4a497",
+    "dataset_sha256": "4ab5e68b61aa622d04b116bcc5f6462f6ef8445d94dfce8e3492fb0f8d951c6e",
     "reference_path": "results/reference_audit_v1/confirm/references/news_seed402_c1_mixed_weak.json",
-    "reference_sha256": "7489495e37aed6529fbd4555a8320ac00543bc4b8120121ad4ab23b3db602e7b",
+    "reference_sha256": "f18a8f74e612461dbda7fdd5c7dc6343ae34767a5e2db55ef07e264277ca135b",
     "coefficient_path": "results/reference_audit_v1/confirm/reference_coefficients/news_seed402_c1_mixed_weak.npz",
-    "coefficient_sha256": "906a1a96fd077e85ff32c61e43e0db0bde68f89474cd841ddb43c52750cf1aa8",
+    "coefficient_sha256": "9ad41a1db5a242b7c67b95ef25492e7cfac078fcb58725dfdd14a667ab9ffda3",
     "historical_reference_accepted": true,
     "historical_numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
     "historical_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
     "baseline_config_path": "configs/reference_audit_v1.json",
     "baseline_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
-    "existing_grouping_path": "results/reference_audit_v1/confirm/grouping/5f04beaaa48c1166a71cf856c7c7d399bf6d3ca10e4029fa18e71c52e5c26e81.json",
+    "existing_grouping_path": null,
     "existing_uji_grouping_metadata_path": null
   },
   "certificate": {
     "primal": 0.8623873416845844,
-    "dual": 0.8623873416845224,
-    "gap": 6.206146707654625e-14,
-    "raw_gap": 6.206146707654625e-14,
-    "normalized_gap": 6.206146707654625e-14,
-    "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 1.7361112547575885e-14
+    "dual": 0.8623873416845185,
+    "gap": 6.59472476627343e-14,
+    "raw_gap": 6.59472476627343e-14,
+    "normalized_gap": 6.59472476627343e-14,
+    "dual_feasibility": 0.9999999999999961,
+    "kkt_inf": 1.877664690397296e-14
   },
   "certificate_original": {
     "primal": 0.8623873416845844,
-    "dual": 0.8623873416845224,
-    "gap": 6.206146707654625e-14,
-    "raw_gap": 6.206146707654625e-14,
-    "normalized_gap": 6.206146707654625e-14,
-    "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 1.7361112547575885e-14
+    "dual": 0.8623873416845185,
+    "gap": 6.59472476627343e-14,
+    "raw_gap": 6.59472476627343e-14,
+    "normalized_gap": 6.59472476627343e-14,
+    "dual_feasibility": 0.9999999999999961,
+    "kkt_inf": 1.877664690397296e-14
   },
   "permuted_certificate": {
     "primal": 0.8623873416845844,
-    "dual": 0.8623873416845224,
-    "gap": 6.206146707654625e-14,
-    "raw_gap": 6.206146707654625e-14,
-    "normalized_gap": 6.206146707654625e-14,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 1.73749903353837e-14
+    "dual": 0.862387341684518,
+    "gap": 6.639133687258436e-14,
+    "raw_gap": 6.639133687258436e-14,
+    "normalized_gap": 6.639133687258436e-14,
+    "dual_feasibility": 0.999999999999996,
+    "kkt_inf": 1.8790524691780774e-14
   },
   "invariance": {
     "passed": true,
@@ -95,23 +95,23 @@
         "passed": true
       },
       "dual": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 9.311936708422611e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 9.311936708422592e-12,
         "passed": true
       },
       "gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.00000000000031e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.000000000000332e-12,
         "passed": true
       },
       "raw_gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.00000000000031e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.000000000000332e-12,
         "passed": true
       },
       "normalized_gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.00000000000031e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.000000000000332e-12,
         "passed": true
       },
       "dual_feasibility": {
@@ -121,18 +121,18 @@
       },
       "kkt_inf": {
         "absolute_difference": 1.3877787807814457e-17,
-        "allowed_difference": 5.000000000000087e-12,
+        "allowed_difference": 5.000000000000093e-12,
         "passed": true
       },
       "prediction": {
         "maximum_absolute_difference": 8.881784197001252e-16,
-        "rmse": 1.703959806182272e-16,
+        "rmse": 1.4656481440206553e-16,
         "allowed_difference": 1.2899113666182196e-10,
         "passed": true
       },
       "l1": {
         "absolute_difference": 0.0,
-        "allowed_difference": 2.3003244795292978e-11,
+        "allowed_difference": 2.3003244795292968e-11,
         "passed": true
       }
     }
@@ -149,11 +149,11 @@
   "budget_eligible": true,
   "library_status_eligible": true,
   "qualification_failure_reasons": [],
-  "elapsed_sec": 0.0036974409595131874,
-  "public_elapsed_sec": 0.0036974409595131874,
-  "solver_elapsed_sec": 0.0033416328951716423,
-  "posterior_mapping_diagnostics_sec": 0.00035544484853744507,
-  "permuted_X_preparation_sec": 0.0012808255851268768,
+  "elapsed_sec": 0.0017676170682534575,
+  "public_elapsed_sec": 0.0017676170682534575,
+  "solver_elapsed_sec": 0.0016066629905253649,
+  "posterior_mapping_diagnostics_sec": 0.0001608189195394516,
+  "permuted_X_preparation_sec": 0.00023147405590862036,
   "actual_library_fit_attempts": 1,
   "library_result": {
     "method": "skglm",
@@ -168,35 +168,35 @@
         "kkt_inf": 0.9844190285714717,
         "iteration": 0,
         "attempt": 0,
-        "time": 0.0014964845031499863
+        "time": 0.0007362730102613568
       },
       {
         "primal": 0.8623873416845844,
-        "dual": 0.8623873416845224,
-        "gap": 6.206146707654625e-14,
-        "raw_gap": 6.206146707654625e-14,
-        "normalized_gap": 6.206146707654625e-14,
-        "dual_feasibility": 0.9999999999999961,
-        "kkt_inf": 1.73749903353837e-14,
+        "dual": 0.862387341684518,
+        "gap": 6.639133687258436e-14,
+        "raw_gap": 6.639133687258436e-14,
+        "normalized_gap": 6.639133687258436e-14,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 1.8790524691780774e-14,
         "iteration": 3,
         "attempt": 1,
-        "time": 0.00327904149889946
+        "time": 0.0015696760965511203
       }
     ],
     "status": "converged",
     "certificate": {
       "primal": 0.8623873416845844,
-      "dual": 0.8623873416845224,
-      "gap": 6.206146707654625e-14,
-      "raw_gap": 6.206146707654625e-14,
-      "normalized_gap": 6.206146707654625e-14,
-      "dual_feasibility": 0.9999999999999961,
-      "kkt_inf": 1.73749903353837e-14
+      "dual": 0.862387341684518,
+      "gap": 6.639133687258436e-14,
+      "raw_gap": 6.639133687258436e-14,
+      "normalized_gap": 6.639133687258436e-14,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 1.8790524691780774e-14
     },
     "certificate_passed": true,
     "budget_exceeded": false,
-    "elapsed_sec": 0.003305683843791485,
-    "diagnostics_sec": 0.0002160416916012764,
+    "elapsed_sec": 0.0015811530174687505,
+    "diagnostics_sec": 0.00010965904220938683,
     "iterations": 3,
     "iteration_unit": "outer working-set iterations across all attempts",
     "attempts": [
@@ -204,18 +204,18 @@
         "attempt": 1,
         "library_tol": 1e-10,
         "initialization": "zero coefficients and zero fitted values",
-        "fit_elapsed_sec": 0.0016826856881380081,
-        "elapsed_sec_including_posterior_diagnostics": 0.001780676655471325,
-        "cumulative_elapsed_sec": 0.00327904149889946,
+        "fit_elapsed_sec": 0.0007895249873399734,
+        "elapsed_sec_including_posterior_diagnostics": 0.0008316850289702415,
+        "cumulative_elapsed_sec": 0.0015696760965511203,
         "outer_working_set_iterations": 3,
-        "library_returned_stop_crit": 1.7055801215803967e-14,
+        "library_returned_stop_crit": 1.8193779816044753e-14,
         "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
         "library_objectives_without_timestamps": [
           0.8868965523398546,
-          0.8623883247277071,
-          0.862387341684584
+          0.8623883247277067,
+          0.8623873416845843
         ],
-        "normalized_gap": 6.206146707654625e-14,
+        "normalized_gap": 6.639133687258436e-14,
         "passed_common_certificate": true
       }
     ],
@@ -237,7 +237,7 @@
     "warmup_metadata": {
       "performed": false,
       "elapsed_sec": 0.0,
-      "initial_warmup_sec": 3.8196991523727775,
+      "initial_warmup_sec": 3.482063365052454,
       "versions": {
         "skglm": "0.5",
         "numba": "0.68.1",
@@ -414,9 +414,9 @@
       ]
     }
   },
-  "historical_comparison_and_scoring_sec": 0.00014389492571353912,
+  "historical_comparison_and_scoring_sec": 6.520305760204792e-05,
   "coefficient_path": "coefficients/news_seed402_c1_mixed_weak__perm_3__skglm.npz",
-  "coefficient_sha256": "b87e96c073e8c2ca8b7cf518e087602f13912cb35f6a50e931c9d4debf18882e",
+  "coefficient_sha256": "f7224dae674c3c517c674e5c34cb80ed40902cc6eb0947fdd2d744394f27a09a",
   "coef_path": "coefficients/news_seed402_c1_mixed_weak__perm_3__skglm.npz",
-  "coefficient_write_sec": 0.0007972121238708496
+  "coefficient_write_sec": 0.0004067060071974993
 }

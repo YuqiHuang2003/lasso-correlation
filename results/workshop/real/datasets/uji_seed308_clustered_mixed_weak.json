@@ -4561,7 +4561,7 @@
   "numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
   "config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
   "dataset_hash": "67a029da336dd67773cd29f88dfd65a2ebadd70fb391bcda11d82a48016a78b7",
-  "preprocessing_sec": 0.19367059972137213,
-  "L": 25.697568935827817,
-  "lipschitz_setup_sec": 0.027623784728348255
+  "preprocessing_sec": 0.08548608410637826,
+  "L": 25.697568935827803,
+  "lipschitz_setup_sec": 0.016269295010715723
 }

@@ -35930,5 +35930,5 @@
   "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
   "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
   "dataset_hash": "137b1da768c921c6b2c96a6e8df964d9319b4e6cf03b5e5ee3e434afa8a4e767",
-  "preprocessing_sec": 0.0716292392462492
+  "preprocessing_sec": 0.02273337298538536
 }

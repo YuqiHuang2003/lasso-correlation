@@ -15,8 +15,8 @@
   "is_primary_order": false,
   "is_identity_repeat": true,
   "method": "skglm",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "f30e1bf1fd0783386e9079d00f17835a0bcb50e2375f3cae40239ed5e0ce2f8f",
   "input_hashes": {
@@ -39,29 +39,29 @@
   "permutation_sha256": "09bb47e4988a0ad5421fbaeb7403b43a8a38dcc7e514f369067fab9921689d96",
   "inverse_sha256": "09bb47e4988a0ad5421fbaeb7403b43a8a38dcc7e514f369067fab9921689d96",
   "permutation_path": "permutations/b48b4579882477467df308492063b42b0469404f6334de0e96b7ace8fdbc15c3.json",
-  "permutation_record_sha256": "10193319596cfcc9f0b98f5499d2692da819a18eb632de7bfc57c704adc08817",
+  "permutation_record_sha256": "4d95da1d04d664900a399db3e4fe7c7686f83560219f2abaaf83b9b289c2cb65",
   "historical_reference_path": "results/workshop/real/references/uji_seed308_dispersed_strong.json",
   "origin": {
     "old_target_id": "uji_seed308_dispersed_strong",
     "baseline_path": "results/workshop/real",
     "dataset_path": "results/workshop/real/datasets/uji_seed308_dispersed_strong.json",
-    "dataset_sha256": "908c708df618ec39af61790cac145ae099819650beae7a26694f29e9b0e1f3b6",
+    "dataset_sha256": "5ac10e0be3048b470d409c03b99d2010be94ff166ba4c1c1730bbe08dd80044c",
     "reference_path": "results/workshop/real/references/uji_seed308_dispersed_strong.json",
-    "reference_sha256": "126e964fc158ccd267abb473795b3a32edc1593ff85a265d51acceb7607dd71a",
+    "reference_sha256": "aa324052a231c2bd362d7b9227e0b71700df7fd9bf698964619259ac46264c8a",
     "coefficient_path": "results/workshop/real/reference_coefficients/uji_seed308_dispersed_strong.npz",
-    "coefficient_sha256": "36b7d50196331238686947ff392c68e2c843b57efb106f13bffeb5a277be82c6",
+    "coefficient_sha256": "04bb16f94fb91de379cde075f7f6195884af40a743221d4f884d18b6f3f3a252",
     "historical_reference_accepted": false,
     "historical_numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
     "historical_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "baseline_config_path": "configs/workshop_real.json",
     "baseline_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "existing_grouping_path": null,
-    "existing_uji_grouping_metadata_path": "results/workshop/real/reference_diagnostics.json"
+    "existing_uji_grouping_metadata_path": null
   },
-  "invocation": "1793202654723214310",
+  "invocation": "1794209518093666026",
   "reserved_public_reference_calls": 1,
   "state": "completed",
   "actual_library_fit_attempts": 2,
-  "public_elapsed_sec": 0.019614764489233494,
-  "run_sha256": "2bea4876bfce9b82272f9aafdf9a2e3779c48e1ae74bdb9b63e481efda986e20"
+  "public_elapsed_sec": 0.008478324045427144,
+  "run_sha256": "ab961c8197b52c650acd80b1da1c523c63c5cac1b65da56de4ca74d6febe4a70"
 }

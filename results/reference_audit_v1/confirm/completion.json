@@ -8,11 +8,11 @@
   "recorded_targets": 72,
   "expected_public_reference_calls": 144,
   "stored_public_reference_calls": 144,
-  "stored_actual_library_fit_attempts": 149,
+  "stored_actual_library_fit_attempts": 148,
   "new_reference_targets_this_invocation": 72,
   "reused_reference_targets_this_invocation": 0,
   "new_public_reference_calls_this_invocation": 144,
-  "new_actual_library_fit_attempts_this_invocation": 149,
+  "new_actual_library_fit_attempts_this_invocation": 148,
   "accuracy_eligible_targets": 72,
   "consensus_accepted_targets": 72,
   "failure_reason_counts": {},
@@ -271,8 +271,8 @@
     }
   ],
   "budget_stop": false,
-  "prior_recorded_wall_sec": 5.85310438927263,
-  "wall_sec_this_invocation": 14.60627575404942,
+  "prior_recorded_wall_sec": 20.459613169543445,
+  "wall_sec_this_invocation": 8.267201690934598,
   "complete_grid": true,
   "interpretation": "Primary F1 contrasts use all accuracy-eligible targets, not only consensus accepted. Seeds are source-specific paired replication units; gene has one fixed design. No group analysis or optimizer trajectories were run."
 }

@@ -35920,6 +35920,7 @@
     "standard_noise": "e5a30ca47b5d36fc95ecae6818a3b6ba5eeb23d539fc97bf7241e39fb1493a4f",
     "magnitudes": "2a92a13cb9daac0ed16730ac6ad346d634e168f0ee7c6a9479946c02fce8b5c9"
   },
+  "y_differs_from_frozen_in_last_bits": false,
   "layout": null,
   "target_id": "gene_seed502_c1_mixed_weak",
   "historical_dataset_hash": "28ab044ddfc281c344ea7dfa4d480d5306afc277cd1dc718851021f73af9b2d8",
@@ -35935,21 +35936,21 @@
     "old_target_id": "gene_seed502_c1_mixed_weak",
     "baseline_path": "results/reference_audit_v1/confirm",
     "dataset_path": "results/reference_audit_v1/confirm/datasets/gene_seed502_c1_mixed_weak.json",
-    "dataset_sha256": "631806593d57b749cceb2d5c477dd8556acc51f76d6d4cb3f8c34f14a8c2b1e0",
+    "dataset_sha256": "db6be97a00fcb52ee3bd6985562d4e5ef25adc6a2c9fcf9cb5d1c595b5068191",
     "reference_path": "results/reference_audit_v1/confirm/references/gene_seed502_c1_mixed_weak.json",
-    "reference_sha256": "ecb0825d62cc4e377685fb5b750b76ba96c128883f2626e9a2b58a58f4c7fda7",
+    "reference_sha256": "852e6b83d2c148960a22a71801dc6b43f64f18eda4263920ffccba85c6adc180",
     "coefficient_path": "results/reference_audit_v1/confirm/reference_coefficients/gene_seed502_c1_mixed_weak.npz",
-    "coefficient_sha256": "f6f7b879500d2678d4b6e5855e2925fa15677c6f16de1f7fddfba85674b3d8ee",
+    "coefficient_sha256": "fd2ff1a4ae8f65a523673ab67f31f4cba913646c52a8e56c87fdc107ec316160",
     "historical_reference_accepted": true,
     "historical_numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
     "historical_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
     "baseline_config_path": "configs/reference_audit_v1.json",
     "baseline_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
-    "existing_grouping_path": "results/reference_audit_v1/confirm/grouping/967af5f3d90bdc3bf36647184a3f19e8fa69a822a85363b27b156aca8498c9fd.json",
+    "existing_grouping_path": null,
     "existing_uji_grouping_metadata_path": null
   },
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "28ab044ddfc281c344ea7dfa4d480d5306afc277cd1dc718851021f73af9b2d8",
-  "preprocessing_sec": 0.11632249318063259
+  "preprocessing_sec": 0.10665908909868449
 }

@@ -850,7 +850,7 @@
     1.1612597249511787,
     1.2172644965478876
   ],
-  "train_y_mean": 0.003300923591141153,
+  "train_y_mean": 0.0033009235911411424,
   "coefficient_coordinates": "X centered and population-standardized on this generated training design; ddof=0",
   "rng": "NumPy PCG64 via SeedSequence(seed).spawn(8)",
   "rng_stream_roles": {
@@ -866,7 +866,7 @@
   "layout_groups_scope": "Consecutive index blocks define support layout. Only family=block has independent covariance blocks; Toeplitz and real-design blocks are bookkeeping partitions.",
   "hashes": {
     "X": "b48b4579882477467df308492063b42b0469404f6334de0e96b7ace8fdbc15c3",
-    "y": "e819a927657a57493ce747742d5f80bdf319bcd2b8a77f6e3e5df1e8982ed02b",
+    "y": "f0ada72e441e43ade5b4c07c8f42172173bfc7c760e99b1dd68095181ac3e96e",
     "w_true": "86805709d759a6b1eb5f833187e26f0b72bbb8ce656362ef61f9112e3e20d7a3",
     "support_order": "2adf370fad22c6c37d9a1961b70430e2b4e63243f2e172e6c335382c9518ef60",
     "ordered_signs": "00c8439a899400b044996013b2b0d0f83274074ad3eb31340d3386d8e23b8cc6",
@@ -4556,8 +4556,8 @@
   },
   "numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
   "config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
-  "dataset_hash": "92ab33799119c6479f7b32f5bf136129b639370b0f2f5111a1e4095c82e3358f",
-  "preprocessing_sec": 0.1945590889081359,
-  "L": 25.697568935827817,
-  "lipschitz_setup_sec": 0.02770432736724615
+  "dataset_hash": "f3d3efb081b0fc853e79d2f8a0830aee8400b9c6de279b5590a09696f871be57",
+  "preprocessing_sec": 0.0552208669250831,
+  "L": 25.697568935827803,
+  "lipschitz_setup_sec": 0.017476037959568202
 }

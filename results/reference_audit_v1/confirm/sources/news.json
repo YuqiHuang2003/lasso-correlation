@@ -23940,7 +23940,7 @@
   "source_page": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
   "source_scope": "News has a fixed source training pool with new row subsamples; gene is one fixed X with new support/noise draws; sources are not difficulty matched",
   "source_preparation_sha256": "08aa6e105edc67c59bf6d4b7063c336f43a6fac869c1ff8e69de5317cbe64ef3",
-  "load_preprocessing_sec": 0.5494784601032734,
+  "load_preprocessing_sec": 0.29310419398825616,
   "numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
   "config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a"
 }

@@ -10,7 +10,7 @@
   "recorded_trajectories": 480,
   "expected_reference_calls": 480,
   "reference_calls": 480,
-  "actual_reference_library_fit_attempts": 562,
+  "actual_reference_library_fit_attempts": 579,
   "reference_accepted_targets": 240,
   "trajectory_status_counts": {
     "converged": 480
@@ -30,7 +30,7 @@
     }
   ],
   "source_preparation_sec": 0.0,
-  "wall_sec_this_invocation": 1061.5464026480913,
+  "wall_sec_this_invocation": 371.8950016940944,
   "reference_call_count_scope": "Counts stored per-target calls; cache reuse does not imply new fitting in this invocation",
   "observational_scope": "Independent follow-up seeds are the replication unit; conditions are paired and checkpoints are not independent samples.",
   "interpretation": "Independent checking of exploratory observations, not a promise of a theoretical guarantee or novelty."

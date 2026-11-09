@@ -1,8 +1,7 @@
 # Contributing to lasso-correlation
 
 This is a research repository with frozen numerical evidence. Python 3.13 on
-Linux is the tested target. The Chinese research reports and their recorded
-protocols define the interpretation of the saved results; repository cleanup
+Linux is the tested target. The recorded protocols define the interpretation of the saved results; repository cleanup
 does not create a new experiment or an independent replication.
 
 ## Local checks
@@ -19,7 +18,7 @@ make test
 `pyproject.toml` supplies the `src/` and `scripts/` import paths for pytest.
 An editable package install is unnecessary. `make test` runs an explicit list
 of 39 arithmetic, small-fixture and mocked-runner checks. It needs no raw data,
-saved results, optional modern solver, or report packages. CI uses this command.
+saved results, optional modern solver, or optional packages. CI uses this command.
 
 Additional checks are opt-in:
 
@@ -48,7 +47,7 @@ the repository.
   code, source data, permutations and other prepared inputs as required by that
   protocol. Do not overwrite old evidence or relabel old runs as new ones.
 - Keep numerical timing stages serial and single threaded. Do not run tests,
-  verification, plots, report generation or another timed study concurrently.
+  verification, plots or another timed study concurrently.
   Record setup and warmup costs separately, retain actual library retries and
   partial failures, and honor the frozen soft-budget and no-retry rules.
 - Retain ineligible, timed-out and uncertain outputs. Keep precision, observed
@@ -73,11 +72,3 @@ designs, warm a solver, fit, or write results. It is expected to fail when that
 evidence is absent or its source/dependency signature differs. Passing ordinary
 unit tests does not imply that a historical study has been reproduced.
 
-## Reports
-
-The primary reports are in Chinese. Keep their terminology, denominators and
-claims consistent with the independently verified artifacts, including negative
-results and post-hoc limitations. Editorial changes do not require new numerical
-runs. Optional Python report tools use `requirements-report.txt`; TeX sources
-may also require a separate TeX/font installation. Neither is installed or run
-by the lightweight CI workflow.

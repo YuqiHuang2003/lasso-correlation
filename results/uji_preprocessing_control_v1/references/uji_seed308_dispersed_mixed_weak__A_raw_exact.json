@@ -3,22 +3,22 @@
   "status": "reference_uncertain",
   "both_pass_common_precision": true,
   "both_within_observed_budget": true,
-  "coefficient_linf_difference": 0.099796424959772,
+  "coefficient_linf_difference": 0.1033712131010957,
   "normalized_primal_difference": 0.0,
   "by_support_threshold": {
     "1e-06": {
       "same_support": false,
-      "support_symmetric_difference": 1,
+      "support_symmetric_difference": 2,
       "same_thresholded_signs": false,
       "sklearn_nnz": 24,
-      "skglm_nnz": 25
+      "skglm_nnz": 24
     },
     "0.0001": {
       "same_support": false,
-      "support_symmetric_difference": 1,
+      "support_symmetric_difference": 2,
       "same_thresholded_signs": false,
       "sklearn_nnz": 24,
-      "skglm_nnz": 25
+      "skglm_nnz": 24
     }
   },
   "interpretation": "Agreement of two high-accuracy numerical implementations; not a proof of exact minimizer support or statistical recovery.",
@@ -33,8 +33,8 @@
   "layout": "dispersed",
   "amplitude": "mixed_weak",
   "arm": "A_raw_exact",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
-  "source_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
+  "source_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "dataset_hash": "349aecf850ea3bece5d8a442519fee3cd471cb39f15bad8618a2856be92ae9fb",
   "lambda": 0.10849980674130397,
@@ -42,14 +42,14 @@
     "method": "sklearn_cyclic_cd",
     "certificate": {
       "primal": 1.7569447701017693,
-      "dual": 1.7569447701017022,
-      "gap": 6.705747068735946e-14,
-      "raw_gap": 6.705747068735946e-14,
-      "normalized_gap": 3.8167090866194514e-14,
+      "dual": 1.7569447701017011,
+      "gap": 6.816769371198461e-14,
+      "raw_gap": 6.816769371198461e-14,
+      "normalized_gap": 3.879899634411164e-14,
       "dual_feasibility": 0.999999999999996,
-      "kkt_inf": 7.308043059595093e-14
+      "kkt_inf": 7.326084183745252e-14
     },
-    "elapsed_sec": 0.022517908364534378,
+    "elapsed_sec": 0.011685826000757515,
     "certificate_passed": true,
     "budget_exceeded": false,
     "status": "converged",
@@ -64,74 +64,110 @@
     "method": "skglm",
     "history": [
       {
-        "primal": 6.182079830199542,
+        "primal": 6.18207983019954,
         "dual": 0.9884940445301903,
-        "gap": 5.1935857856693515,
-        "raw_gap": 5.1935857856693515,
-        "normalized_gap": 0.8401033193228299,
+        "gap": 5.19358578566935,
+        "raw_gap": 5.19358578566935,
+        "normalized_gap": 0.8401033193228298,
         "dual_feasibility": 0.9999999999999959,
         "kkt_inf": 1.1920127289413076,
         "iteration": 0,
         "attempt": 0,
-        "time": 0.0019623935222625732
+        "time": 0.0009652380831539631
       },
       {
         "primal": 1.7569447701017693,
-        "dual": 1.7569447699959047,
-        "gap": 1.0586465037931703e-10,
-        "raw_gap": 1.0586465037931703e-10,
-        "normalized_gap": 6.025496770350096e-11,
-        "dual_feasibility": 0.9999999999999959,
-        "kkt_inf": 2.3921920000447017e-11,
-        "iteration": 10,
+        "dual": 1.756944769120914,
+        "gap": 9.808553969037348e-10,
+        "raw_gap": 9.808553969037348e-10,
+        "normalized_gap": 5.582733240083123e-10,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 9.011462409613813e-11,
+        "iteration": 9,
         "attempt": 1,
-        "time": 0.011977320536971092
+        "time": 0.006240423070266843
+      },
+      {
+        "primal": 1.7569447701017693,
+        "dual": 1.7569447700999854,
+        "gap": 1.7839063559677015e-12,
+        "raw_gap": 1.7839063559677015e-12,
+        "normalized_gap": 1.0153457219172407e-12,
+        "dual_feasibility": 0.9999999999999959,
+        "kkt_inf": 1.9156898289907076e-13,
+        "iteration": 19,
+        "attempt": 2,
+        "time": 0.013589763082563877
       }
     ],
     "status": "converged",
     "certificate": {
       "primal": 1.7569447701017693,
-      "dual": 1.7569447699959047,
-      "gap": 1.0586465037931703e-10,
-      "raw_gap": 1.0586465037931703e-10,
-      "normalized_gap": 6.025496770350096e-11,
+      "dual": 1.7569447700999854,
+      "gap": 1.7839063559677015e-12,
+      "raw_gap": 1.7839063559677015e-12,
+      "normalized_gap": 1.0153457219172407e-12,
       "dual_feasibility": 0.9999999999999959,
-      "kkt_inf": 2.3921920000447017e-11
+      "kkt_inf": 1.9156898289907076e-13
     },
     "certificate_passed": true,
     "budget_exceeded": false,
-    "elapsed_sec": 0.012006799690425396,
-    "diagnostics_sec": 0.0007348768413066864,
-    "iterations": 10,
+    "elapsed_sec": 0.01361971499864012,
+    "diagnostics_sec": 0.0004481499781832099,
+    "iterations": 19,
     "iteration_unit": "outer working-set iterations across all attempts",
     "attempts": [
       {
         "attempt": 1,
         "library_tol": 1e-10,
         "initialization": "zero coefficients and zero fitted values",
-        "fit_elapsed_sec": 0.009646822698414326,
-        "elapsed_sec_including_posterior_diagnostics": 0.010012881830334663,
-        "cumulative_elapsed_sec": 0.011977320536971092,
-        "outer_working_set_iterations": 10,
-        "library_returned_stop_crit": 2.3915203151148035e-11,
+        "fit_elapsed_sec": 0.0051272750133648515,
+        "elapsed_sec_including_posterior_diagnostics": 0.005254604038782418,
+        "cumulative_elapsed_sec": 0.006240423070266843,
+        "outer_working_set_iterations": 9,
+        "library_returned_stop_crit": 9.020750812993583e-11,
         "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
         "library_objectives_without_timestamps": [
           4.817584528252178,
-          2.887709118517634,
-          1.8130642545710356,
-          1.7618306711095602,
-          1.7570524904595088,
-          1.7569447793516144,
-          1.7569447701034804,
-          1.7569447701017824,
-          1.7569447701017822,
-          1.7569447701017826
+          2.8872231435427964,
+          1.813047261339579,
+          1.7619724727779253,
+          1.757066257633619,
+          1.7569447747471796,
+          1.7569447701019034,
+          1.7569447701017276,
+          1.7569447701017276
         ],
-        "normalized_gap": 6.025496770350096e-11,
+        "normalized_gap": 5.582733240083123e-10,
+        "passed_common_certificate": false
+      },
+      {
+        "attempt": 2,
+        "library_tol": 1e-12,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.007193987024948001,
+        "elapsed_sec_including_posterior_diagnostics": 0.007343627046793699,
+        "cumulative_elapsed_sec": 0.013589763082563877,
+        "outer_working_set_iterations": 10,
+        "library_returned_stop_crit": 1.8790524691780774e-14,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          4.817584528252178,
+          2.8872231435427964,
+          1.813047261339579,
+          1.7619724727779253,
+          1.757066257633619,
+          1.7569447747471796,
+          1.7569447701019034,
+          1.7569447701017276,
+          1.7569447701017276,
+          1.7569447701017271
+        ],
+        "normalized_gap": 1.0153457219172407e-12,
         "passed_common_certificate": true
       }
     ],
-    "attempt_count": 1,
+    "attempt_count": 2,
     "library_tolerances": [
       1e-10,
       1e-12,
@@ -149,7 +185,7 @@
     "warmup_metadata": {
       "performed": false,
       "elapsed_sec": 0.0,
-      "initial_warmup_sec": 3.895263062790036,
+      "initial_warmup_sec": 3.823852622997947,
       "versions": {
         "skglm": "0.5",
         "numba": "0.68.1",
@@ -167,57 +203,57 @@
   "geometry": {
     "sklearn": {
       "1e-06": {
-        "active_gram_min_eigenvalue": 0.08150346761829994,
+        "active_gram_min_eigenvalue": 0.08150346761830068,
         "active_gram_max_eigenvalue": 3.674433943526414,
         "active_gram_numerical_rank": 24,
         "active_gram_rank_cutoff": 1.958131759952274e-14,
-        "active_gram_condition": 45.083160887517806,
-        "beta_min": 0.0010952699214575343,
-        "active_kkt_violation": 7.308043059595093e-14,
+        "active_gram_condition": 45.083160887517394,
+        "beta_min": 0.0010952699214575058,
+        "active_kkt_violation": 7.326084183745252e-14,
         "nnz": 24,
-        "inactive_kkt_margin": 1.7458257062230587e-14
+        "inactive_kkt_margin": 1.7305601396344628e-14
       },
       "0.0001": {
-        "active_gram_min_eigenvalue": 0.08150346761829994,
+        "active_gram_min_eigenvalue": 0.08150346761830068,
         "active_gram_max_eigenvalue": 3.674433943526414,
         "active_gram_numerical_rank": 24,
         "active_gram_rank_cutoff": 1.958131759952274e-14,
-        "active_gram_condition": 45.083160887517806,
-        "beta_min": 0.0010952699214575343,
-        "active_kkt_violation": 7.308043059595093e-14,
+        "active_gram_condition": 45.083160887517394,
+        "beta_min": 0.0010952699214575058,
+        "active_kkt_violation": 7.326084183745252e-14,
         "nnz": 24,
-        "inactive_kkt_margin": 1.7458257062230587e-14
+        "inactive_kkt_margin": 1.7305601396344628e-14
       }
     },
     "skglm": {
       "1e-06": {
-        "active_gram_min_eigenvalue": 8.785563784439115e-16,
-        "active_gram_max_eigenvalue": 3.674748300446004,
+        "active_gram_min_eigenvalue": 0.08150346761830068,
+        "active_gram_max_eigenvalue": 3.674433943526414,
         "active_gram_numerical_rank": 24,
-        "active_gram_rank_cutoff": 2.039895086428658e-14,
-        "active_gram_condition": null,
-        "beta_min": 0.0010952697928049288,
-        "active_kkt_violation": 2.3921920000447017e-11,
-        "nnz": 25,
-        "inactive_kkt_margin": 0.0019917145639887918
+        "active_gram_rank_cutoff": 1.958131759952274e-14,
+        "active_gram_condition": 45.083160887517394,
+        "beta_min": 0.0010952699214616113,
+        "active_kkt_violation": 1.9156898289907076e-13,
+        "nnz": 24,
+        "inactive_kkt_margin": -1.6958656701149266e-14
       },
       "0.0001": {
-        "active_gram_min_eigenvalue": 8.785563784439115e-16,
-        "active_gram_max_eigenvalue": 3.674748300446004,
+        "active_gram_min_eigenvalue": 0.08150346761830068,
+        "active_gram_max_eigenvalue": 3.674433943526414,
         "active_gram_numerical_rank": 24,
-        "active_gram_rank_cutoff": 2.039895086428658e-14,
-        "active_gram_condition": null,
-        "beta_min": 0.0010952697928049288,
-        "active_kkt_violation": 2.3921920000447017e-11,
-        "nnz": 25,
-        "inactive_kkt_margin": 0.0019917145639887918
+        "active_gram_rank_cutoff": 1.958131759952274e-14,
+        "active_gram_condition": 45.083160887517394,
+        "beta_min": 0.0010952699214616113,
+        "active_kkt_violation": 1.9156898289907076e-13,
+        "nnz": 24,
+        "inactive_kkt_margin": -1.6958656701149266e-14
       }
     }
   },
-  "geometry_diagnostics_sec_outside_fit_timers": 0.0016279416158795357,
+  "geometry_diagnostics_sec_outside_fit_timers": 0.0006803050637245178,
   "reported_reference_calls": 2,
-  "actual_library_fit_attempts": 2,
+  "actual_library_fit_attempts": 3,
   "coefficient_path": "reference_coefficients/uji_seed308_dispersed_mixed_weak__A_raw_exact.npz",
-  "coefficient_sha256": "1686b31e3d7a0e18247474231503e3cc359e1cefdce36ddb978bff29a28c8483",
-  "coefficient_write_sec": 0.0007993811741471291
+  "coefficient_sha256": "2cd27a6f91284217d5c5927448eee0ba86e0601d3564f2ee3ca0c464f499102d",
+  "coefficient_write_sec": 0.0005476949736475945
 }

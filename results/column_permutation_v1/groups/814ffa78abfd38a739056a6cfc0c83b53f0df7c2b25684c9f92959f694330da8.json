@@ -2198,12 +2198,12 @@
         "member_scales_from_anchor": [
           1.0,
           1.0000000000000002,
-          1.0000000000000002
+          1.0000000000000004
         ],
         "relative_l2_residuals_to_anchor": [
           0.0,
           6.935423589159583e-18,
-          1.1425705836746288e-16
+          1.1319971238912432e-16
         ]
       },
       {
@@ -2622,11 +2622,11 @@
         ],
         "member_scales_from_anchor": [
           1.0,
-          0.9999999999999999
+          1.0
         ],
         "relative_l2_residuals_to_anchor": [
           0.0,
-          1.386390307416516e-17
+          1.590333327299181e-16
         ]
       },
       {
@@ -6448,12 +6448,12 @@
         "member_scales_from_anchor": [
           1.0,
           1.0000000000000002,
-          1.0000000000000002
+          1.0000000000000004
         ],
         "relative_l2_residuals_to_anchor": [
           0.0,
           6.935423589159583e-18,
-          1.1425705836746288e-16
+          1.1319971238912432e-16
         ]
       },
       {
@@ -6872,11 +6872,11 @@
         ],
         "member_scales_from_anchor": [
           1.0,
-          0.9999999999999999
+          1.0
         ],
         "relative_l2_residuals_to_anchor": [
           0.0,
-          1.386390307416516e-17
+          1.590333327299181e-16
         ]
       },
       {
@@ -10698,12 +10698,12 @@
         "member_scales_from_anchor": [
           1.0,
           1.0000000000000002,
-          1.0000000000000002
+          1.0000000000000004
         ],
         "relative_l2_residuals_to_anchor": [
           0.0,
           6.935423589159583e-18,
-          1.1425705836746288e-16
+          1.1319971238912432e-16
         ]
       },
       {
@@ -11122,11 +11122,11 @@
         ],
         "member_scales_from_anchor": [
           1.0,
-          0.9999999999999999
+          1.0
         ],
         "relative_l2_residuals_to_anchor": [
           0.0,
-          1.386390307416516e-17
+          1.590333327299181e-16
         ]
       },
       {
@@ -14952,12 +14952,12 @@
           "member_scales_from_anchor": [
             1.0,
             1.0000000000000002,
-            1.0000000000000002
+            1.0000000000000004
           ],
           "relative_l2_residuals_to_anchor": [
             0.0,
             6.935423589159583e-18,
-            1.1425705836746288e-16
+            1.1319971238912432e-16
           ]
         },
         {
@@ -15376,11 +15376,11 @@
           ],
           "member_scales_from_anchor": [
             1.0,
-            0.9999999999999999
+            1.0
           ],
           "relative_l2_residuals_to_anchor": [
             0.0,
-            1.386390307416516e-17
+            1.590333327299181e-16
           ]
         },
         {
@@ -19571,12 +19571,12 @@
           "member_scales_from_anchor": [
             1.0,
             1.0000000000000002,
-            1.0000000000000002
+            1.0000000000000004
           ],
           "relative_l2_residuals_to_anchor": [
             0.0,
             6.935423589159583e-18,
-            1.1425705836746288e-16
+            1.1319971238912432e-16
           ]
         },
         {
@@ -19995,11 +19995,11 @@
           ],
           "member_scales_from_anchor": [
             1.0,
-            0.9999999999999999
+            1.0
           ],
           "relative_l2_residuals_to_anchor": [
             0.0,
-            1.386390307416516e-17
+            1.590333327299181e-16
           ]
         },
         {
@@ -24190,12 +24190,12 @@
           "member_scales_from_anchor": [
             1.0,
             1.0000000000000002,
-            1.0000000000000002
+            1.0000000000000004
           ],
           "relative_l2_residuals_to_anchor": [
             0.0,
             6.935423589159583e-18,
-            1.1425705836746288e-16
+            1.1319971238912432e-16
           ]
         },
         {
@@ -24614,11 +24614,11 @@
           ],
           "member_scales_from_anchor": [
             1.0,
-            0.9999999999999999
+            1.0
           ],
           "relative_l2_residuals_to_anchor": [
             0.0,
-            1.386390307416516e-17
+            1.590333327299181e-16
           ]
         },
         {
@@ -26631,13 +26631,13 @@
   "rule": "Full unordered-pair blocked absolute cosine screening; ascending-column greedy anchor groups; every admitted member directly passes no-intercept relative residual; negative scale allowed; no transitive chaining",
   "floating_point_boundary": "Candidate guard accommodates dot/normalization roundoff; final groups are numerical residual groups, not proofs of exact proportionality or mathematical solution non-uniqueness",
   "cache_hit": false,
-  "scan_elapsed_sec": 0.011761007830500603,
-  "original_scan_elapsed_sec": 0.011761007830500603,
+  "scan_elapsed_sec": 0.00932276004459709,
+  "original_scan_elapsed_sec": 0.00932276004459709,
   "cache_scope": "Process-local LRU of eight X-hash/tolerance/block-size results; call once per distinct X in post-processing",
-  "elapsed_sec": 0.02040828112512827,
+  "elapsed_sec": 0.011831518961116672,
   "diagnostics": {
-    "wall_sec": 0.02040828112512827,
-    "scan_wall_sec": 0.011761007830500603,
+    "wall_sec": 0.011831518961116672,
+    "scan_wall_sec": 0.00932276004459709,
     "block_size": 256,
     "peak_gram_bytes_upper_bound": 524288,
     "working_array_bytes_upper_bound": 4860800,
@@ -26649,10 +26649,10 @@
     "cosine_candidate_cutoff": 0.9999999999964455,
     "cosine_rounding_guard": 3.55449003564069e-12
   },
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "origin": {
     "kind": "original_X_only_pre_fit_computation"
   },
-  "preparation_sec": 0.04607101436704397,
+  "preparation_sec": 0.021816771011799574,
   "coordinate_system": "original frozen columns"
 }

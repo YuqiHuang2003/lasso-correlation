@@ -4625,6 +4625,7 @@
     510
   ],
   "real_design_comparison_scope": "Independent robustness arm with real_sparsity default 15 and real_n default 1000; not a difficulty-matched comparison with synthetic n500/p1000/s20",
+  "y_differs_from_frozen_in_last_bits": false,
   "source": "uji",
   "target_id": "uji_seed309_clustered_strong",
   "historical_dataset_hash": "10082f5bb6595f12ed341f93fa3378824eaaf746e17060d81867beb13338a8d0",
@@ -4640,21 +4641,21 @@
     "old_target_id": "uji_seed309_clustered_strong",
     "baseline_path": "results/workshop/real",
     "dataset_path": "results/workshop/real/datasets/uji_seed309_clustered_strong.json",
-    "dataset_sha256": "d7deb7662e4bdaa8fd36b33f2bca462d7087984ef3c5319807de14102e4f2b2c",
+    "dataset_sha256": "2f8be6269e496af8088671f9ffcc1351a12dd19801cbc2a3fc2a3e307b21b496",
     "reference_path": "results/workshop/real/references/uji_seed309_clustered_strong.json",
-    "reference_sha256": "bf6b9bde36b875f5e22ce6c514fafae2ae45f7911b71b092febf7e5659762c22",
+    "reference_sha256": "3a288a89549f69dabee4349b6cdab442245a295b68e36c3d5661a66674b6ab36",
     "coefficient_path": "results/workshop/real/reference_coefficients/uji_seed309_clustered_strong.npz",
-    "coefficient_sha256": "c3635e1f316ae07ae9bb3562a70f93de3d3c05aa51162b3d358e1c0371f9ecc2",
+    "coefficient_sha256": "f3408b772d7e9bee7462b7c3ed63808b1fedbeb99caeb990decb76d24dcddc94",
     "historical_reference_accepted": false,
     "historical_numerical_signature": "bc89e7e2257788ee33d6a13dfd7d540af0f5101c8ad346db8e39e323526c44c4",
     "historical_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "baseline_config_path": "configs/workshop_real.json",
     "baseline_config_sha256": "41293c88a08e143ee545e0f51fef8c435b92d4de32b7789322a59f06e2ff94a7",
     "existing_grouping_path": null,
-    "existing_uji_grouping_metadata_path": "results/workshop/real/reference_diagnostics.json"
+    "existing_uji_grouping_metadata_path": null
   },
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "10082f5bb6595f12ed341f93fa3378824eaaf746e17060d81867beb13338a8d0",
-  "preprocessing_sec": 0.20576667971909046
+  "preprocessing_sec": 0.05709490994922817
 }

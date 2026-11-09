@@ -1,7 +1,7 @@
 {
   "performed": true,
-  "elapsed_sec": 3.895263062790036,
-  "initial_warmup_sec": 3.895263062790036,
+  "elapsed_sec": 3.823852622997947,
+  "initial_warmup_sec": 3.823852622997947,
   "versions": {
     "skglm": "0.5",
     "numba": "0.68.1",

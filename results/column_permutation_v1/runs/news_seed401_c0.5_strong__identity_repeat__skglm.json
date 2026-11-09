@@ -15,8 +15,8 @@
   "is_primary_order": false,
   "is_identity_repeat": true,
   "method": "skglm",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "55217c22c141317ebc0c1d882178ae8afa873553015ef3beef5b6a9bba08e817",
   "input_hashes": {
@@ -37,51 +37,51 @@
   "permutation_sha256": "9fae8a670f4d29cd7a049be155b7a2b73989948de4bda074de8e992a7558d07b",
   "inverse_sha256": "9fae8a670f4d29cd7a049be155b7a2b73989948de4bda074de8e992a7558d07b",
   "permutation_path": "permutations/31085f61e6aa3eae9498cba69ad5f0dfd7810f70b39fbd1583ab0fb9c54fa980.json",
-  "permutation_record_sha256": "b233178f08db1667172df04141496dbc0007dc07d428f281406506b2c40e3bd7",
+  "permutation_record_sha256": "0560fe76b2d6a2ba942297de9cdf6334cfab33461f9cdce0d412b0694244ce5b",
   "historical_reference_path": "results/reference_audit_v1/confirm/references/news_seed401_c0.5_strong.json",
   "origin": {
     "old_target_id": "news_seed401_c0.5_strong",
     "baseline_path": "results/reference_audit_v1/confirm",
     "dataset_path": "results/reference_audit_v1/confirm/datasets/news_seed401_c0.5_strong.json",
-    "dataset_sha256": "8aa5e30446d9c7dd23e8d914dee1329ea6d6a3b892f6bf64b360c722e9b9e564",
+    "dataset_sha256": "89a5d3fe0ae14f7a24c771887b0fff35f13058129bb86abc3fbe271b7fa36c00",
     "reference_path": "results/reference_audit_v1/confirm/references/news_seed401_c0.5_strong.json",
-    "reference_sha256": "65fa41dc853ce1ccd19b1c9356eb82b5d53fe56e22643faaf07199ea966a12f3",
+    "reference_sha256": "ffb4076ee00dfb848aa00013e2990b4555dc44cb691d30e58fecbecab91ae727",
     "coefficient_path": "results/reference_audit_v1/confirm/reference_coefficients/news_seed401_c0.5_strong.npz",
-    "coefficient_sha256": "75ef18e098ff5436c7487b1ee78b6af594816b3dd191bb284cc5995a990fecb2",
+    "coefficient_sha256": "1027e3c0fb3b7aed7e6711fd1d1db403d00f4b5ab3d7f12cc9a2ee35a9bda9ca",
     "historical_reference_accepted": true,
     "historical_numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
     "historical_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
     "baseline_config_path": "configs/reference_audit_v1.json",
     "baseline_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
-    "existing_grouping_path": "results/reference_audit_v1/confirm/grouping/31085f61e6aa3eae9498cba69ad5f0dfd7810f70b39fbd1583ab0fb9c54fa980.json",
+    "existing_grouping_path": null,
     "existing_uji_grouping_metadata_path": null
   },
   "certificate": {
     "primal": 0.6933171826440236,
-    "dual": 0.693317182643832,
-    "gap": 1.9162449405030202e-13,
-    "raw_gap": 1.9162449405030202e-13,
-    "normalized_gap": 1.9162449405030202e-13,
+    "dual": 0.6933171826438324,
+    "gap": 1.9129142714291447e-13,
+    "raw_gap": 1.9129142714291447e-13,
+    "normalized_gap": 1.9129142714291447e-13,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 4.71359062892418e-14
+    "kkt_inf": 4.709427292581836e-14
   },
   "certificate_original": {
     "primal": 0.6933171826440236,
-    "dual": 0.693317182643832,
-    "gap": 1.9162449405030202e-13,
-    "raw_gap": 1.9162449405030202e-13,
-    "normalized_gap": 1.9162449405030202e-13,
+    "dual": 0.6933171826438324,
+    "gap": 1.9129142714291447e-13,
+    "raw_gap": 1.9129142714291447e-13,
+    "normalized_gap": 1.9129142714291447e-13,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 4.71359062892418e-14
+    "kkt_inf": 4.709427292581836e-14
   },
   "permuted_certificate": {
     "primal": 0.6933171826440236,
-    "dual": 0.693317182643832,
-    "gap": 1.9162449405030202e-13,
-    "raw_gap": 1.9162449405030202e-13,
-    "normalized_gap": 1.9162449405030202e-13,
+    "dual": 0.6933171826438324,
+    "gap": 1.9129142714291447e-13,
+    "raw_gap": 1.9129142714291447e-13,
+    "normalized_gap": 1.9129142714291447e-13,
     "dual_feasibility": 0.999999999999996,
-    "kkt_inf": 4.71359062892418e-14
+    "kkt_inf": 4.709427292581836e-14
   },
   "invariance": {
     "passed": true,
@@ -96,22 +96,22 @@
       },
       "dual": {
         "absolute_difference": 0.0,
-        "allowed_difference": 8.46658591321916e-12,
+        "allowed_difference": 8.466585913219161e-12,
         "passed": true
       },
       "gap": {
         "absolute_difference": 0.0,
-        "allowed_difference": 5.000000000000958e-12,
+        "allowed_difference": 5.000000000000956e-12,
         "passed": true
       },
       "raw_gap": {
         "absolute_difference": 0.0,
-        "allowed_difference": 5.000000000000958e-12,
+        "allowed_difference": 5.000000000000956e-12,
         "passed": true
       },
       "normalized_gap": {
         "absolute_difference": 0.0,
-        "allowed_difference": 5.000000000000958e-12,
+        "allowed_difference": 5.000000000000956e-12,
         "passed": true
       },
       "dual_feasibility": {
@@ -121,7 +121,7 @@
       },
       "kkt_inf": {
         "absolute_difference": 0.0,
-        "allowed_difference": 5.0000000000002356e-12,
+        "allowed_difference": 5.000000000000235e-12,
         "passed": true
       },
       "prediction": {
@@ -149,54 +149,54 @@
   "budget_eligible": true,
   "library_status_eligible": true,
   "qualification_failure_reasons": [],
-  "elapsed_sec": 0.004184185527265072,
-  "public_elapsed_sec": 0.004184185527265072,
-  "solver_elapsed_sec": 0.0037838416174054146,
-  "posterior_mapping_diagnostics_sec": 0.0003998866304755211,
-  "permuted_X_preparation_sec": 0.00132742989808321,
+  "elapsed_sec": 0.0028090510750189424,
+  "public_elapsed_sec": 0.0028090510750189424,
+  "solver_elapsed_sec": 0.002613897086121142,
+  "posterior_mapping_diagnostics_sec": 0.00019497296307235956,
+  "permuted_X_preparation_sec": 0.00036952702794224024,
   "actual_library_fit_attempts": 1,
   "library_result": {
     "method": "skglm",
     "history": [
       {
-        "primal": 2.975154024664043,
-        "dual": 0.2043416144495271,
-        "gap": 2.770812410214516,
-        "raw_gap": 2.770812410214516,
+        "primal": 2.9751540246640427,
+        "dual": 0.20434161444952717,
+        "gap": 2.7708124102145155,
+        "raw_gap": 2.7708124102145155,
         "normalized_gap": 0.9313172989514041,
         "dual_feasibility": 0.999999999999996,
         "kkt_inf": 1.244074260414293,
         "iteration": 0,
         "attempt": 0,
-        "time": 0.0014818888157606125
+        "time": 0.0011841480154544115
       },
       {
         "primal": 0.6933171826440236,
-        "dual": 0.693317182643832,
-        "gap": 1.9162449405030202e-13,
-        "raw_gap": 1.9162449405030202e-13,
-        "normalized_gap": 1.9162449405030202e-13,
+        "dual": 0.6933171826438324,
+        "gap": 1.9129142714291447e-13,
+        "raw_gap": 1.9129142714291447e-13,
+        "normalized_gap": 1.9129142714291447e-13,
         "dual_feasibility": 0.999999999999996,
-        "kkt_inf": 4.71359062892418e-14,
+        "kkt_inf": 4.709427292581836e-14,
         "iteration": 4,
         "attempt": 1,
-        "time": 0.003719944506883621
+        "time": 0.002549752010963857
       }
     ],
     "status": "converged",
     "certificate": {
       "primal": 0.6933171826440236,
-      "dual": 0.693317182643832,
-      "gap": 1.9162449405030202e-13,
-      "raw_gap": 1.9162449405030202e-13,
-      "normalized_gap": 1.9162449405030202e-13,
+      "dual": 0.6933171826438324,
+      "gap": 1.9129142714291447e-13,
+      "raw_gap": 1.9129142714291447e-13,
+      "normalized_gap": 1.9129142714291447e-13,
       "dual_feasibility": 0.999999999999996,
-      "kkt_inf": 4.71359062892418e-14
+      "kkt_inf": 4.709427292581836e-14
     },
     "certificate_passed": true,
     "budget_exceeded": false,
-    "elapsed_sec": 0.0037452299147844315,
-    "diagnostics_sec": 0.00020745303481817245,
+    "elapsed_sec": 0.0025668489979580045,
+    "diagnostics_sec": 0.0001676150131970644,
     "iterations": 4,
     "iteration_unit": "outer working-set iterations across all attempts",
     "attempts": [
@@ -204,19 +204,19 @@
         "attempt": 1,
         "library_tol": 1e-10,
         "initialization": "zero coefficients and zero fitted values",
-        "fit_elapsed_sec": 0.002137593924999237,
-        "elapsed_sec_including_posterior_diagnostics": 0.0022368067875504494,
-        "cumulative_elapsed_sec": 0.003719944506883621,
+        "fit_elapsed_sec": 0.0013086090330034494,
+        "elapsed_sec_including_posterior_diagnostics": 0.0013630629982799292,
+        "cumulative_elapsed_sec": 0.002549752010963857,
         "outer_working_set_iterations": 4,
         "library_returned_stop_crit": 4.712202850143399e-14,
         "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
         "library_objectives_without_timestamps": [
           1.1040690820594672,
-          0.693906295191716,
+          0.6939062951917161,
           0.6933171826440263,
-          0.6933171826440234
+          0.6933171826440236
         ],
-        "normalized_gap": 1.9162449405030202e-13,
+        "normalized_gap": 1.9129142714291447e-13,
         "passed_common_certificate": true
       }
     ],
@@ -238,7 +238,7 @@
     "warmup_metadata": {
       "performed": false,
       "elapsed_sec": 0.0,
-      "initial_warmup_sec": 3.8196991523727775,
+      "initial_warmup_sec": 3.482063365052454,
       "versions": {
         "skglm": "0.5",
         "numba": "0.68.1",
@@ -479,9 +479,9 @@
     },
     "status": "pass"
   },
-  "historical_comparison_and_scoring_sec": 0.0012089405208826065,
+  "historical_comparison_and_scoring_sec": 0.0007461539935320616,
   "coefficient_path": "coefficients/news_seed401_c0.5_strong__identity_repeat__skglm.npz",
-  "coefficient_sha256": "9755a5be7798710c17fe883ca123349545f01f5e8ab9c0ee648d679814d9a766",
+  "coefficient_sha256": "088c2e9a85e79fe759e6adb42b97a3df0a766d81394c1ec5a6a0c439f0fa1f82",
   "coef_path": "coefficients/news_seed401_c0.5_strong__identity_repeat__skglm.npz",
-  "coefficient_write_sec": 0.0009115971624851227
+  "coefficient_write_sec": 0.0009652009466663003
 }

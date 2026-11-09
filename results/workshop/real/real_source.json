@@ -1,5 +1,5 @@
 {
-  "source_preparation_sec": 1.3435055799782276,
+  "source_preparation_sec": 0.706762021058239,
   "source_csv_sha256": "45ca0128bd12019c976bb4793e407c979c82995d7a5940ab7288620247905168",
   "source_training_split_sha256": "f378fd7b5e293b41a7e7d2f7550779405563eef6095f3c9325d1340ad7ab3758",
   "source_feature_names": [

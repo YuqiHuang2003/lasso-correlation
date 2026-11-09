@@ -9,15 +9,15 @@
         "eligible": true,
         "reasons": [],
         "status": "converged",
-        "elapsed_sec": 0.001410551369190216,
-        "normalized_gap": 4.884981308350689e-15
+        "elapsed_sec": 0.0009578299941495061,
+        "normalized_gap": 4.773959005888173e-15
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
         "status": "converged",
-        "elapsed_sec": 0.00322086364030838,
-        "normalized_gap": 4.910016837555986e-11
+        "elapsed_sec": 0.001670459983870387,
+        "normalized_gap": 4.9101278598584486e-11
       }
     }
   },
@@ -162,9 +162,9 @@
   "primary_support_threshold": 1e-06,
   "primary_absolute_f1_difference": 0.0,
   "primary_delta_exceeded": false,
-  "prediction_difference_rmse": 4.665649311973129e-11,
-  "l1_norm_difference_abs": 7.129941081984725e-11,
-  "evaluation_sec_outside_reference_timers": 0.0005084769800305367,
+  "prediction_difference_rmse": 4.6656603017293627e-11,
+  "l1_norm_difference_abs": 7.129852264142755e-11,
+  "evaluation_sec_outside_reference_timers": 0.0003030090592801571,
   "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
   "target_id": "news_seed403_c1_strong",
   "params": {
@@ -183,8 +183,8 @@
   "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
   "dataset_hash": "2194e88e2891e459f3be50d473edef7e54825dfb6294d834fd760802a11b401f",
   "input_hashes": {
-    "dataset_sha256": "8c6b09c7f44fa7cc927cde775a7c6a6150ed2e072ca33928de78db92057704ca",
-    "reference_json_sha256": "858194725de60b20aec0455e8d725d8bf2a97b1e0d3bb0f68525c5b583ca0c4f",
-    "reference_coefficients_sha256": "45c79d9c6a05817c119c7c3f8ef865110206e7f7f48982092550d6b32f8289cf"
+    "dataset_sha256": "fadea17e3e0170787eadf91bfeebb907cb84133e6355518b5e05f9216c4e9042",
+    "reference_json_sha256": "9badd328ea2781e29d12b81068ba9a885b01ca591a631f3448507ca1073b2bfb",
+    "reference_coefficients_sha256": "3434f8776ab5e140af3f2f5633b44b2c57a894c891479cab2450bba419066713"
   }
 }

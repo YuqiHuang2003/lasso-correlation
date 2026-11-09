@@ -15,8 +15,8 @@
   "is_primary_order": true,
   "is_identity_repeat": false,
   "method": "sklearn",
-  "numerical_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
-  "source_signature": "3916ac4fc64e52e3818c79e385b790fe4f9c29aad07ce37c4c393f982812fa15",
+  "numerical_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
+  "source_signature": "f7c2723eb565484e8c715442f7bb04a1bfb54cbf78c11868cbbd76d5d9b7cdab",
   "config_sha256": "eeacf5988d933e318c53f1230d2bacf63a894a59122af949916f35797a788f4a",
   "dataset_hash": "137b1da768c921c6b2c96a6e8df964d9319b4e6cf03b5e5ee3e434afa8a4e767",
   "input_hashes": {
@@ -37,51 +37,51 @@
   "permutation_sha256": "5c8ddd8f36b949e84e2870c76ecbe1b8517c640088c026ffd86d37f441be4a6c",
   "inverse_sha256": "5258d6cbf715db5577c14768c0d090178b3d422793594349c28a25507647bb78",
   "permutation_path": "permutations/967af5f3d90bdc3bf36647184a3f19e8fa69a822a85363b27b156aca8498c9fd.json",
-  "permutation_record_sha256": "a74d0dc780c0b0abb0de6170aa6e931fa3482f63f1be774ae75cef2de101da0f",
+  "permutation_record_sha256": "583ff28ae6359ba2852060ccc260fccfb2770b729ee27fbbb3036b16794dd1c3",
   "historical_reference_path": "results/reference_audit_v1/confirm/references/gene_seed502_c1_strong.json",
   "origin": {
     "old_target_id": "gene_seed502_c1_strong",
     "baseline_path": "results/reference_audit_v1/confirm",
     "dataset_path": "results/reference_audit_v1/confirm/datasets/gene_seed502_c1_strong.json",
-    "dataset_sha256": "0c6d9ca1bdf076e67f6d8d06c3c3e732bdc2bbf87a70298d7b9437c58876df96",
+    "dataset_sha256": "0b248b1c7250b11b82a92074d3303614162ef15dcd485cca796c1aa55f7171c6",
     "reference_path": "results/reference_audit_v1/confirm/references/gene_seed502_c1_strong.json",
-    "reference_sha256": "2e5e131ce88ce26b5a3fd9c3d7fbe3daa849d59bc90e28630b7b5db46733b4dd",
+    "reference_sha256": "52af8f85422f3c3567311897721b2aa9191e9cc7d3a8bd0df92d06b236acd261",
     "coefficient_path": "results/reference_audit_v1/confirm/reference_coefficients/gene_seed502_c1_strong.npz",
-    "coefficient_sha256": "b608cc6b8674a6a07d3a4af6a879fae718ffdf45f5acf944257ecbca65790681",
+    "coefficient_sha256": "47a85cf0e65ac186175b0326bae59d99478e4a600ddc467c25944f2c0b583e35",
     "historical_reference_accepted": true,
     "historical_numerical_signature": "2611b70784008313c0915673b28250c8b6106577b34bd24ef431f9bb14405804",
     "historical_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
     "baseline_config_path": "configs/reference_audit_v1.json",
     "baseline_config_sha256": "54fcd571ef0ceaa0832ceb0dbe458fb949308f905ca77f63f53661ea35c84c0a",
-    "existing_grouping_path": "results/reference_audit_v1/confirm/grouping/967af5f3d90bdc3bf36647184a3f19e8fa69a822a85363b27b156aca8498c9fd.json",
+    "existing_grouping_path": null,
     "existing_uji_grouping_metadata_path": null
   },
   "certificate": {
-    "primal": 1.8551372208567563,
-    "dual": 1.8551372208566717,
-    "gap": 8.459899447643693e-14,
-    "raw_gap": 8.459899447643693e-14,
-    "normalized_gap": 4.560255356062915e-14,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 6.639133687258436e-14
+    "primal": 1.855137220856756,
+    "dual": 1.8551372208566725,
+    "gap": 8.348877145181177e-14,
+    "raw_gap": 8.348877145181177e-14,
+    "normalized_gap": 4.500409485248441e-14,
+    "dual_feasibility": 0.999999999999996,
+    "kkt_inf": 6.689093723366568e-14
   },
   "certificate_original": {
-    "primal": 1.8551372208567563,
-    "dual": 1.8551372208566717,
-    "gap": 8.459899447643693e-14,
-    "raw_gap": 8.459899447643693e-14,
-    "normalized_gap": 4.560255356062915e-14,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 6.639133687258436e-14
+    "primal": 1.855137220856756,
+    "dual": 1.8551372208566725,
+    "gap": 8.348877145181177e-14,
+    "raw_gap": 8.348877145181177e-14,
+    "normalized_gap": 4.500409485248441e-14,
+    "dual_feasibility": 0.999999999999996,
+    "kkt_inf": 6.689093723366568e-14
   },
   "permuted_certificate": {
-    "primal": 1.8551372208567563,
-    "dual": 1.8551372208566717,
-    "gap": 8.459899447643693e-14,
-    "raw_gap": 8.459899447643693e-14,
-    "normalized_gap": 4.560255356062915e-14,
-    "dual_feasibility": 0.9999999999999961,
-    "kkt_inf": 6.650235917504688e-14
+    "primal": 1.855137220856756,
+    "dual": 1.855137220856673,
+    "gap": 8.304468224196171e-14,
+    "raw_gap": 8.304468224196171e-14,
+    "normalized_gap": 4.476471136922652e-14,
+    "dual_feasibility": 0.999999999999996,
+    "kkt_inf": 6.70019595361282e-14
   },
   "invariance": {
     "passed": true,
@@ -95,44 +95,44 @@
         "passed": true
       },
       "dual": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 1.4275686104283357e-11,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 1.4275686104283363e-11,
         "passed": true
       },
       "gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.000000000000423e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.000000000000417e-12,
         "passed": true
       },
       "raw_gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.000000000000423e-12,
+        "absolute_difference": 4.440892098500626e-16,
+        "allowed_difference": 5.000000000000417e-12,
         "passed": true
       },
       "normalized_gap": {
-        "absolute_difference": 0.0,
-        "allowed_difference": 5.0000000000002275e-12,
+        "absolute_difference": 2.393834832578927e-16,
+        "allowed_difference": 5.000000000000225e-12,
         "passed": true
       },
       "dual_feasibility": {
         "absolute_difference": 0.0,
-        "allowed_difference": 9.99999999999998e-12,
+        "allowed_difference": 9.999999999999978e-12,
         "passed": true
       },
       "kkt_inf": {
         "absolute_difference": 1.1102230246251565e-16,
-        "allowed_difference": 5.0000000000003325e-12,
+        "allowed_difference": 5.000000000000335e-12,
         "passed": true
       },
       "prediction": {
         "maximum_absolute_difference": 8.881784197001252e-16,
-        "rmse": 2.011415008038735e-16,
-        "allowed_difference": 3.224052375003367e-11,
+        "rmse": 2.333229944976403e-16,
+        "allowed_difference": 3.224052375003365e-11,
         "passed": true
       },
       "l1": {
         "absolute_difference": 0.0,
-        "allowed_difference": 1.5200139575437657e-11,
+        "allowed_difference": 1.5200139575437653e-11,
         "passed": true
       }
     }
@@ -149,11 +149,11 @@
   "budget_eligible": true,
   "library_status_eligible": true,
   "qualification_failure_reasons": [],
-  "elapsed_sec": 0.07904455997049809,
-  "public_elapsed_sec": 0.07904455997049809,
-  "solver_elapsed_sec": 0.07679970003664494,
-  "posterior_mapping_diagnostics_sec": 0.0022444212809205055,
-  "permuted_X_preparation_sec": 0.012083632871508598,
+  "elapsed_sec": 0.04885052295867354,
+  "public_elapsed_sec": 0.04885052295867354,
+  "solver_elapsed_sec": 0.047418863978236914,
+  "posterior_mapping_diagnostics_sec": 0.0014307779492810369,
+  "permuted_X_preparation_sec": 0.002337017096579075,
   "actual_library_fit_attempts": 1,
   "library_result": {
     "method": "sklearn_cyclic_cd",
@@ -166,7 +166,7 @@
       {
         "attempt": 1,
         "library_tol": 1e-13,
-        "fit_elapsed_sec": 0.07679478637874126,
+        "fit_elapsed_sec": 0.047415246022865176,
         "initialization": "zero coefficients (new estimator, warm_start=False)"
       }
     ],
@@ -14496,9 +14496,9 @@
       ]
     }
   },
-  "historical_comparison_and_scoring_sec": 0.000380965881049633,
+  "historical_comparison_and_scoring_sec": 0.00024285807739943266,
   "coefficient_path": "coefficients/gene_seed502_c1_strong__perm_0__sklearn.npz",
-  "coefficient_sha256": "8d10c79e5fd328325e34dbcba149c3761caa31b432572a7040791ec0904a7400",
+  "coefficient_sha256": "8b08eada231e6b140efd7e51eab54faa629089ac77eb9765889083f35d681260",
   "coef_path": "coefficients/gene_seed502_c1_strong__perm_0__sklearn.npz",
-  "coefficient_write_sec": 0.014097839593887329
+  "coefficient_write_sec": 0.007664712960831821
 }

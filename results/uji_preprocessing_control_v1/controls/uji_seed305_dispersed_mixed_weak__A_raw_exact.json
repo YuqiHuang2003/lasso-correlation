@@ -7,12 +7,12 @@
     "amplitude": "mixed_weak"
   },
   "arm": "A_raw_exact",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "old_reference_path": "results/workshop/real/references/uji_seed305_dispersed_mixed_weak.json",
-  "old_reference_sha256": "4edcf19c3c0d8ff33d69f69dd564e7238d66ba57e092209c7934e75a0c34d24b",
-  "old_reference_coefficients_sha256": "f4aa9f76f97fc4c393d96e6ed59ca51a7639bbec3d54723da8dff9d5f6ede299",
-  "old_dataset_sha256": "50a7a13711896a0ea8a65491396eeb09b1daa2b61d690131d8fb1ce19fa19c49",
+  "old_reference_sha256": "384bc454d432a62b731e7fbcf3ec366595ba1f036629c2d6025a0b038081be3b",
+  "old_reference_coefficients_sha256": "9315f4832ec61919a7612d2af575e637cd54187609e0e8ad4d7c838fc5c13a3e",
+  "old_dataset_sha256": "d7e82162db065e001583a8559102ffa464e51029bc1e6ada7d686ecb3ee638d3",
   "old_p": 360,
   "new_p": 359,
   "retained_old_columns": [
@@ -4134,7 +4134,7 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        1.3870847178319168e-17
+        1.387084717831917e-17
       ],
       "feature_names": [
         "WAP220",
@@ -7935,7 +7935,7 @@
     "w_true": "0995374c0012aeeb08d586e22f6d30eb085f44b2a7393722402ddb0f5e5c4118"
   },
   "reduced_dataset_hash": "9722fbfae7fa82bdf19a6dd8d24a480daf1194b2179040c3ef0d4379e999f3a3",
-  "old_dataset_reconstruction_sec": 0.19386165589094162,
+  "old_dataset_reconstruction_sec": 0.050021221046335995,
   "shared_group_preparation_path": "group_preparation/305.json",
   "raw_RSSI_subsample_hash": "60695e3ab367e328c1539bb0a23bfb564550c3e08a6629826e509dfde888ad66",
   "mapping_diagnostics": {
@@ -7980,20 +7980,20 @@
     "old_skglm": {
       "signal_or_fit_mapping_rmse": 0.0,
       "mapping_rmse_triangle_bound": 0.0,
-      "old_l1_norm": 10.907691010861738,
-      "mapped_l1_norm": 10.907691010861736,
-      "l1_norm_change": -1.7763568394002505e-15,
+      "old_l1_norm": 10.907691010860356,
+      "mapped_l1_norm": 10.907691010860356,
+      "l1_norm_change": 0.0,
       "l1_scale_change": 0.0,
       "l1_cancellation_amount": 0.0,
       "l1_scale_error_bound": 0.0,
       "l1_change_lower_bound": -0.0,
       "l1_change_upper_bound": 0.0,
       "absolute_l1_change_upper_bound": 0.0,
-      "penalty_change": -1.927343737785207e-16,
+      "penalty_change": 0.0,
       "penalty_change_lower_bound": -0.0,
       "penalty_change_upper_bound": 0.0,
-      "l1_accounting_residual": -1.7763568394002505e-15,
-      "old_objective": 1.7306492996588845,
+      "l1_accounting_residual": 0.0,
+      "old_objective": 1.730649299658884,
       "mapped_objective": 1.730649299658884
     }
   },
@@ -8121,9 +8121,9 @@
       "support_symmetric_difference_count": 0
     }
   },
-  "mapping_diagnostics_sec": 0.033268142491579056,
+  "mapping_diagnostics_sec": 0.013262005057185888,
   "new_public_reference_calls": 2,
-  "new_actual_library_fit_attempts": 3,
+  "new_actual_library_fit_attempts": 2,
   "public_reference_call_slots_reserved": 2,
   "interpretation": "Post-hoc mechanism control; original-variable and reduced-coordinate F1 are different tasks. Keeping y/lambda does not prove exact objective equivalence.",
   "status": "numerical_reference_agreement",
@@ -8182,7 +8182,7 @@
     }
   },
   "reduced_reference_path": "references/uji_seed305_dispersed_mixed_weak__A_raw_exact.json",
-  "reduced_reference_sha256": "f812b63762a48a763cbb33f7fee851842ef49ae9c27d11bef0b8cc908e68861b",
+  "reduced_reference_sha256": "ed49112d62ee32dc56567e5e769e161a0e756dde5a0cd2bb637d80c5b2b10760",
   "accuracy_eligible": true,
   "reference_accepted": true,
   "reference_consensus": true,
@@ -8193,17 +8193,17 @@
       "sklearn": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 2.2414242150647635e-13,
-        "elapsed_sec": 0.011638457886874676
+        "normalized_gap": 2.24655626821889e-13,
+        "elapsed_sec": 0.006108217989094555
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 1.1062140573719743e-12,
-        "elapsed_sec": 0.01567159127444029
+        "normalized_gap": 1.3738249690939025e-11,
+        "elapsed_sec": 0.004799494985491037
       }
     }
   },
-  "mapping_artifact_sha256": "85b3d589eaf4eeaaa42e9a2e815dc3fc66960fb08b47f0e067e53fa47dd75f68",
-  "mapping_artifact_write_sec": 0.0012894263491034508
+  "mapping_artifact_sha256": "fe706e6a0777523730a2fdf27036407968f98905de5dc815600261e23314cf06",
+  "mapping_artifact_write_sec": 0.0009433990344405174
 }

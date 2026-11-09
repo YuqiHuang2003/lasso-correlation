@@ -3,8 +3,8 @@
   "status": "reference_uncertain",
   "both_pass_common_precision": true,
   "both_within_observed_budget": true,
-  "coefficient_linf_difference": 0.06547280287201931,
-  "normalized_primal_difference": 0.0,
+  "coefficient_linf_difference": 0.003779959544996933,
+  "normalized_primal_difference": 2.711579616232007e-16,
   "by_support_threshold": {
     "1e-06": {
       "same_support": true,
@@ -44,14 +44,14 @@
     "method": "sklearn_cyclic_cd",
     "certificate": {
       "primal": 1.6377509522186409,
-      "dual": 1.6377509522182236,
-      "gap": 4.1722181265413383e-13,
-      "raw_gap": 4.1722181265413383e-13,
-      "normalized_gap": 2.5475290494499703e-13,
-      "dual_feasibility": 0.9999999999999959,
-      "kkt_inf": 4.7281623061223854e-14
+      "dual": 1.6377509522182243,
+      "gap": 4.1655567883935873e-13,
+      "raw_gap": 4.1655567883935873e-13,
+      "normalized_gap": 2.543461680025623e-13,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 4.719835633437697e-14
     },
-    "elapsed_sec": 0.018874958157539368,
+    "elapsed_sec": 0.013173246989026666,
     "certificate_passed": true,
     "budget_exceeded": false,
     "status": "converged",
@@ -66,69 +66,102 @@
     "method": "skglm",
     "history": [
       {
-        "primal": 6.682245521406005,
+        "primal": 6.682245521406004,
         "dual": 0.7851823344092167,
-        "gap": 5.897063186996788,
-        "raw_gap": 5.897063186996788,
+        "gap": 5.897063186996787,
+        "raw_gap": 5.897063186996787,
         "normalized_gap": 0.882497233617958,
         "dual_feasibility": 0.9999999999999959,
         "kkt_inf": 1.6823172786999514,
         "iteration": 0,
         "attempt": 0,
-        "time": 0.00195458997040987
+        "time": 0.0009382059797644615
       },
       {
-        "primal": 1.6377509522186409,
-        "dual": 1.637750952094725,
-        "gap": 1.2391576653669745e-10,
-        "raw_gap": 1.2391576653669745e-10,
-        "normalized_gap": 7.566215508458737e-11,
-        "dual_feasibility": 0.9999999999999959,
-        "kkt_inf": 3.326350306309678e-11,
+        "primal": 1.6377509522186406,
+        "dual": 1.6377509519613904,
+        "gap": 2.5725022112510487e-10,
+        "raw_gap": 2.5725022112510487e-10,
+        "normalized_gap": 1.5707529937724122e-10,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 2.7229399290895628e-11,
         "iteration": 5,
         "attempt": 1,
-        "time": 0.009529653936624527
+        "time": 0.004028889001347125
+      },
+      {
+        "primal": 1.6377509522186404,
+        "dual": 1.637750952218577,
+        "gap": 6.350475700855895e-14,
+        "raw_gap": 6.350475700855895e-14,
+        "normalized_gap": 3.877558851211771e-14,
+        "dual_feasibility": 0.999999999999996,
+        "kkt_inf": 5.9674487573602164e-15,
+        "iteration": 11,
+        "attempt": 2,
+        "time": 0.00723452097736299
       }
     ],
     "status": "converged",
     "certificate": {
-      "primal": 1.6377509522186409,
-      "dual": 1.637750952094725,
-      "gap": 1.2391576653669745e-10,
-      "raw_gap": 1.2391576653669745e-10,
-      "normalized_gap": 7.566215508458737e-11,
-      "dual_feasibility": 0.9999999999999959,
-      "kkt_inf": 3.326350306309678e-11
+      "primal": 1.6377509522186404,
+      "dual": 1.637750952218577,
+      "gap": 6.350475700855895e-14,
+      "raw_gap": 6.350475700855895e-14,
+      "normalized_gap": 3.877558851211771e-14,
+      "dual_feasibility": 0.999999999999996,
+      "kkt_inf": 5.9674487573602164e-15
     },
     "certificate_passed": true,
     "budget_exceeded": false,
-    "elapsed_sec": 0.00955881830304861,
-    "diagnostics_sec": 0.0007364824414253235,
-    "iterations": 5,
+    "elapsed_sec": 0.007257691933773458,
+    "diagnostics_sec": 0.0004163149278610945,
+    "iterations": 11,
     "iteration_unit": "outer working-set iterations across all attempts",
     "attempts": [
       {
         "attempt": 1,
         "library_tol": 1e-10,
         "initialization": "zero coefficients and zero fitted values",
-        "fit_elapsed_sec": 0.007196635939180851,
-        "elapsed_sec_including_posterior_diagnostics": 0.007573047652840614,
-        "cumulative_elapsed_sec": 0.009529653936624527,
+        "fit_elapsed_sec": 0.0029703680193051696,
+        "elapsed_sec_including_posterior_diagnostics": 0.0030887869652360678,
+        "cumulative_elapsed_sec": 0.004028889001347125,
         "outer_working_set_iterations": 5,
-        "library_returned_stop_crit": 3.326480757515071e-11,
+        "library_returned_stop_crit": 2.7233409971572087e-11,
         "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
         "library_objectives_without_timestamps": [
-          3.0747130984963738,
-          1.6675748546963418,
-          1.6412151247021307,
-          1.637750952218653,
-          1.6377509522186389
+          3.074713098496375,
+          1.667571050334931,
+          1.6407005835806745,
+          1.6377509522186413,
+          1.637750952218643
         ],
-        "normalized_gap": 7.566215508458737e-11,
+        "normalized_gap": 1.5707529937724122e-10,
+        "passed_common_certificate": false
+      },
+      {
+        "attempt": 2,
+        "library_tol": 1e-12,
+        "initialization": "zero coefficients and zero fitted values",
+        "fit_elapsed_sec": 0.003071701037697494,
+        "elapsed_sec_including_posterior_diagnostics": 0.0032000599894672632,
+        "cumulative_elapsed_sec": 0.00723452097736299,
+        "outer_working_set_iterations": 6,
+        "library_returned_stop_crit": 8.326672684688674e-16,
+        "library_stop_crit_definition": "maximum subdifferential violation; not normalized dual gap",
+        "library_objectives_without_timestamps": [
+          3.074713098496375,
+          1.667571050334931,
+          1.6407005835806745,
+          1.6377509522186413,
+          1.637750952218643,
+          1.6377509522186406
+        ],
+        "normalized_gap": 3.877558851211771e-14,
         "passed_common_certificate": true
       }
     ],
-    "attempt_count": 1,
+    "attempt_count": 2,
     "library_tolerances": [
       1e-10,
       1e-12,
@@ -146,7 +179,7 @@
     "warmup_metadata": {
       "performed": false,
       "elapsed_sec": 0.0,
-      "initial_warmup_sec": 3.8926941715180874,
+      "initial_warmup_sec": 3.2388851779978722,
       "versions": {
         "skglm": "0.5",
         "numba": "0.68.1",
@@ -164,57 +197,57 @@
   "geometry": {
     "sklearn": {
       "1e-06": {
-        "active_gram_min_eigenvalue": -8.816575982862469e-17,
-        "active_gram_max_eigenvalue": 3.6191309882943647,
+        "active_gram_min_eigenvalue": 2.020048126046535e-17,
+        "active_gram_max_eigenvalue": 3.6191309882943603,
         "active_gram_numerical_rank": 19,
-        "active_gram_rank_cutoff": 1.6072170209355207e-14,
+        "active_gram_rank_cutoff": 1.6072170209355185e-14,
         "active_gram_condition": null,
-        "beta_min": 0.003867429009121156,
-        "active_kkt_violation": 4.7281623061223854e-14,
+        "beta_min": 0.0038674290091215255,
+        "active_kkt_violation": 4.719835633437697e-14,
         "nnz": 20,
-        "inactive_kkt_margin": 0.0021761683029402207
+        "inactive_kkt_margin": 0.002176168302940179
       },
       "0.0001": {
-        "active_gram_min_eigenvalue": -8.816575982862469e-17,
-        "active_gram_max_eigenvalue": 3.6191309882943647,
+        "active_gram_min_eigenvalue": 2.020048126046535e-17,
+        "active_gram_max_eigenvalue": 3.6191309882943603,
         "active_gram_numerical_rank": 19,
-        "active_gram_rank_cutoff": 1.6072170209355207e-14,
+        "active_gram_rank_cutoff": 1.6072170209355185e-14,
         "active_gram_condition": null,
-        "beta_min": 0.003867429009121156,
-        "active_kkt_violation": 4.7281623061223854e-14,
+        "beta_min": 0.0038674290091215255,
+        "active_kkt_violation": 4.719835633437697e-14,
         "nnz": 20,
-        "inactive_kkt_margin": 0.0021761683029402207
+        "inactive_kkt_margin": 0.002176168302940179
       }
     },
     "skglm": {
       "1e-06": {
-        "active_gram_min_eigenvalue": -8.816575982862469e-17,
-        "active_gram_max_eigenvalue": 3.6191309882943647,
+        "active_gram_min_eigenvalue": 2.020048126046535e-17,
+        "active_gram_max_eigenvalue": 3.6191309882943603,
         "active_gram_numerical_rank": 19,
-        "active_gram_rank_cutoff": 1.6072170209355207e-14,
+        "active_gram_rank_cutoff": 1.6072170209355185e-14,
         "active_gram_condition": null,
-        "beta_min": 5.207307138710426e-06,
-        "active_kkt_violation": 3.326350306309678e-11,
+        "beta_min": 8.746946412459267e-05,
+        "active_kkt_violation": 5.9674487573602164e-15,
         "nnz": 20,
-        "inactive_kkt_margin": 0.0021761683029905138
+        "inactive_kkt_margin": 0.002176168302939152
       },
       "0.0001": {
-        "active_gram_min_eigenvalue": 0.1569261836329649,
-        "active_gram_max_eigenvalue": 2.8545624154683846,
+        "active_gram_min_eigenvalue": 0.15692618363296423,
+        "active_gram_max_eigenvalue": 2.854562415468383,
         "active_gram_numerical_rank": 19,
-        "active_gram_rank_cutoff": 1.204296349175389e-14,
-        "active_gram_condition": 18.190478793168953,
-        "beta_min": 0.006239359422095872,
-        "active_kkt_violation": 3.326350306309678e-11,
+        "active_gram_rank_cutoff": 1.2042963491753884e-14,
+        "active_gram_condition": 18.190478793169017,
+        "beta_min": 0.006239359422327673,
+        "active_kkt_violation": 5.9674487573602164e-15,
         "nnz": 19,
-        "inactive_kkt_margin": 3.5110803153770576e-15
+        "inactive_kkt_margin": -3.191891195797325e-16
       }
     }
   },
-  "geometry_diagnostics_sec_outside_fit_timers": 0.0013958746567368507,
+  "geometry_diagnostics_sec_outside_fit_timers": 0.0005512849893420935,
   "reported_reference_calls": 2,
-  "actual_library_fit_attempts": 2,
+  "actual_library_fit_attempts": 3,
   "coefficient_path": "reference_coefficients/uji_seed303_dispersed_mixed_weak.npz",
-  "coefficient_sha256": "f58270021ff097a8be3cd3be0cfc89a4c0f4bfe3e92b56bd3458f471514068ab",
-  "coefficient_write_sec": 0.0008918335661292076
+  "coefficient_sha256": "ae64faef2eb0c9534039dbfe6573b31e6001d8bb58b52955ca37d0e5ecabaf07",
+  "coefficient_write_sec": 0.00047956802882254124
 }

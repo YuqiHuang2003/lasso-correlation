@@ -9,15 +9,15 @@
         "eligible": true,
         "reasons": [],
         "status": "converged",
-        "elapsed_sec": 0.0014629904180765152,
+        "elapsed_sec": 0.0010113699827343225,
         "normalized_gap": 9.880984919163893e-15
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
         "status": "converged",
-        "elapsed_sec": 0.005047033540904522,
-        "normalized_gap": 4.595879232738298e-12
+        "elapsed_sec": 0.0021905730245634913,
+        "normalized_gap": 4.5964343442506106e-12
       }
     }
   },
@@ -166,9 +166,9 @@
   "primary_support_threshold": 1e-06,
   "primary_absolute_f1_difference": 0.0,
   "primary_delta_exceeded": false,
-  "prediction_difference_rmse": 1.1465396236600945e-12,
+  "prediction_difference_rmse": 1.1466691087819939e-12,
   "l1_norm_difference_abs": 3.028688411177427e-13,
-  "evaluation_sec_outside_reference_timers": 0.0005072783678770065,
+  "evaluation_sec_outside_reference_timers": 0.00026125996373593807,
   "interpretation": "Raw output scores are retained for every target; the primary contrast requires accuracy+budget eligibility and does not condition on consensus. The observed two-output range is not a bound over all minimizers.",
   "target_id": "news_seed409_c1_strong",
   "params": {
@@ -187,8 +187,8 @@
   "protocol_sha256": "af3716efefd10263a80cd61735f33dbdf8a31e554a56f19719690feb38409525",
   "dataset_hash": "b1b9b012fe93a4b36ea02e57b067800d2f2182c11f7923637599b659fe3f31d3",
   "input_hashes": {
-    "dataset_sha256": "7f53ca9b49222f7e9e5a1cc3140f22e82490f92610bc32b8364316199eeec9bc",
-    "reference_json_sha256": "332e72428b3717fdb8bf77cad973791ce54819b4a732538d0304c4e0053f408f",
-    "reference_coefficients_sha256": "2a454fd0e8a8a53ee9e0e9aa14c5defc9adbe79881c9ddabbfb1ac6c06ea3346"
+    "dataset_sha256": "514338af3266642e89c4cf5af33918281e011833c3fc6cdabf5b78bda6a61a25",
+    "reference_json_sha256": "eeb43f1dc4766ce324c397d4491979851a959ba4fe8f3a01987cb31fd7968c14",
+    "reference_coefficients_sha256": "8289f54ff7880edb72bb31c58d77c8a64d5b0be6d157570b38533071e6c97960"
   }
 }

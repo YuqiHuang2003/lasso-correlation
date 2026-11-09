@@ -7,12 +7,12 @@
     "amplitude": "strong"
   },
   "arm": "B_near",
-  "numerical_signature": "35d24a062769146c22ff5c28b6004993a04c0aa607904d24a95e6bcd41e4c6f6",
+  "numerical_signature": "34ebefca4d5a8e3ce2a7fb7fd0fa5366fc53718577818b5847085416115519ae",
   "config_sha256": "19efce120804edc278b36d0d2164011be3d0e3a3f36d77be3422c93bf53071d6",
   "old_reference_path": "results/workshop/real/references/uji_seed305_dispersed_strong.json",
-  "old_reference_sha256": "504eb8ed80f931be3a2a52509c45bf95b24807ea0d23a3a6fc26720b992c1f41",
-  "old_reference_coefficients_sha256": "41f7e99fcce7b2c7e6ff273588b64a0473e0eebd3fb2f3f65caa9c3d5c3657df",
-  "old_dataset_sha256": "9bdf6226c9a74e862c739080f5b06f3de8391f295769cdf6e686e7c6ce224a54",
+  "old_reference_sha256": "cc2f33cb0ad7f1e8f875feda90f98e2be18eb93a0249039e4283b3b01cdf9f30",
+  "old_reference_coefficients_sha256": "8ac9fe6a324ecc198099c37868a75e08ab045bff2086558d7914b5d72a2b4b9d",
+  "old_dataset_sha256": "d853382dbf39cdb8f4c26b1be939dcc6fd456eb928c19b22c9856b106c7ce721",
   "old_p": 360,
   "new_p": 355,
   "retained_old_columns": [
@@ -3462,7 +3462,7 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        1.1572111341200158e-16
+        1.157211134120016e-16
       ],
       "feature_names": [
         "WAP163",
@@ -4140,7 +4140,7 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        1.3870847178319168e-17
+        1.387084717831917e-17
       ],
       "feature_names": [
         "WAP220",
@@ -7092,7 +7092,7 @@
       ],
       "relative_l2_residuals_to_anchor": [
         0.0,
-        1.3870847178319167e-17
+        1.3870847178319168e-17
       ],
       "feature_names": [
         "WAP422",
@@ -7875,7 +7875,7 @@
     "w_true": "a7fe5a6ab03e5f7302732ac11ba22b36524546d5cece7dc429569390e036ef40"
   },
   "reduced_dataset_hash": "94f6eaf2eb64b0ffaa58f3227b546edb3ec7c2bc603c211b427e6fdbf8bcbba8",
-  "old_dataset_reconstruction_sec": 0.19286761805415154,
+  "old_dataset_reconstruction_sec": 0.05254128901287913,
   "shared_group_preparation_path": "group_preparation/305.json",
   "raw_RSSI_subsample_hash": "60695e3ab367e328c1539bb0a23bfb564550c3e08a6629826e509dfde888ad66",
   "mapping_diagnostics": {
@@ -7901,8 +7901,8 @@
     "old_sklearn": {
       "signal_or_fit_mapping_rmse": 0.0,
       "mapping_rmse_triangle_bound": 0.0,
-      "old_l1_norm": 13.157691010860404,
-      "mapped_l1_norm": 13.157691010860404,
+      "old_l1_norm": 13.157691010860407,
+      "mapped_l1_norm": 13.157691010860407,
       "l1_norm_change": 0.0,
       "l1_scale_change": 0.0,
       "l1_cancellation_amount": 0.0,
@@ -7914,14 +7914,14 @@
       "penalty_change_lower_bound": -0.0,
       "penalty_change_upper_bound": 0.0,
       "l1_accounting_residual": 0.0,
-      "old_objective": 1.9747738648268178,
-      "mapped_objective": 1.9747738648268178
+      "old_objective": 1.974773864826818,
+      "mapped_objective": 1.974773864826818
     },
     "old_skglm": {
       "signal_or_fit_mapping_rmse": 0.0,
       "mapping_rmse_triangle_bound": 0.0,
-      "old_l1_norm": 13.1576910108626,
-      "mapped_l1_norm": 13.1576910108626,
+      "old_l1_norm": 13.157691010860308,
+      "mapped_l1_norm": 13.157691010860308,
       "l1_norm_change": 0.0,
       "l1_scale_change": 0.0,
       "l1_cancellation_amount": 0.0,
@@ -8061,7 +8061,7 @@
       "support_symmetric_difference_count": 0
     }
   },
-  "mapping_diagnostics_sec": 0.03303410764783621,
+  "mapping_diagnostics_sec": 0.013636406045407057,
   "new_public_reference_calls": 2,
   "new_actual_library_fit_attempts": 2,
   "public_reference_call_slots_reserved": 2,
@@ -8122,7 +8122,7 @@
     }
   },
   "reduced_reference_path": "references/uji_seed305_dispersed_strong__B_near.json",
-  "reduced_reference_sha256": "27cae178ba7c0c48edc1d46ce723691868b524df06b2b971754f68ab4d916a12",
+  "reduced_reference_sha256": "7a316b88df7d26c8d55db41f8d117c67d79375477ca742c6582054d332567c52",
   "accuracy_eligible": true,
   "reference_accepted": true,
   "reference_consensus": true,
@@ -8133,17 +8133,17 @@
       "sklearn": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 2.1521115981742075e-13,
-        "elapsed_sec": 0.012364866212010384
+        "normalized_gap": 2.158858029516446e-13,
+        "elapsed_sec": 0.009572501992806792
       },
       "skglm": {
         "eligible": true,
         "reasons": [],
-        "normalized_gap": 4.992696514823894e-12,
-        "elapsed_sec": 0.008884151466190815
+        "normalized_gap": 9.93416512765572e-11,
+        "elapsed_sec": 0.004533431958407164
       }
     }
   },
-  "mapping_artifact_sha256": "e7024e3bde04b580decff0acc03d8913216eab4b27eeb7937b4d5eeb6339b22c",
-  "mapping_artifact_write_sec": 0.0013024304062128067
+  "mapping_artifact_sha256": "7ff5eb47e9aa02d1373d3f448809ad3b4f76abda0652d90916302d2ce9167b1c",
+  "mapping_artifact_write_sec": 0.000579681945964694
 }
